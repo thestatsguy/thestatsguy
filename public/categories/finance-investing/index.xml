@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance &amp; Investing on The Stats Guy</title>
+    <link>/categories/finance-investing/</link>
+    <description>Recent content in Finance &amp; Investing on The Stats Guy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/finance-investing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book Review: Rich by Retirement by Joshua Giersch</title>
+      <link>/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/</guid>
+      <description>Joshua Giersch, better known as “Shiny Things”, is an investment guru who has been generously giving investing advice on HardwareZone and his blog. His advice are consistently dished out with the SG context in mind, and his book &amp;ldquo;Rich by Retirement: How Singaporeans Can Invest Smart and Retire Wealthy&amp;rdquo;, is, in essence, the consolidation of all of his tips and hacks on being a successful investor in SG.</description>
+    </item>
+    
+  </channel>
+</rss>
