@@ -6,10 +6,19 @@
     <description>Recent content in Categories on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finance &amp; Investing</title>
+      <link>/categories/finance-investing/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/finance-investing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Science</title>
@@ -17,15 +26,6 @@
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finance &amp; Investing</title>
-      <link>/categories/finance-investing/</link>
-      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/finance-investing/</guid>
       <description></description>
     </item>
     

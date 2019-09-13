@@ -1,0 +1,131 @@
+---
+title: "Fundamental Analysis 101: A basic overview of the fundamental analysis of stocks"
+date: 2019-06-08
+categories: ["Finance & Investing"]
+---
+
+<center>
+<img src="https://frugalinvesting.files.wordpress.com/2018/07/market-analysis-1024x682.jpg?w=900" width="100%">
+</center>
+
+In this post, I would like to give an overview of the principles and concepts in the fundamental analysis of stocks.
+
+<h2>What is fundamental analysis?</h2>
+
+Well, fundamental analysis (FA) is the analysis of the fundamentals of a company. The fundamentals of the company are trying to capture essentially the health of the company, in the present and future. The objective of FA is to discern a point of view on the current and future prospects of a company – the actionability from this point of view is of course whether to buy (or short-sell) the stock. If our FA suggests that the company is likely to perform well in the future, we would like a piece of the action.
+
+In this sense, there is an inherent notion of valuation – based on our view of the stock, we could, for example, conclude that the stock is currently under-valued and is likely to grow to at least a fair valuation. Therefore, we buy. Nonetheless, we don’t know when our under-valued stock would grow to our fair valuation. It could take days, months or years.
+
+<h2>The efficient market hypothesis, technical analysis, and fundamental analysis</h2>
+
+Any current under- or over-valuation of a stock implies that the market is not valuing the stock “correctly”, and is hence inefficient. One of the dominant criticisms against FA is the efficient market hypothesis (EMH). EMH states that at any point in time, the market is efficient and security prices are exactly where they should be – every security is valued correctly, taking into account all aspects of the security and the company. For example, the resultant price plunge from a JNJ lawsuit or a Boeing plane crash is exactly reflective of the inherent value of JNJ or Boeing.
+
+Corollary to the EMH is as follows – it would be impossible to derive any form of “correct” valuation or insights based on e.g. the fundamentals of JNJ or Boeing, no matter how we analyse the fundamentals. Research has shown that the strong condition of the EMH is largely true (reference), and there are occasions where inefficiencies occur.
+
+On the other hand, proponents of technical analysis (TA) argue that price movements are driven by signals in the historical prices themselves. TA relies on e.g. trading on momentum of the stock, and similar to the EMH, suggests that the JNJ lawsuit or Boeing plane crash has already been priced into the stock, and stock prices constantly moves to capture these news and signals.
+
+Based on my current understanding on securities and prices, FA makes sense to me. As someone with scientific and statistical background, it is challenging for me to convince myself that TA is not some variant of data dredging or confirmation bias. But of course, you can always take what you will and maintain healthy skepticism.
+
+<h2>The objective of fundamental analysis</h2>
+
+As we mentioned above, the objective of FA is to discern a point of view on the current and future prospects of a company. The actionability from this point of view is of course whether to buy (or short-sell) the stock. More specifically, what are we interested in from an exercise of FA is to answer questions such as the following:
+
+* Is the company actually making money?
+
+* Can the company continue to make money?
+
+* Can the company beat its competition in time to come?
+
+* Is the company is able to fulfil its debt obligations?
+
+As simple as they are crafted, these questions are difficult to tackle and sometimes give ambiguous answers, leaving the analyst to provide a subjective opinion. Personally, this is one reason why FA appeals to me – the fact that the same set of numbers can lead to different analysis and stories meant that there’s more to the performance of a company than financials, much like data scientists would use data to tell a story and derive insights.
+
+<h2>The ancient dichotomy – Quantitative and qualitative fundamentals</h2>
+
+There’s no need to further elaborate the difference between quantitative and qualitative fundamentals. While revenue, sales, and costs can be objectively measured, notions like brand loyalty, intellectual product, and management competence are hard to place a price tag on. Following table illustrates examples what we would like to look for in both aspects of FA.
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td><strong>Example quantitative factors</strong></td><td><strong>Example qualitative factors</strong></td></tr><tr><td><b>Balance sheet</b><br>    Assets<br>    Liabilities<br>    Equity<br><b>Income statement</b><br>    Revenue<br>    Cost of goods sold<br>    Selling, general and admin expenses<br><b>Cash flow statement</b><br>    Operations<br>    Financing<br>    Investing </td><td>Business model<br>Industry outlook<br>Competitive landscape<br>Regulation<br>Management competence<br>Governance    </td></tr></tbody></table></figure>
+
+Let’s take a look at each of them, starting from the qualitative factors.
+
+<h3>Qualitative factors</h3>
+
+<h4>Business model</h4>
+
+What exactly does a company do? The nature of a company’s business can vary from simplistic to downright complex and opaque. Something like McDonalds is not difficult to look at, while it is challenging to comprehensively evaluate Amazon or Google. The whole idea of understanding a company’s business model is consider whether its profits are sustainable in the short and long term, or a fluke. In addition, in this digital era, is the company and industry that we are looking at prone to disruption (think Kodak), or are the barriers to entry significant? It’s wiser and much easier to invest with a piece of mind on companies that we understand.
+
+<h4>Industry outlook</h4>
+
+Likewise, is the industry a weary and inefficient one, or something that investment dollars are pouring into? Is it on the fringe of disruption or well-protected? Is the industry growing or shrinking?
+
+<h4>Competitive landscape</h4>
+
+How do the competitors in the same space match up? What is their respective market share? Is it a duopoly like Boeing and Airbus, or are there plenty of strong players? Are there any up and coming small players that could disrupt? Or are there any external, non-traditional players looking to enter the market? Are the R&D initiatives bearing fruits that can shake things up? Or are customers simply to loyal to certain brands for anything to change at all? Knowing the competitive landscape helps in making that informed decision.
+
+<h4>Regulation</h4>
+
+Industries that are heavily regulated by authorities typically spend significant amounts of money lobbying, or have to be reactive to policy changes. Something like Medicare for all would make a dent on the bottomlines of healthcare companies.  Therefore, understanding the relationship between the company and the government helps in making an informed forecast.
+
+<h4>Management competence</h4>
+
+A solid business model won’t fly if the management is incompetent, leading to poor execution. For a retail investor, there is no truly good or robust way to assessing management competence. We would be able to fling a few million dollars around and demand attendance from the C-suite. The best would be to rely on Wall Street analyst opinions as well as to attend quarterly earnings calls with the CEO and/or CFO and judge for yourself. Are they open to tough line of questioning or are they dodging, spinning, or giving non-answers? We could also consider their historical records. In all, not easy to judge.
+
+<h4>Governance</h4>
+
+Finally, checks and balances are required to ensure that a company is compliant with laws and regulations. Financial transparency allows shareholders and investors information that they should rightly have access to. Conflicts of interest in management structure should be nonexistent and shareholders’ rights and interests should be upheld and represented.
+
+<h3>Quantitative factors</h3>
+
+The quantitative fundamentals of a company can all be found in its financial statements, which are quarterly, semi-annually or annually compiled and published. There are three major financial statements:
+
+* Balance sheet
+
+* Income statement
+
+* Cash flow statement
+
+<p>Before we elaborate on each of these, note that these statements and other variants are filed and published with the respective bourses. For stocks listed on the SGX, annual reports and related documents can be found <a href="https://www2.sgx.com/securities/annual-reports-related-documents">here</a>. On the other hand, stocks listed in the US following <a href="https://www.sec.gov/">SEC</a> regulations and periodically file reports known as 10-K and 10-Q. The 10-K is an annual filing that publishes the company's performance over the previous fiscal year. It consists of the balance sheet, income statement, cash flow statement, as well as other types of information, including that of operations, future plans, headwinds, etc. The 10-Q,&nbsp; on the other hand, is the quarterly version of the 10-K, and is not audited, unlike the 10-K. There would typically be three 10-Q filings and one 10-K filing in a year, and they are vital sources of information and research for any serious stock picker.</p>
+
+<h4>Balance sheet</h4>
+
+The balance sheet is a record of the company’s assets, liabilities, and equities at a given point in time. Assets are the all resources in the company, inclusive of free cash, inventory, real estate, machinery etc. The relationship between assets, liabilities, and equities are given in the fundamental accounting equation:
+
+Assets = Liabilities + Shareholders’ equity
+
+The right hand side of the equation represents the way in which these assets are financed, either by debt, i.e. liabilities, or by equity, i.e. all the value that has been contributed to the company by shareholders.
+
+The balance sheet is essentially a snapshot of the company at point in time, like an X-ray or MRI. While important, investors oftentimes overlook the balance sheet as revenue or earnings, which require a notion of time elapsed e.g. quarterly earnings, are not found in the balance sheet. On the other hand, the balance sheet informs investors about the amount of debt that the company has, how much cash and cash-like assets it possesses and so on – like how we take a blood test to look at various biomarkers like blood glucose or red blood cell count.
+
+There are two categories of assets – current and non-current assets. Current assets are largely liquid, perhaps with a latency of up to 12 months or less. Examples of current assets include cash, inventories, and account receivables, of course with cash being the most liquid.
+
+Typically, we can think of large amounts of free cash in a company as being an attractive investment. Simply put, there is an option value in cash for companies to grow in strategic directions, or provide some cushion during tough times – the proverbial “saving for the rainy day”. Another way to think about free cash is that the company is so caught up in earning money that its management has yet to figure a way to put the free cash into good use. Yet another way to see this is that its management is not far-sighted enough to know how to invest the cash. You can see that a small stockpile of cash can be argued accordingly in both ways as well.
+
+Inventories are goods that yet to be sold, while account receivables are outstanding payments due to the company by its customers. Inventories can be thought of as “held up” revenue, in that the goods have already been produced, but no revenue comes in because they are not sold yet. Like free cash, inventory levels can be analyzed accordingly. For example, inventory turnover (sales / average inventory) indicates how fast goods are moving through the system to customers. We would want inventories to remain at a steady level.
+
+Account receivables are credit issued to customers for their purchases. This allows the company to book top-line revenue and stimulate sales. Inevitably, too long of a credit is bad for the company.
+
+Non-current assets are essentially assets that cannot be liquidated in a jiffy – these includes real estate, factories etc. Even though non-current assets are counted in the balance sheet as assets, in reality they are not exactly resources that the company can rally in times of difficulty for any quick maneuvers.
+
+Liabilities are essentially debt, and can also be categorized under current liabilities and non-current liabilities, with the time horizon of current liabilities being say a year or less. For example, when a company issues a corporate bond of 10 years in tenure, this would be a non-current liability.
+
+Debt is critical for a company to succeed, when it manages to leverage appropriately. Of course, too much debt is unhealthy. The quick ratio, (current assets - inventories) / current liabilities, is a quick indicator – a quick ratio of more than 1 implies that short term debt obligations can be taken care of.
+
+Equity is the difference between assets and liabilities, represents what the shareholders own in the company. There are two key items in equity, namely the paid-in capital and retained earnings. Paid-in capital is the amount of money shareholders paid in the first place during public offering to own a share in the company. Retained earnings represent all the earnings made by the company, that instead of being paid out as dividend to shareholders, are retained to further the growth and operations of the company.
+
+<h4>Income statement</h4>
+
+The income statement is a little less boring than the balance sheet, because it directly shows the revenue numbers of the company over a period of time. Numbers like revenue, earnings, earnings per share (EPS) illustrates the performance of the company. Revenue, specifically revenue growth is often a strong investing signal as it can show potential of the company and the market as well as the company’s positioning in the market.
+
+To get from revenue to earnings, we need to consider expenses. There are typically two key types of expenses, namely cost of goods sold (COGS) and selling, general, and administrative expenses (SG&A) – both are rather self-explanatory. With these, we can then get to gross margin (net sales – COGS) and operating income (gross income – operating expenses, i.e. excluding expenses related to e.g. taxes and interest). 
+
+<h4>Cash flow statement</h4>
+
+While the cash flow statement sounds similar to the income statement, they are very different beasts for a simple reason – while the income statement captures revenue and expense transaction, if there’s no actual cash flow, no records will be made on the cash flow statement. This manner of recording in the income statement is known as accrual accounting. Cash flow records in the cash flow statement could come from operations, financing, and investing.
+
+As we discussed previously, cash is an important component in the health of the company. Cash means flexibility and agility. One of the key considerations in looking at a company’s cash flow statement is to assess its ability to generate free cash flow, or FCF. Think of it as all our monthly expenses being accounted for from our salary – the rest is free for us to save, invest, or spend on a little indulgence. The same logic applies to a company. A company with plenty of FCF can embark on various ways to make use of the cash, perhaps in R&D or paying some of them back to shareholders.
+
+A closely related topic in cash flow, or specifically, discounted cash flow, is that of valuation, which I would like to touch on more in-depth in a future post.
+
+Summing up, another key topic in fundamental analysis is the use of valuation ratio, such as earnings per share, or EPS, or price-to-earnings or P/E ratio, to evaluate and summarize a company – another topic that justifies a separate in-depth exploration.
+
+That’s all for now! Hope you have gained something from this brief introduction. Thanks for reading 😊

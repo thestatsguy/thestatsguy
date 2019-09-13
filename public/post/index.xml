@@ -6,10 +6,20 @@
     <description>Recent content in Posts on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fundamental Analysis 101: A basic overview of the fundamental analysis of stocks</title>
+      <link>/2019/06/08/fundamental-analysis-101-a-basic-overview-of-the-fundamental-analysis-of-stocks/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/08/fundamental-analysis-101-a-basic-overview-of-the-fundamental-analysis-of-stocks/</guid>
+      <description>In this post, I would like to give an overview of the principles and concepts in the fundamental analysis of stocks.
+What is fundamental analysis? Well, fundamental analysis (FA) is the analysis of the fundamentals of a company. The fundamentals of the company are trying to capture essentially the health of the company, in the present and future. The objective of FA is to discern a point of view on the current and future prospects of a company – the actionability from this point of view is of course whether to buy (or short-sell) the stock.</description>
+    </item>
     
     <item>
       <title>Seven tips for working on analytics delivery projects</title>
