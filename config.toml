@@ -10,14 +10,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
+    name = "Home"
+    url = "https://thestatsguy.netlify.com/"
+[[menu.main]]
     name = "About"
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/thestatsguy"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
 
 [params]
     description = "My explorations in topics that I enjoy the most."
