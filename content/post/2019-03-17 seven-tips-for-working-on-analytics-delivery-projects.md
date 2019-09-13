@@ -1,0 +1,74 @@
+---
+title: "Seven tips for working on analytics delivery projects"
+date: 2019-03-17
+categories: ["Data Science"]
+---
+
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/03/4c7f8-creativitygap.jpg" width="100%">
+</center>
+
+Following are seven tips / tricks / hacks that I came to learnt (some of them the hard way) and compiled as a data scientist / delivery consultant / data science consultant. In brief, they are:
+
+<b>You to Yourself</b>
+
+1. Develop a strategy
+
+2. Keep a delivery journal
+
+3. Plan your daily activities
+
+4. Frontload your projects
+
+<b>You to Others</b>
+
+1. Show mediocre output to no one
+
+2. Follow up on everything
+
+3. Have 30 seconds responses to every possible question from the customer you can think of
+
+Before I elaborate, let me clarify that by "customers", I mean anyone who is related to the project, most possibly only with the exception of yourself, your teammates, and your project manager. If you work as a consultant, the idea of a customer is obvious. If you work in an in-house analytics outfit, then your customer is someone who will use your final output; could be your boss, the business owners, the IT department and engineers, the end-users etc.
+
+<b>YOU TO YOURSELF</b>
+
+1. <b>DEVELOP A STRATEGY</b> - At the start of the project, develop a strategy or a plan. Take a piece of paper and a pen, write down how you want to tackle the problem. <b>Writing it down is key</b>. Consider everything - how data flows from point A and B, what models do you want to try/you think might work, what data pre-proc do you think you need/might be necessary, what is the ideal set of results/output for you - down to the data structures (R: data frame, list, vector, matrix; python: pandas dataframe, dictionaries, lists; pyspark: broadcasts, accumulators, local vs. distributed etc.), what packages do you think you will require (version numbers/compatibility?), what visualizations do you want to see, what would the ideal plot look like, what assumptions are you making, how much time do you think you need for each task, how big are the intermediate results, is the cluster/HDFS sized correctly, what difficulties do you think you will face. Draw flowcharts and diagrams, draw your pipelines. <b>EVERYTHING</b>. Again, <b>writing them down is key</b>. I strongly recommend using pen and paper for this, or a notebook. Don't be afraid to take 1 or 2 hours on this. Be thorough. After you are done, take a picture of it with your phone and save it somewhere. Unless you are extremely clear right at the beginning what you want to do, this should probably be one of many drafts.
+
+2. <b>KEEP A DELIVERY JOURNAL</b> - Keep a delivery journal. Document everything - What happened today, problems faced, how long did a certain procedure take, your modelling strategy, your thoughts, your gut feelings, meeting notes, what went wrong, what went right, insights, mistakes… everything. Think of it as a diary. Do it on a daily basis. Show this journal to no one but yourself. Write as the day progresses, don’t wait until the end of the day. If you find it hard to do this, try to jot down in concise but substantive points, and expound on them at the end of your day. Also, make reference to the strategy you developed. Did anything change for the better or the worse after today? Personally, I keep a Evernote window open while I work and write in it as the day progresses.
+
+3. <b>PLAN YOUR DAILY ACTIVITIES</b> - Plan your daily activities. At the end of your day, plan what do you want to achieve at the end of the next manday. Write them down. Don’t do this in the customer’s office - do this after you had your dinner, took a shower. I find myself writing more accurate projections of my following manday when I write this at home or in the hotel room, i.e. outside of the office. I do this using Evernote as well.
+
+4. <b>FRONTLOAD YOUR PROJECT</b> - To frontload your project means to do as much of the work as possible at the start of the project - preferably in the first week. I always had this idea subconsciously, even when I was still in university, but never verbalized it until I read [The McKinsey Edge by Shu Hattori](https://www.bookdepository.com/McKinsey-Edge-Success-Principles-from-Worlds-Most-Powerful-Consulting-Firm-Shu-Hattori/9781259588686). Basically, if you say this to yourself: “This is the first week of the project, so I should just take it easy”, <b>YOU ARE DEAD WRONG</b>. If you have this sentiment during the first 5 mandays of your project, you are not doing the right thing. The first manweek is critical. Use it for the following:
+
+* Information (get up to speed with project kickoff materials, timeline, exact format of deliverables etc.)
+* Clarifications (clarifications with your customers - this is the most important)
+* Strategy (delivery or dev strategy, as above)
+* Workflow (software, tools, access credentials)
+
+Also, frontloading your project does not mean you jump right into developing the scripts and codebase and writing as much as possible. This is counter-productive, and most likely your codebase will turn out to be utterly useless by the second or third manweek. Instead, use the time to get the above issues out of the way, so that once you get into the dev rhythm, you don't have to stop and mind about these pesky nonsense that will hurt your productivity.
+
+<b>YOU TO OTHERS</b>
+
+1. <b>SHOW MEDIOCRE OUTPUT TO NO ONE - AKA you always need a story to tell</b> - As it turns out, impressions matter even in a delivery project, with defined deliverables and outcomes. When you meet your customers for the first time during presales or sign-off or the like, you get sized up. The next and the most crucial juncture in which you are sized up again is perhaps at your first intermediate output or milestone, whether it's a MVP dashboard or some intermediate flat table of results or a deck depicting your first iteration of modelling using CRISP-DM. Never show mediocre output to your customers, even if you prefaced it with "This is just some intermediary results".
+
+If you ponder about this point for a little, you might realise that for a modelling project, this might be difficult to accomplish. What if after putting in 2 or 3 manweeks of modelling effort, your ROC-AUC is still stuck at 0.65? In this case, there are several things you can think about and show to your customers, including:
+
+* Some EDA plot or statistic or metric to illustrate the quality of the data, or lack thereof
+* Likewise, some plot or statistic or metric to show that one or more assumptions made in the project is not true, but only ostensible or perhaps even outright false. (In the latter case, you should go hammer your presales guy who scoped and sized this project. If you are the one who scoped it, you deserve it.)
+* An alternative approach, not limited to changing performance metrics, including additional data or features, targetting or neglecting a specific subsample of the data for subsequent efforts.
+
+Basically, you need a <b>story</b>. If your immediate output looks great, great, you have a story to tell. But if your immediate output is less than ideal, then you need to craft a story on how to improve things going forward.
+
+2. <b>FOLLOW UP ON EVERYTHING</b> - This ties in with frontloading your project - follow up on every single doubt you have in your mind. This is important because you will meet customers who know that you, as the delivery consultant, lack a certain piece of critical information, but didn't share it with you anyway - simply because you didn't ask. I had to learn this this hard way. And it's a sure-lose situation for you because there is no good answer to their question "Why didn't you ask me?". However, do be careful when you follow up on questions with your customers. Make sure your question is thought-out and well-researched. Remember, impressions count.
+
+3. <b>HAVE A 30-SECOND RESPONSE TO EVERY POSSIBLE QUESTION from the customer you can think of</b> - This is another one that I picked up from the McKinsey Edge, and I really like this a lot. It's simple to implement, yet so impactful and well thought-out. Inevitably, you can't have responses to every single question there is - just make sure you have the responses to the key and obvious questions. For example,
+
+* Why do you use this feature over the other?
+* Why do you log-transform this feature?
+* Why are you using <programming language A> over <programming language B>?
+* Why are you using <machine learning model A> over <machine learning model B>?
+* How do you interpret these results?
+* How can I use these results?
+* Etc etc etc.
+
+The objective is to not babble like a fool for 2 or 3 mins and have zero concrete ideas or responses put across. No one has the time or patience to listen to your uninsightful babbling. We all know this one person in our workplace who keeps talking continuously but nothing substantial is actually put forth. Therefore, make sure you convey your idea across as concisely and succinctly as possible. 30 seconds is just a heuristic.

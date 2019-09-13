@@ -6,10 +6,26 @@
     <description>Recent content on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Seven tips for working on analytics delivery projects</title>
+      <link>/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</guid>
+      <description>Following are seven tips / tricks / hacks that I came to learnt (some of them the hard way) and compiled as a data scientist / delivery consultant / data science consultant. In brief, they are:
+You to Yourself
+ Develop a strategy
+ Keep a delivery journal
+ Plan your daily activities
+ Frontload your projects
+  You to Others
+ Show mediocre output to no one</description>
+    </item>
     
     <item>
       <title>My Master of Science in Statistics programme in NUS</title>
