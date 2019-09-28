@@ -22,6 +22,16 @@ What is fundamental analysis? Well, fundamental analysis (FA) is the analysis of
     </item>
     
     <item>
+      <title>Stylized facts in statistical finance</title>
+      <link>/2019/04/04/stylized-facts-in-statistical-finance/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/04/stylized-facts-in-statistical-finance/</guid>
+      <description>In statistical finance (as well as in certain areas in social science), stylized facts are empirical observations summarized in a theory-like form, and are generally representative under broad circumstances.
+Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic (&#34;... this makes sense to me&#34;). Stylized facts may often guide investigations and explorations into certain topics of interest, functioning perhaps as assumptions to be either built upon or proven otherwise.</description>
+    </item>
+    
+    <item>
       <title>Seven tips for working on analytics delivery projects</title>
       <link>/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
@@ -55,16 +65,6 @@ You to Yourself
       
       <guid>/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/</guid>
       <description>Joshua Giersch, better known as “Shiny Things”, is an investment guru who has been generously giving investing advice on HardwareZone and his blog. His advice are consistently dished out with the SG context in mind, and his book &amp;ldquo;Rich by Retirement: How Singaporeans Can Invest Smart and Retire Wealthy&amp;rdquo;, is, in essence, the consolidation of all of his tips and hacks on being a successful investor in SG.</description>
-    </item>
-    
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>
