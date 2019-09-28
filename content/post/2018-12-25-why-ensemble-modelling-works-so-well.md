@@ -1,0 +1,42 @@
+---
+title: "Why ensemble modelling works so well - and one often neglected principle"
+date: "2019-12-25"
+categories: ["Data Science"]
+---
+
+<p><img class=" size-full wp-image-81 aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/12/r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638.jpg" alt="r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638" width="638" height="479"></p>
+<p style="text-align: center;">Putting models together in an ensemble learning fashion is a popular technique amongst Data Scientists</p>
+<p>Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It's a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.</p>
+<p>Ensemble learning is often introduced towards the end of any Data Science 101-type content, and often emphasized in terms of implementation rather than the underlying reason behind its success. It's also a question I get asked often.</p>
+<p>In this post I will conduct a simple statistical treatment to illustrate why ensemble learning works, and <strong>one important catch that most data scientists neglect</strong>.</p>
+<h3>Binary classifiers as biased coin flips</h3>
+<p>Consider a binary classifier c<sub>1</sub> on a yes/no classification problem. Being a reasonably constructed classifier, c<sub>1</sub> has an accuracy of 60%. This means that the probability of c<sub>1</sub>&nbsp;giving the correct prediction is 0.60, like a flip of a biased coin.</p>
+<p>Now consider putting three such classifiers together in a democratic fashion. This means that the set of classifiers (the ensemble) would give the correct prediction if and only if two of the three (doesn't matter which two) or more give the correct prediction.</p>
+<p>If you do your combinations calculations correctly, you would be able to arrive at the overall performance of the ensemble being 0.648:</p>
+<pre>Pr({correct, correct, wrong})   = (0.6²)(0.4)&nbsp;= 0.144
+Pr({correct, correct, correct}) = 0.6³ = 0.216
+
+Accuracy of ensemble = 0.216 + (0.144)(3) = 0.648 &gt; 0.6
+(<em>3 times because there are 3 different ways of getting 2 correct, 1 wrong.</em>)
+</pre>
+<p>Generally, we can say that as the number of models within the ensemble increase, so does the accuracy of the ensemble. <strong>However, this result is valid only if the individual classifiers are independent amongst each other</strong> - something which most data scientists fail to understand or appreciate. Consider this next piece of math.</p>
+<p>(In reality, true independence is hard to either attain or assess, so we settle with low or zero correlation.)</p>
+<h3>Binary classifiers as Bernoulli trials</h3>
+<p>Every time we ask our binary classifier c<sub>1</sub> for a prediction, we are essentially conducting a Bernoulli trial with:</p>
+<pre>E(c<sub>1</sub>) = p
+Var(c<sub>1</sub>) = p(1-p)</pre>
+<p>Putting together our ensemble of 3 independent classifiers again:</p>
+<pre>(<em>ens.</em>) = ⅓(c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub>)
+E(<em>ens.</em>) = p (<em>unbiased</em>)
+Var(<em>ens.</em>) = ⅓p(1-p) &lt; p(1-p) = Var(c<sub>1</sub>)</pre>
+<p>With this, it's clear why the independence or negligible correlation condition is necessary - otherwise:</p>
+<pre>Var(<em>ens.</em>) = ⅓p(1-p) + Cov(c<sub>1</sub>,c<sub>2</sub>) + Cov(c<sub>1</sub>,c<sub>3</sub>) + Cov(c<sub>2</sub>,c<sub>3</sub>)
+(<em>all pairwise covariances</em>)</pre>
+<p>With the additional pairwise covariance terms, it is <strong>no longer guaranteed</strong> that</p>
+<pre>Var(<em>ens.</em>) &lt; Var(c<sub>1</sub>)</pre>
+<p>Without going through the math again, this set of results can be applied to regression problems with no loss of generality.</p>
+<h3>What does this mean and what I can do with this</h3>
+<p>Clearly, we need our ensemble to be reliable and not wobble all over the place with high prediction variance. It's&nbsp;intuitive why the negligible correlation condition makes sense - correlated models would more often than not support each other and make the same yes/no predictions simultaneously, even if the given test case could jolly well be in the grey zone.</p>
+<p>In addition, it should be clear to you now that there's not much use in assembling strong learners together in an ensemble - they are likely to be accurate per se, and thereby correlated with each other with the test cases. All you are doing is to increase the variance of your predictions. On the other hand, putting a bunch of weak learners would make sense because they are likely to be less correlated amongst each other.</p>
+<p>Finally, the next time when someone presents an ensemble learning approach, ask if they ever consider the correlations amongst the underlying models. Odds are that they would take you a blank look and not sure why that's necessary :P</p>
+<p>(If you are interested to learn more about ensemble learning and how it works in algorithms like random forests, feel free to take a look at this <a href="https://github.com/tohweizhong/RUGS-RF" target="_blank" rel="noopener">repo</a> on my Github.)</p>
