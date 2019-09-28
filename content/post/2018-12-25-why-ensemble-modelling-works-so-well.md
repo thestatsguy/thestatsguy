@@ -1,6 +1,6 @@
 ---
 title: "Why ensemble modelling works so well - and one often neglected principle"
-date: "2019-12-25"
+date: 2019-12-25
 categories: ["Data Science"]
 ---
 
