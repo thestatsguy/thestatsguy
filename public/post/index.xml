@@ -59,6 +59,16 @@ You to Yourself
     </item>
     
     <item>
+      <title>The Machine Learning Life Cycle - how to run a ML project</title>
+      <link>/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</guid>
+      <description>The Machine Learning Life Cycle from DataRobot.
+I recently came across this page in the DataRobot Artificial Intelligence Wiki. If you don&#39;t already know, DataRobot is currently one of the top automated machine learning platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning.</description>
+    </item>
+    
+    <item>
       <title>Why ensemble modelling works so well - and one often neglected principle</title>
       <link>/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
@@ -66,6 +76,19 @@ You to Yourself
       <guid>/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</guid>
       <description>Putting models together in an ensemble learning fashion is a popular technique amongst Data Scientists
 Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.</description>
+    </item>
+    
+    <item>
+      <title>OCBC 360 Interest structure changes: what&#39;s the impact on me and you? - Part 1</title>
+      <link>/2018/10/20/ocbc-360-interest-structure-changes-whats-the-impact-on-me-and-you-part-1/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/20/ocbc-360-interest-structure-changes-whats-the-impact-on-me-and-you-part-1/</guid>
+      <description>What&amp;rsquo;s changed for the OCBC 360 account bonus interest structure
+Effective from 1st Nov 2018, there will be changes to the interest structure of the&amp;nbsp;OCBC 360 account. If you are either exploring deposit accounts out there or currently using OCBC 360 (like myself), you should pay attention to these changes.
+Following is the existing interest structure:
+Existing interest structure
+It&amp;rsquo;s a relatively straightforward structure that has requirements on salary crediting (which earns you 1.</description>
     </item>
     
     <item>

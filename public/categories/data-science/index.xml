@@ -39,6 +39,16 @@ You to Yourself
     </item>
     
     <item>
+      <title>The Machine Learning Life Cycle - how to run a ML project</title>
+      <link>/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</guid>
+      <description>The Machine Learning Life Cycle from DataRobot.
+I recently came across this page in the DataRobot Artificial Intelligence Wiki. If you don&#39;t already know, DataRobot is currently one of the top automated machine learning platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning.</description>
+    </item>
+    
+    <item>
       <title>Why ensemble modelling works so well - and one often neglected principle</title>
       <link>/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
