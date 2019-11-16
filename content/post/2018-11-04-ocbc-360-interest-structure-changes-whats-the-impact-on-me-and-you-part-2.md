@@ -1,0 +1,178 @@
+---
+title: "OCBC 360 Interest structure changes: what's the impact on me and you? - Part 2"
+date: 2018-11-04
+categories: ["Finance & Investing"]
+---
+
+<p style="text-align: center;"><a href="https://www.ocbc.com/assets/images/360-1980-350-mobile.jpg"><img class=" aligncenter" src="https://www.ocbc.com/assets/images/360-1980-350-mobile.jpg" width="640" height="274" border="0" /></a>The OCBC 360 Account</p>
+<p>This is part 2 from the post "<a href="http://thestatsguy.home.blog/2018/10/20/ocbc-360-interest-structure-changes-whats-the-impact-on-me-and-you-part-1/">OCBC 360 Interest structure changes: what's the impact on me and you? - Part 1</a>". Be sure to check that out first before going further here.</p>
+<p>In my previous post, I illustrated the upcoming changes to the bonus interest structure of the 360 account, and how it will be affecting me. In this post, I will be making some specific comparisons between accounts from different banks and work on some simple numbers to make a decision on my next deposit account.</p>
+<p><strong>Shortlisted accounts</strong></p>
+<p>After some quick research (OK, this one <a href="https://blog.moneysmart.sg/savings-accounts/best-savings-accounts-singapore/">article</a> summarized it all up), I will be focusing specifically on the following:</p>
+<ul style="font-weight: 400;">
+<li>OCBC 360 account</li>
+<li>DBS Multiplier account</li>
+<li>UOB One account</li>
+<li>Bank of China SmartSaver account</li>
+<li>Maybank SaveUp account</li>
+</ul>
+<p>In addition, a special mention of the <a href="https://www.hsbc.com.sg/advance/">HSBC Advance programme</a>. I won't be elaborating on it here, but do check it out.</p>
+<p><strong>Comparison metrics</strong></p>
+<p>What would be our basis of comparison?</p>
+<ol>
+<li><strong>Interest structure</strong>, and how much interest I will be getting <strong>realistically </strong>- it may not be possible to fulfill all components in the interest structure</li>
+<li><strong>Balance cap on the bonus interest</strong> - how much of my balance qualify for the bonus interest?</li>
+<li><strong>Banking convenience</strong> - since I will be using this account for salary crediting, emergency funds, and everyday expenses, it's important that I can bank with this account conveniently. This means plenty of ATMs and a decent online banking system</li>
+</ol>
+<p><strong>Here we go!</strong></p>
+<p><u>OCBC 360 account</u></p>
+<p>Let's start with 360 first. Based on the new structure, I doubt I can consistently get the Step-up bonus, and there's no way I will purchase any insurance or investment products from OCBC - so here's how much I think I can get. "Realistic interest rates" are in (brackets).</p>
+<table>
+<tbody>
+<tr>
+<td width="125"> </td>
+<td width="125"><strong>Salary</strong></td>
+<td width="125"><strong>Spend</strong></td>
+<td width="125"><strong>Step-up</strong></td>
+<td width="125"><strong>Invest</strong></td>
+</tr>
+<tr>
+<td width="125"><strong>First 35K</strong></td>
+<td width="125">1.2% (1.2%)</td>
+<td width="125">0.3% (0.3%)</td>
+<td width="125">0.3% (0%)</td>
+<td width="125">0.6% (0%)</td>
+</tr>
+<tr>
+<td width="125"><strong>Next 35K</strong></td>
+<td width="125">1.5% (1.5%)</td>
+<td width="125">0.6% (0.6%)</td>
+<td width="125">0.6% (0%)</td>
+<td width="125">1.2% (0%)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Realistic average interest rate for me: 1.8% (from Salary and Spend)</li>
+<li>Balance cap on bonus interest: 70K</li>
+<li>Banking convenience: High (OCBC shares ATMs with UOB and others, and I am already a satisfied user of their online banking system.)</li>
+</ul>
+<p><u>DBS Multiplier account</u></p>
+<p>The <a href="https://www.dbs.com.sg/personal/landing/dbs-multiplier/">DBS Multiplier account</a> is by far one of the most lenient accounts when it comes to qualifying for bonus interest. There are five qualifying components, namely salary, credit card spend, home loan installments, insurance, and investments. The salary component is compulsory, and for every thing else, it's based on total flow of funds across 2 or 3 components. What do I mean by that?</p>
+<p>For example, if I have a salary credit of $3,000 per month, with just $1 spend on credit card and $1 on investments (I will explain this later), then it would be total flow of $3,002 across 3 components. This means I can qualify for 2.00% p.a. No minimum amounts on specific components, just considering total flow of funds. It's that simple.</p>
+<p style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/11/51b97-capture.png"><img src="https://thestatsguyhome.files.wordpress.com/2018/11/51b97-capture.png?w=300" width="640" height="432" border="0" /></a></p>
+<p style="text-align: center;">DBS Multiplier Account Interest Structure</p>
+<p>With that, it's easy to immediately see how much bonus interest I would be getting:</p>
+<ul>
+<li>Realistic average interest for me: 2.20%</li>
+<li>Balance cap on bonus interest: 50K</li>
+<li>Banking convenience: Medium-High (POSB/DBS ATMs have the longest queues.)</li>
+</ul>
+<p>On the investment component, the easiest way to qualify is via either using <a href="https://www.posb.com.sg/personal/investments/investing-in-funds/invest-saver">POSB Invest-Saver</a> (only for the first 12 months - read the fineprint under the investment component <a href="https://www.dbs.com.sg/personal/landing/dbs-multiplier/">here</a>) or using <a href="http://www.sgs.gov.sg/savingsbonds.aspx">Singapore Savings Bonds</a>. I won't elaborate further on this here, but be sure to check out this <a href="https://kpo-and-czm.blogspot.com/2018/04/dbs-multiplier-ssbs-joint-account-higher-interest.html">blog post</a>.</p>
+<p><u>UOB One account</u></p>
+<p>The <a href="https://www.uob.com.sg/personal/save/chequeing/one-account.page">UOB One account</a> is pretty straightforward in their interest structure. There are only two qualifying components:</p>
+<ol>
+<li>Min. card spend of $500 in the month</li>
+<li>Min. card spend of $500 with either salary crediting or 3 GIRO deductions</li>
+</ol>
+<p>So for most folks, hitting both should be relatively easy.</p>
+<table style="height: 247px;" width="375">
+<tbody>
+<tr>
+<td width="76"> </td>
+<td width="302"><strong>2 components</strong></td>
+</tr>
+<tr>
+<td width="76"><strong>First 15K</strong></td>
+<td width="302">1.85%</td>
+</tr>
+<tr>
+<td width="76"><strong>Next 15K</strong></td>
+<td width="302">2.00%</td>
+</tr>
+<tr>
+<td width="76"><strong>Next 15K</strong></td>
+<td width="302">2.15%</td>
+</tr>
+<tr>
+<td width="76"><strong>Next 15K</strong></td>
+<td width="302">2.30%</td>
+</tr>
+<tr>
+<td width="76"><strong>Next 15K</strong></td>
+<td width="302">3.88%</td>
+</tr>
+</tbody>
+</table>
+<ul style="font-weight: 400;">
+<li>Realistic average interest for me: 2.075% (Probably going to keep up to 60K of cash at any point in time. It's already a rather significant amount to keep in cash.)</li>
+<li>Balance cap on bonus interest: 75K</li>
+<li>Banking convenience: High</li>
+</ul>
+<p><u>BOC SmartSaver account</u></p>
+<p>The <a href="http://www.bankofchina.com/sg/pbservice/pb1/201611/t20161130_8271280.html">BOC SmartSaver account</a> is probably more suited for relatively higher income earners and spenders, based on their minimum requirements of $1,500 monthly spending (1.60%) and $6,000 income (1.20%). Anything short and you would be losing out by using this account.</p>
+<ul style="font-weight: 400;">
+<li>Realistic average interest for me: 1.55%</li>
+<li>Balance cap on bonus interest: 60K</li>
+<li>Banking convenience: Low (in the next 3 seconds, think of a location where you can recall seeing a BOC ATM.)</li>
+</ul>
+<p><u>Maybank SaveUp account</u></p>
+<p>Finally, the <a href="http://info.maybank2u.com.sg/saveup/">Maybank SaveUp account</a> is Maybank's attempt at competing in deposit accounts. There are 9 (!) bonus components to choose from which you would need to qualify for 3. As long as you can qualify for 3, the bonus interest would be straight out 3.0625%. Qualifying for 2 gives less than 1.20%, so the jump is tremendous.</p>
+<p>When I was first doing my homework on all these deposit accounts, Maybank looked like the obvious choice to me - I didn't think I would have any problems hitting the 3.06%. This was until I realized that minimum monthly credit card spend of $500 - which incredulously, is a challenge for me. Yes, the amount of money I spend every month is very low and a significant chunk of my spending cannot come from credit cards - unless kopitiams and hawker centers are ready to accept them.</p>
+<p>Therefore, unless credit card spending on insurance or income tax counts, it is unlikely that I can get the 3.06%. Which turns out to be the case.</p>
+<ul>
+<li>Realistic average interest for me: 1.11%</li>
+<li>Balance cap on bonus interest: 60K</li>
+<li>Banking convenience: Medium</li>
+</ul>
+<p style="font-weight: 400;"><strong>Conclusion</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="156"><strong>Account</strong></td>
+<td width="156"><strong>Realistic average interest for me</strong></td>
+<td width="156"><strong>Balance cap</strong></td>
+<td width="156"><strong>Banking convenience</strong></td>
+</tr>
+<tr>
+<td width="156">OCBC 360</td>
+<td width="156">1.80%</td>
+<td width="156">70K</td>
+<td width="156">High</td>
+</tr>
+<tr>
+<td width="156">DBS Multiplier</td>
+<td width="156">2.20%</td>
+<td width="156">50K</td>
+<td width="156">Medium-High</td>
+</tr>
+<tr>
+<td width="156">UOB One</td>
+<td width="156">2.08%</td>
+<td width="156">75K</td>
+<td width="156">High</td>
+</tr>
+<tr>
+<td width="156">BOC SmartSaver</td>
+<td width="156">1.55%</td>
+<td width="156">60K</td>
+<td width="156">Low</td>
+</tr>
+<tr>
+<td width="156">Maybank SaveUp</td>
+<td width="156">1.11%</td>
+<td width="156">60K</td>
+<td width="156">Medium</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">Looks like the answer is clear - keep 50K of cash in DBS Multiplier account.</p>
+<p style="font-weight: 400;"><strong>Assumptions  / Points to note</strong></p>
+<ol style="font-weight: 400;">
+<li>This turns out that a large part of this analysis hinges on an assumption of monthly credit card spending of less than $500 - which is true <em>most of the time</em> for me. There are definitely months where I am able to exceed $500 of credit card spending, but it's pretty inconsistent. Mostly dependent on whether there's a special occasion during the month.</li>
+<li>The above assumption will no longer be valid if it's possible to rack up credit card spend with insurance premiums, income tax payments, or other consistent forms of payments.</li>
+<li>Another assumption I made was that I would be unable to consistently increase my month end balances. This assumption is valid simply because of the presence of SSBs.</li>
+<li>OCBC may one fine day emulate DBS and include the <a href="https://www.ocbc.com/personal-banking/investments/bluechip.html">BCIP</a> into the 360 investment component. Then the 360 account would work out for me.</li>
+<li>Finally, do your own homework, and especially consider whether my assumptions make sense in your situation.</li>
+</ol>
+<p>That's all for this post!</p>
