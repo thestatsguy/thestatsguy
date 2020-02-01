@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stoicism on The Stats Guy</title>
+    <link>/categories/stoicism/</link>
+    <description>Recent content in Stoicism on The Stats Guy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/stoicism/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do Less, Better</title>
+      <link>/2019/02/23/do-less-better/</link>
+      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/23/do-less-better/</guid>
+      <description>The Daily Stoic podcast Here’s the simple recipe for improvement and for happiness. It comes from Marcus Aurelius and the fact that it came from such a busy man with so many obligations and responsibilities should not be forgotten.&amp;nbsp;“If you seek tranquility,” he said, “do less.”&amp;nbsp;And then he follows the note to himself with some clarification. Not nothing, less. Do only what’s essential. “Which brings a double satisfaction,” he writes “to do less, better.</description>
+    </item>
+    
+  </channel>
+</rss>
