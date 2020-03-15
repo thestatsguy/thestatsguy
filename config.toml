@@ -27,7 +27,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 4
 [[menu.main]]
     name = "Finance & Investing"
-    url = "https://thestatsguy.netlify/categories/finance-investing/"
+    url = "https://thestatsguy.netlify.com/categories/finance-investing/"
     weight = 5
 [[menu.main]]
     name = "Stoicism"
