@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.56.3" />
+
+
+<title>Random Forests in R - The Stats Guy</title>
+<meta property="og:title" content="Random Forests in R - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">21 min read</span>
+    
+
+    <h1 class="article-title">Random Forests in R</h1>
+
+    
+    <span class="article-date">2020-03-15</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>As the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.</p>
+<p>In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems. Each section of this tutorial corresponds to an individual R script that can be found in the GitHub repo at <a href="https://github.com/thestatsguy/RUGS-RF" class="uri">https://github.com/thestatsguy/RUGS-RF</a>.</p>
+<p>This tutorial is divided into two sections. We will first use tree-based methods for classification on the <strong>spam</strong> dataset from the <strong>kernlab</strong> package - the same dataset used in the previous RUGS workshop on support vector machines (SVM). Subsequently, we will apply these methods on a regression problem, with the <strong>imports85</strong> dataset from the <strong>randomForest</strong> package.</p>
+</div>
+<div id="tree-based-methods-for-classification" class="section level2">
+<h2>Tree-based methods for classification</h2>
+<div id="preparation" class="section level3">
+<h3>Preparation</h3>
+<p>Let’s start by loading the spam dataset and doing some preparations:</p>
+<pre class="r"><code># packages that we will need:
+#  @ kernlab:      for the spam dataset
+#  @ tree:         for decision tree construction
+#  @ randomForest: for bagging and RF
+#  @ beepr:        for a little beep
+#  @ pROC:         for plotting of ROC
+
+# code snippet to install and load multiple packages at once
+#pkgs &lt;- c(&quot;kernlab&quot;,&quot;tree&quot;,&quot;randomForest&quot;,&quot;beepr&quot;,&quot;pROC&quot;)
+#sapply(pkgs,FUN=function(p){
+#        print(p)
+#        if(!require(p)) install.packages(p)
+#        require(p)
+#})
+
+# load required packages
+suppressWarnings(library(kernlab))
+suppressWarnings(library(tree))
+suppressWarnings(library(randomForest))
+## randomForest 4.6-14
+## Type rfNews() to see new features/changes/bug fixes.
+suppressWarnings(library(beepr)) # try it! beep()
+suppressWarnings(library(pROC))
+## Type &#39;citation(&quot;pROC&quot;)&#39; for a citation.
+## 
+## Attaching package: &#39;pROC&#39;
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     cov, smooth, var
+
+# load dataset
+data(spam)
+
+# take a look
+str(spam)
+## &#39;data.frame&#39;:    4601 obs. of  58 variables:
+##  $ make             : num  0 0.21 0.06 0 0 0 0 0 0.15 0.06 ...
+##  $ address          : num  0.64 0.28 0 0 0 0 0 0 0 0.12 ...
+##  $ all              : num  0.64 0.5 0.71 0 0 0 0 0 0.46 0.77 ...
+##  $ num3d            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ our              : num  0.32 0.14 1.23 0.63 0.63 1.85 1.92 1.88 0.61 0.19 ...
+##  $ over             : num  0 0.28 0.19 0 0 0 0 0 0 0.32 ...
+##  $ remove           : num  0 0.21 0.19 0.31 0.31 0 0 0 0.3 0.38 ...
+##  $ internet         : num  0 0.07 0.12 0.63 0.63 1.85 0 1.88 0 0 ...
+##  $ order            : num  0 0 0.64 0.31 0.31 0 0 0 0.92 0.06 ...
+##  $ mail             : num  0 0.94 0.25 0.63 0.63 0 0.64 0 0.76 0 ...
+##  $ receive          : num  0 0.21 0.38 0.31 0.31 0 0.96 0 0.76 0 ...
+##  $ will             : num  0.64 0.79 0.45 0.31 0.31 0 1.28 0 0.92 0.64 ...
+##  $ people           : num  0 0.65 0.12 0.31 0.31 0 0 0 0 0.25 ...
+##  $ report           : num  0 0.21 0 0 0 0 0 0 0 0 ...
+##  $ addresses        : num  0 0.14 1.75 0 0 0 0 0 0 0.12 ...
+##  $ free             : num  0.32 0.14 0.06 0.31 0.31 0 0.96 0 0 0 ...
+##  $ business         : num  0 0.07 0.06 0 0 0 0 0 0 0 ...
+##  $ email            : num  1.29 0.28 1.03 0 0 0 0.32 0 0.15 0.12 ...
+##  $ you              : num  1.93 3.47 1.36 3.18 3.18 0 3.85 0 1.23 1.67 ...
+##  $ credit           : num  0 0 0.32 0 0 0 0 0 3.53 0.06 ...
+##  $ your             : num  0.96 1.59 0.51 0.31 0.31 0 0.64 0 2 0.71 ...
+##  $ font             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num000           : num  0 0.43 1.16 0 0 0 0 0 0 0.19 ...
+##  $ money            : num  0 0.43 0.06 0 0 0 0 0 0.15 0 ...
+##  $ hp               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ hpl              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ george           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num650           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ lab              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ labs             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ telnet           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num857           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ data             : num  0 0 0 0 0 0 0 0 0.15 0 ...
+##  $ num415           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num85            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ technology       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num1999          : num  0 0.07 0 0 0 0 0 0 0 0 ...
+##  $ parts            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ pm               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ direct           : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ cs               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ meeting          : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ original         : num  0 0 0.12 0 0 0 0 0 0.3 0 ...
+##  $ project          : num  0 0 0 0 0 0 0 0 0 0.06 ...
+##  $ re               : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ edu              : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ table            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ conference       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charSemicolon    : num  0 0 0.01 0 0 0 0 0 0 0.04 ...
+##  $ charRoundbracket : num  0 0.132 0.143 0.137 0.135 0.223 0.054 0.206 0.271 0.03 ...
+##  $ charSquarebracket: num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charExclamation  : num  0.778 0.372 0.276 0.137 0.135 0 0.164 0 0.181 0.244 ...
+##  $ charDollar       : num  0 0.18 0.184 0 0 0 0.054 0 0.203 0.081 ...
+##  $ charHash         : num  0 0.048 0.01 0 0 0 0 0 0.022 0 ...
+##  $ capitalAve       : num  3.76 5.11 9.82 3.54 3.54 ...
+##  $ capitalLong      : num  61 101 485 40 40 15 4 11 445 43 ...
+##  $ capitalTotal     : num  278 1028 2259 191 191 ...
+##  $ type             : Factor w/ 2 levels &quot;nonspam&quot;,&quot;spam&quot;: 2 2 2 2 2 2 2 2 2 2 ...</code></pre>
+<p>In this example, we will attempt to predict whether an email is spam or nonspam. To do so, we will construct models on one subset of the data (training data), and use the constructed model on another disparate subset of the data (the testing data). This is known as cross validation.</p>
+<pre class="r"><code># preparation for cross validation:
+# split the dataset into 2 halves,
+# 2300 samples for training and 2301 for testing
+num.samples &lt;- nrow(spam) # 4,601
+num.train   &lt;- round(num.samples/2) # 2,300
+num.test    &lt;- num.samples - num.train # 2,301
+num.var     &lt;- ncol(spam) # 58
+
+# set up the indices
+set.seed(150715)
+idx       &lt;- sample(1:num.samples)
+train.idx &lt;- idx[seq(num.train)]
+test.idx  &lt;- setdiff(idx,train.idx)
+
+# subset the data
+spam.train &lt;- spam[train.idx,]
+spam.test  &lt;- spam[test.idx,]</code></pre>
+<p>Taking a quick glance at the <strong>type</strong> variable:</p>
+<pre class="r"><code>table(spam.train$type)
+## 
+## nonspam    spam 
+##    1380     920
+table(spam.test$type)
+## 
+## nonspam    spam 
+##    1408     893</code></pre>
+</div>
+<div id="decision-tree" class="section level3">
+<h3>Decision tree</h3>
+<p>Now that we are done with the preparation, let’s start by constructing a decision tree model, using the <strong>tree</strong> package:</p>
+<pre class="r"><code>tree.mod &lt;- tree(type ~ ., data = spam.train)</code></pre>
+<p>Here’s how our model looks like:</p>
+<pre class="r"><code>plot(tree.mod)
+title(&quot;Decision tree&quot;)
+text(tree.mod, cex = 0.75)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_tree2-1.png" width="672" /></p>
+<p>The model may be overtly complicated. Typically, after constructing a decision tree model, we may want to prune the model, by collapsing certain edges, nodes and leaves together without much loss of performance. This is done by iteratively comparing the number of leaf nodes with the model’s performance (by k-fold cross validation <em>within the training set</em>).</p>
+<pre class="r"><code>cv.prune &lt;- cv.tree(tree.mod, FUN = prune.misclass)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &quot;red&quot;, type = &quot;b&quot;,
+     main = &quot;Decision tree: Cross validation to find optimal size of tree&quot;,
+     xlab = &quot;Size of tree&quot;, ylab = &quot;Misclassifications&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_tree3-1.png" width="672" /></p>
+<p>Having 9 leaf nodes may be good (maximising performance while minimising complexity).</p>
+<pre class="r"><code>best.tree.size &lt;- 9
+
+# pruning (cost-complexity pruning)
+pruned.tree.mod &lt;- prune.misclass(tree.mod, best = best.tree.size)
+
+# here&#39;s the new tree model
+plot(pruned.tree.mod)
+title(paste(&quot;Pruned decision tree (&quot;, best.tree.size, &quot; leaf nodes)&quot;,sep = &quot;&quot;))
+text(pruned.tree.mod, cex = 0.75)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_tree4-1.png" width="672" /></p>
+<p>Now with our new model, let’s make some predictions on the testing data.</p>
+<pre class="r"><code>tree.pred &lt;- predict(pruned.tree.mod,
+                     subset(spam.test, select = -type), 
+                     type = &quot;class&quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(tree.pred.results &lt;- table(tree.pred, spam.test$type))
+##          
+## tree.pred nonspam spam
+##   nonspam    1325  120
+##   spam         83  773
+
+# What is the accuracy of our tree model?
+print(tree.accuracy &lt;- (tree.pred.results[1,1] + tree.pred.results[2,2]) / sum(tree.pred.results))
+## [1] 0.9117775</code></pre>
+<p>Our decision tree model is able to predict spam vs. nonspam emails with about 91.18% accuracy. We will make comparisons of accuracies with other models later.</p>
+</div>
+<div id="bagging" class="section level3">
+<h3>Bagging</h3>
+<p>Next, we turn our attention to the bagging model. Recall that bagging, a.k.a. <em>bootstrap aggregating</em>, is the process of sampling (with replacement), samples from the training data. Each of these subsets are known as bags, and we construct individual decision tree models using each of these bags. Finally, to make a classification prediction, we use the majority vote from the ensemble of decision tree models.</p>
+<pre class="r"><code>bg.mod&lt;-randomForest(type ~ ., data = spam.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     proximity = TRUE,
+                     importance = TRUE)</code></pre>
+<p>In the bagging, and also the random forest model, there are often only two hyperparameters that we are interested in: <strong>mtry</strong>, which is the number of variables to try from for each tree and at each split, and <strong>ntree</strong>, the number of trees in the ensemble. Tuning the number of trees is relatively easy by looking at the out-of-bag (OOB) error estimate of the ensemble at each step of the way. For more details, refer to the slides. We set <strong>proximity = TRUE</strong> and <strong>importance = TRUE</strong>, in order to get some form of visualization of the model, and the variable importances respectively.</p>
+<pre class="r"><code>plot(bg.mod$err.rate[,1], type = &quot;l&quot;, lwd = 3, col = &quot;blue&quot;,
+     main = &quot;Bagging: OOB estimate of error rate&quot;,
+     xlab = &quot;Number of Trees&quot;, ylab = &quot;OOB error rate&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_bagging2-1.png" width="672" /></p>
+<p>Here, 300 trees seems more than sufficient. One advantage of bagging and random forest models is that they provide a way of doing feature or variable selection, by considering the importance of each variable in the model. For exact details on how these importance measures are defined, refer to the slides.</p>
+<pre class="r"><code>varImpPlot(bg.mod,
+           main = &quot;Bagging: Variable importance&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_bagging3-1.png" width="672" /></p>
+<p>In addition, we can visualize the classification done by the model using a multidimensional plot on the proximity matrix. The green samples in the figure represent nonspams, while the red samples are spams.</p>
+<pre class="r"><code>MDSplot(bg.mod,
+        fac = spam.train$type,
+        palette = c(&quot;green&quot;,&quot;red&quot;),
+        main = &quot;Bagging: MDS&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_bagging4-1.png" width="672" /></p>
+<p>Finally, let’s make some predictions on the testing data:</p>
+<pre class="r"><code>bg.pred &lt;- predict(bg.mod,
+                   subset(spam.test, select = -type), 
+                   type = &quot;class&quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(bg.pred.results &lt;- table(bg.pred, spam.test$type))
+##          
+## bg.pred   nonspam spam
+##   nonspam    1358   78
+##   spam         50  815
+
+# what is the accuracy of our bagging model?
+print(bg.accuracy &lt;- sum(diag((bg.pred.results))) / sum(bg.pred.results))
+## [1] 0.944372</code></pre>
+<p>Our bagging model predicts whether an email is spam or not with about 94.44% accuracy.</p>
+</div>
+<div id="random-forest" class="section level3">
+<h3>Random Forest</h3>
+<p>The only difference between the bagging model and random forest model is that the latter uses chooses only from a subset of variables to split on at each node of each tree. In other words, only the <strong>mtry</strong> argument differs between bagging and random forest.</p>
+<pre class="r"><code>rf.mod &lt;- randomForest(type ~ ., data = spam.train,
+                       mtry = floor(sqrt(num.var - 1)), # 7; only difference from bagging is here
+                       ntree = 300,
+                       proximity = TRUE,
+                       importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees:
+plot(rf.mod$err.rate[,1], type = &quot;l&quot;, lwd = 3, col = &quot;blue&quot;,
+     main = &quot;Random forest: OOB estimate of error rate&quot;,
+     xlab = &quot;Number of Trees&quot;, ylab = &quot;OOB error rate&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_rf1-1.png" width="672" /></p>
+<p>Besides tuning the <strong>ntree</strong> hyperparameter, we might also be interested in tuning the <strong>mtry</strong> hyperparameter in random forest. The random forest model may be built using the <strong>mtry</strong> value that minimises the OOB error.</p>
+<pre class="r"><code>tuneRF(subset(spam.train, select = -type),
+       spam.train$type,
+       ntreeTry = 100)
+## mtry = 7  OOB error = 5.65% 
+## Searching left ...
+## mtry = 4     OOB error = 5.39% 
+## 0.04615385 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 5.52% 
+## 0.02307692 0.05
+##        mtry   OOBError
+## 4.OOB     4 0.05391304
+## 7.OOB     7 0.05652174
+## 14.OOB   14 0.05521739
+title(&quot;Random forest: Tuning the mtry hyperparameter&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_rf2-1.png" width="672" /></p>
+<pre class="r"><code># variable importance
+varImpPlot(rf.mod,
+           main = &quot;Random forest: Variable importance&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_rf3-1.png" width="672" /></p>
+<pre class="r"><code>
+# multidimensional scaling plot
+# green samples are non-spam,
+# red samples are spam
+MDSplot(rf.mod,
+        fac = spam.train$type,
+        palette = c(&quot;green&quot;,&quot;red&quot;),
+        main = &quot;Random forest: MDS&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_rf3-2.png" width="672" /></p>
+<pre class="r"><code>
+# now, let&#39;s make some predictions
+rf.pred &lt;- predict(rf.mod,
+                   subset(spam.test,select = -type), 
+                   type=&quot;class&quot;)
+
+# confusion matrix
+print(rf.pred.results &lt;- table(rf.pred, spam.test$type))
+##          
+## rf.pred   nonspam spam
+##   nonspam    1372   80
+##   spam         36  813
+
+# Accuracy of our RF model:
+print(rf.accuracy &lt;- sum(diag((rf.pred.results))) / sum(rf.pred.results))
+## [1] 0.9495871</code></pre>
+<p>Our random forest model predicts whether an email is spam or not with about 94.96% accuracy.</p>
+</div>
+<div id="visualization-of-performances" class="section level3">
+<h3>Visualization of performances</h3>
+<p>Let’s go ahead and make some comparisons on the performances of our model. For comparison sake, let’s also construct a logistic regression model.</p>
+<pre class="r"><code>log.mod &lt;- glm(type ~ . , data = spam.train,
+             family = binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+# predictions
+log.pred.prob &lt;- predict(log.mod,
+                         subset(spam.test, select = -type), 
+                         type = &quot;response&quot;)
+log.pred.class &lt;- factor(sapply(log.pred.prob,
+                                FUN = function(x){
+                                        if(x &gt;= 0.5) return(&quot;spam&quot;)
+                                        else return(&quot;nonspam&quot;)
+                                }))
+
+# confusion matrix
+log.pred.results &lt;- table(log.pred.class, spam.test$type)
+
+# Accuracy of logistic regression model:
+print(log.accuracy &lt;- sum(diag((log.pred.results))) / sum(log.pred.results))
+## [1] 0.9126467</code></pre>
+<p>Now, let’s compare the performances, considering first the model accuracies.</p>
+<pre class="r"><code>barplot(c(tree.accuracy,
+          bg.accuracy,
+          rf.accuracy,
+          log.accuracy),
+        main=&quot;Accuracies of various models&quot;,
+        names.arg=c(&quot;Tree&quot;,&quot;Bagging&quot;,&quot;RF&quot;, &quot;Logistic&quot;))</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_viz1-1.png" width="672" /></p>
+<p>We can see here that the ensemble models (bagging and random forest) outperforms the single decision tree, and also the logistic regression model. It turns out here that the bagging and the random forest models have about the same classification performance. Understanding the rationale of <em>random subspace sampling</em> (refer to slides) should allow us to appreciate the potential improvement of random forest over the bagging model.</p>
+<p>Finally, let’s plot the ROC curves of the various models. The ROC is only valid for models that give probabilistic output.</p>
+<pre class="r"><code>bg.pred.prob &lt;- predict(bg.mod ,
+                        subset(spam.test, select = -type),
+                        type = &quot;prob&quot;)
+
+rf.pred.prob &lt;- predict(rf.mod ,
+                        subset(spam.test, select = -type),
+                        type = &quot;prob&quot;)
+
+plot.roc(spam.test$type,
+         bg.pred.prob[,1], col = &quot;blue&quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.3,
+         main = &quot;ROC-AUC of various models&quot;)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &gt; cases
+
+plot.roc(spam.test$type,
+         rf.pred.prob[,1], col = &quot;green&quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.2,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &gt; cases
+
+plot.roc(spam.test$type,
+         log.pred.prob, col = &quot;red&quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.1,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &lt; cases
+
+legend(x = 0.6, y = 0.8, legend = c(&quot;Bagging&quot;,
+                                    &quot;Random forest&quot;,
+                                    &quot;Logistic regression&quot;),
+       col = c(&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;), lwd = 1)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/c_viz2-1.png" width="672" /></p>
+</div>
+</div>
+<div id="tree-based-methods-for-regression" class="section level2">
+<h2>Tree-based methods for regression</h2>
+<p>In the following section, we will consider the use of tree-based methods for regression. The materials that follows are analogous to that above, if not the similar.</p>
+<div id="preparation-1" class="section level3">
+<h3>Preparation</h3>
+<pre class="r"><code>library(tree)
+library(randomForest)
+
+data(imports85)
+imp &lt;- imports85
+
+# The following data preprocessing steps on
+# the imports85 dataset are suggested by
+# the authors of the randomForest package
+# look at
+# &gt; ?imports85
+imp &lt;- imp[,-2]  # Too many NAs in normalizedLosses.
+imp &lt;- imp[complete.cases(imp), ]
+# ## Drop empty levels for factors
+imp[] &lt;- lapply(imp, function(x) if (is.factor(x)) x[, drop=TRUE] else x)
+
+# Also removing the numOfCylinders and fuelSystem
+# variables due to sparsity of data
+# to see this, run the following lines:
+# &gt; table(imp$numOfCylinders)
+# &gt; table(imp$fuelSystem)
+# This additional step is only necessary because we will be
+# making comparisons between the tree-based models
+# and linear regression, and linear regression cannot
+# handle sparse data well
+imp &lt;- subset(imp, select = -c(numOfCylinders,fuelSystem))
+
+# also removing the make variable
+imp &lt;- subset(imp, select = -make)
+
+# Preparation for cross validation:
+# split the dataset into 2 halves,
+# 96 samples for training and 97 for testing
+num.samples &lt;- nrow(imp) # 193
+num.train   &lt;- round(num.samples / 2) # 96
+num.test    &lt;- num.samples - num.train # 97
+num.var     &lt;- ncol(imp) # 25
+
+# set up the indices
+set.seed(150715)
+idx       &lt;- sample(1:num.samples)
+train.idx &lt;- idx[seq(num.train)]
+test.idx  &lt;- setdiff(idx,train.idx)
+
+# subset the data
+imp.train &lt;- imp[train.idx,]
+imp.test  &lt;- imp[test.idx,]
+
+str(imp.train)
+## &#39;data.frame&#39;:    96 obs. of  22 variables:
+##  $ symboling       : int  3 1 1 1 3 1 1 1 0 2 ...
+##  $ fuelType        : Factor w/ 2 levels &quot;diesel&quot;,&quot;gas&quot;: 2 2 2 2 2 2 2 1 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &quot;std&quot;,&quot;turbo&quot;: 1 1 1 1 2 1 1 1 1 1 ...
+##  $ numOfDoors      : Factor w/ 2 levels &quot;four&quot;,&quot;two&quot;: 2 1 2 2 2 1 2 2 1 2 ...
+##  $ bodyStyle       : Factor w/ 5 levels &quot;convertible&quot;,..: 1 4 4 3 3 3 3 4 4 4 ...
+##  $ driveWheels     : Factor w/ 3 levels &quot;4wd&quot;,&quot;fwd&quot;,&quot;rwd&quot;: 2 2 2 2 2 2 2 2 3 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &quot;front&quot;,&quot;rear&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  94.5 93.1 94.5 93.7 95.9 93.7 93.1 94.5 113 99.8 ...
+##  $ length          : num  159 167 165 157 173 ...
+##  $ width           : num  64.2 64.2 63.8 63.8 66.3 63.8 64.2 63.8 69.6 66.3 ...
+##  $ height          : num  55.6 54.1 54.5 50.8 50.2 50.6 54.1 54.5 52.8 53.1 ...
+##  $ curbWeight      : int  2254 1945 1918 1876 2921 1967 1905 2017 4066 2507 ...
+##  $ engineType      : Factor w/ 5 levels &quot;dohc&quot;,&quot;l&quot;,&quot;ohc&quot;,..: 3 3 3 3 3 3 3 3 1 3 ...
+##  $ engineSize      : int  109 91 97 90 156 90 91 103 258 136 ...
+##  $ bore            : num  3.19 3.03 3.15 2.97 3.59 2.97 3.03 2.99 3.63 3.19 ...
+##  $ stroke          : num  3.4 3.15 3.29 3.23 3.86 3.23 3.15 3.47 4.17 3.4 ...
+##  $ compressionRatio: num  8.5 9 9.4 9.41 7 9.4 9 21.9 8.1 8.5 ...
+##  $ horsepower      : int  90 68 69 68 145 68 68 55 176 110 ...
+##  $ peakRpm         : int  5500 5000 5200 5500 5000 5500 5000 4800 4750 5500 ...
+##  $ cityMpg         : int  24 31 31 37 19 31 31 45 15 19 ...
+##  $ highwayMpg      : int  29 38 37 41 24 38 38 50 19 25 ...
+##  $ price           : int  11595 6695 6649 5572 14869 6229 6795 7099 35550 15250 ...
+str(imp.test)
+## &#39;data.frame&#39;:    97 obs. of  22 variables:
+##  $ symboling       : int  -1 0 1 0 3 0 0 3 2 2 ...
+##  $ fuelType        : Factor w/ 2 levels &quot;diesel&quot;,&quot;gas&quot;: 2 2 2 2 2 2 2 2 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &quot;std&quot;,&quot;turbo&quot;: 1 1 2 1 2 1 1 1 1 1 ...
+##  $ numOfDoors      : Factor w/ 2 levels &quot;four&quot;,&quot;two&quot;: 1 1 2 1 2 2 1 2 2 1 ...
+##  $ bodyStyle       : Factor w/ 5 levels &quot;convertible&quot;,..: 4 3 3 4 3 3 4 3 3 4 ...
+##  $ driveWheels     : Factor w/ 3 levels &quot;4wd&quot;,&quot;fwd&quot;,&quot;rwd&quot;: 2 2 3 1 2 2 2 2 1 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &quot;front&quot;,&quot;rear&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  102.4 97.2 102.7 97 95.9 ...
+##  $ length          : num  176 173 178 172 173 ...
+##  $ width           : num  66.5 65.2 68 65.4 66.3 65.2 65.2 66.5 63.8 66.5 ...
+##  $ height          : num  54.9 54.7 54.8 54.3 50.2 53.3 54.1 56.1 55.7 56.1 ...
+##  $ curbWeight      : int  2414 2324 2910 2385 2811 2236 2304 2658 2240 2758 ...
+##  $ engineType      : Factor w/ 5 levels &quot;dohc&quot;,&quot;l&quot;,&quot;ohc&quot;,..: 3 3 3 4 3 3 3 3 4 3 ...
+##  $ engineSize      : int  122 120 140 108 156 110 110 121 108 121 ...
+##  $ bore            : num  3.31 3.33 3.78 3.62 3.6 3.15 3.15 3.54 3.62 3.54 ...
+##  $ stroke          : num  3.54 3.47 3.12 2.64 3.9 3.58 3.58 3.07 2.64 3.07 ...
+##  $ compressionRatio: num  8.7 8.5 8 9 7 9 9 9.31 8.7 9.3 ...
+##  $ horsepower      : int  92 97 175 82 145 86 86 110 73 110 ...
+##  $ peakRpm         : int  4200 5200 5000 4800 5000 5800 5800 5250 4400 5250 ...
+##  $ cityMpg         : int  27 27 19 24 19 27 27 21 26 21 ...
+##  $ highwayMpg      : int  32 34 24 25 24 33 33 28 31 28 ...
+##  $ price           : int  10898 8949 16503 9233 12964 7895 8845 11850 7603 15510 ...
+
+# take a quick look
+hist(imp.train$price)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_prep1-1.png" width="672" /></p>
+<pre class="r"><code>hist(imp.test$price)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_prep1-2.png" width="672" /></p>
+<p>We will be predicting the price of imported automobiles in this example. While tree-based methods are scale-invariant with respect to predictor variables, this is not true for the response variable. Hence, let’s take a log-transformation on <strong>price</strong> here.</p>
+<pre class="r"><code>imp.train$price &lt;- log(imp.train$price)
+imp.test$price &lt;- log(imp.test$price)
+
+# take a look again
+hist(imp.train$price)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_prep2-1.png" width="672" /></p>
+<pre class="r"><code>hist(imp.test$price)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_prep2-2.png" width="672" /></p>
+</div>
+<div id="decision-tree-1" class="section level3">
+<h3>Decision tree</h3>
+<p>Done with the preparation, let’s begin with decision trees.</p>
+<pre class="r"><code># Construct decision tree model
+tree.mod &lt;- tree(price ~ ., data = imp.train)
+
+# here&#39;s how the model looks like
+plot(tree.mod)
+title(&quot;Decision tree&quot;)
+text(tree.mod, cex = 0.75)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_tree1-1.png" width="672" /></p>
+<pre class="r"><code>
+# let&#39;s see if our decision tree requires pruning
+cv.prune &lt;- cv.tree(tree.mod, FUN = prune.tree)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &quot;red&quot;, type = &quot;b&quot;,
+     main = &quot;Cross validation to find optimal size of tree&quot;,
+     xlab = &quot;Size of tree&quot;, ylab = &quot;Mean squared error&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_tree1-2.png" width="672" /></p>
+<pre class="r"><code># looks fine
+
+# now let&#39;s make some predictions
+tree.pred &lt;- predict(tree.mod,
+                     subset(imp.test,select = -price), 
+                     type = &quot;vector&quot;)
+
+# Comparing our predictions with the test data:
+plot(tree.pred, imp.test$price, main = &quot;Decision tree: Actual vs. predicted&quot;)
+abline(a = 0, b = 1) # A prediction with zero error will lie on the y = x line</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_tree1-3.png" width="672" /></p>
+<pre class="r"><code>
+# What is the MSE of our model?
+print(tree.mse &lt;- mean((tree.pred - imp.test$price) ** 2))
+## [1] 0.0391897</code></pre>
+<p>Our decision tree model predicts the price of imported automobiles with a mean squared error of 0.0392. As with the previous section, we will make comparsions on model performances later.</p>
+</div>
+<div id="bagging-1" class="section level3">
+<h3>Bagging</h3>
+<p>Next, bagging.</p>
+<pre class="r"><code>bg.mod&lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+# here, the error is the mean squared error,
+# not classification error
+plot(bg.mod$mse, type = &quot;l&quot;, lwd = 3, col = &quot;blue&quot;,
+     main = &quot;Bagging: OOB estimate of error rate&quot;,
+     xlab = &quot;Number of Trees&quot;, ylab = &quot;OOB error rate&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_bagging1-1.png" width="672" /></p>
+<pre class="r"><code>
+# variable importance
+varImpPlot(bg.mod,
+           main = &quot;Bagging: Variable importance&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_bagging1-2.png" width="672" /></p>
+<pre class="r"><code>
+# let&#39;s make some predictions
+bg.pred &lt;- predict(bg.mod,
+                   subset(imp.test,select = -price))
+
+# Comparing our predictions with test data:
+plot(bg.pred,imp.test$price, main = &quot;Bagging: Actual vs. predicted&quot;)
+abline(a = 0, b = 1)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_bagging1-3.png" width="672" /></p>
+<pre class="r"><code>
+# MSE of bagged model
+print(bg.mse &lt;- mean((bg.pred - imp.test$price) ** 2))
+## [1] 0.02298332</code></pre>
+<p>Our bagging model predicts the price of imported automobiles with a mean squared error of 0.023.</p>
+</div>
+<div id="random-forest-1" class="section level3">
+<h3>Random forest</h3>
+<p>Finally, the random forest model.</p>
+<pre class="r"><code>rf.mod&lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = floor((num.var - 1) / 3), # 7; only difference from bagging is here
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+plot(rf.mod$mse, type = &quot;l&quot;, lwd = 3, col = &quot;blue&quot;,
+     main = &quot;Random forest: OOB estimate of error rate&quot;,
+     xlab = &quot;Number of Trees&quot;, ylab = &quot;OOB error rate&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_rf1-1.png" width="672" /></p>
+<pre class="r"><code>
+# tuning the mtry hyperparameter:
+# model may be rebuilt if desired
+tuneRF(subset(imp.train, select = -price),
+       imp.train$price,
+       ntreetry = 100)
+## mtry = 7  OOB error = 0.03033217 
+## Searching left ...
+## mtry = 4     OOB error = 0.03732523 
+## -0.2305491 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 0.0289063 
+## 0.04700843 0.05
+##    mtry   OOBError
+## 4     4 0.03732523
+## 7     7 0.03033217
+## 14   14 0.02890630
+title(&quot;Random forest: Tuning the mtry hyperparameter&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_rf1-2.png" width="672" /></p>
+<pre class="r"><code>
+
+# variable importance
+varImpPlot(rf.mod,
+           main = &quot;Random forest: Variable importance&quot;)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_rf1-3.png" width="672" /></p>
+<pre class="r"><code>
+# let&#39;s make some predictions
+rf.pred &lt;- predict(rf.mod,
+                   subset(imp.test, select = -price))
+
+# Comparing our predictions with test data:
+plot(rf.pred, imp.test$price, main = &quot;Random forest: Actual vs. predicted&quot;)
+abline(a = 0, b = 1)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_rf1-4.png" width="672" /></p>
+<pre class="r"><code>
+# MSE of RF model
+print(rf.mse &lt;- mean((rf.pred - imp.test$price) ** 2))
+## [1] 0.02317156</code></pre>
+<p>Our random forest model incurs a mean squared error of 0.0232 for the prediction of imported automobile prices</p>
+</div>
+<div id="visualization-of-performances-1" class="section level3">
+<h3>Visualization of performances</h3>
+<p>For comparison purposes, let’s also construct a ordinary least squares (linear regression) model.</p>
+<pre class="r"><code>ols.mod &lt;- lm(price ~ ., data = imp.train)
+
+# predictions
+ols.pred &lt;- predict(ols.mod,
+                   subset(imp.test, select = -price))
+
+# comparisons with test data:
+plot(ols.pred, imp.test$price, main = &quot;OLS: Actual vs. predicted&quot;)
+abline(a = 0, b = 1)</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_ols1-1.png" width="672" /></p>
+<pre class="r"><code>
+# MSE
+print(ols.mse &lt;- mean((ols.pred-imp.test$price) ** 2))
+## [1] 0.04616828</code></pre>
+<p>Now, let’s compare their performances.</p>
+<pre class="r"><code># Comparing MSEs of various models:
+barplot(c(tree.mse,
+          bg.mse,
+          rf.mse,
+          ols.mse),
+        main = &quot;Mean squared errors of various models&quot;,
+        names.arg = c(&quot;Tree&quot;, &quot;Bagging&quot;, &quot;RF&quot;, &quot;OLS&quot;))</code></pre>
+<p><img src="/post/2020-03-15-random-forests-in-r_files/figure-html/r_viz1-1.png" width="672" /></p>
+<p>Our top performer here is the random forest model, followed by the bagging model.</p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

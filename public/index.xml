@@ -6,10 +6,20 @@
     <description>Recent content on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Random Forests in R</title>
+      <link>/2020/03/15/random-forests-in-r/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/15/random-forests-in-r/</guid>
+      <description>IntroductionAs the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.
+In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems.</description>
+    </item>
     
     <item>
       <title>Fundamental Analysis 101: A basic overview of the fundamental analysis of stocks</title>
@@ -210,17 +220,6 @@ It&amp;rsquo;s a relatively straightforward structure that has requirements on s
       <description>About this blog This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – machine learning, investing, personal finances, analyzing financial data, and stoicism.
 Too true to be funny? – a post I saw on Reddit
  Data science: the blog was so named “the stats guy” largely because that became my nickname amongst some friends.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown - test change</title>
-      <link>/2015/07/23/hello-r-markdown-test-change/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown-test-change/</guid>
-      <description>R MarkdownHello! This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
     </item>
     
   </channel>
