@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.56.3" />
+
+
+<title>Using waterfall charts to visualize feature contributions - The Stats Guy</title>
+<meta property="og:title" content="Using waterfall charts to visualize feature contributions - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://thestatsguy.netlify.com/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/data-science/">Data Science</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/finance-investing/">Finance &amp; Investing</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stoicism/">Stoicism</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Using waterfall charts to visualize feature contributions</h1>
+
+    
+    <span class="article-date">2020-03-15</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.</p>
+</div>
+<div id="regression" class="section level2">
+<h2>Regression</h2>
+<div id="preparation" class="section level3">
+<h3>Preparation</h3>
+<pre class="r"><code>library(MASS)
+library(caret)
+## Warning: package &#39;caret&#39; was built under R version 3.6.3
+## Loading required package: lattice
+## Loading required package: ggplot2
+## Warning: package &#39;ggplot2&#39; was built under R version 3.6.3
+library(magrittr)
+library(ggplot2)
+
+data(Boston)
+set.seed(123)
+
+# mean centering
+b2 &lt;- preProcess(Boston, method = &quot;center&quot;) %&gt;% predict(., Boston)
+
+idx &lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)
+train &lt;- Boston[idx,]
+test &lt;- Boston[-idx,]
+
+mod0 &lt;- lm(data = train, medv ~.)
+
+sm &lt;- summary(mod0)
+betas &lt;- sm$coefficients[,1]
+
+testcase &lt;- test[1,]
+pred &lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &lt;- testcase[-which(testcase %&gt;% names == &quot;medv&quot;)] %&gt;% as.matrix
+betas2 &lt;- betas[-1]
+
+nm &lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &lt;- betas2*featvec
+featcont &lt;- c(betas[1], featcont, pred)
+names(featcont) &lt;- c(nm, &quot;Prediction&quot;)</code></pre>
+</div>
+<div id="waterfall-chart-on-regression-feature-contributions" class="section level3">
+<h3>Waterfall chart on regression feature contributions</h3>
+<pre class="r"><code># waterfall chart on feature contribution
+plotdata &lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &lt;- seq_along(plotdata$coef)
+plotdata$Impact &lt;- ifelse(plotdata$featcont &gt; 0, &quot;+ve&quot;, &quot;-ve&quot;)
+plotdata[plotdata$coef %in% c(&quot;(Intercept)&quot;, &quot;Prediction&quot;), &quot;Impact&quot;] &lt;- &quot;Initial/Net&quot;
+plotdata$end &lt;- cumsum(plotdata$featcont)
+plotdata$end &lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &lt;- c(0, head(plotdata$end, -1))
+plotdata &lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &lt;- ggplot(plotdata, aes(fill = Impact)) +
+ geom_rect(aes(coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&quot;#999999&quot;, &quot;#E69F00&quot;, &quot;#56B4E9&quot;))
+ scale_fill_manual(values=c(&quot;darkred&quot;, &quot;darkgreen&quot;, &quot;darkblue&quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+#coord_flip()
+
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &lt;- gg + geom_hline(yintercept = 0)
+gg</code></pre>
+<p><img src="/post/2020-03-15-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png" width="672" /></p>
+<pre class="r"><code>
+cont_prop &lt;- featcont/pred
+
+plot_data &lt;- data.frame(coef = names(cont_prop),
+                        cont_prop = cont_prop,
+                        row.names = NULL)
+plot_data &lt;- plot_data[-nrow(plot_data),]
+
+plot_data &lt;- plot_data[order(plot_data$cont_prop, decreasing = FALSE),]
+
+plot_data$coef &lt;- factor(plot_data$coef, levels = plot_data$coef)
+
+p&lt;-ggplot(data=plot_data, aes(x=coef, y = cont_prop)) +
+    geom_bar(stat=&quot;identity&quot;, fill = &quot;darkblue&quot;) +
+    coord_flip() +
+    theme_minimal() +
+    xlab(&quot;Features&quot;) +
+    ggtitle(&quot;Feature Contributions&quot;)
+p</code></pre>
+<p><img src="/post/2020-03-15-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png" width="672" /></p>
+</div>
+</div>
+<div id="classification" class="section level2">
+<h2>Classification</h2>
+<div id="preparation-1" class="section level3">
+<h3>Preparation</h3>
+<pre class="r"><code>library(kernlab)
+## 
+## Attaching package: &#39;kernlab&#39;
+## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     alpha
+library(caret)
+library(magrittr)
+library(ggplot2)
+
+data(spam)
+set.seed(123)
+
+# mean centering
+s2 &lt;- preProcess(spam, method = &quot;center&quot;) %&gt;% predict(., spam)
+
+idx &lt;- createDataPartition(s2$type, p = 0.8, list = FALSE)
+train &lt;- s2[idx,]
+test &lt;- s2[-idx,]
+
+mod0 &lt;- glm(data = train, type ~., family =  binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+sm &lt;- summary(mod0)
+betas &lt;- sm$coefficients[,1]
+
+testcase &lt;- test[1,]
+pred &lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &lt;- testcase[-which(testcase %&gt;% names == &quot;type&quot;)] %&gt;% as.matrix
+betas2 &lt;- betas[-1]
+
+nm &lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &lt;- betas2*featvec
+featcont &lt;- c(betas[1], featcont, pred)
+names(featcont) &lt;- c(nm, &quot;Prediction&quot;)</code></pre>
+</div>
+<div id="waterfall-chart-on-classification-feature-contributions" class="section level3">
+<h3>Waterfall chart on classification feature contributions</h3>
+<pre class="r"><code># waterfall chart on feature contribution
+plotdata &lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &lt;- seq_along(plotdata$coef)
+plotdata$Impact &lt;- ifelse(plotdata$featcont &gt; 0, &quot;+ve&quot;, &quot;-ve&quot;)
+plotdata[plotdata$coef %in% c(&quot;(Intercept)&quot;, &quot;Prediction&quot;), &quot;Impact&quot;] &lt;- &quot;Initial/Net&quot;
+plotdata$end &lt;- cumsum(plotdata$featcont)
+plotdata$end &lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &lt;- c(0, head(plotdata$end, -1))
+plotdata &lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &lt;- ggplot(plotdata, aes(coef, fill = Impact)) +
+ geom_rect(aes(x = coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&quot;#999999&quot;, &quot;#E69F00&quot;, &quot;#56B4E9&quot;))
+ scale_fill_manual(values=c(&quot;darkred&quot;, &quot;darkgreen&quot;, &quot;darkblue&quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+ #coord_flip()
+ 
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &lt;- gg + geom_hline(yintercept = 0)
+gg</code></pre>
+<p><img src="/post/2020-03-15-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/c_prep2-1.png" width="672" /></p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

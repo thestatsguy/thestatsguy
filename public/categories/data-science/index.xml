@@ -22,6 +22,16 @@ In this short tutorial, we will go through the use of tree-based methods (decisi
     </item>
     
     <item>
+      <title>Using waterfall charts to visualize feature contributions</title>
+      <link>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</guid>
+      <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
+RegressionPreparationlibrary(MASS)library(caret)## Warning: package &amp;#39;caret&amp;#39; was built under R version 3.6.3## Loading required package: lattice## Loading required package: ggplot2## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3library(magrittr)library(ggplot2)data(Boston)set.seed(123)# mean centeringb2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)idx &amp;lt;- createDataPartition(b2$medv, p = 0.</description>
+    </item>
+    
+    <item>
       <title>Seven tips for working on analytics delivery projects</title>
       <link>/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
