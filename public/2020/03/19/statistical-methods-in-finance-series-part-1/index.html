@@ -63,7 +63,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">Statistical methods in finance series: Part 1</h1>
@@ -73,11 +73,53 @@
     
 
     <div class="article-content">
-      <p><center>
+      
+
+<p><center>
 <img src="https://miro.medium.com/max/1280/1*LZnClq6o0kEU88-BZnkvCw.jpeg" width="100%">
 </center></p>
 
-<p>It&rsquo;s a sleepless night tonight, so I decided to write a little bit. This will be the first part 1 of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my M.Sc. Statistics modules, ST5218 Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.</p>
+<p>It&rsquo;s a sleepless night, so I decided to write a little. This will be the first part of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my NUS M.Sc Statistics modules, Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.</p>
+
+<p>Of all the modules that I did during my M.Sc, I always found this one to resonate with me the most - guess that&rsquo;s mainly because I like topic, as well as of the fact that I was heavily experimenting with investing on my own during that time. I also found that using finance as the backdrop or context to study certain statistical concepts, such as copula or factor analysis, to be more engaging than perhaps studying these topics in vaccum.</p>
+
+<h1 id="statistical-methods-in-finance">Statistical methods in finance</h1>
+
+<p>There are a number of statistical methods that can be directly mapped to their applications in finance:</p>
+
+<ul>
+<li>Statistical distributions: Value-at-Risk (VaR)</li>
+<li>Linear regression: Capital Asset Pricing Model (CAPM)</li>
+<li>Factor analysis: Arbitrage Pricing Theory</li>
+<li>Logit/probit models: credit scoring/rating</li>
+<li>Time series analysis: price forecast, volatility modelling</li>
+<li>Nonlinear regression: term structures of interest rates</li>
+<li>Monte-Carlo simulations: pricing of assets</li>
+<li>Copulae: tail dependence of asset prices</li>
+<li>Estimation of covariance matrix and optimization: Markowitz&rsquo;s portfolio theory</li>
+<li>and many more&hellip;</li>
+</ul>
+
+<p>In this series, I would like to tackle some of these topics, by combining statistical theory, finance theory, and the use of R where relevant.</p>
+
+<h1 id="broader-question-can-statistics-be-used-to-make-a-profit">Broader question: can statistics be used to make a profit?</h1>
+
+<p>Since there are folks who decided to spend the time and energy to study the application of statistical methods in capital markets, surely it&rsquo;s a worthwhile effort and making money is possible? Well, yes and no. It&rsquo;s well known in statistical finance is that financial data has extremely low signal-to-noise (SNR) ratio. This means that for a model that predicts price, even if the model is correctly specified, due to the low SNR, it&rsquo;s unlikely for the predictions to be useful. Most folks would hence consider the study of price volatility to be more important than price itself. If we are able to have an informed point of view about future volatility (perhaps due to the fact that volatility autocorrelation is strong =&gt; volatility may be predicted in a GARCH/ARCH model), we would be able to act accordingly. We will talk about this along the way in this series.</p>
+
+<h1 id="stylized-fact-in-statistical-finance">Stylized fact in statistical finance</h1>
+
+<p>I previously (well, a year ago) wrote about <a href="https://thestatsguy.netlify.com/2019/04/04/stylized-facts-in-statistical-finance/">stylized facts</a> in statistical finance, where I briefly listed without explanations various &ldquo;facts&rdquo;. Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic. There are a number of well-known ones, such as:</p>
+
+<ul>
+<li>Financial data has extremely low signal-to-noise ratio.</li>
+<li>Price changes are less volatile in bull markets and more volatile bear markets.</li>
+<li>Volatility clustering is typically observed in financial data; that is, large changes tend to be followed by large changes of either sign, and small changes tend to be followed by small changes of either sign.</li>
+<li>and others</li>
+</ul>
+
+<p>In this series, we will necessarily also delve a little deeper into some of these stylized facts, by considering both empirical (historical data) and theoretical perspectives.</p>
+
+<p>That&rsquo;s it for a brief introduction to series - looking forward to do deep dives into various topics!</p>
 
     </div>
   </article>
