@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>test - The Stats Guy</title>
+<meta property="og:title" content="test - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://thestatsguy.netlify.com/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/data-science/">Data Science</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/finance-investing/">Finance &amp; Investing</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stoicism/">Stoicism</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">test</h1>
+
+    
+    <span class="article-date">2020-03-21</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.</p>
+<p>equation: <span class="math inline">\(A = \pi*r^{2}\)</span></p>
+</div>
+<div id="regression" class="section level2">
+<h2>Regression</h2>
+<div id="preparation" class="section level3">
+<h3>Preparation</h3>
+<pre class="r"><code>library(MASS)
+library(caret)
+## Loading required package: lattice
+## Loading required package: ggplot2
+## Warning: package &#39;ggplot2&#39; was built under R version 3.5.3
+library(magrittr)
+library(ggplot2)
+
+data(Boston)
+set.seed(123)
+
+# mean centering
+b2 &lt;- preProcess(Boston, method = &quot;center&quot;) %&gt;% predict(., Boston)
+
+idx &lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)
+train &lt;- Boston[idx,]
+test &lt;- Boston[-idx,]
+
+mod0 &lt;- lm(data = train, medv ~.)
+
+sm &lt;- summary(mod0)
+betas &lt;- sm$coefficients[,1]
+
+testcase &lt;- test[1,]
+pred &lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &lt;- testcase[-which(testcase %&gt;% names == &quot;medv&quot;)] %&gt;% as.matrix
+betas2 &lt;- betas[-1]
+
+nm &lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &lt;- betas2*featvec
+featcont &lt;- c(betas[1], featcont, pred)
+names(featcont) &lt;- c(nm, &quot;Prediction&quot;)</code></pre>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
