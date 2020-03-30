@@ -1,7 +1,7 @@
 ---
 title: "A repertoire of data scientist interview questions - with a twist"
 date: 2018-12-28
-categories: ["Data Science"]
+categories: ["Machine learning"]
 ---
 
 <!-- wp:image {"align":"center","id":93} -->

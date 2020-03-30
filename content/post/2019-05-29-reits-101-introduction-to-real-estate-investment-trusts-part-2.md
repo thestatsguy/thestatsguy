@@ -1,7 +1,7 @@
 ---
 title: "REITs 101: Introduction to real estate investment trusts - Part 2"
 date: 2019-05-29
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <!-- wp:embed {"url":"https://i.etsystatic.com/6111470/r/il/35f144/1417264877/il_fullxfull.1417264877_awhp.jpg","type":"rich","providerNameSlug":"","className":""} -->

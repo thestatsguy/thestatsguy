@@ -1,7 +1,7 @@
 ---
 title: "Paper Review: To Tune or Not to Tune the Number of Trees in Random Forest"
 date: 2019-02-24
-categories: ["Data Science"]
+categories: ["Machine learning"]
 ---
 
 <figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2-1.png" alt="" class="wp-image-208"/><figcaption>Plotting different performance metrics against the number of trees in random forest. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.</figcaption></figure>

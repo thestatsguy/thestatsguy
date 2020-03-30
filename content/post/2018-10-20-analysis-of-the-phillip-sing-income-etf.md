@@ -1,7 +1,7 @@
 ---
 title: "Analysis of the Phillip SING Income ETF"
 date: 2018-10-20
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <p class="separator"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/47348-etf-poems-landing-page-2.jpg"><img src="https://thestatsguyhome.files.wordpress.com/2018/10/47348-etf-poems-landing-page-2.jpg?w=300" width="640" height="273" border="0" /></a></p>

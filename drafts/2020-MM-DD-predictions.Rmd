@@ -1,5 +1,5 @@
 ---
-title: "Using waterfall charts to visualize feature contributions"
+title: "predictions"
 #author: ""
 date: 2020-03-15
 categories: ["Machine learning"]

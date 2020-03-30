@@ -1,7 +1,7 @@
 ---
 title: "Good news for fans of Singapore Savings Bonds"
 date: 2018-12-21
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <p><img class=" size-full wp-image-64 aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/12/SSB.jpg" alt="SSB" width="600" height="240"></p>

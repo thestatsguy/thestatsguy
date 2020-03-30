@@ -22,17 +22,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://github.com/thestatsguy"
     weight = 3
 [[menu.main]]
-    name = "Data Science"
-    url = "https://thestatsguy.netlify.com/categories/data-science/"
+    name = "Machine learning"
+    url = "https://thestatsguy.netlify.com/categories/machine-learning/"
     weight = 4
 [[menu.main]]
-    name = "Finance & Investing"
-    url = "https://thestatsguy.netlify.com/categories/finance-investing/"
+    name = "Investing"
+    url = "https://thestatsguy.netlify.com/categories/investing/"
     weight = 5
 [[menu.main]]
     name = "Stoicism"
     url = "https://thestatsguy.netlify.com/categories/stoicism/"
-    weight = 5
+    weight = 6
 
 
 [params]

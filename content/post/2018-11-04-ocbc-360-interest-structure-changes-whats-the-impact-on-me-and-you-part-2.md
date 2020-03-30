@@ -1,7 +1,7 @@
 ---
 title: "OCBC 360 Interest structure changes - Part 2"
 date: 2018-11-04
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <p style="text-align: center;"><a href="https://www.ocbc.com/assets/images/360-1980-350-mobile.jpg"><img class=" aligncenter" src="https://www.ocbc.com/assets/images/360-1980-350-mobile.jpg" width="640" height="274" border="0" /></a>The OCBC 360 Account</p>

@@ -1,7 +1,7 @@
 ---
 title: "Statistical methods in finance series - Part 1"
 date: "2020-03-19"
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <center>

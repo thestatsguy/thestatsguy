@@ -1,7 +1,7 @@
 ---
 title: "The Machine Learning Life Cycle - how to run a ML project"
 date: 2019-01-20
-categories: ["Data Science"]
+categories: ["Machine learning"]
 ---
 
 <img src="https://3gp10c1vpy442j63me73gy3s-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-22-at-10.41.30-AM-1024x579.png" alt=""/><figcaption>The Machine Learning Life Cycle from <a href="https://www.datarobot.com/wiki/machine-learning-life-cycle/">DataRobot</a>.</figcaption>

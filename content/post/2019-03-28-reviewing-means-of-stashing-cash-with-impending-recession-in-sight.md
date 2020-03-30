@@ -1,7 +1,7 @@
 ---
 title: "Reviewing means of stashing cash with impending recession in sight"
 date: 2019-03-28
-categories: ["Finance & Investing"]
+categories: ["Investing"]
 ---
 
 <!-- wp:image -->

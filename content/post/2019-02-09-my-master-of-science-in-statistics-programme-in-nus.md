@@ -1,7 +1,7 @@
 ---
 title: "My Master of Science in Statistics programme in NUS"
 date: 2019-02-09
-categories: ["Data Science"]
+categories: ["Machine learning"]
 ---
 
 <center>

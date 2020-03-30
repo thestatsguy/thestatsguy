@@ -2,7 +2,7 @@
 title: "Random Forests in R"
 #author: ""
 date: 2020-03-15
-categories: ["Data science"]
+categories: ["Machine learning"]
 #tags: ["R Markdown", "plot", "regression"]
 ---
 
@@ -33,12 +33,12 @@ Let's start by loading the spam dataset and doing some preparations:
 #  @ pROC:         for plotting of ROC
 
 # code snippet to install and load multiple packages at once
-#pkgs <- c("kernlab","tree","randomForest","beepr","pROC")
-#sapply(pkgs,FUN=function(p){
+# pkgs <- c("kernlab","tree","randomForest","beepr","pROC")
+# sapply(pkgs,FUN=function(p){
 #        print(p)
 #        if(!require(p)) install.packages(p)
 #        require(p)
-#})
+# })
 
 # load required packages
 suppressWarnings(library(kernlab))
