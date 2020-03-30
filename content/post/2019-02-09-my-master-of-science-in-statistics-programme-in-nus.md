@@ -5,7 +5,7 @@ categories: ["Machine learning"]
 ---
 
 <center>
-<img src="http://nus.edu.sg/images/resources/nus-og-logo.jpg" width="100%">
+<img src="https://www.science.nus.edu.sg/wp-content/uploads/2020/02/fos-logo.png" width="100%">
 </center>
 
 I have gotten quite a couple of questions regarding my current [MSc Statistics programme](https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme) in NUS. Here are some broadstroke information about the programme and how I am approaching it.
