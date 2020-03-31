@@ -1,0 +1,163 @@
+---
+title: "Medtech 101: An overview of the medical device industry"
+date: 2019-05-27
+categories: ["Investing"]
+---
+
+<!-- wp:embed {"url":"https://www.flintec.com/wp-content/uploads/2016/10/medical.jpeg","type":"rich","providerNameSlug":"","className":""} -->
+<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
+https://www.flintec.com/wp-content/uploads/2016/10/medical.jpeg
+</div><figcaption><a href="https://www.flintec.com/uk/applications/medical">Source</a>.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>In this post, I will be doing a 101 dissection of the medical device industry. It’s a somewhat not-so-popular industry from the perspective of retail investing, but I have had some prior experience in this space, so it’s a tad easier for me to conduct some levels of analysis on companies in this space.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I will work through the following pointers in this piece,
+and hopefully at the end of it, allow the reader to have some level of appreciation
+for the industry as a whole.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Introduction to the medical device industry</li><li>The medical devices themselves</li><li>Key features of the industry</li><li>Being a retail investor in this space</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Unless otherwise stated, all facts and information are obtained from my desktop research from BMI Research and Fitch Solutions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Introduction to the medical device industry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Medical devices refer to a variety of mostly hardware instruments used in the diagnosis, treatment or prevention of a multitude of diseases. These instruments range from surgical gloves and masks, to advanced devices like drug-eluting stents (DES). Technologically simple products are competed in the market via price and volume, just like any other household or everyday products.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center"} -->
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://www.mddionline.com/sites/default/files/images/Boston-Sci-Synergy-Stent.jpg" alt=""/><figcaption>Boston Scientific Synery Drug Eluting Stent system. <a href="https://www.mddionline.com/boston-scis-synergy-stent-worth-price">Source</a>.</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>What we are more interested in is the opposite end of this spectrum. Products like DES or other implantable medical devices (IMD) are technologically advanced and provide differentiated ways in treating complex diseases like heart arrhythmia and chronic arthritis. They are costly devices and are rarely paid for by individual patients – that is, their usage is co-paid or reimbursed by insurers or government healthcare schemes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>By definition, a medical device is different from a drug in that the successful use of the device is not dependent on the absorption or metabolism of the device. In this sense, a wheelchair is a medical device in the same way as a pacemaker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>The industry at a glance</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Following table illustrates the size of the medical device industry (Source: Fitch Solutions, <a href="https://store.fitchsolutions.com/global-medical-devices-report">Global Medical Devices Report Q2 2019</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>
+  &nbsp;
+  </td><td><strong>2018   </strong></td><td><strong>2019 forecast   </strong></td><td><strong>2020 forecast   </strong></td><td><strong>2021 forecast   </strong></td></tr><tr><td>Total sales USDmn   </td><td>387,393.61   </td><td>408,173.28   </td><td>
+  434,477.48
+  </td><td>461,548.71   </td></tr><tr><td>Totals sales %y/y   </td><td>7.6   </td><td>5.4   </td><td>6.4   </td><td>6.2   </td></tr><tr><td>Total sales 5-yr CAGR   </td><td>5.9   </td><td>6.0   </td><td>5.8   </td><td>5.7   </td></tr><tr><td>Totals sales per capita USD   </td><td>61.6   </td><td>64.3   </td><td>67.9   </td><td>71.6   </td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Following is an infographic published by Technavio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.technavio.com/image/medical%20device%20market.jpg","type":"rich","providerNameSlug":"","className":""} -->
+<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
+https://www.technavio.com/image/medical%20device%20market.jpg
+</div><figcaption>Technavio Global Medical Devices Report 2018-2022. <a href="https://www.technavio.com/report/global-medical-devices-market-analysis-share-2018">Source</a>.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>According to both the Fitch Solutions Global Medical Devices Report Q2 2019 as well as the Technavio Global Medical Devices Report 2018 -2022, the industry is forecasted to grow at a CAGR of about 5% or more, up to a forecasted market size of 460 billion by 2021.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>The US Market</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The US is both a dominant player and consumer in the medical device industry. On top of having the world’s highest health spending as percentage GDP and per capita, the US medical device market accounts for over 40% of the global market and has the world’s highest per capita medical device expenditure. The US is also home to many of the world’s largest medical device companies. The following table illustrates the top 12 players in the industry, which is dominated by the Americans. Most of these companies have a presence in California, Massachusetts, and <a href="https://www.medicaldesignandoutsourcing.com/minnesota-2-0-major-u-s-medical-device-cluster/">Minnesota (the so-called “Medical Alley”)</a> (Source: <a href="https://www.mpo-mag.com/issues/2018-07-01/view_features/the-2018-top-30-global-medical-device-companies">Medical Product Outsourcing 2018 Top 30 Global Medical Device Companies</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Rank   </strong></td><td><strong>Company   </strong></td><td><strong>Country   </strong></td><td><strong>Medical device revenue USDbn   </strong></td><td><strong>Market cap USDbn   </strong></td><td><strong>Price-to-Sales   </strong></td><td><strong>Ticker symbol   </strong></td></tr><tr><td>1   </td><td>Medtronic   </td><td>US   </td><td>29.7   </td><td>125   </td><td>4.21   </td><td>MDT   </td></tr><tr><td>2   </td><td>Johnson &amp; Johnson   </td><td>US   </td><td>26.6   </td><td>369*   </td><td>-*   </td><td>JNJ   </td></tr><tr><td>3   </td><td>GE Healthcare   </td><td>US   </td><td>19.1   </td><td>82.4   </td><td>4.31   </td><td>GE**   </td></tr><tr><td>4   </td><td>Royal Philips   </td><td>The Netherlands   </td><td>16.3   </td><td>37.5   </td><td>2.30   </td><td>PHIA   </td></tr><tr><td>5   </td><td>Siemens Healthineers   </td><td>Germany   </td><td>16.3   </td><td>40.4   </td><td>2.48   </td><td>SHL   </td></tr><tr><td>6   </td><td>Abbott Laboratories   </td><td>US   </td><td>16.2   </td><td>136   </td><td>8.40   </td><td>ABT   </td></tr><tr><td>7   </td><td>Cardinal Health   </td><td>US   </td><td>13.5   </td><td>13.7   </td><td>1.01   </td><td>CAH   </td></tr><tr><td>8   </td><td>Stryker   </td><td>US   </td><td>12.4   </td><td>69.1   </td><td>5.57   </td><td>SYK   </td></tr><tr><td>9   </td><td>Becton Dickinson   </td><td>US   </td><td>12.1   </td><td>63.4   </td><td>5.24   </td><td>BDX   </td></tr><tr><td>10   </td><td>Baxter   </td><td>US   </td><td>10.6   </td><td>38.4   </td><td>3.62   </td><td>BAX   </td></tr><tr><td>11   </td><td>Boston Scientific   </td><td>US   </td><td>9.0   </td><td>53.5   </td><td>5.94   </td><td>BSX   </td></tr><tr><td>12   </td><td>Essilor   </td><td>France   </td><td>9.0   </td><td>52.0   </td><td>5.78   </td><td>EL   </td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>* Johnson &amp; Johnson’s businesses extend well beyond that of medical devices.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>** GE Healthcare remains to be a healthcare unit within GE. While <a href="https://www.cnbc.com/2018/12/19/ge-reportedly-confidentially-files-for-ipo-of-health-care-unit.html">GE has filed for IPO to spin off GE Healthcare</a> during December 2018, <a href="https://www.cnbc.com/2019/02/25/ge-withdraws-plans-for-healthcare-ipo-after-danaher-deal-bloomberg.html">a 2019 IPO “looks unlikely after Danaher deal”</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>The medical devices themselves</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Classification of devices</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In the US, the primary regulatory body that governs the entire medical device industry is the Food and Drug Administration, or FDA. By FDA standards, medical devices are classified into three classes, namely Class I, II and III. A device falls into one of these classes by virtue of their risk level to patient, Class III being the riskiest. The following table illustrates examples of these classes. Most if not all major countries follow similar standards, e.g. Class I to IV in Japan, <a href="https://www.hsa.gov.sg/content/hsa/en/Health_Products_Regulation/Consumer_Information/Consumer_Guides/Medical_Devices.html">Class A to D in Singapore</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>
+  &nbsp;
+  </td><td><strong>Level of risk   </strong></td><td><strong>Examples   </strong></td></tr><tr><td>Class I   </td><td>Low   </td><td>Surgical gloves, scalpers, wheelchairs   </td></tr><tr><td>Class II   </td><td>Moderate   </td><td>Powered wheelchairs, infusion pumps, surgical drapes   </td></tr><tr><td>Class III   </td><td>High   </td><td>Heart valves, silicone breast implants, stents and balloons   </td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Segmentation by device type and diseases</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Medical device companies typically tackle conditions in the following areas of specialty, like this example from <a href="https://global.medtronic.com/xg-en/patients/conditions.html">Medtronic</a>, with example conditions in each of them. Going into each specialty would be too much here.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>
+  &nbsp;
+  </td><td><strong>Example condition   </strong></td><td><strong>Device/therapy   </strong></td></tr><tr><td>Airway and lungs   </td><td>Pulmonary valve disease   </td><td>Transcatheter pulmonary valve (TPV) Therapy   </td></tr><tr><td>Brain   </td><td>Epilepsy&nbsp;   </td><td>Deep brain simulation   </td></tr><tr><td>Diabetes   </td><td>Type 2 diabetes   </td><td>Continuous glucose monitoring (CGM)   </td></tr><tr><td>Digestive and gastrointestinal   </td><td>Crohn’s Disease   </td><td>Disease visualization   </td></tr><tr><td>Ear, Nose, Throat (ENT)   </td><td>Thyriod conditions   </td><td>Minimally invasive video-assisted   thyroidectomy   </td></tr><tr><td>Heart and Vascular   </td><td>Bradycardia, Tachycardia   </td><td>Pacemakers   </td></tr><tr><td>Pain Management   </td><td>Chronic pain   </td><td>Spinal cord stimulation   </td></tr><tr><td>Spine and Orthopedic   </td><td>Cervical herniated discs   </td><td>Cervical disc replacement   </td></tr><tr><td>Urinary   </td><td>Overactive bladder   </td><td>Bladder control therapy   </td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>Key features of the industry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li><em>The role of regulatory bodies</em>. The FDA in the US plays a key role in regulating the medical device industry. For starters, in order for companies to market their devices, these devices must go through one of two FDA approval processes, namely the pre-market approval (PMA) or the pre-market notifications (510k), where the latter is less stringent than the former. Most devices go through the 510k process (3-6 months), while more advanced or novel devices go through the PMA process (~ 270 days) (<a href="http://www.medpac.gov/docs/default-source/reports/jun17_ch7.pdf">Source</a>). The FDA is also continuously involved in the post-market surveillance of devices, by reviewing studies done be researchers or the companies themselves to evaluate device effectiveness and efficacies. If required, the FDA issues product recalls to stop all device marketing and usage in the market.</li><li><em>Low price transparency</em>. While list prices of products are typically known, due to the complexity of reimbursements on a procedure (rather than a device) basis, patients often have next to zero inkling on how much their devices truly cost. Likewise, physicians, hospitals, and e.g. Medicare all have limited knowledge on actual device transaction price. Only the medical device companies know how much they are selling these devices for. Talk about corporate capitalism.</li><li><em>Relationship between medical devices companies and physicians</em>. Medical devices companies have often developed deep ties with physicians (not hospitals) themselves, in a setting where physicians often make purchasing decisions on devices, e.g. preferring an equivalent product from one company to another, due to e.g. familiarity or inertia to change. There are other ways in which these companies interact directly with physicians (FDA) (<a href="http://www.medpac.gov/docs/default-source/reports/jun17_ch7.pdf">Source</a>). These includes:<ul><li>royalty payments to physicians who help develop medical devices;</li></ul><ul><li>consulting fees to physicians for providing feedback about the performance and design of a company’s devices;</li></ul><ul><li>funding for physicians to conduct research;</li></ul><ul><li>funding for medical education activities; and,</li></ul><ul><li>for physicians who use IMDs, regular interactions with the manufacturer’s sales representatives, who are often present at the physician’s invitation in the operating room during procedures and may help the physician make a final decision about which devices to use.</li></ul></li><li><em>High barrier of entry even amongst the tech giants</em>. While the likes of Google Health, Apple Watch, or <a href="https://thenextweb.com/artificial-intelligence/2018/10/15/amazons-new-patent-will-allow-alexa-to-detect-your-illness/">Alexa detecting a cold or cough</a> have attempted to break into the healthcare space, success in developing and marketing medical devices requires significant scientific expertise and market knowledge. Combine that with navigating the red tape and bureaucracy, something like Netflix producing and distributing films probably won’t happen for quite some time.</li><li><em>Big eat small</em>. Start-up companies that develop promising new products are often acquired by one of the large medical devices companies. These acquisitions are beneficial to both sides of the equation: small companies can find it challenging to market their products, while major device companies have established distribution networks and relationships with hospitals and other providers. Large companies can also provide additional resources to further develop and improve new medical devices. An acquisition also allows the venture capital firms that supported the start-up company to withdraw their funding and realize a profit. For the large companies, acquisitions provide another way to conduct research and development and can either complement or substitute for the company’s internal efforts. Large companies can also use acquisitions to branch out into new therapeutic areas or bolster existing product lines (<a href="http://www.medpac.gov/docs/default-source/reports/jun17_ch7.pdf">Source</a>).</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Being a retail investor in the medical device industry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Short of being an entrepreneur, a private equity, a venture capital or even a medical researcher, investing in the medical device industry would mean investing in stocks or investing in index ETFs. Suppose due diligence is done and fundamental analysis validates that a company is suitably priced in the market. It would be reasonable then to approach stock picking in this industry based on events such as the following:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Research breakthroughs, new product launch, acquisition of new, non-cannibalizing technology</li><li>Lawsuits, FDA product recalls, ethical scandals</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Being aware of who’s who in specific areas is critical in assessing changes in the competitive landscape. For example, Boston Scientific continues to dominate in the left atrial appendage closure (LAAC) market with Watchman, while Johnson &amp; Johnson has fallen from grace in the DES market, giving up space to Abbott Labs, Boston Scientific, and Medtronic.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Alternatively, the best bet on the space as a lay retail investor is probably the <a href="https://www.ishares.com/us/products/239516/ishares-us-medical-devices-etf">iShares US Medical Devices ETF</a> (IHI), listed on NYSE. IHI tracks the Dow Jones U.S. Select Medical Equipment Index, with its current top holdings including Abbott Labs, Medtronic, and Strkyer. At an expense ratio of 43 basis points, it’s a fairly reasonable ETF to hold on to for broad medical device exposure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>And that's all for this 101! Hope you have gained a little something from it. Thank you for reading :)</p>
+<!-- /wp:paragraph -->
