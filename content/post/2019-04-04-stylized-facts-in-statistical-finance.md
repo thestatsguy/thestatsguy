@@ -1,7 +1,7 @@
 ---
 title: "Stylized facts in statistical finance"
 date: "2019-04-04"
-categories: ["Investing"]
+categories: ["Stats finance"]
 ---
 
 <center>

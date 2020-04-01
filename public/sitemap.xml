@@ -32,14 +32,14 @@
   </url>
   
   <url>
-    <loc>/categories/investing/</loc>
+    <loc>/2020/03/19/statistical-methods-in-finance-series-part-1/</loc>
     <lastmod>2020-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2020/03/19/statistical-methods-in-finance-series-part-1/</loc>
+    <loc>/categories/stats-finance/</loc>
     <lastmod>2020-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -55,6 +55,12 @@
   <url>
     <loc>/2019/06/08/fundamental-analysis-101-a-basic-overview-of-the-fundamental-analysis-of-stocks/</loc>
     <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/investing/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

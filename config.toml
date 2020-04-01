@@ -26,13 +26,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://thestatsguy.netlify.com/categories/machine-learning/"
     weight = 4
 [[menu.main]]
+    name = "Stats finance"
+    url = "https://thestatsguy.netlify.com/categories/stats-finance/"
+    weight = 5
+[[menu.main]]
     name = "Investing"
     url = "https://thestatsguy.netlify.com/categories/investing/"
-    weight = 5
+    weight = 6
 [[menu.main]]
     name = "Stoicism"
     url = "https://thestatsguy.netlify.com/categories/stoicism/"
-    weight = 6
+    weight = 7
 
 
 [params]
