@@ -1,5 +1,5 @@
 ---
-title: "Introduction to modern portfolio theory - SMFS Part 2"
+title: "(WIP) Introduction to modern portfolio theory - SMFS Part 2"
 #author: ""
 date: 2020-04-01
 categories: ["Stats finance"]
@@ -63,7 +63,7 @@ A technical point to bring out here is that while $\sum_{i = 1}^{p} w_i = 1$, th
 
 **_Terminology_**
 
-Holding a **_long_** position in a particular asset simply means buying that particular asset. On the other hands, **_short selling_** is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.
+Holding a **_long_** position in a particular asset simply means buying that particular asset. On the other hand, **_short selling_** is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.
 
 ---
 
