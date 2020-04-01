@@ -40,8 +40,16 @@ R_N = w_1R_1 + ... + w_pR_P = w^TR,
 \]</span></p>
 <p>where <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
 <p><span class="math display">\[\sum_{i = 1}^{p} w_i = 1\]</span></p>
-<p>Of course, the questions that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
-<div id="wip" class="section level4">
-<h4>WIP</h4>
+<p>Of course, the question that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+<div id="portfolio-weights" class="section level3">
+<h3>Portfolio weights</h3>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{p} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <em>short selling</em>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hands, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
+<hr />
 </div>
+</div>
+<div id="wip" class="section level2">
+<h2>WIP</h2>
 </div>

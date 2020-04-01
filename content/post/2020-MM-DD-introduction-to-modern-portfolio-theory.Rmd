@@ -53,7 +53,19 @@ where $w_i$ is the weight of the $i$th asset in the portfolio, with
 
 $$\sum_{i = 1}^{p} w_i = 1$$
 
-Of course, the questions that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
+Of course, the question that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
 
-#### WIP
+### Portfolio weights
+
+A technical point to bring out here is that while $\sum_{i = 1}^{p} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. _short selling_. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
+
+---
+
+**_Terminology_**
+
+Holding a **_long_** position in a particular asset simply means buying that particular asset. On the other hands, **_short selling_** is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.
+
+---
+
+## WIP
 
