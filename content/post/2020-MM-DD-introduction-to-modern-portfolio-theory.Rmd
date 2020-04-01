@@ -1,0 +1,71 @@
+---
+title: "Introduction to modern portfolio theory - SMFS Part 2"
+#author: ""
+date: 2020-04-01
+categories: ["Stats finance"]
+#tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Introduction
+
+This is part 2 of the [statistical methods in finance series](https://thestatsguy.netlify.com/2020/03/19/statistical-methods-in-finance-series-part-1/). In this installment, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the [MPT Wikipedia article](https://en.wikipedia.org/wiki/Modern_portfolio_theory) explains it very well:
+
+> (MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset's risk and return should not be assessed by itself, but by how it contributes to a portfolio's overall risk and return. It uses the variance of asset prices as a proxy for risk.
+
+The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or _risk premium_? It wouldn't make sense.
+
+(Now, it's probably worthy to point out here that in this framework, risk equates to the standard deviation of portfolio's returns - which in my personal opinion is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let's stick to this for now.)
+
+---
+
+**_Terminology_**
+
+**_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
+
+---
+
+## Formulation
+
+Suppose there are $p$ assets with returns
+
+$$
+
+\begin{array}{c}
+R_i, i = 1, ..., p \\\
+\mathbf{R} = (R_1, ..., R_p)^{T}
+\end{array}
+
+$$
+Their expected returns and risks are respectively
+
+$$
+
+\begin{array}{c}
+r_i = ER_i, \sigma_i = \sigma_{R_i}, cov(R) = \Sigma = (\sigma_{ij})_{1 \le i,j \le p}
+\end{array}
+$$
+We can then form a portfolio consisting of the $p$ assets such that
+
+$$
+
+\begin{array}{c}
+R_N = w_1R_1 + ... + w_pR_P = w^TR,
+\end{array}
+$$
+where $w_i$ is the weight of the $i$th asset in the portfolio, such that
+
+$$
+
+\begin{array}{c}
+\sum_{i = 1}^{p} w_i = 1
+\end{array}
+
+$$
+Of course, the questions that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
+
+#### WIP
+

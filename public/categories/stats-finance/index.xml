@@ -6,17 +6,27 @@
     <description>Recent content in Stats finance on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/stats-finance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Statistical methods in finance series - Part 1</title>
-      <link>/2020/03/19/statistical-methods-in-finance-series-part-1/</link>
+      <title>Introduction to modern portfolio theory - SMFS Part 2</title>
+      <link>/2020/04/01/introduction-to-modern-portfolio-theory-smfs-part-2/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/01/introduction-to-modern-portfolio-theory-smfs-part-2/</guid>
+      <description>IntroductionThis is part 2 of the statistical methods in finance series. In this installment, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the MPT Wikipedia article explains it very well:
+(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type.</description>
+    </item>
+    
+    <item>
+      <title>Statistical methods in finance series - SMFS Part 1</title>
+      <link>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/19/statistical-methods-in-finance-series-part-1/</guid>
+      <guid>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</guid>
       <description>It&amp;rsquo;s a sleepless night, so I decided to write a little. This will be the first part of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my NUS M.Sc Statistics modules, Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.</description>
     </item>
     

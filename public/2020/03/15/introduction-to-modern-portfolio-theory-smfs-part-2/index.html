@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>Introduction to modern portfolio theory - SMFS Part 2 - The Stats Guy</title>
+<meta property="og:title" content="Introduction to modern portfolio theory - SMFS Part 2 - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://thestatsguy.netlify.com/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/machine-learning/">Machine learning</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stats-finance/">Stats finance</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/investing/">Investing</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stoicism/">Stoicism</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Introduction to modern portfolio theory - SMFS Part 2</h1>
+
+    
+    <span class="article-date">2020-03-15</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This is part 2 of the <a href="https://thestatsguy.netlify.com/2020/03/19/statistical-methods-in-finance-series-part-1/">statistical methods in finance series</a>. In this installment, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the <a href="https://en.wikipedia.org/wiki/Modern_portfolio_theory">MPT Wikipedia article</a> explains it very well:</p>
+<blockquote>
+<p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
+</blockquote>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <em>risk premium</em>? It wouldn’t make sense.</p>
+<p>(Now, it’s probably worthy to point out here that in this framework, risk equates to the standard deviation of portfolio’s returns - which in my personal opinion is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.)</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
+<hr />
+</div>
+<div id="formulation" class="section level2">
+<h2>Formulation</h2>
+<p>Suppose there are <span class="math inline">\(p\)</span> assets with returns</p>
+<p>$$</p>
+<p>\begin{array}{c}
+R_i, i = 1, …, p \<br />
+ = (R_1, …, R_p)^{T}
+\end{array}</p>
+<p>$$
+Their expected returns and risks are respectively</p>
+<p>$$</p>
+<p>\begin{array}{c}
+r_i = ER_i, <em>i = </em>{R_i}, cov(R) = = (<em>{ij})</em>{1 i,j p}
+\end{array}
+$$
+We can then form a portfolio consisting of the <span class="math inline">\(p\)</span> assets such that</p>
+<p>$$</p>
+<p>\begin{array}{c}
+R_N = w_1R_1 + … + w_pR_P = w^TR,
+\end{array}
+$$
+where <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, such that</p>
+<p>$$</p>
+<p>\begin{array}{c}
+_{i = 1}^{p} w_i = 1
+\end{array}</p>
+<p>$$
+Of course, the questions that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+<div id="wip" class="section level4">
+<h4>WIP</h4>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
