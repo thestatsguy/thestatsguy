@@ -23,32 +23,24 @@ categories: ["Stats finance"]
 </div>
 <div id="formulation" class="section level2">
 <h2>Formulation</h2>
-<p>Suppose there are <span class="math inline">\(p\)</span> assets with returns</p>
-<p>$$</p>
-<p>\begin{array}{c}
-R_i, i = 1, …, p \<br />
- = (R_1, …, R_p)^{T}
-\end{array}</p>
-<p>$$
-Their expected returns and risks are respectively</p>
-<p>$$</p>
-<p>\begin{array}{c}
-r_i = ER_i, <em>i = </em>{R_i}, cov(R) = = (<em>{ij})</em>{1 i,j p}
+<p>Suppose there are <span class="math inline">\(p\)</span> assets with returns <span class="math inline">\(R_i, i = 1, ..., p\)</span> respectively, where <span class="math inline">\(\mathbf{R} = (R_1, ..., R_p)^{T}\)</span>.</p>
+<p>Their expected returns and risks are respectively</p>
+<p><span class="math display">\[
+\begin{array}{c}
+r_i = ER_i \\\
+\sigma_i = \sigma_{R_i}\\\
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le p}
 \end{array}
-$$
+\]</span>
 We can then form a portfolio consisting of the <span class="math inline">\(p\)</span> assets such that</p>
-<p>$$</p>
-<p>\begin{array}{c}
-R_N = w_1R_1 + … + w_pR_P = w^TR,
+<p><span class="math display">\[
+\begin{array}{c}
+R_N = w_1R_1 + ... + w_pR_P = w^TR,
 \end{array}
-$$
-where <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, such that</p>
-<p>$$</p>
-<p>\begin{array}{c}
-_{i = 1}^{p} w_i = 1
-\end{array}</p>
-<p>$$
-Of course, the questions that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+\]</span></p>
+<p>where <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
+<p><span class="math display">\[\sum_{i = 1}^{p} w_i = 1\]</span></p>
+<p>Of course, the questions that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
 <div id="wip" class="section level4">
 <h4>WIP</h4>
 </div>

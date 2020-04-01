@@ -30,41 +30,29 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 ## Formulation
 
-Suppose there are $p$ assets with returns
+Suppose there are $p$ assets with returns $R_i, i = 1, ..., p$ respectively, where $\mathbf{R} = (R_1, ..., R_p)^{T}$.
 
-$$
-
-\begin{array}{c}
-R_i, i = 1, ..., p \\\
-\mathbf{R} = (R_1, ..., R_p)^{T}
-\end{array}
-
-$$
 Their expected returns and risks are respectively
 
 $$
-
 \begin{array}{c}
-r_i = ER_i, \sigma_i = \sigma_{R_i}, cov(R) = \Sigma = (\sigma_{ij})_{1 \le i,j \le p}
+r_i = ER_i \\\
+\sigma_i = \sigma_{R_i}\\\
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le p}
 \end{array}
 $$
 We can then form a portfolio consisting of the $p$ assets such that
 
 $$
-
 \begin{array}{c}
 R_N = w_1R_1 + ... + w_pR_P = w^TR,
 \end{array}
 $$
-where $w_i$ is the weight of the $i$th asset in the portfolio, such that
 
-$$
+where $w_i$ is the weight of the $i$th asset in the portfolio, with
 
-\begin{array}{c}
-\sum_{i = 1}^{p} w_i = 1
-\end{array}
+$$\sum_{i = 1}^{p} w_i = 1$$
 
-$$
 Of course, the questions that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
 
 #### WIP
