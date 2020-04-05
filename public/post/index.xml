@@ -102,6 +102,16 @@ What are ReitsWhat makes Reits different from other investment vehiclesWhy inves
     </item>
     
     <item>
+      <title>An uncommon approach in tackling class imbalance</title>
+      <link>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</guid>
+      <description>In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.
+The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.</description>
+    </item>
+    
+    <item>
       <title>A guide to dollar cost averaging in Singapore - Part 2</title>
       <link>/2019/04/17/a-guide-to-dollar-cost-averaging-in-singapore-part-2/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
