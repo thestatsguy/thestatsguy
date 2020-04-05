@@ -65,7 +65,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">(WIP) Introduction to modern portfolio theory - SMFS Part 2</h1>
@@ -91,8 +91,8 @@
 <p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
 <hr />
 </div>
-<div id="formulation" class="section level2">
-<h2>Formulation</h2>
+<div id="problem-formulation" class="section level2">
+<h2>Problem formulation</h2>
 <p>Suppose there are <span class="math inline">\(p\)</span> assets with returns <span class="math inline">\(R_i, i = 1, ..., p\)</span> respectively, where <span class="math inline">\(\mathbf{R} = (R_1, ..., R_p)^{T}\)</span>.</p>
 <p>Their expected returns and risks are respectively</p>
 <p><span class="math display">\[
@@ -113,11 +113,20 @@ R_N = w_1R_1 + ... + w_pR_P = w^TR,
 <p>Of course, the question that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_p)^T\)</span> such that expected returns are maximised while minimising risk?</p>
 <div id="portfolio-weights" class="section level3">
 <h3>Portfolio weights</h3>
-<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{p} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <em>short selling</em>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{p} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <em>short selling</em>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
 <hr />
+</div>
+<div id="portfolio-expectation-and-variance" class="section level3">
+<h3>Portfolio expectation and variance</h3>
+<p>With this set-up, the expectation and variance of the portfolio would be</p>
+<p><span class="math display">\[E(R_N) = \sum_iw_iE(R_i) = w^TE(R)\]</span>
+<span class="math display">\[\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
+where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between the <span class="math inline">\(i\)</span>th and <span class="math inline">\(j\)</span>th asset.</p>
+<p>Alternatively,</p>
+<p><span class="math display">\[\sigma_N^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w\]</span></p>
 </div>
 </div>
 <div id="wip" class="section level2">

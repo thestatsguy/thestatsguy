@@ -1,7 +1,7 @@
 ---
 title: "(WIP) Introduction to modern portfolio theory - SMFS Part 2"
 #author: ""
-date: 2020-04-01
+date: 2020-04-05
 categories: ["Stats finance"]
 #tags: ["R Markdown", "plot", "regression"]
 ---
@@ -24,11 +24,15 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 **_Terminology_**
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
 **_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
 
 ---
 
-## Formulation
+## Problem formulation
 
 Suppose there are $p$ assets with returns $R_i, i = 1, ..., p$ respectively, where $\mathbf{R} = (R_1, ..., R_p)^{T}$.
 
@@ -53,7 +57,7 @@ where $w_i$ is the weight of the $i$th asset in the portfolio, with
 
 $$\sum_{i = 1}^{p} w_i = 1$$
 
-Of course, the question that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
+In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
 
 ### Portfolio weights
 
@@ -66,6 +70,20 @@ A technical point to bring out here is that while $\sum_{i = 1}^{p} w_i = 1$, th
 Holding a **_long_** position in a particular asset simply means buying that particular asset. On the other hand, **_short selling_** is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.
 
 ---
+
+### Portfolio expectation and variance
+
+With this set-up, the expectation and variance of the portfolio would be
+
+$$E(R_N) = \sum_iw_iE(R_i) = w^TE(R)$$
+$$\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}$$
+where $\sigma_{ij}$ is the covariance between the $i$th and $j$th asset.
+
+Alternatively,
+
+$$\sigma_N^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w$$
+
+
 
 ## WIP
 
