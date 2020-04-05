@@ -4,9 +4,9 @@ date: 2019-04-17
 categories: ["Investing"]
 ---
 
-<!-- wp:image -->
-<figure class="wp-block-image"><img src="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg" alt=""/><figcaption><em>Dollar cost averaging and regular savings plans are good ways for long-term investors to build up their nest egg in Singapore. </em><a href="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg">Image&nbsp;source</a><em>.</em> </figcaption></figure>
-<!-- /wp:image -->
+<center>
+<img src="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg" width="100%">
+</center>
 
 <!-- wp:paragraph -->
 <p>This is Part 2 from the post "<a href="https://thestatsguy.home.blog/2019/01/13/a-guide-to-dollar-cost-averaging-in-singapore-part-1/">A guide to dollar cost averaging in Singapore – Part 1</a>". Be sure to check that out first before going further here.</p>

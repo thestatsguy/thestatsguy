@@ -4,7 +4,9 @@ date: 2019-01-20
 categories: ["Machine learning"]
 ---
 
-<img src="https://3gp10c1vpy442j63me73gy3s-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-22-at-10.41.30-AM-1024x579.png" alt=""/><figcaption>The Machine Learning Life Cycle from <a href="https://www.datarobot.com/wiki/machine-learning-life-cycle/">DataRobot</a>.</figcaption>
+<center>
+<img src="https://3gp10c1vpy442j63me73gy3s-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-22-at-10.41.30-AM-1024x579.png" width="100%">
+</center>
 
 <p>I recently came across this <a href="https://www.datarobot.com/wiki/machine-learning-life-cycle/">page</a> in the <a href="https://www.datarobot.com/wiki/">DataRobot Artificial Intelligence Wiki</a>. If you don't already know, <a href="https://www.datarobot.com/sg/">DataRobot</a> is currently one of the top <a href="https://en.wikipedia.org/wiki/Automated_machine_learning">automated machine learning</a> platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don't use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning. In any case, this is not my intended topic for today.</p>
 

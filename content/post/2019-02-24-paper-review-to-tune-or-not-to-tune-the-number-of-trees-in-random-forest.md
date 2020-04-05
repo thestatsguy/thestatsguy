@@ -4,7 +4,11 @@ date: 2019-02-24
 categories: ["Machine learning"]
 ---
 
-<figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2-1.png" alt="" class="wp-image-208"/><figcaption>Plotting different performance metrics against the number of trees in random forest. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.</figcaption></figure>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2-1.png" width="100%">
+</center>
+
+<figure class="wp-block-image"><img src="" alt="" class="wp-image-208"/><figcaption>Plotting different performance metrics against the number of trees in random forest. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.</figcaption></figure>
 
 <p>I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:</p>
 

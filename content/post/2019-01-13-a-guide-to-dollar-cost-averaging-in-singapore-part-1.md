@@ -4,9 +4,9 @@ date: 2019-01-13
 categories: ["Investing"]
 ---
 
-<!-- wp:image -->
-<figure class="wp-block-image"><img src="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg" alt=""/><figcaption>Dollar cost averaging and regular savings plans are good ways for long-term investors to build up their nest egg in Singapore. <a href="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg">Image&nbsp;source</a>.</figcaption></figure>
-<!-- /wp:image -->
+<center>
+<img src="https://www.sgmoneymatters.com/wp-content/uploads/2017/02/collect-passive-income.jpg" width="100%">
+</center>
 
 <!-- wp:paragraph -->
 <p>Happy New Year from Korea everyone! I am currently on a business trip in Seoul, visiting our Korean counterparts for 2 weeks. Besides the weeknight / weekend day trips to popular spots like Myeongdong and Dongdaemun, I have also found some time to do a bit of writing.</p>

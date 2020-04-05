@@ -4,11 +4,9 @@ date: 2019-05-27
 categories: ["Investing"]
 ---
 
-<!-- wp:embed {"url":"https://www.flintec.com/wp-content/uploads/2016/10/medical.jpeg","type":"rich","providerNameSlug":"","className":""} -->
-<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
-https://www.flintec.com/wp-content/uploads/2016/10/medical.jpeg
-</div><figcaption><a href="https://www.flintec.com/uk/applications/medical">Source</a>.</figcaption></figure>
-<!-- /wp:embed -->
+<center>
+<img src="https://www.medtecheurope.org/wp-content/uploads/2018/10/shutterstock_691546471-1049x590.jpg" width="100%">
+</center>
 
 <!-- wp:paragraph -->
 <p>In this post, I will be doing a 101 dissection of the medical device industry. It’s a somewhat not-so-popular industry from the perspective of retail investing, but I have had some prior experience in this space, so it’s a tad easier for me to conduct some levels of analysis on companies in this space.</p>

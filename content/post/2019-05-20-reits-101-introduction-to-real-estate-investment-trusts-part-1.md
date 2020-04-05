@@ -4,11 +4,9 @@ date: 2019-05-20
 categories: ["Investing"]
 ---
 
-<!-- wp:embed {"url":"https://i.etsystatic.com/6111470/r/il/35f144/1417264877/il_fullxfull.1417264877_awhp.jpg","type":"rich","providerNameSlug":""} -->
-<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
-https://i.etsystatic.com/6111470/r/il/35f144/1417264877/il_fullxfull.1417264877_awhp.jpg
-</div><figcaption>The Singapore skyline at night. <a href="https://www.etsy.com/au/listing/563149556/custom-singapore-skyline-canvas-art">Source</a>.</figcaption></figure>
-<!-- /wp:embed -->
+<center>
+<img src="https://i.etsystatic.com/6111470/r/il/35f144/1417264877/il_fullxfull.1417264877_awhp.jpg" width="100%">
+</center>
 
 <!-- wp:paragraph -->
 <p>This post is a 101 dissection of real estate investment trusts, REITs or Reits in short. As the full content of this topics is pretty long and I plan to make this 101 comprehensive, I will be publishing this piece in 2 parts, touching on the following:</p>

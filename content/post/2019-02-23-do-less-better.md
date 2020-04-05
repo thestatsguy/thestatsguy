@@ -4,8 +4,13 @@ date: 2019-02-23
 categories: ["Stoicism"]
 ---
 
+<center>
+<img src="https://dailystoic.com/wp-content/uploads/2018/10/ds_Podcast.jpg" width="100%">
+</center>
+
+
 <!-- wp:image -->
-<figure class="wp-block-image"><img src="https://dailystoic.com/wp-content/uploads/2018/10/ds_Podcast.jpg" alt=""/><figcaption>The Daily Stoic podcast</figcaption></figure>
+<figure class="wp-block-image"><img src="" alt=""/><figcaption>The Daily Stoic podcast</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:quote -->
