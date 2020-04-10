@@ -71,7 +71,7 @@
     <h1 class="article-title">(WIP) Introduction to modern portfolio theory - SMFS Part 2</h1>
 
     
-    <span class="article-date">2020-04-05</span>
+    <span class="article-date">2020-04-10</span>
     
 
     <div class="article-content">
@@ -122,12 +122,24 @@ R_N = w_1R_1 + ... + w_pR_P = w^TR,
 <div id="portfolio-expectation-and-variance" class="section level3">
 <h3>Portfolio expectation and variance</h3>
 <p>With this set-up, the expectation and variance of the portfolio would be</p>
-<p><span class="math display">\[E(R_N) = \sum_iw_iE(R_i) = w^TE(R)\]</span>
+<p><span class="math display">\[ER_N = \sum_iw_iER_i = w^TER\]</span>
 <span class="math display">\[\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
 where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between the <span class="math inline">\(i\)</span>th and <span class="math inline">\(j\)</span>th asset.</p>
 <p>Alternatively,</p>
 <p><span class="math display">\[\sigma_N^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w\]</span></p>
 </div>
+</div>
+<div id="starting-with-two-assets" class="section level2">
+<h2>Starting with two assets</h2>
+<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_N\)</span> is large and <span class="math inline">\(\sigma_N^2\)</span> is small. We can start solving this problem by first considering <span class="math inline">\(p = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between 2 assets only. Inevitably, we would have</p>
+<p><span class="math display">\[
+\begin{array}{c}
+ER_N = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+w_1+w_2 = 1, w_2 = 1 - w_1
+\end{array}
+\]</span>
+where <span class="math inline">\(\rho_{12}\)</span> is trhe correlation between <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>.</p>
 </div>
 <div id="wip" class="section level2">
 <h2>WIP</h2>

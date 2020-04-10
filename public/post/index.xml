@@ -6,17 +6,17 @@
     <description>Recent content in Posts on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>(WIP) Introduction to modern portfolio theory - SMFS Part 2</title>
-      <link>/2020/04/05/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <link>/2020/04/10/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/04/05/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</guid>
+      <guid>/2020/04/10/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</guid>
       <description>IntroductionThis is part 2 of the statistical methods in finance series. In this installment, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the MPT Wikipedia article explains it very well:
 (MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type.</description>
     </item>

@@ -1,7 +1,7 @@
 ---
 title: "(WIP) Introduction to modern portfolio theory - SMFS Part 2"
 #author: ""
-date: 2020-04-05
+date: 2020-04-10
 categories: ["Stats finance"]
 #tags: ["R Markdown", "plot", "regression"]
 ---
@@ -22,10 +22,7 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 ---
 
-**_Terminology_**
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+**_Terminology_** ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
 **_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
@@ -75,7 +72,7 @@ Holding a **_long_** position in a particular asset simply means buying that par
 
 With this set-up, the expectation and variance of the portfolio would be
 
-$$E(R_N) = \sum_iw_iE(R_i) = w^TE(R)$$
+$$ER_N = \sum_iw_iER_i = w^TER$$
 $$\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}$$
 where $\sigma_{ij}$ is the covariance between the $i$th and $j$th asset.
 
@@ -83,7 +80,18 @@ Alternatively,
 
 $$\sigma_N^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w$$
 
+## Starting with two assets
 
+Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_N$ is large and $\sigma_N^2$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
+
+$$
+\begin{array}{c}
+ER_N = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+w_1+w_2 = 1, w_2 = 1 - w_1
+\end{array}
+$$
+where $\rho_{12}$ is trhe correlation between $R_1$ and $R_2$.
 
 ## WIP
 
