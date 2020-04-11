@@ -19,7 +19,7 @@
       <guid>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
       <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
 Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
-Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
+Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
     </item>
     
     <item>
