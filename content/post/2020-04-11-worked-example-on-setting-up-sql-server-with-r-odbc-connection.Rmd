@@ -1,0 +1,23 @@
+---
+title: "Worked example on setting up SQL Server with R ODBC connection"
+date: 2020-04-11
+categories: ["Machine learning"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
+
+Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
+
+![](https://github.com/thestatsguy/thestatsguy/blob/master/public/post/images/Capture.PNG)
+
+Step 2: Click on the "Install SSMS" button. SSMS stands for SQL Server Management Studio. Once done, connect to the server:
+
+![](https://github.com/thestatsguy/thestatsguy/blob/master/public/post/images/Capture3.PNG)
+
+Step 3: Create a database on the server. You may follow the steps given in this page as a quick start: https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017. If you do, you should have a database created named "TutorialDB" and a table named "Customers".
+
+Step 4: Install and load the RODBC package in R.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>Worked example on setting up SQL Server with R ODBC connection - The Stats Guy</title>
+<meta property="og:title" content="Worked example on setting up SQL Server with R ODBC connection - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://thestatsguy.netlify.com/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/machine-learning/">Machine learning</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stats-finance/">Stats finance</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/investing/">Investing</a></li>
+    
+    <li><a href="https://thestatsguy.netlify.com/categories/stoicism/">Stoicism</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Worked example on setting up SQL Server with R ODBC connection</h1>
+
+    
+    <span class="article-date">2020-04-11</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.</p>
+<p>Step 1: Install SQL Server from <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" class="uri">https://www.microsoft.com/en-us/sql-server/sql-server-downloads</a>. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:</p>
+<p><img src="https://github.com/thestatsguy/thestatsguy/blob/master/public/post/images/Capture.PNG" /></p>
+<p>Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio. Once done, connect to the server:</p>
+<p><img src="https://github.com/thestatsguy/thestatsguy/blob/master/public/post/images/Capture3.PNG" /></p>
+<p>Step 3: Create a database on the server. You may follow the steps given in this page as a quick start: <a href="https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017" class="uri">https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017</a>. If you do, you should have a database created named “TutorialDB” and a table named “Customers”.</p>
+<p>Step 4: Install and load the RODBC package in R.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

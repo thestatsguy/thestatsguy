@@ -6,10 +6,21 @@
     <description>Recent content in Posts on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Worked example on setting up SQL Server with R ODBC connection</title>
+      <link>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
+      <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
+Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
+Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
+    </item>
     
     <item>
       <title>(WIP) Introduction to modern portfolio theory - SMFS Part 2</title>
