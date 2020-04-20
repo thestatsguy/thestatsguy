@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://thestatsguy.netlify.app/"
 languageCode = "en-us"
 title = "The Stats Guy"
 theme = "hugo-lithium"
