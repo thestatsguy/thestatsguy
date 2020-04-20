@@ -22,8 +22,7 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 ---
 
-**_Terminology_** ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
+**_Terminology_**
 
 **_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
 
@@ -31,7 +30,7 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 ## Problem formulation
 
-Suppose there are $p$ assets with returns $R_i, i = 1, ..., p$ respectively, where $\mathbf{R} = (R_1, ..., R_p)^{T}$.
+Suppose there are $N$ assets with returns $R_i, i = 1, ..., N$ respectively, where $\mathbf{R} = (R_1, ..., R_N)^{T}$.
 
 Their expected returns and risks are respectively
 
@@ -39,26 +38,26 @@ $$
 \begin{array}{c}
 r_i = ER_i \\\
 \sigma_i = \sigma_{R_i}\\\
-cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le p}
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
 \end{array}
 $$
-We can then form a portfolio consisting of the $p$ assets such that
+We can then form a portfolio consisting of the $N$ assets such that
 
 $$
 \begin{array}{c}
-R_N = w_1R_1 + ... + w_pR_P = w^TR,
+R_p = w_1R_1 + ... + w_NR_N = w^TR,
 \end{array}
 $$
 
-where $w_i$ is the weight of the $i$th asset in the portfolio, with
+where $R_p$ is the return of the portfolio and $w_i$ is the weight of the $i$th asset in the portfolio, with
 
-$$\sum_{i = 1}^{p} w_i = 1$$
+$$\sum_{i = 1}^{N} w_i = 1$$
 
-In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose $w = (w_1, ..., w_p)^T$ such that expected returns are maximised while minimising risk?
+In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose $w = (w_1, ..., w_N)^T$ such that expected returns are maximised while minimising risk?
 
 ### Portfolio weights
 
-A technical point to bring out here is that while $\sum_{i = 1}^{p} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. _short selling_. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
+A technical point to bring out here is that while $\sum_{i = 1}^{N} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. _short selling_. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
 
 ---
 
@@ -72,22 +71,22 @@ Holding a **_long_** position in a particular asset simply means buying that par
 
 With this set-up, the expectation and variance of the portfolio would be
 
-$$ER_N = \sum_iw_iER_i = w^TER$$
+$$ER_p = \sum_iw_iER_i = w^TER$$
 $$\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}$$
 where $\sigma_{ij}$ is the covariance between the $i$th and $j$th asset.
 
 Alternatively,
 
-$$\sigma_N^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w$$
+$$\sigma_p^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w$$
 
 ## Starting with two assets
 
-Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_N$ is large and $\sigma_N^2$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
+Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_p$ is large and $\sigma_p^2$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
 
 $$
 \begin{array}{c}
-ER_N = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
-\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+\sigma_p^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
 w_1+w_2 = 1, w_2 = 1 - w_1
 \end{array}
 $$

@@ -6,10 +6,19 @@
     <description>Recent content on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(WIP) The math behind diversification</title>
+      <link>/2020/04/19/wip-the-math-behind-diversification/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/19/wip-the-math-behind-diversification/</guid>
+      <description>IntroductionThe objective of this post is simple - to illustrate the concept of diversification and why it’s important in asset management. We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, loss aversion would indicate that we would rather minimize the risk of losing it all in a single stock.</description>
+    </item>
     
     <item>
       <title>Worked example on setting up SQL Server with R ODBC connection</title>
