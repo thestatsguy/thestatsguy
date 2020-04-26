@@ -6,9 +6,8 @@ categories: ["Machine learning"]
 
 <center>
 <img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2-1.png" width="100%">
+Plotting different performance metrics against the number of trees in random forest. [Source](https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf)
 </center>
-
-<figure class="wp-block-image"><img src="" alt="" class="wp-image-208"/><figcaption>Plotting different performance metrics against the number of trees in random forest. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.</figcaption></figure>
 
 <p>I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:</p>
 
@@ -18,11 +17,17 @@ categories: ["Machine learning"]
 
 <p>This is an interesting paper as it directly addresses a fundamental question on whether the number of base learners in a bagging ensemble should be tuned. In the case of random forest (RF), the number of trees <em>T</em> is often regarded as a hyperparameter, in the sense that either too high or too low of a value would yield sub-par model performance. Tuning of <em>T</em> is typically done by plotting the one or multiple chosen out-of-bag (OOB) metrics, such as the error rate, as a function of <em>T</em>:</p>
 
-<figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/download.png" alt="" class="wp-image-195"/><figcaption>Different OOB metrics (error rate, Brier score, log loss, AUC) as a function of <em>T</em>. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.<br></figcaption></figure>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/02/download.png" width="100%">
+Different OOB metrics (error rate, Brier score, log loss, AUC) as a function of <em>T</em>. [Source](https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf)
+</center>
 
 <p>In the case above, there are clear indications of convergence in <em>T</em>, and any further increase in <em>T</em> brings either marginal or zero improvements in model performance. However, that's not always the case, prompting the treatment of <em>T</em> as a model hyperparameter:</p>
 
-<figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2.png" alt="" class="wp-image-196"/><figcaption>Non-convergence of <em>T</em>. <a href="https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf">Source</a>.</figcaption></figure>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/02/download2.png" width="100%">
+Non-convergence of <em>T</em>. [Source](https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf)
+</center>
 
 <h2>2. Objectives of paper</h2>
 
@@ -46,9 +51,15 @@ categories: ["Machine learning"]
 
 <ul><li>In a largely accurate (many observations with ε<sub>i</sub>  ≈ 0, few observations with ε<sub>i</sub>  ≈ 1) ensemble, observations with ε<sub>i</sub> &gt; 0.5 will be compensated by observations with ε<sub>i</sub> &lt; 0.5 , in such a way that the error rate curve is monotonously decreasing.</li><li>However, in ensembles with many ε<sub>i</sub>  ≈ 0 and a few ε<sub>i</sub> ≥ 0.5 that are close to 0.5, a problem arises. By the authors' computations, due to these fringe cases (model is uncertain <strong>∴</strong> ε<sub>i</sub>  ≈ 0.5), the error rate curve falls down quickly, then grows again slowly to convergence. The following should make a convincing case:</li></ul>
 
-<figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/untitled.png" alt="" class="wp-image-203"/><figcaption>OOB error rate curves for three datasets from OpenML. <a href="http://jmlr.org/papers/v18/17-269.html">Source</a>.</figcaption></figure>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/02/untitled.png" width="100%">
+OOB error rate curves for three datasets from OpenML. [Source](http://jmlr.org/papers/v18/17-269.html)
+</center>
 
-<figure class="wp-block-image"><img src="https://thestatsguyhome.files.wordpress.com/2019/02/untitled2.png" alt="" class="wp-image-204"/><figcaption>OOB ε<sub>i</sub> distributions from RF models on the same three datasets. <a href="http://jmlr.org/papers/v18/17-269.html">Source</a>.</figcaption></figure>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/02/untitled2.png" width="100%">
+OOB ε<sub>i</sub> distributions from RF models on the same three datasets. [Source](http://jmlr.org/papers/v18/17-269.html)
+</center>
 
 <p>These are rather high impact findings as <strong>in practice, the empirical OOB distributions of ε</strong><sub><strong>i</strong></sub><strong> are often not reviewed, especially in the setting of RF or any other ensemble&nbsp;modeling&nbsp;exercise</strong>. (On the other hand, if your training is in statistics, then linear regression diagnostics should be very familiar. Just sayin'.)</p>
 

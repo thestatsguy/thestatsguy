@@ -12,7 +12,10 @@ categories: ["Machine learning"]
 
 <p>If you have worked on data science projects previously, odds are you would have heard of the term CRISP-DM, short of <a href="https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining">CRoss Industry Standard Process for Data Mining</a>. CRISP-DM was developed by five European countries, including Teradata, in 1997, though it's now largely recognized as being associated with IBM and SPSS.</p>
 
-<figure class="wp-block-image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CRISP-DM_Process_Diagram.png/800px-CRISP-DM_Process_Diagram.png" alt=""/><figcaption>The CRISP-DM Process</figcaption></figure>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CRISP-DM_Process_Diagram.png/800px-CRISP-DM_Process_Diagram.png" width="100%">
+The CRISP-DM Process
+</center>
 
 <p>The official CRISP-DM manual is this <a href="ftp://public.dhe.ibm.com/software/analytics/spss/documentation/modeler/18.0/en/ModelerCRISPDM.pdf">50-page document</a>, which if I said that I have read it, I would be lying. Nonetheless, CRISP-DM is intuitive enough for me to use it in my work, in order to scope and run data science projects. There are multiple ways to use CRISP-DM, such as manhours scoping and costing and milestones and success criteria setting. So naturally, I was intrigued by the DataRobot's version of CRISP-DM, and decided to look a little bit deeper.</p>
 

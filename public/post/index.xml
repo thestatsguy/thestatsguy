@@ -153,7 +153,8 @@ You to Yourself
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/02/24/paper-review-to-tune-or-not-to-tune-the-number-of-trees-in-random-forest/</guid>
-      <description>Plotting different performance metrics against the number of trees in random forest. Source. I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:
+      <description>Plotting different performance metrics against the number of trees in random forest. Source 
+I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:
 Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number of Trees in Random Forest. Journal of Machine Learning Research, 18(181), 1-18.</description>
     </item>
     
