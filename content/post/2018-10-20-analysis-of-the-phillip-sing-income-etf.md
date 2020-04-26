@@ -3,10 +3,15 @@ title: "Analysis of the Phillip SING Income ETF"
 date: 2018-10-20
 categories: ["Investing"]
 ---
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/10/47348-etf-poems-landing-page-2.jpg" width="100%">
+</center>
 
-<p class="separator"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/47348-etf-poems-landing-page-2.jpg"><img src="https://thestatsguyhome.files.wordpress.com/2018/10/47348-etf-poems-landing-page-2.jpg?w=300" width="640" height="273" border="0" /></a></p>
 <p>Earlier this month (Oct 2018), Phillip Securities introduced a brand new ETF - the Phillip SING Income ETF, to be managed by Phillip Capital Management, Based on the name of the ETF alone, it's easy to guess the focus of this ETF: dividend income, which is an investment style popular amongst retail investors in Singapore.</p>
 <p>Here's how the ETF is described on <a href="http://poems.com.sg/">poems.com.sg</a>:</p>
+
+---
+
 <h3><span style="color: #0000ff;">Harvest Your Regular Income with Phillip SING Income ETF</span></h3>
 <p>The Phillip SING Income ETF focuses on 30 high quality Singapore Listed stocks to offer investors a cost-effective and diversified exposure to the Singapore market. By using a rule/factor-based approach for stocks selection, the ETF aims to deliver stable and quality income for investors.</p>
 <div class="m-top">
@@ -24,14 +29,17 @@ categories: ["Investing"]
 </ol>
 </li>
 </ul>
+
+---
+
 <div>
 <p>Here's a compilation of articles written by various sources on this ETF:</p>
 <ul>
-<li>The Fifth Person - <a href="https://fifthperson.com/phillip-sing-income-etf/" target="_blank" rel="noopener">https://fifthperson.com/phillip-sing-income-etf/</a></li>
-<li>The Motley Fool Singapore - <a href="https://www.fool.sg/2018/10/02/the-phillip-sing-income-etf-a-new-option-for-income-hungry-singapore-investors/" target="_blank" rel="noopener">https://www.fool.sg/2018/10/02/the-phillip-sing-income-etf-a-new-option-for-income-hungry-singapore-investors/</a></li>
-<li>Dollars And Sense - <a href="https://dollarsandsense.sg/an-alternative-to-the-sti-etf-introducing-the-phillip-sing-income-etf/" target="_blank" rel="noopener">https://dollarsandsense.sg/an-alternative-to-the-sti-etf-introducing-the-phillip-sing-income-etf/</a></li>
-<li>Bedokian Portfolio - <a href="http://bedokianportfolio.blogspot.com/2018/09/the-phillip-sing-income-etf.html" target="_blank" rel="noopener">http://bedokianportfolio.blogspot.com/2018/09/the-phillip-sing-income-etf.html</a></li>
-<li>Small Cap Asia - <a href="https://www.smallcapasia.com/5-things-to-know-about-phillip-sing-income-etf/" target="_blank" rel="noopener">https://www.smallcapasia.com/5-things-to-know-about-phillip-sing-income-etf/</a></li>
+<li><a href="https://fifthperson.com/phillip-sing-income-etf/" target="_blank" rel="noopener">The Fifth Person</a></li>
+<li><a href="https://www.fool.sg/2018/10/02/the-phillip-sing-income-etf-a-new-option-for-income-hungry-singapore-investors/" target="_blank" rel="noopener">The Motley Fool Singapore</a></li>
+<li><a href="https://dollarsandsense.sg/an-alternative-to-the-sti-etf-introducing-the-phillip-sing-income-etf/" target="_blank" rel="noopener">Dollars And Sense</a></li>
+<li><a href="http://bedokianportfolio.blogspot.com/2018/09/the-phillip-sing-income-etf.html" target="_blank" rel="noopener">Bedokian Portfolio</a></li>
+<li><a href="https://www.smallcapasia.com/5-things-to-know-about-phillip-sing-income-etf/" target="_blank" rel="noopener">Small Cap Asia</a></li>
 </ul>
 <div>
 <p>In this post, I will be doing my analysis on this ETF and evaluate the potential role it can play in my portfolio.</p>
@@ -39,7 +47,6 @@ categories: ["Investing"]
 </div>
 <div>
 <div>
-<div> </div>
 </div>
 </div>
 <div>
@@ -78,7 +85,6 @@ categories: ["Investing"]
 <div>
 <p><b>Underlying indices and their constituents</b></p>
 </div>
-<div> </div>
 <div>
 <p>The STI is, well, the flagship index for the SGX, and tracks the top 30 stocks (by market cap) listed on the SGX. O9A, on the other hand, tracks the MSCI Singapore Index, and the Phillip SING Income ETF will be tracking the Morningstar Singapore Yield Focus Index.</p>
 <p><u>The Morningstar Singapore Yield Focus Index</u></p>
@@ -89,20 +95,38 @@ categories: ["Investing"]
 <p><u>Top 10 holdings</u></p>
 <p>Following is how the indices differ in top 10 holdings.</p>
 </div>
-</div>
-<div> </div>
-<p class="separator" style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/e07ea-capture.png"><img class=" aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/10/e07ea-capture.png?w=300" width="400" height="193" border="0" /></a>Top 10 holdings of respective indices</p>
+
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/10/e07ea-capture.png" width="100%">
+Top 10 holdings of respective indices
+</center>
+
 <p class="separator">The first thing you should notice is that the top 4 holdings of the three indices are the same, albeit in different order. DBS, OCBC, UOB, and Singtel all feature in the respective top 4. The STI is well-known to be overweighted in our local banks (40.96%), which is similar for the MSCI Singapore Index (47.43%). Whether it's good for an index to be overweighted in banks is another topic all together - however what's refreshing here is that the <b>banks take up only 23.9% of the MSYF</b>.</p>
 <p class="separator">This is the first key characteristic for lay investors like us to consider: the <b>MSYF has a hard cap of 10% per stock</b>. To me, this is biggest upside of this ETF - an ETF on SGX that's not overweighted in banks.</p>
 <p class="separator"><u>Full holdings and sector distribution</u></p>
 <p class="separator">Following are the full holdings of each index.</p>
-<p class="separator" style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/156f5-full2bholdings.png"><img class=" aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/10/156f5-full2bholdings.png?w=300" width="640" height="378" border="0" /></a>Full holdings of respective indices</p>
+
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/10/156f5-full2bholdings.png" width="100%">
+Full holdings of respective indices
+</center>
+
 <p class="separator">And here are the sector distributions.</p>
-<p class="separator" style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/78bbc-sector2bdistri.png"><img class=" aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/10/78bbc-sector2bdistri.png?w=300" width="640" height="382" border="0" /></a>Sector distributions of respective indices</p>
-<p class="separator">Again, just by eyeballing, what catches my lay investor's eye immediately is the <b>30.1% representation of real estate</b> (mainly REITs) in the ETF. Personally, I like S-REITs as dividend generating vehicles, but neither STI nor the S-REIT ETF can offer a diversified and cheap solution to gain REITs exposure in Singapore (the S-REIT ETF is pretty expensive with a 0.6% expense ratio).</p>
+
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/10/78bbc-sector2bdistri.png" width="100%">
+Sector distributions of respective indices
+</center>
+
+<p class="separator">Again, just by eyeballing, what catches my lay investor's attention immediately is the <b>30.1% representation of real estate</b> (mainly REITs) in the ETF. Personally, I like S-REITs as dividend generating vehicles, but neither STI nor the S-REIT ETF can offer a diversified and cheap solution to gain REITs exposure in Singapore (the S-REIT ETF is pretty expensive with a 0.6% expense ratio).</p>
 <p class="separator"><b>Dividend yield and expense ratio</b></p>
 <p class="separator">Of course, two important things that must be considered for an ETF are the dividend yield and expense ratio.</p>
-<p class="separator" style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/b3761-dividend2byield2band2bexpense2bratio.png"><img class=" aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/10/b3761-dividend2byield2band2bexpense2bratio.png?w=300" width="640" height="352" border="0" /></a>Dividend yields and expense ratios of respective indices</p>
+
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/10/b3761-dividend2byield2band2bexpense2bratio.png" width="100%">
+Dividend yields and expense ratios of respective indices
+</center>
+
 <p class="separator">For the Phillip SING Income ETF, both 5% yield and 0.4% management fees are indicative numbers given by the fund managers as the most probable. If both numbers come true, this would be another plus point for this ETF - competitive fees with superior yield. The 5% indicative yield comes from the fact that there is a combined 60% of banks and real estate in the ETF.</p>
 <p class="separator"><b>What to think about when the ETF starts trading</b></p>
 <ul>
@@ -122,8 +146,6 @@ categories: ["Investing"]
 <div>
 <p>Therefore, I have participated in the subscription of this ETF, putting in a few grand, and potentially including it into my DCA if it turns out well.</p>
 </div>
-<div> </div>
 <div>
 <p>The Phillip SING Income ETF will go live on the SGX on 29th Oct 2018.</p>
 </div>
-<div> </div>
