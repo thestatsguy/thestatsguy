@@ -1,0 +1,65 @@
+baseurl = "https://thestatsguy.netlify.app/"
+languageCode = "en-us"
+title = "The Stats Guy"
+theme = "hugo-xmin"
+googleAnalytics = ""
+disqusShortname = "thestatsguy90"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+#[[menu.main]]
+#    name = "GitHub"
+#    url = "https://github.com/thestatsguy"
+#    weight = 3
+[[menu.main]]
+    name = "Machine learning"
+    url = "/categories/machine-learning/"
+    weight = 4
+[[menu.main]]
+    name = "Stats finance"
+    url = "/categories/stats-finance/"
+    weight = 5
+[[menu.main]]
+    name = "Investing"
+    url = "/categories/investing/"
+    weight = 6
+[[menu.main]]
+    name = "Stoicism"
+    url = "/categories/stoicism/"
+    weight = 7
+
+
+[params]
+
+    description = "My explorations in topics that I enjoy the most."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "trum.png"
+
+    [params.logo]
+    url = "trum.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+    footer = "&copy; [The Stats Guy](https://thestatsguy.rbind.io) 2020"
