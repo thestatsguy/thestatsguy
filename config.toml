@@ -1,17 +1,18 @@
 baseurl = "https://thestatsguy.netlify.app/"
 languageCode = "en-us"
 title = "The Stats Guy"
-theme = "hugo-lithium"
+theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = "thestatsguy90"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+footnotereturnlinkcontents = "↩"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "Home"
-    url = "https://thestatsguy.rbind.io/"
+    url = "/"
     weight = 1
 [[menu.main]]
     name = "About"
@@ -23,23 +24,24 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #    weight = 3
 [[menu.main]]
     name = "Machine learning"
-    url = "https://thestatsguy.rbind.io/categories/machine-learning/"
+    url = "/categories/machine-learning/"
     weight = 4
 [[menu.main]]
     name = "Stats finance"
-    url = "https://thestatsguy.rbind.io/categories/stats-finance/"
+    url = "/categories/stats-finance/"
     weight = 5
 [[menu.main]]
     name = "Investing"
-    url = "https://thestatsguy.rbind.io/categories/investing/"
+    url = "/categories/investing/"
     weight = 6
 [[menu.main]]
     name = "Stoicism"
-    url = "https://thestatsguy.rbind.io/categories/stoicism/"
+    url = "/categories/stoicism/"
     weight = 7
 
 
 [params]
+
     description = "My explorations in topics that I enjoy the most."
 
     # options for highlight.js (version, additional languages, and theme)
@@ -60,3 +62,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     height = 50
     alt = "Logo"
 
+    footer = "&copy; [The Stats Guy](https://thestatsguy.rbind.io) 2020"
