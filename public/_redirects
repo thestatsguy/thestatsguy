@@ -1,0 +1,3 @@
+http://thestatsguy.rbind.io/*     https://thestatsguy.rbind.io/:splat 301!
+https://thestatsguy.netlify.app/* https://thestatsguy.rbind.io/:splat 301!
+https://thestatsguy.netlify.com/* https://thestatsguy.rbind.io/:splat 301!
