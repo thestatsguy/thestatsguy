@@ -197,13 +197,13 @@ With the new year comes the new year resolutions of many Singaporeans. If you ha
     </item>
     
     <item>
-      <title>A repertoire of data scientist interview questions - with a twist</title>
-      <link>/2018/12/28/a-repertoire-of-data-scientist-interview-questions-with-a-twist/</link>
+      <title>Some data scientist interview questions - with a twist</title>
+      <link>/2018/12/28/some-data-scientist-interview-questions-with-a-twist/</link>
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/12/28/a-repertoire-of-data-scientist-interview-questions-with-a-twist/</guid>
+      <guid>/2018/12/28/some-data-scientist-interview-questions-with-a-twist/</guid>
       <description>Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. Source.
-(This post will be continually updated so as to capture more questions and answers along the way. To be honest I don&amp;rsquo;t think I have the best answers to some of these questions as well. Still learning. If you think that there&amp;rsquo;s a better way to tackle these questions, or maybe even that the question is set out in the wrong way in the first place, feel free to reach out or leave a comment.</description>
+Been wanting to do this consolidation for some time, so here goes. I won&amp;rsquo;t be touching on any language-specific questions (e.g. packages or functions), as I don&amp;rsquo;t believe they are relevant in this Google/Stack Overflow era - kind of missing the forest for the trees. Also, won&amp;rsquo;t be going over basic questions like &amp;ldquo;What is logistic regression&amp;rdquo; or &amp;ldquo;How does collaborative filtering works&amp;rdquo; or the like.</description>
     </item>
     
     <item>

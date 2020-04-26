@@ -1,5 +1,5 @@
 ---
-title: "A repertoire of data scientist interview questions - with a twist"
+title: "Some data scientist interview questions - with a twist"
 date: 2018-12-28
 categories: ["Machine learning"]
 ---
@@ -10,14 +10,6 @@ categories: ["Machine learning"]
 
 <!-- wp:paragraph -->
 <p>Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. <a href="https://xkcd.com/1838/" target="_blank" rel="noopener">Source</a>.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>(<em>This post will be continually updated so as to capture more questions and answers along the way</em>. <em>To be honest I don't think I have the best answers to some of these questions as well. Still learning. If you think that there's a better way to tackle these questions, or maybe even that the question is set out in the wrong way in the first place, feel free to <a rel="noopener" href="http://thestatsguy.home.blog/contact/" target="_blank">reach out</a> or leave a comment. I would love to hear from you. I also realized&nbsp;that each of these questions can be deep dived into individual blog posts.</em>)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><em>(Last updated: 20th Jan 2019)</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
