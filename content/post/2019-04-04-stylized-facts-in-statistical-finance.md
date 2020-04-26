@@ -1,5 +1,5 @@
 ---
-title: "Stylized facts in statistical finance"
+title: "[quick] Stylized facts in statistical finance"
 date: "2019-04-04"
 categories: ["Stats finance"]
 ---

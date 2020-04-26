@@ -6,22 +6,13 @@
     <description>Recent content in Stats finance on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/stats-finance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>(WIP) The math behind diversification</title>
-      <link>/2020/04/19/wip-the-math-behind-diversification/</link>
-      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/04/19/wip-the-math-behind-diversification/</guid>
-      <description>IntroductionThe objective of this post is simple - to illustrate the concept of diversification and why it’s important in asset management. We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, loss aversion would indicate that we would rather minimize the risk of losing it all in a single stock.</description>
-    </item>
-    
-    <item>
-      <title>(WIP) Introduction to modern portfolio theory - SMFS Part 2</title>
+      <title>[wip] Introduction to modern portfolio theory - SMFS Part 2</title>
       <link>/2020/04/10/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -31,20 +22,20 @@
     </item>
     
     <item>
-      <title>Statistical methods in finance series - SMFS Part 1</title>
-      <link>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</link>
+      <title>[quick] Statistical methods in finance series - SMFS Part 1</title>
+      <link>/2020/03/19/quick-statistical-methods-in-finance-series-smfs-part-1/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</guid>
+      <guid>/2020/03/19/quick-statistical-methods-in-finance-series-smfs-part-1/</guid>
       <description>It&amp;rsquo;s a sleepless night, so I decided to write a little. This will be the first part of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my NUS M.Sc Statistics modules, Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.</description>
     </item>
     
     <item>
-      <title>Stylized facts in statistical finance</title>
-      <link>/2019/04/04/stylized-facts-in-statistical-finance/</link>
+      <title>[quick] Stylized facts in statistical finance</title>
+      <link>/2019/04/04/quick-stylized-facts-in-statistical-finance/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/04/stylized-facts-in-statistical-finance/</guid>
+      <guid>/2019/04/04/quick-stylized-facts-in-statistical-finance/</guid>
       <description>In statistical finance (as well as in certain areas in social science), stylized facts are empirical observations summarized in a theory-like form, and are generally representative under broad circumstances.
 Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic (&#34;... this makes sense to me&#34;). Stylized facts may often guide investigations and explorations into certain topics of interest, functioning perhaps as assumptions to be either built upon or proven otherwise.</description>
     </item>

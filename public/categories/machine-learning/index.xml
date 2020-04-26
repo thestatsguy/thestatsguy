@@ -12,22 +12,22 @@
     
     
     <item>
-      <title>Worked example on setting up SQL Server with R ODBC connection</title>
-      <link>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
+      <title>[quick] Worked example on setting up SQL Server with R ODBC connection</title>
+      <link>/2020/04/11/quick-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
+      <guid>/2020/04/11/quick-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
       <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
 Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
 Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
     </item>
     
     <item>
-      <title>Quick start to using Git and GitHub</title>
-      <link>/2020/03/21/quick-start-to-using-git-and-github/</link>
+      <title>[quick] Quick start to using Git and GitHub</title>
+      <link>/2020/03/21/quick-quick-start-to-using-git-and-github/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/21/quick-start-to-using-git-and-github/</guid>
+      <guid>/2020/03/21/quick-quick-start-to-using-git-and-github/</guid>
       <description>Git is pretty awesome. My most common &amp;ldquo;use case&amp;rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.
 Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).</description>
     </item>
@@ -43,21 +43,21 @@ In this short tutorial, we will go through the use of tree-based methods (decisi
     </item>
     
     <item>
-      <title>Using waterfall charts to visualize feature contributions</title>
-      <link>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</link>
+      <title>[quick] Using waterfall charts to visualize feature contributions</title>
+      <link>/2020/03/15/quick-using-waterfall-charts-to-visualize-feature-contributions/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</guid>
+      <guid>/2020/03/15/quick-using-waterfall-charts-to-visualize-feature-contributions/</guid>
       <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
 RegressionPreparationlibrary(MASS)library(caret)## Loading required package: lattice## Loading required package: ggplot2## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3library(magrittr)library(ggplot2)data(Boston)set.seed(123)# mean centeringb2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)train &amp;lt;- Boston[idx,]test &amp;lt;- Boston[-idx,]mod0 &amp;lt;- lm(data = train, medv ~.</description>
     </item>
     
     <item>
-      <title>An uncommon approach in tackling class imbalance</title>
-      <link>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</link>
+      <title>[quick] An uncommon approach in tackling class imbalance</title>
+      <link>/2019/05/11/quick-an-uncommon-approach-in-tackling-class-imbalance/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</guid>
+      <guid>/2019/05/11/quick-an-uncommon-approach-in-tackling-class-imbalance/</guid>
       <description>In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.
 The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.</description>
     </item>
@@ -89,11 +89,11 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
     </item>
     
     <item>
-      <title>My Master of Science in Statistics programme in NUS</title>
-      <link>/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/</link>
+      <title>[quick] My Master of Science in Statistics programme in NUS</title>
+      <link>/2019/02/09/quick-my-master-of-science-in-statistics-programme-in-nus/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/</guid>
+      <guid>/2019/02/09/quick-my-master-of-science-in-statistics-programme-in-nus/</guid>
       <description>I have gotten quite a couple of questions regarding my current MSc Statistics programme in NUS. Here are some broadstroke information about the programme and how I am approaching it.
  I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.
  Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one.</description>

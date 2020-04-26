@@ -6,33 +6,24 @@
     <description>Recent content in Posts on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>(WIP) The math behind diversification</title>
-      <link>/2020/04/19/wip-the-math-behind-diversification/</link>
-      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/04/19/wip-the-math-behind-diversification/</guid>
-      <description>IntroductionThe objective of this post is simple - to illustrate the concept of diversification and why it’s important in asset management. We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, loss aversion would indicate that we would rather minimize the risk of losing it all in a single stock.</description>
-    </item>
-    
-    <item>
-      <title>Worked example on setting up SQL Server with R ODBC connection</title>
-      <link>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
+      <title>[quick] Worked example on setting up SQL Server with R ODBC connection</title>
+      <link>/2020/04/11/quick-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/04/11/worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
+      <guid>/2020/04/11/quick-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
       <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
 Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
 Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
     </item>
     
     <item>
-      <title>(WIP) Introduction to modern portfolio theory - SMFS Part 2</title>
+      <title>[wip] Introduction to modern portfolio theory - SMFS Part 2</title>
       <link>/2020/04/10/wip-introduction-to-modern-portfolio-theory-smfs-part-2/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -42,21 +33,21 @@ Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-s
     </item>
     
     <item>
-      <title>Quick start to using Git and GitHub</title>
-      <link>/2020/03/21/quick-start-to-using-git-and-github/</link>
+      <title>[quick] Quick start to using Git and GitHub</title>
+      <link>/2020/03/21/quick-quick-start-to-using-git-and-github/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/21/quick-start-to-using-git-and-github/</guid>
+      <guid>/2020/03/21/quick-quick-start-to-using-git-and-github/</guid>
       <description>Git is pretty awesome. My most common &amp;ldquo;use case&amp;rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.
 Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).</description>
     </item>
     
     <item>
-      <title>Statistical methods in finance series - SMFS Part 1</title>
-      <link>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</link>
+      <title>[quick] Statistical methods in finance series - SMFS Part 1</title>
+      <link>/2020/03/19/quick-statistical-methods-in-finance-series-smfs-part-1/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/19/statistical-methods-in-finance-series-smfs-part-1/</guid>
+      <guid>/2020/03/19/quick-statistical-methods-in-finance-series-smfs-part-1/</guid>
       <description>It&amp;rsquo;s a sleepless night, so I decided to write a little. This will be the first part of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my NUS M.Sc Statistics modules, Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.</description>
     </item>
     
@@ -71,11 +62,11 @@ In this short tutorial, we will go through the use of tree-based methods (decisi
     </item>
     
     <item>
-      <title>Using waterfall charts to visualize feature contributions</title>
-      <link>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</link>
+      <title>[quick] Using waterfall charts to visualize feature contributions</title>
+      <link>/2020/03/15/quick-using-waterfall-charts-to-visualize-feature-contributions/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/15/using-waterfall-charts-to-visualize-feature-contributions/</guid>
+      <guid>/2020/03/15/quick-using-waterfall-charts-to-visualize-feature-contributions/</guid>
       <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
 RegressionPreparationlibrary(MASS)library(caret)## Loading required package: lattice## Loading required package: ggplot2## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3library(magrittr)library(ggplot2)data(Boston)set.seed(123)# mean centeringb2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)train &amp;lt;- Boston[idx,]test &amp;lt;- Boston[-idx,]mod0 &amp;lt;- lm(data = train, medv ~.</description>
     </item>
@@ -111,21 +102,21 @@ What are ReitsWhat makes Reits different from other investment vehiclesWhy inves
     </item>
     
     <item>
-      <title>An uncommon approach in tackling class imbalance</title>
-      <link>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</link>
+      <title>[quick] An uncommon approach in tackling class imbalance</title>
+      <link>/2019/05/11/quick-an-uncommon-approach-in-tackling-class-imbalance/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/11/an-uncommon-approach-in-tackling-class-imbalance/</guid>
+      <guid>/2019/05/11/quick-an-uncommon-approach-in-tackling-class-imbalance/</guid>
       <description>In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.
 The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.</description>
     </item>
     
     <item>
-      <title>Stylized facts in statistical finance</title>
-      <link>/2019/04/04/stylized-facts-in-statistical-finance/</link>
+      <title>[quick] Stylized facts in statistical finance</title>
+      <link>/2019/04/04/quick-stylized-facts-in-statistical-finance/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/04/stylized-facts-in-statistical-finance/</guid>
+      <guid>/2019/04/04/quick-stylized-facts-in-statistical-finance/</guid>
       <description>In statistical finance (as well as in certain areas in social science), stylized facts are empirical observations summarized in a theory-like form, and are generally representative under broad circumstances.
 Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic (&#34;... this makes sense to me&#34;). Stylized facts may often guide investigations and explorations into certain topics of interest, functioning perhaps as assumptions to be either built upon or proven otherwise.</description>
     </item>
@@ -176,11 +167,11 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
     </item>
     
     <item>
-      <title>My Master of Science in Statistics programme in NUS</title>
-      <link>/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/</link>
+      <title>[quick] My Master of Science in Statistics programme in NUS</title>
+      <link>/2019/02/09/quick-my-master-of-science-in-statistics-programme-in-nus/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/</guid>
+      <guid>/2019/02/09/quick-my-master-of-science-in-statistics-programme-in-nus/</guid>
       <description>I have gotten quite a couple of questions regarding my current MSc Statistics programme in NUS. Here are some broadstroke information about the programme and how I am approaching it.
  I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.
  Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one.</description>
@@ -226,11 +217,11 @@ Ensemble learning is the simultaneous use of multiple predictive models to arriv
     </item>
     
     <item>
-      <title>Good news for fans of Singapore Savings Bonds</title>
-      <link>/2018/12/21/good-news-for-fans-of-singapore-savings-bonds/</link>
+      <title>[quick] Good news for fans of Singapore Savings Bonds</title>
+      <link>/2018/12/21/quick-good-news-for-fans-of-singapore-savings-bonds/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/12/21/good-news-for-fans-of-singapore-savings-bonds/</guid>
+      <guid>/2018/12/21/quick-good-news-for-fans-of-singapore-savings-bonds/</guid>
       <description>The Singapore Savings Bonds programme
 Been a while since I last posted on my blog - the last month or so has been hectic for me, with the semester final examinations for my part-time Masters as well as travelling for business. Still, no excuses for slipping on my 2 posts per month commitment, so will try to make up for it in December.
 Also, quick update: following my analysis of the various deposit accounts here and here, I went ahead and opened my DBS Multiplier account online, together with the DBS Live Fresh credit card.</description>
@@ -261,11 +252,11 @@ It&#39;s a relatively straightforward structure that has requirements on salary 
     </item>
     
     <item>
-      <title>Book Review: Rich by Retirement by Joshua Giersch</title>
-      <link>/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/</link>
+      <title>[quick] Book Review: Rich by Retirement by Joshua Giersch</title>
+      <link>/2018/09/16/quick-book-review-rich-by-retirement-by-joshua-giersch/</link>
       <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/</guid>
+      <guid>/2018/09/16/quick-book-review-rich-by-retirement-by-joshua-giersch/</guid>
       <description>Joshua Giersch, better known as “Shiny Things”, is an investment guru who has been generously giving investing advice on HardwareZone and his blog. His advice are consistently dished out with the SG context in mind, and his book &amp;ldquo;Rich by Retirement: How Singaporeans Can Invest Smart and Retire Wealthy&amp;rdquo;, is, in essence, the consolidation of all of his tips and hacks on being a successful investor in SG.</description>
     </item>
     

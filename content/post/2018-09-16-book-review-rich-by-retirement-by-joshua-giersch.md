@@ -1,5 +1,5 @@
 ---
-title: "Book Review: Rich by Retirement by Joshua Giersch"
+title: "[quick] Book Review: Rich by Retirement by Joshua Giersch"
 date: 2018-09-16
 categories: ["Investing"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Quick start to using Git and GitHub"
+title: "[quick] Quick start to using Git and GitHub"
 date: "2020-03-21"
 categories: ["Machine learning"]
 ---

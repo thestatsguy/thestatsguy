@@ -25,7 +25,7 @@ categories: ["Investing"]
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Reits, by virtue of their long form name, are essentially instruments that allow investors to get exposure to the real estate market, be it locally, regionally, or globally. The easiest way to give an explanation of what is a Reit is is to take on the perspective of the Reit manager. As the Reit manager, to start an investment trust on real estate, you would first need to secure financing from, say a bank, to finance your portfolio of properties. That's one portion of the financing. The other portion comes from listing the Reit in an exchange through an IPO, and get investors to invest in your Reit as a unitholder.</p>
+<p>Reits, by virtue of their long form name, are essentially instruments that allow investors to get exposure to the real estate market, be it locally, regionally, or globally. The easiest way to give an explanation of what is a Reit is to take on the perspective of the Reit manager. As the Reit manager, to start an investment trust on real estate, you would first need to secure financing from, say a bank, to finance your portfolio of properties. That's one portion of the financing. The other portion comes from listing the Reit in an exchange through an IPO, and get investors to invest in your Reit as a unitholder.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

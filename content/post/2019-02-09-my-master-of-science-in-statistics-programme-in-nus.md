@@ -1,5 +1,5 @@
 ---
-title: "My Master of Science in Statistics programme in NUS"
+title: "[quick] My Master of Science in Statistics programme in NUS"
 date: 2019-02-09
 categories: ["Machine learning"]
 ---

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>[quick] An uncommon approach in tackling class imbalance - The Stats Guy</title>
+<meta property="og:title" content="[quick] An uncommon approach in tackling class imbalance - The Stats Guy">
+
+
+  <link href='/trum.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/trum.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://thestatsguy.rbind.io/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/thestatsguy">GitHub</a></li>
+    
+    <li><a href="https://thestatsguy.rbind.io/categories/machine-learning/">Machine learning</a></li>
+    
+    <li><a href="https://thestatsguy.rbind.io/categories/stats-finance/">Stats finance</a></li>
+    
+    <li><a href="https://thestatsguy.rbind.io/categories/investing/">Investing</a></li>
+    
+    <li><a href="https://thestatsguy.rbind.io/categories/stoicism/">Stoicism</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">[quick] An uncommon approach in tackling class imbalance</h1>
+
+    
+    <span class="article-date">2019-05-11</span>
+    
+
+    <div class="article-content">
+      <p><center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/05/f5126-1h01epkhncswjxdtyxzuq6g.jpeg" width="100%">
+</center></p>
+
+<!-- wp:paragraph {"align":"left"} -->
+
+<p><p class="has-text-align-left">In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.g. <a href="https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis#SMOTE">SMOTE</a>). Of course, downsampling of majority class is often frowned upon as precious datapoints are being discarded.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>In many situations, these approaches work reasonably well. However, in contexts in which there is an inherent asymmetry between false positives and false negatives, these approaches are less than ideal. For example,</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:list -->
+
+<p><ul><li>In cyber security, the inability to detect an intrusion into networks (false negative) incurs a different cost as compared to a false alarm (false positive).</li><li>In human resources, the inability to detect impending attrition of a high-potential employee (false negative) incurs a different cost as compared to incorrectly detecting said attrition (false positive).</li><li>In a clinical setting, the inability to detect post-surgical complications (false negative) incurs a different cost as compared to incorrectly detecting a complication (false positive). </li></ul>
+<!-- /wp:list --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>In most practical contexts, false positives and negatives incur different waste and costs. In addition, given that a prediction error is going to occur, there is often a <strong>preferred </strong>outcome or error. For instance, a healthcare practitioner would likely rather to not miss out on a post-surgical complication, than save on manpower and resources with poor prognosis.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Assuming that is the case, a simple but less commonplace approach to tackling class imbalance is to design a utility function <em>U(m)</em> that captures the inherent asymmetry of prediction outcomes, and use <em>U(m) </em>as the loss function in the ML training process for model <em>m</em>. Such utility functions are often used in econometrics to capture choices and preferences. Following illustrates an instructive but naive example of <em>U(m)</em>:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:table -->
+
+<p><figure class="wp-block-table"><table><tbody><tr><td>
+  <strong>Prediction Outcome</strong>
+  </td><td>
+  <strong>Utility Score</strong>
+  </td></tr><tr><td>
+  True positive
+  </td><td>
+  1
+  </td></tr><tr><td>
+  True negative
+  </td><td>
+  1
+  </td></tr><tr><td>
+  False positive
+  </td><td>
+  -5
+  </td></tr><tr><td>
+  False negative
+  </td><td>
+  -50
+  </td></tr></tbody></table></figure>
+<!-- /wp:table --></p>
+
+<!-- wp:paragraph -->
+
+<p><p><em>U(m)</em> would then be:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:preformatted -->
+
+<p><pre class="wp-block-preformatted">U(m) = TP(n<sub>1</sub>) + TN(n<sub>2</sub>) - 5FP(n<sub>3</sub>) - 50FN(n<sub>4</sub>)</pre>
+<!-- /wp:preformatted --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>where <em>n<sub>i </sub>&nbsp;</em>are the respective case counts of each prediction outcome. <em>U(m) </em>can then be used as the loss function in tuning individual ML models, heavily penalizing false negatives.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>The utility scores of each prediction outcome is a function of the expert judgement of clinicians and practitioners, in evaluating relative costs and tradeoffs between each outcome. They are also largely context-driven and should ideally differ between surgical complications, diseases, or even hospitals and departments. Finally, loss functions are general to supervised learning algorithms, i.e. <em>U(m)</em> can be experimented with and built into various ML models.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Of course, the challenge then, in using utility functions in machine learning, is in the design of the function - how to best to capture the inherent asymmetry and tradeoffs, and evaluate and summarize relative costs. This has to be done together with domain experts as they are the ones who can providing the expert opinion and judgement, in articulating the tradeoffs in utility. While network intrusion and employee attrition can be quantified in dollar value, the loss of a human life is definitely not so straightforward.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p></p>
+<!-- /wp:paragraph --></p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = 'https://thestatsguy90.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
