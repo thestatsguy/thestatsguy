@@ -1,6 +1,6 @@
 # thestatsguy
 
-#### Read it here: https://thestatsguy.netlify.app/
+#### Read it here: https://thestatsguy.rbind.io/
 
 Workflow
 * Edit md/rmd files
