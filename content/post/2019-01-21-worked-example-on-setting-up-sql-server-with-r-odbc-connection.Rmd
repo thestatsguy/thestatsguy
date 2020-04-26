@@ -1,6 +1,6 @@
 ---
-title: "[quick] Worked example on setting up SQL Server with R ODBC connection"
-date: 2020-04-11
+title: "[short] Worked example on setting up SQL Server with R ODBC connection"
+date: 2019-01-21
 categories: ["Machine learning"]
 ---
 

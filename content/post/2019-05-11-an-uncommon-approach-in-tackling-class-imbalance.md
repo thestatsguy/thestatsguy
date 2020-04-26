@@ -1,5 +1,5 @@
 ---
-title: "[quick] An uncommon approach in tackling class imbalance"
+title: "[short] An uncommon approach in tackling class imbalance"
 date: 2019-05-11
 categories: ["Machine learning"]
 ---

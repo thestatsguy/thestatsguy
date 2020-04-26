@@ -4,35 +4,24 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/machine-learning/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/stats-finance/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/2020/04/11/quick-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/stats-finance/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,23 +32,8 @@
   </url>
   
   <url>
-    <loc>/2020/03/21/quick-quick-start-to-using-git-and-github/</loc>
-    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/03/19/quick-statistical-methods-in-finance-series-smfs-part-1/</loc>
+    <loc>/2020/03/19/short-statistical-methods-in-finance-series-smfs-part-1/</loc>
     <lastmod>2020-03-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/03/15/random-forests-in-r/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/03/15/quick-using-waterfall-charts-to-visualize-feature-contributions/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,12 +58,18 @@
   </url>
   
   <url>
-    <loc>/2019/05/11/quick-an-uncommon-approach-in-tackling-class-imbalance/</loc>
+    <loc>/categories/machine-learning/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2019/05/11/short-an-uncommon-approach-in-tackling-class-imbalance/</loc>
     <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/04/04/quick-stylized-facts-in-statistical-finance/</loc>
+    <loc>/2019/04/04/short-stylized-facts-in-statistical-finance/</loc>
     <lastmod>2019-04-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -120,8 +100,18 @@
   </url>
   
   <url>
-    <loc>/2019/02/09/quick-my-master-of-science-in-statistics-programme-in-nus/</loc>
+    <loc>/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/01/24/short-using-waterfall-charts-to-visualize-feature-contributions/</loc>
+    <lastmod>2019-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</loc>
+    <lastmod>2019-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -145,7 +135,7 @@
   </url>
   
   <url>
-    <loc>/2018/12/21/quick-good-news-for-fans-of-singapore-savings-bonds/</loc>
+    <loc>/2018/12/21/short-good-news-for-fans-of-singapore-savings-bonds/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,8 +150,18 @@
   </url>
   
   <url>
-    <loc>/2018/09/16/quick-book-review-rich-by-retirement-by-joshua-giersch/</loc>
+    <loc>/2018/09/16/short-book-review-rich-by-retirement-by-joshua-giersch/</loc>
     <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/04/12/short-quick-start-to-using-git-and-github/</loc>
+    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/07/20/random-forests-in-r/</loc>
+    <lastmod>2016-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>

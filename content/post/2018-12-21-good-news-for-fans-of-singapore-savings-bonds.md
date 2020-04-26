@@ -1,5 +1,5 @@
 ---
-title: "[quick] Good news for fans of Singapore Savings Bonds"
+title: "[short] Good news for fans of Singapore Savings Bonds"
 date: 2018-12-21
 categories: ["Investing"]
 ---

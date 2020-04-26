@@ -1,6 +1,6 @@
 ---
-title: "[quick] Quick start to using Git and GitHub"
-date: "2020-03-21"
+title: "[short] Quick start to using Git and GitHub"
+date: "2017-04-12"
 categories: ["Machine learning"]
 ---
 
