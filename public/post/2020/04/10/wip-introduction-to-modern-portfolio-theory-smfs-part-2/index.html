@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[wip] Introduction to modern portfolio theory - SMFS Part 2 | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link href="//YOUR-CDN-LINK/styles/github.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">[wip] Introduction to modern portfolio theory - SMFS Part 2</span></h2>
+
+<h3 class="date">2020/04/10</h3><h3>4min read</h3>
+</div>
+
+<main>
+
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This is part 2 of the <a href="https://thestatsguy.netlify.com/2020/03/19/statistical-methods-in-finance-series-part-1/">statistical methods in finance series</a>. In this installment, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the <a href="https://en.wikipedia.org/wiki/Modern_portfolio_theory">MPT Wikipedia article</a> explains it very well:</p>
+<blockquote>
+<p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
+</blockquote>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <em>risk premium</em>? It wouldn’t make sense.</p>
+<p>(Now, it’s probably worthy to point out here that in this framework, risk equates to the standard deviation of portfolio’s returns - which in my personal opinion is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.)</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
+<hr />
+</div>
+<div id="problem-formulation" class="section level2">
+<h2>Problem formulation</h2>
+<p>Suppose there are <span class="math inline">\(N\)</span> assets with returns <span class="math inline">\(R_i, i = 1, ..., N\)</span> respectively, where <span class="math inline">\(\mathbf{R} = (R_1, ..., R_N)^{T}\)</span>.</p>
+<p>Their expected returns and risks are respectively</p>
+<p><span class="math display">\[
+\begin{array}{c}
+r_i = ER_i \\\
+\sigma_i = \sigma_{R_i}\\\
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
+\end{array}
+\]</span>
+We can then form a portfolio consisting of the <span class="math inline">\(N\)</span> assets such that</p>
+<p><span class="math display">\[
+\begin{array}{c}
+R_p = w_1R_1 + ... + w_NR_N = w^TR,
+\end{array}
+\]</span></p>
+<p>where <span class="math inline">\(R_p\)</span> is the return of the portfolio and <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
+<p><span class="math display">\[\sum_{i = 1}^{N} w_i = 1\]</span></p>
+<p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+<div id="portfolio-weights" class="section level3">
+<h3>Portfolio weights</h3>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <em>short selling</em>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
+<hr />
+</div>
+<div id="portfolio-expectation-and-variance" class="section level3">
+<h3>Portfolio expectation and variance</h3>
+<p>With this set-up, the expectation and variance of the portfolio would be</p>
+<p><span class="math display">\[ER_p = \sum_iw_iER_i = w^TER\]</span>
+<span class="math display">\[\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
+where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between the <span class="math inline">\(i\)</span>th and <span class="math inline">\(j\)</span>th asset.</p>
+<p>Alternatively,</p>
+<p><span class="math display">\[\sigma_p^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w\]</span></p>
+</div>
+</div>
+<div id="starting-with-two-assets" class="section level2">
+<h2>Starting with two assets</h2>
+<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_p\)</span> is large and <span class="math inline">\(\sigma_p^2\)</span> is small. We can start solving this problem by first considering <span class="math inline">\(p = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between 2 assets only. Inevitably, we would have</p>
+<p><span class="math display">\[
+\begin{array}{c}
+ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+\sigma_p^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+w_1+w_2 = 1, w_2 = 1 - w_1
+\end{array}
+\]</span>
+where <span class="math inline">\(\rho_{12}\)</span> is trhe correlation between <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>.</p>
+</div>
+<div id="wip" class="section level2">
+<h2>WIP</h2>
+</div>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+ 
+
+<script src="https://cdnjs.com/libraries/highlight.js"></script>
+<script src="https://cdnjs.com/libraries/highlight.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+  
+  <hr/>
+  &copy; <a href="https://yihui.name">Yihui Xie</a> 2017 &ndash; 2019 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
