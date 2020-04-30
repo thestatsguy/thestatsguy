@@ -1,9 +1,9 @@
-baseurl = "/"
+baseurl = "https://thestatsguy.netlify.app/"
 languageCode = "en-us"
 title = "A minimal Hugo website"
 theme = "hugo-xmin"
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "thestatsguy90"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
 
