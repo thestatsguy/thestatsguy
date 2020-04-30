@@ -1,0 +1,52 @@
+10:10:10 PM: Build ready to start
+10:10:12 PM: build-image version: 2dbd444fcdce00cf06325060a8238d5ae3e86774
+10:10:12 PM: build-image tag: v3.3.7
+10:10:12 PM: buildbot version: d305548225ac57bb00eb5a596b0b8674e76a4681
+10:10:13 PM: Fetching cached dependencies
+10:10:13 PM: Starting to download cache of 291.5MB
+10:10:15 PM: Finished downloading cache in 2.378782928s
+10:10:15 PM: Starting to extract cache
+10:10:27 PM: Finished extracting cache in 11.789436689s
+10:10:27 PM: Finished fetching cache in 14.246693247s
+10:10:27 PM: Starting to prepare the repo for build
+10:10:27 PM: Preparing Git Reference refs/heads/master
+10:10:28 PM: Starting build script
+10:10:28 PM: Installing dependencies
+10:10:29 PM: Started restoring cached node version
+10:10:37 PM: Finished restoring cached node version
+10:10:37 PM: v10.20.1 is already installed.
+10:10:38 PM: Now using node v10.20.1 (npm v6.14.4)
+10:10:38 PM: Attempting ruby version 2.6.2, read from environment
+10:10:40 PM: Using ruby version 2.6.2
+10:10:40 PM: Using PHP version 5.6
+10:10:40 PM: Started restoring cached go cache
+10:10:40 PM: Finished restoring cached go cache
+10:10:40 PM: unset GOOS;
+10:10:40 PM: unset GOARCH;
+10:10:40 PM: export GOROOT='/opt/buildhome/.gimme/versions/go1.12.linux.amd64';
+10:10:40 PM: export PATH="/opt/buildhome/.gimme/versions/go1.12.linux.amd64/bin:${PATH}";
+10:10:40 PM: go version >&2;
+10:10:40 PM: export GIMME_ENV='/opt/buildhome/.gimme/env/go1.12.linux.amd64.env';
+10:10:40 PM: go version go1.12 linux/amd64
+10:10:40 PM: Installing missing commands
+10:10:40 PM: Verify run directory
+10:10:40 PM: Executing user command: hugo
+10:10:42 PM: Building sites …
+10:10:42 PM: Total in 36 ms
+10:10:42 PM: Error: Error building site: failed to render pages: render of "taxonomyTerm" failed: "/opt/build/repo/themes/hugo-xmin/layouts/_default/terms.html:8:21": execute of template failed: template: _default/terms.html:8:21: executing "_default/terms.html" at <.Page.RelPermalink>: can't evaluate field Page in type hugolib.WeightedPages
+10:10:42 PM: Skipping functions preparation step: no functions directory set
+10:10:42 PM: Caching artifacts
+10:10:42 PM: Started saving pip cache
+10:10:42 PM: Finished saving pip cache
+10:10:42 PM: Started saving emacs cask dependencies
+10:10:42 PM: Finished saving emacs cask dependencies
+10:10:42 PM: Started saving maven dependencies
+10:10:42 PM: Finished saving maven dependencies
+10:10:42 PM: Started saving boot dependencies
+10:10:42 PM: Finished saving boot dependencies
+10:10:42 PM: Started saving go dependencies
+10:10:42 PM: Finished saving go dependencies
+10:10:42 PM: Error running command: Build script returned non-zero exit code: 255
+10:10:42 PM: Failing build: Failed to build site
+10:10:42 PM: failed during stage 'building site': Build script returned non-zero exit code: 255
+10:10:42 PM: Finished processing build request in 29.630756825s
