@@ -1,6 +1,6 @@
 baseurl = "https://thestatsguy.netlify.app/"
 languageCode = "en-us"
-title = "A minimal Hugo website"
+title = "The Stats Guy"
 theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = "thestatsguy90"
@@ -20,17 +20,25 @@ footnotereturnlinkcontents = "↩"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
-[[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "Machine learning"
+    url = "/categories/machine-learning/"
     weight = 4
+[[menu.main]]
+    name = "Stats finance"
+    url = "/categories/stats-finance/"
+    weight = 5
+[[menu.main]]
+    name = "Investing"
+    url = "/categories/investing/"
+    weight = 6
+[[menu.main]]
+    name = "Stoicism"
+    url = "/categories/stoicism/"
+    weight = 7
 [[menu.main]]
     name = "Subscribe"
     url = "/index.xml"
 
 [params]
     description = "A website built through Hugo and blogdown."
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 -- 2019 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    footer = "&copy; [The Stats Guy](https:thestatsguy.rbind.io) 2020 | [GitHub](https://github.com/thestatsguy)"
