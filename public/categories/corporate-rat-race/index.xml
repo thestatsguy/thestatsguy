@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Corporate rat race on The Stats Guy</title>
+    <link>/categories/corporate-rat-race/</link>
+    <description>Recent content in Corporate rat race on The Stats Guy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/corporate-rat-race/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[short] Travelling and productivity</title>
+      <link>/post/2017/03/05/travelling-and-productivity/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/03/05/travelling-and-productivity/</guid>
+      <description>Two things I want to talk about here: how travelling affects productivity and how to alleviate some of its effects.
+Since October 2016, I have been travelling in out of the Philippines for a data science project. Between October 2016 to February 2017, I made 11 trips to the Philippines, each trip spanning on average about 1 work week.
+At first it seems fun; which young professional wouldn’t want to experience a work life of constant flying, staying in 4 or 5 stars hotels while working on interesting projects?</description>
+    </item>
+    
+    <item>
+      <title>Three Needs Theory - Power, Achievement, Affliation</title>
+      <link>/post/2017/01/02/three-needs-theory-power-achievement-affliation/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/01/02/three-needs-theory-power-achievement-affliation/</guid>
+      <description>The Three Needs Theory was developed by psychologist David McClelland in the 1960s. The theory identifies three main needs in the professional setting, which form the drivers of motivation. These needs are
+ The need for power (n-Pow) The need for achievement (n-Ach) The need for affiliation (n-Aff)  I first encountered this idea in the book Managing Scientists: Leadership Strategies in Scientific Research by Alice Sapienza, which I have yet to finish reading.</description>
+    </item>
+    
+  </channel>
+</rss>
