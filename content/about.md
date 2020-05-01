@@ -43,6 +43,7 @@ This blog is put together using a variety of tools:
 * [Netlify](https://www.netlify.com/)
 * [rbind.io](https://support.rbind.io/about/)
 * [Disqus](https://disqus.com/)
+* [Google Analytics](https://analytics.google.com/)
 
 This stack is by far the most complex one that I have used, after being initially convinced by [blogdown](https://bookdown.org/yihui/blogdown/). The kind of ecosystem that [Xie Yihui](https://yihui.org/) and others have built is powerful and customizable, yet painless (relatively) and easy to operate. It helps that I am proficient in R as well.
 
