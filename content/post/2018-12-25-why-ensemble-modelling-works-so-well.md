@@ -1,7 +1,7 @@
 ---
 title: "Why ensemble modelling works so well - and one often neglected principle"
 date: 2018-12-25
-categories: ["Machine learning"]
+categories: ["ML & Stats"]
 ---
 
 <p><img class=" size-full wp-image-81 aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/12/r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638.jpg" alt="r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638" width="638" height="479"></p>

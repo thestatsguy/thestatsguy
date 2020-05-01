@@ -1,7 +1,7 @@
 ---
 title: "Seven tips for working on analytics delivery projects"
 date: 2019-03-17
-categories: ["Machine learning"]
+categories: ["ML & Stats"]
 ---
 
 <center>

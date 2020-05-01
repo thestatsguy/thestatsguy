@@ -1,16 +1,15 @@
 ---
 title: "Some data scientist interview questions - with a twist"
 date: 2018-12-28
-categories: ["Machine learning"]
+categories: ["ML & Stats"]
 ---
 
-<!-- wp:image {"align":"center","id":93} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="https://thestatsguyhome.files.wordpress.com/2018/12/machine_learning.png" alt="machine_learning" class="wp-image-93"/></figure></div>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p>Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. <a href="https://xkcd.com/1838/" target="_blank" rel="noopener">Source</a>.</p>
-<!-- /wp:paragraph -->
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/12/machine_learning.png" width="50%">
+</center>
+<center>
+Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. [Source](https://xkcd.com/1838/)
+</center>
 
 <!-- wp:paragraph -->
 <p>Been wanting to do this consolidation for some time, so here goes. I won't be touching on any language-specific questions (e.g. packages or functions), as I don't believe they are relevant in this Google/Stack Overflow era - kind of missing the forest for the trees. Also, won't be going over basic questions like "What is logistic regression" or "How does collaborative filtering works" or the like.</p>

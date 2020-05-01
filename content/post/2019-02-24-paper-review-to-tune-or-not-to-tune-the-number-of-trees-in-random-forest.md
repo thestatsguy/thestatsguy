@@ -1,7 +1,7 @@
 ---
 title: "Paper Review: To Tune or Not to Tune the Number of Trees in Random Forest"
 date: 2019-02-24
-categories: ["Machine learning"]
+categories: ["ML & Stats"]
 ---
 
 <center>

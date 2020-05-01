@@ -21,7 +21,7 @@ footnotereturnlinkcontents = "↩"
     weight = 2
 [[menu.main]]
     name = "ML & Stats"
-    url = "/categories/machine-learning/"
+    url = "/categories/ml-stats/"
     weight = 4
 [[menu.main]]
     name = "Stats finance"

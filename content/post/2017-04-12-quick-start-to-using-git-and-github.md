@@ -1,7 +1,7 @@
 ---
 title: "[short] Quick start to using Git and GitHub"
 date: "2017-04-12"
-categories: ["Machine learning"]
+categories: ["ML & Stats"]
 ---
 
 <center>

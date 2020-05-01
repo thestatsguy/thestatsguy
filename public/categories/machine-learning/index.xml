@@ -6,118 +6,10 @@
     <description>Recent content in Machine learning on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jul 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>[short] An uncommon approach in tackling class imbalance</title>
-      <link>/post/2019/05/11/short-an-uncommon-approach-in-tackling-class-imbalance/</link>
-      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/05/11/short-an-uncommon-approach-in-tackling-class-imbalance/</guid>
-      <description>In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.
-The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.</description>
-    </item>
-    
-    <item>
-      <title>Seven tips for working on analytics delivery projects</title>
-      <link>/post/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</guid>
-      <description>Following are seven tips / tricks / hacks that I came to learnt (some of them the hard way) and compiled as a data scientist / delivery consultant / data science consultant. In brief, they are:
-You to Yourself
- Develop a strategy
- Keep a delivery journal
- Plan your daily activities
- Frontload your projects
-  You to Others
- Show mediocre output to no one</description>
-    </item>
-    
-    <item>
-      <title>Paper Review: To Tune or Not to Tune the Number of Trees in Random Forest</title>
-      <link>/post/2019/02/24/paper-review-to-tune-or-not-to-tune-the-number-of-trees-in-random-forest/</link>
-      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/02/24/paper-review-to-tune-or-not-to-tune-the-number-of-trees-in-random-forest/</guid>
-      <description>Plotting different performance metrics against the number of trees in random forest. Source 
-I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:
-Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number of Trees in Random Forest. Journal of Machine Learning Research, 18(181), 1-18.</description>
-    </item>
-    
-    <item>
-      <title>[short] My Master of Science in Statistics programme in NUS</title>
-      <link>/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</guid>
-      <description>I have gotten quite a couple of questions regarding my current MSc Statistics programme in NUS. Here are some broadstroke information about the programme and how I am approaching it.
- I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.
- Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one.</description>
-    </item>
-    
-    <item>
-      <title>[short] Using waterfall charts to visualize feature contributions</title>
-      <link>/post/2019/01/24/short-using-waterfall-charts-to-visualize-feature-contributions/</link>
-      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/01/24/short-using-waterfall-charts-to-visualize-feature-contributions/</guid>
-      <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
-RegressionPreparationlibrary(MASS)library(caret)## Loading required package: lattice## Loading required package: ggplot2## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3library(magrittr)library(ggplot2)data(Boston)set.seed(123)# mean centeringb2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)train &amp;lt;- Boston[idx,]test &amp;lt;- Boston[-idx,]mod0 &amp;lt;- lm(data = train, medv ~.</description>
-    </item>
-    
-    <item>
-      <title>[short] Worked example on setting up SQL Server with R ODBC connection</title>
-      <link>/post/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
-      <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
-Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
-Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
-    </item>
-    
-    <item>
-      <title>The Machine Learning Life Cycle - how to run a ML project</title>
-      <link>/post/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</link>
-      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</guid>
-      <description>I recently came across this page in the DataRobot Artificial Intelligence Wiki. If you don&#39;t already know, DataRobot is currently one of the top automated machine learning platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning.</description>
-    </item>
-    
-    <item>
-      <title>Some data scientist interview questions - with a twist</title>
-      <link>/post/2018/12/28/some-data-scientist-interview-questions-with-a-twist/</link>
-      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018/12/28/some-data-scientist-interview-questions-with-a-twist/</guid>
-      <description>Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. Source.
-Been wanting to do this consolidation for some time, so here goes. I won&amp;rsquo;t be touching on any language-specific questions (e.g. packages or functions), as I don&amp;rsquo;t believe they are relevant in this Google/Stack Overflow era - kind of missing the forest for the trees. Also, won&amp;rsquo;t be going over basic questions like &amp;ldquo;What is logistic regression&amp;rdquo; or &amp;ldquo;How does collaborative filtering works&amp;rdquo; or the like.</description>
-    </item>
-    
-    <item>
-      <title>Why ensemble modelling works so well - and one often neglected principle</title>
-      <link>/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</guid>
-      <description>Putting models together in an ensemble learning fashion is a popular technique amongst Data Scientists
-Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.</description>
-    </item>
-    
-    <item>
-      <title>[short] Quick start to using Git and GitHub</title>
-      <link>/post/2017/04/12/short-quick-start-to-using-git-and-github/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2017/04/12/short-quick-start-to-using-git-and-github/</guid>
-      <description>Git is pretty awesome. My most common &amp;ldquo;use case&amp;rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.
-Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).</description>
-    </item>
     
     <item>
       <title>Random Forests in R</title>
