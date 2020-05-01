@@ -1,7 +1,7 @@
 ---
 title: "A guide to dollar cost averaging in Singapore"
 date: 2019-01-13
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <center>

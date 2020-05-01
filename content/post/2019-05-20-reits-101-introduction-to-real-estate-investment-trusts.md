@@ -1,7 +1,7 @@
 ---
 title: "REITs 101: Introduction to real estate investment trusts"
 date: 2019-05-20
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <center>

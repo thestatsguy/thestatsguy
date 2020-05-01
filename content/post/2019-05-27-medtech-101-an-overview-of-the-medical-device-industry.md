@@ -1,7 +1,7 @@
 ---
 title: "Medtech 101: An overview of the medical device industry"
 date: 2019-05-27
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <center>

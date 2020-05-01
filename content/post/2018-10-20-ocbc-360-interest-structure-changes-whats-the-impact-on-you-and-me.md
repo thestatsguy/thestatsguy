@@ -1,7 +1,7 @@
 ---
 title: "OCBC 360 Interest structure change: what's the impact on you and me?"
 date: 2018-10-20
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <p class="separator" style="text-align: center;"><a href="https://thestatsguyhome.files.wordpress.com/2018/10/76eb9-changes2beffective2b1nov.jpg"><img class=" aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/10/76eb9-changes2beffective2b1nov.jpg?w=300" width="640" height="529" border="0"></a>What's changed for the OCBC 360 account bonus interest structure</p>

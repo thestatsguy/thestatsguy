@@ -29,7 +29,7 @@ footnotereturnlinkcontents = "↩"
     weight = 5
 [[menu.main]]
     name = "Finance & Investing"
-    url = "/categories/investing/"
+    url = "/categories/finance-investing/"
     weight = 6
 [[menu.main]]
     name = "Corporate rat race"

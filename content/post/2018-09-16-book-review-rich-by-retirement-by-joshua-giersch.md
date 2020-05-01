@@ -1,7 +1,7 @@
 ---
 title: "[short] Book Review: Rich by Retirement by Joshua Giersch"
 date: 2018-09-16
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <center>

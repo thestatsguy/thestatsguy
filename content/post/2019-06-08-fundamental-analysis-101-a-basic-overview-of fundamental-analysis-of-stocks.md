@@ -1,7 +1,7 @@
 ---
 title: "Fundamental Analysis 101: A basic overview of the fundamental analysis of stocks"
 date: 2019-06-08
-categories: ["Investing"]
+categories: ["Finance & Investing"]
 ---
 
 <center>

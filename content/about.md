@@ -5,7 +5,7 @@ date: "2016-05-05T21:48:51-07:00"
 
 # About this blog
 
-This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – machine learning, investing, personal finances, analyzing financial data, and stoicism.
+This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – statistics, machine learning, investing, personal finance, analyzing financial data, and stoicism.
 
 <img src="https://i.redd.it/5193db0avbey.jpg" width="100%">
 <center>Too true to be funny? – [a post I saw on Reddit](https://www.reddit.com/r/ProgrammerHumor/comments/5si1f0/machine_learning_approaches/)</center>
