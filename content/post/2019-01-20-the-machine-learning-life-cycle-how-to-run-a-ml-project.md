@@ -1,5 +1,5 @@
 ---
-title: "The Machine Learning Life Cycle - how to run a ML project"
+title: "The Machine Learning Life Cycle: how to run a ML project"
 date: 2019-01-20
 categories: ["ML & Stats"]
 ---

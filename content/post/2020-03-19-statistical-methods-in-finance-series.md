@@ -1,5 +1,5 @@
 ---
-title: "[short] Statistical methods in finance series - SMFS Part 1"
+title: "[short] Statistical methods in finance series"
 date: "2020-03-19"
 categories: ["Stats finance"]
 ---
