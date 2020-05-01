@@ -20,7 +20,7 @@ footnotereturnlinkcontents = "↩"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Machine learning"
+    name = "ML & Stats"
     url = "/categories/machine-learning/"
     weight = 4
 [[menu.main]]
@@ -28,18 +28,21 @@ footnotereturnlinkcontents = "↩"
     url = "/categories/stats-finance/"
     weight = 5
 [[menu.main]]
-    name = "Investing"
+    name = "Finance & Investing"
     url = "/categories/investing/"
     weight = 6
 [[menu.main]]
+    name = "Corporate rat race"
+    url = "/categories/corporate-rat-race/"
+    weight = 7
+[[menu.main]]
     name = "Stoicism"
     url = "/categories/stoicism/"
-    weight = 7
+    weight = 8
 [[menu.main]]
     name = "Subscribe"
     url = "/index.xml"
 
 [params]
     description = "Explorations in topics that I enjoy the most."
-    footer = "&copy; [The Stats Guy](https:thestatsguy.rbind.io) 2020 | [GitHub](https://github.com/thestatsguy)"
-    
+    footer = "&copy; The Stats Guy 2020 | [Home](https://thestatsguy.netlify.app) | [GitHub](https://github.com/thestatsguy)"
