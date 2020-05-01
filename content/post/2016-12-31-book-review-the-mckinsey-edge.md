@@ -1,5 +1,5 @@
 ---
-title: 'Book Review: The McKinsey Edge'
+title: '[short] Book Review: The McKinsey Edge'
 author: ~
 date: '2016-12-31'
 slug: book-review-the-mckinsey-edge

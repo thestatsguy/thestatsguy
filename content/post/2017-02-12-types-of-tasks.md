@@ -1,5 +1,5 @@
 ---
-title: Types of tasks
+title: "[short] Types of tasks"
 author: ~
 date: '2017-02-12'
 slug: types-of-tasks

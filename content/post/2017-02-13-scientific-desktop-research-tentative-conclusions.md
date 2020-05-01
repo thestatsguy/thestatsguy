@@ -1,5 +1,5 @@
 ---
-title: 'Scientific desktop research: tentative conclusions'
+title: '[short] Scientific desktop research: tentative conclusions'
 author: ~
 date: '2017-02-13'
 slug: scientific-desktop-research-tentative-conclusions
