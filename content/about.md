@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About thestatsguy.rbind.io"
 date: "2016-05-05T21:48:51-07:00"
 ---
 

@@ -1,7 +1,7 @@
 baseurl = "https://thestatsguy.netlify.app/"
 languageCode = "en-us"
 title = "The Stats Guy"
-theme = "hugo-xmin"
+theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = "thestatsguy90"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
