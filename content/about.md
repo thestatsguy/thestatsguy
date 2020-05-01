@@ -51,12 +51,12 @@ Before this, I have tried various platforms:
 
 * [Google sites](https://sites.google.com/new) (mid 2014 to late 2015)
 * [Blogger](https://www.blogger.com) (twice! once in late 2016 to mid 2017 and again in late 2018)
-* [github.io](https://pages.github.com) (early 2019)
+* [Pelican](http://www.pelicanthemes.com/) + [Jupyter](https://jupyter.org/) + [GitHub Pages](https://pages.github.com) (early 2019)
 * [WordPress](https://wordpress.com) (late 2018 to mid 2019)
 
-Now, with thestatsguy.rbind.io technically being my 6th try, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here.
+Now, with thestatsguy.rbind.io technically being my 6th attempt, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here.
 
-### My focus - what I wrote
+### My focus for the past 10 years - 2010 to 2020
 
 Over the years, my world view, and together with it, my focus and my interests have changed. For example, I used to think that climbing the corporate ladder is a lofty goal that is worthy of my time and energy. I spent time understanding and strategizing about my work, my work environment and my colleagues at a deeper level, so that I can get more done with less time and then use that productivity to increase my chances of promotion. These days, I think less of these things. I try to focus more on myself and my development as an individual, and with life events unfolding one after another in the mid-2010s, Stoicism has been very critical in helping me reflect on and dissect these events, and learn more about myself and being human.
 
