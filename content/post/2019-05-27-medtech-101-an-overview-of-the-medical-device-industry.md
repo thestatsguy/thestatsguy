@@ -34,9 +34,12 @@ for the industry as a whole.</p>
 <p>Medical devices refer to a variety of mostly hardware instruments used in the diagnosis, treatment or prevention of a multitude of diseases. These instruments range from surgical gloves and masks, to advanced devices like drug-eluting stents (DES). Technologically simple products are competed in the market via price and volume, just like any other household or everyday products.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"align":"center"} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="https://www.mddionline.com/sites/default/files/images/Boston-Sci-Synergy-Stent.jpg" alt=""/><figcaption>Boston Scientific Synery Drug Eluting Stent system. <a href="https://www.mddionline.com/boston-scis-synergy-stent-worth-price">Source</a>.</figcaption></figure></div>
-<!-- /wp:image -->
+<center>
+<img src="https://www.mddionline.com/sites/default/files/images/Boston-Sci-Synergy-Stent.jpg" width="60%">
+</center>
+<center>
+Boston Scientific Synery Drug Eluting Stent system. [Source](https://www.mddionline.com/boston-scis-synergy-stent-worth-price)
+</center>
 
 <!-- wp:paragraph -->
 <p>What we are more interested in is the opposite end of this spectrum. Products like DES or other implantable medical devices (IMD) are technologically advanced and provide differentiated ways in treating complex diseases like heart arrhythmia and chronic arthritis. They are costly devices and are rarely paid for by individual patients – that is, their usage is co-paid or reimbursed by insurers or government healthcare schemes.</p>
@@ -66,11 +69,12 @@ for the industry as a whole.</p>
 <p>Following is an infographic published by Technavio.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.technavio.com/image/medical%20device%20market.jpg","type":"rich","providerNameSlug":"","className":""} -->
-<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
-https://www.technavio.com/image/medical%20device%20market.jpg
-</div><figcaption>Technavio Global Medical Devices Report 2018-2022. <a href="https://www.technavio.com/report/global-medical-devices-market-analysis-share-2018">Source</a>.</figcaption></figure>
-<!-- /wp:embed -->
+<center>
+<img src="https://www.technavio.com/image/medical%20device%20market.jpg" width="100%">
+</center>
+<center>
+Technavio Global Medical Devices Report 2018-2022. [Source](https://www.technavio.com/report/global-medical-devices-market-analysis-share-2018)
+</center>
 
 <!-- wp:paragraph -->
 <p>According to both the Fitch Solutions Global Medical Devices Report Q2 2019 as well as the Technavio Global Medical Devices Report 2018 -2022, the industry is forecasted to grow at a CAGR of about 5% or more, up to a forecasted market size of 460 billion by 2021.</p>
