@@ -193,8 +193,8 @@ Been wanting to do this consolidation for some time, so here goes. I won&amp;rsq
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</guid>
-      <description>Putting models together in an ensemble learning fashion is a popular technique amongst Data Scientists
-Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.</description>
+      <description>Putting models together in an ensemble learning fashion is a popular technique amongst data scientists 
+Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.</description>
     </item>
     
     <item>

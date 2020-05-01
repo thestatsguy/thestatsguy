@@ -14,7 +14,7 @@ This blog is simply an outlet for me to write, and in the process, reflect and a
 * __Machine learning and statistics__: the blog was so named “the stats guy” largely because that became my nickname amongst some friends. Also, there’s an increasing emphasis on hacking and e.g. layer-stacking in deep learning, with too little statistical groundings, as above. The subtle disregard of statistics in data science is unhealthy to say the least, and so here I write about certain ideas and principles that are, for the most part, neglected in analyzing and modelling data. Finally, I figured it’s more liberating to write behind a pseudonym of sorts.
 * __Finance, retail investing in Singapore__: there are plenty of materials out there regarding retail investing in US/UK, but not enough for those of us who live in Singapore. So I think aloud about this topic here as well.
 * __[Statistical finance](https://en.wikipedia.org/wiki/Statistical_finance)__: it’s sort of the overlap between my data science/statistics background and me managing my own money, so this is fun to me and comes naturally.
-* __[Corporate rat race](https://en.wikipedia.org/wiki/Rat_race)__: in here, I write a little bit being in the corporate rat race, how to survive, how to (try to) excel, and what's the endgame for everyone (including myself).
+* __[Corporate rat race](https://en.wikipedia.org/wiki/Rat_race)__: in here, I write a little bit about being in the corporate rat race, how to protect yourself survive, how to (try to) excel, and what's the endgame for everyone (including myself).
 * __[Stoicism](https://en.wikipedia.org/wiki/Stoicism)__: or rather, applied Stoicism. I spend some time exploring how Stoicism is helpful for ordinary people like me.
 
 # About me

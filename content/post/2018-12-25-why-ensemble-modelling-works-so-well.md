@@ -4,8 +4,13 @@ date: 2018-12-25
 categories: ["ML & Stats"]
 ---
 
-<p><img class=" size-full wp-image-81 aligncenter" src="https://thestatsguyhome.files.wordpress.com/2018/12/r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638.jpg" alt="r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638" width="638" height="479"></p>
-<p style="text-align: center;">Putting models together in an ensemble learning fashion is a popular technique amongst Data Scientists</p>
+<center>
+<img src="https://thestatsguyhome.files.wordpress.com/2018/12/r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638.jpg" width="100%">
+</center>
+<center>
+Putting models together in an ensemble learning fashion is a popular technique amongst data scientists
+</center>
+
 <p>Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It's a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.</p>
 <p>Ensemble learning is often introduced towards the end of any Data Science 101-type content, and often emphasized in terms of implementation rather than the underlying reason behind its success. It's also a question I get asked often.</p>
 <p>In this post I will conduct a simple statistical treatment to illustrate why ensemble learning works, and <strong>one important catch that most data scientists neglect</strong>.</p>
@@ -39,4 +44,4 @@ Var(<em>ens.</em>) = ⅓p(1-p) &lt; p(1-p) = Var(c<sub>1</sub>)</pre>
 <p>Clearly, we need our ensemble to be reliable and not wobble all over the place with high prediction variance. It's&nbsp;intuitive why the negligible correlation condition makes sense - correlated models would more often than not support each other and make the same yes/no predictions simultaneously, even if the given test case could jolly well be in the grey zone.</p>
 <p>In addition, it should be clear to you now that there's not much use in assembling strong learners together in an ensemble - they are likely to be accurate per se, and thereby correlated with each other with the test cases. All you are doing is to increase the variance of your predictions. On the other hand, putting a bunch of weak learners would make sense because they are likely to be less correlated amongst each other.</p>
 <p>Finally, the next time when someone presents an ensemble learning approach, ask if they ever consider the correlations amongst the underlying models. Odds are that they would take you a blank look and not sure why that's necessary :P</p>
-<p>(If you are interested to learn more about ensemble learning and how it works in algorithms like random forests, feel free to take a look at this <a href="https://github.com/tohweizhong/RUGS-RF" target="_blank" rel="noopener">repo</a> on my Github.)</p>
+<p>(If you are interested to learn more about ensemble learning and how it works in algorithms like random forests, feel free to take a look at this <a href="https://github.com/thestatsguy/RUGS-RF" target="_blank" rel="noopener">repo</a> on my Github.)</p>

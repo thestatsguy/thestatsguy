@@ -111,7 +111,6 @@ Updated interest structure (effective 1st Nov 2018)
 <p><u>DBS Multiplier account</u></p>
 <p>The <a href="https://www.dbs.com.sg/personal/landing/dbs-multiplier/">DBS Multiplier account</a> is by far one of the most lenient accounts when it comes to qualifying for bonus interest. There are five qualifying components, namely salary, credit card spend, home loan installments, insurance, and investments. The salary component is compulsory, and for every thing else, it's based on total flow of funds across 2 or 3 components. What do I mean by that?</p>
 <p>For example, if I have a salary credit of $3,000 per month, with just $1 spend on credit card and $1 on investments (I will explain this later), then it would be total flow of $3,002 across 3 components. This means I can qualify for 2.00% p.a. No minimum amounts on specific components, just considering total flow of funds. It's that simple.</p>
-
 <center>
 <img src="https://thestatsguyhome.files.wordpress.com/2018/11/51b97-capture.png" width="100%">
 </center>
