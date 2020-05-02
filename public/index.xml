@@ -138,13 +138,13 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
     </item>
     
     <item>
-      <title>[short] Using waterfall charts to visualize feature contributions</title>
-      <link>/post/2019/01/24/short-using-waterfall-charts-to-visualize-feature-contributions/</link>
+      <title>Using waterfall charts to visualize feature contributions</title>
+      <link>/post/2019/01/24/using-waterfall-charts-to-visualize-feature-contributions/</link>
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019/01/24/short-using-waterfall-charts-to-visualize-feature-contributions/</guid>
-      <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
-RegressionPreparationlibrary(MASS)library(caret)## Loading required package: lattice## Loading required package: ggplot2## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3library(magrittr)library(ggplot2)data(Boston)set.seed(123)# mean centeringb2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)train &amp;lt;- Boston[idx,]test &amp;lt;- Boston[-idx,]mod0 &amp;lt;- lm(data = train, medv ~.</description>
+      <guid>/post/2019/01/24/using-waterfall-charts-to-visualize-feature-contributions/</guid>
+      <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found here.
+Waterfall chart: a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term \(\beta_0\). The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample \([x_1, x_2, .</description>
     </item>
     
     <item>
@@ -165,6 +165,15 @@ Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-s
       
       <guid>/post/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</guid>
       <description>I recently came across this page in the DataRobot Artificial Intelligence Wiki. If you don&#39;t already know, DataRobot is currently one of the top automated machine learning platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning.</description>
+    </item>
+    
+    <item>
+      <title>[short] Feature Contribution - another way to think about feature importance</title>
+      <link>/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/</guid>
+      <description>A typical feature importance plot. Image source.  In many machine learning models, feature importance or variable importance is an important output from the model as it informs us about the relative or absolute importance of each feature in contributing to the model. More specifically, feature importance tells us which are the features that are highly differentiating, in the case of classification, and which are those that are not.</description>
     </item>
     
     <item>

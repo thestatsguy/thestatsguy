@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[short] Feature Contribution - another way to think about feature importance | The Stats Guy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/ml-stats/">ML &amp; Stats</a></li>
+      
+      <li><a href="/categories/stats-finance/">Stats finance</a></li>
+      
+      <li><a href="/categories/finance-investing/">Finance &amp; Investing</a></li>
+      
+      <li><a href="/categories/corporate-rat-race/">Corporate rat race</a></li>
+      
+      <li><a href="/categories/stoicism/">Stoicism</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">[short] Feature Contribution - another way to think about feature importance</span></h2>
+
+<h3 class="date">2019/01/14</h3>
+<h3>2min read</h3>
+</div>
+
+<main>
+<!-- wp:image -->
+
+<p><center>
+<figure class="wp-block-image"><img src="https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/XGBoost-Feature-Importance-Bar-Chart.png" alt=""/><figcaption>A typical feature importance plot. <a href="https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/XGBoost-Feature-Importance-Bar-Chart.png">Image source</a>.</figcaption></figure>
+</center>
+<!-- /wp:image --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>In many machine learning models, feature importance or variable importance is an important output from the model as it informs us about the relative or absolute importance of each feature in contributing to the model. More specifically, feature importance tells us which are the features that are highly differentiating, in the case of classification, and which are those that are not.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>However, one shortfall of feature importance is that it&rsquo;s global in nature - it informs the data scientist about the overall strength of the features as a whole in the dataset. What if something more granular and refined is required? Just because a feature is high up on the feature importance list does not mean that it&rsquo;s always important.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:heading {"level":3} -->
+
+<p><h3>Logistic regression as an example</h3>
+<!-- /wp:heading --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Suppose you have some logistic regression model in the form</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:preformatted -->
+
+<p><pre class="wp-block-preformatted">logit(p) =  β<sub>0</sub> + β<sub>1</sub>x<sub>1</sub> + &hellip; + β<sub>p</sub>x<sub>p</sub></pre>
+<!-- /wp:preformatted --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>For a given test case with p features, you would get the predicted probability by substituting each actualized feature value into the model (and do the inverse logit transformation). Naturally, different test cases would have different actualized feature value, summing up to different predicted probabilities.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Therefore, it&rsquo;s intuitive to think about how a feature contributes to the predicted probability of a given test case:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:preformatted -->
+
+<p><pre class="wp-block-preformatted">feature contribution of x<sub>k</sub> = |β<sub>k</sub>x<sub>k</sub>| / (|β<sub>0|</sub> + Σ|β<sub>i</sub>x<sub>i</sub>|) ∈ [0,1]</pre>
+<!-- /wp:preformatted --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>With this, we can say the x<sub>k</sub> contributes to the predicted probability of a given test case for some proportion or percentage, i.e. the feature contribution.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:heading {"level":3} -->
+
+<p><h3>Generalizing to tree-based models</h3>
+<!-- /wp:heading --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>This way of evaluating individual feature contribution can be generalized to beyond linear models. For example, in a decision tree, a given test case would have a given prediction pathway that it takes down the decision tree - passing through to multiple junctions in the tree. The gain or loss in predicted probabilities or predicted values can be tracked accordingly, leading to a similar notion of feature contribution.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Moreover, this can further generalized to ensemble models, such as Random Forest, ExtraTrees and even XGBoost.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>I leave you with these two blog posts and the treeinterpreter package in Python as it has already been explored:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:list -->
+
+<p><ul><li><a href="http://blog.datadive.net/interpreting-random-forests/">http://blog.datadive.net/interpreting-random-forests/</a></li><li><a href="https://blog.datadive.net/random-forest-interpretation-conditional-feature-contributions/">https://blog.datadive.net/random-forest-interpretation-conditional-feature-contributions/</a></li><li><a href="https://github.com/andosa/treeinterpreter">https://github.com/andosa/treeinterpreter</a></li></ul>
+<!-- /wp:list --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>That&rsquo;s all for this short post, hope it helps in bringing you to think slightly deeper about feature importance.</p>
+<!-- /wp:paragraph --></p>
+
+</main>
+
+  <footer>
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thestatsguy90" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165274801-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  
+  <hr/>
+  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  
+  </footer>
+  </body>
+</html>

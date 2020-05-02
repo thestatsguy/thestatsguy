@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>[short] Using waterfall charts to visualize feature contributions | The Stats Guy</title>
+    <title>Using waterfall charts to visualize feature contributions | The Stats Guy</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
@@ -34,7 +34,7 @@
     </nav>
 
 <div class="article-meta">
-<h2><span class="title">[short] Using waterfall charts to visualize feature contributions</span></h2>
+<h2><span class="title">Using waterfall charts to visualize feature contributions</span></h2>
 
 <h3 class="date">2019/01/24</h3>
 <h3>4min read</h3>
@@ -48,8 +48,8 @@
 <h2>Introduction</h2>
 <p>I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found <a href="https://github.com/thestatsguy/thestatsguy/blob/master/content/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions.Rmd">here</a>.</p>
 <ul>
-<li><p>Waterfall chart: a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term <span class="math inline">\(\beta_0\)</span>. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>, get the prediction, then visualize indivdiual feature contribution to the prediction <span class="math inline">\(\hat{y}\)</span>.</p></li>
-<li><p>Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>), but plotted by ranking the numeric contributions by their proportions relative to the prediction <code>contribution_proportion &lt;- feature_contribution / prediction</code>, written below as <code>cont_prop &lt;- featcont/pred</code>.</p></li>
+<li><p>Waterfall chart: a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term <span class="math inline">\(\beta_0\)</span>. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>, get the prediction, then visualize individual <strong>absolute</strong> feature contribution to the prediction <span class="math inline">\(\hat{y}\)</span>.</p></li>
+<li><p>Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>), but plotted by ranking the numeric contributions by their proportions <strong>relative</strong> to the prediction <code>contribution_proportion &lt;- feature_contribution / prediction</code>, written below as <code>cont_prop &lt;- featcont/pred</code>.</p></li>
 </ul>
 </div>
 <div id="regression" class="section level2">

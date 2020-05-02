@@ -1,5 +1,5 @@
 ---
-title: "[short] Using waterfall charts to visualize feature contributions"
+title: "Using waterfall charts to visualize feature contributions"
 #author: ""
 date: 2019-01-24
 categories: ["ML & Stats"]
@@ -12,7 +12,11 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 ## Introduction
 
-I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification.
+I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found [here](https://github.com/thestatsguy/thestatsguy/blob/master/content/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions.Rmd).
+
+- Waterfall chart: a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term $\beta_0$. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample $[x_1, x_2, ..., x_p]$, get the prediction, then visualize individual __absolute__ feature contribution to the prediction $\hat{y}$.
+
+- Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample $[x_1, x_2, ..., x_p]$), but plotted by ranking the numeric contributions by their proportions __relative__ to the prediction `contribution_proportion <- feature_contribution / prediction`, written below as `cont_prop <- featcont/pred`.
 
 ## Regression
 
