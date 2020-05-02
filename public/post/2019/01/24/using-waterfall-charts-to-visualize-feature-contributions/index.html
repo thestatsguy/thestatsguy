@@ -48,9 +48,13 @@
 <h2>Introduction</h2>
 <p>I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found <a href="https://github.com/thestatsguy/thestatsguy/blob/master/content/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions.Rmd">here</a>.</p>
 <ul>
-<li><p>Waterfall chart: a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term <span class="math inline">\(\beta_0\)</span>. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>, get the prediction, then visualize individual <strong>absolute</strong> feature contribution to the prediction <span class="math inline">\(\hat{y}\)</span>.</p></li>
-<li><p>Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>), but plotted by ranking the numeric contributions by their proportions <strong>relative</strong> to the prediction <code>contribution_proportion &lt;- feature_contribution / prediction</code>, written below as <code>cont_prop &lt;- featcont/pred</code>.</p></li>
+<li>Waterfall chart: inspired by their commonplace use in finance<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term <span class="math inline">\(\beta_0\)</span>. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>, get the prediction, then visualize individual <strong>absolute</strong> feature contribution to the prediction <span class="math inline">\(\hat{y}\)</span>.</li>
 </ul>
+<p><img src="https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png" /></p>
+<ul>
+<li>Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample <span class="math inline">\([x_1, x_2, ..., x_p]\)</span>), but plotted by ranking the numeric contributions by their proportions <strong>relative</strong> to the prediction<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> like this: <code>contribution_proportion = feature_contribution / prediction</code>, written below as <code>cont_prop &lt;- featcont/pred</code>.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png" /></p>
 </div>
 <div id="regression" class="section level2">
 <h2>Regression</h2>
@@ -223,6 +227,13 @@ if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
 gg</code></pre>
 <p><img src="/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/c_prep2-1.png" width="672" /></p>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Something like <a href="https://en.wikipedia.org/wiki/Waterfall_chart">this</a> or <a href="http://blog.slidemagic.com/2008/08/how-to-create-mckinsey-waterfall-chart.html">this</a>, for example<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>See <a href="https://thestatsguy.rbind.io/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/">this</a> on feature contributions.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
 
 </main>
