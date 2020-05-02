@@ -201,7 +201,7 @@ categories: ["Finance & Investing"]
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>That said, IS only provides two ETFs, the <a href="https://www.nikkoam.com.sg/etf/sti">G3B</a> and <a href="https://www.nikkoam.com.sg/etf/abf">A35</a>. Even for a <a href="https://www.bogleheads.org/wiki/Lazy_portfolios">lazy portfolio</a> consideration, this is insufficient. A Singaporean lazy portfolio could look like something like <a href="https://thestatsguy.home.blog/2018/09/16/book-review-rich-by-retirement-by-joshua-giersch/">IWDA.LN + ES3 + A35</a>, or any other variation on global equity exposure, local equity exposure, local bond exposure (e.g. <a href="https://www.nikkoam.com.sg/etf/sgd-investment-grade-corp-bond">MBH</a>), with or without EM exposure (e.g. <a href="https://www.bloomberg.com/quote/EIMI:LN">EIMI.LN</a>), small cap exposure or alternatives exposure (e.g. REITs).</p>
+<p>That said, IS only provides two ETFs, the <a href="https://www.nikkoam.com.sg/etf/sti">G3B</a> and <a href="https://www.nikkoam.com.sg/etf/abf">A35</a>. Even for a <a href="https://www.bogleheads.org/wiki/Lazy_portfolios">lazy portfolio</a> consideration, this is insufficient. A Singaporean lazy portfolio could look like something like <a href="https://thestatsguy.rbind.io/post/2018/09/16/short-book-review-rich-by-retirement-by-joshua-giersch/">IWDA.LN + ES3 + A35</a>, or any other variation on global equity exposure, local equity exposure, local bond exposure (e.g. <a href="https://www.nikkoam.com.sg/etf/sgd-investment-grade-corp-bond">MBH</a>), with or without EM exposure (e.g. <a href="https://www.bloomberg.com/quote/EIMI:LN">EIMI.LN</a>), small cap exposure or alternatives exposure (e.g. REITs).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -209,7 +209,7 @@ categories: ["Finance & Investing"]
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>(In particular, OVQ is one that I particular watched and took a slightly <a href="https://thestatsguy.home.blog/2018/10/20/analysis-of-the-phillip-sing-income-etf/">deeper look</a>. It's also my <a href="https://thestatsguy.home.blog/2019/04/06/portfolio-update-q1-2019/">largest position to date</a>.)</p>
+<p>(In particular, OVQ is one that I particular watched and took a slightly <a href="https://thestatsguy.rbind.io/post/2018/10/20/analysis-of-the-phillip-sing-income-etf/">deeper look</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -229,7 +229,7 @@ categories: ["Finance & Investing"]
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>I decided early on that the BCIP seems expensive relative to the others. Having started out with IS, I now use IS for G3B and A35, SBP for OVQ, MBH, and a variety of REITs and stocks, and MIP for <a href="https://sg.finance.yahoo.com/quote/JNJ?p=JNJ">JNJ.N</a>. You can take a catch a snapshot of my current portfolio <a href="https://thestatsguy.home.blog/2019/04/06/portfolio-update-q1-2019/">here</a>. That said, what that works for me may not work for you. Do your own research!</p>
+<p>I decided early on that the BCIP seems expensive relative to the others. Having started out with IS, I now use IS for G3B and A35, SBP for OVQ, MBH, and a variety of REITs and stocks, and MIP for <a href="https://sg.finance.yahoo.com/quote/JNJ?p=JNJ">JNJ.N</a>. That said, what that works for me may not work for you. Do your own research!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

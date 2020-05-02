@@ -35,7 +35,7 @@ Since there are folks who decided to spend the time and energy to study the appl
 
 # Stylized fact in statistical finance
 
-I previously (well, a year ago) wrote about [stylized facts](https://thestatsguy.netlify.com/2019/04/04/stylized-facts-in-statistical-finance/) in statistical finance, where I briefly listed without explanations various "facts". Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic. There are a number of well-known ones, such as:
+I previously (well, a year ago) wrote about [stylized facts](https://thestatsguy.rbind.io/post/2019/04/04/short-stylized-facts-in-statistical-finance/) in statistical finance, where I briefly listed without explanations various "facts". Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic. There are a number of well-known ones, such as:
 
 * Financial data has extremely low signal-to-noise ratio.
 * Price changes are less volatile in bull markets and more volatile bear markets.
