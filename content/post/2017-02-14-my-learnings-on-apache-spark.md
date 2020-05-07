@@ -1,8 +1,8 @@
 ---
-title: Learnings about Apache Spark
+title: My learnings on Apache Spark
 author: ~
 date: '2017-02-14'
-slug: learnings-about-apache-spark
+slug: my-learnings-on-apache-spark
 categories: ["ML & Stats"]
 tags: []
 ---

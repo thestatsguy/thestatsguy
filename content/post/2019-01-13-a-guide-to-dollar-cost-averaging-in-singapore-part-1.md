@@ -209,7 +209,7 @@ categories: ["Finance & Investing"]
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>(In particular, OVQ is one that I particular watched and took a slightly <a href="https://thestatsguy.rbind.io/post/2018/10/20/analysis-of-the-phillip-sing-income-etf/">deeper look</a></p>
+<p>(In particular, OVQ is one that I particular watched and took a slightly <a href="https://thestatsguy.rbind.io/post/2018/10/20/analysis-of-the-phillip-sing-income-etf/">deeper look)</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

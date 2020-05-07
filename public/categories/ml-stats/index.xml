@@ -129,11 +129,11 @@ Following is the most straightforward way to start use Git and Github in this no
     </item>
     
     <item>
-      <title>Learnings about Apache Spark</title>
-      <link>/post/2017/02/14/learnings-about-apache-spark/</link>
+      <title>My learnings on Apache Spark</title>
+      <link>/post/2017/02/14/my-learnings-on-apache-spark/</link>
       <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017/02/14/learnings-about-apache-spark/</guid>
+      <guid>/post/2017/02/14/my-learnings-on-apache-spark/</guid>
       <description>One simple way to optimise Spark jobs on YARN When submitting Spark jobs to YARN on the CLI, we would use a submission script that typically looks like the following:
 spark-submit \ --master yarn-cluster \ --driver-memory 20G \ --driver-cores 10 \ --executor-cores 10 \ --executor-memory 20G \ --num-executors 10 \ --total-executor-cores 100\ script_to_submit.py  These are options that allows the user to specify the amount of resources to allocate to the submitted job.</description>
     </item>

@@ -4,24 +4,35 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/2020/05/07/declining-interest-rates-amidst-covid-19-and-a-hidden-star/</loc>
+    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/finance-investing/</loc>
+    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/stats-finance/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/stats-finance/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -34,12 +45,6 @@
   <url>
     <loc>/post/2020/03/19/short-statistical-methods-in-finance-series/</loc>
     <lastmod>2020-03-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/finance-investing/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -176,7 +181,7 @@
   </url>
   
   <url>
-    <loc>/post/2017/02/14/learnings-about-apache-spark/</loc>
+    <loc>/post/2017/02/14/my-learnings-on-apache-spark/</loc>
     <lastmod>2017-02-14T00:00:00+00:00</lastmod>
   </url>
   
