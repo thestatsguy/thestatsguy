@@ -29,7 +29,7 @@ In any case, if you would like a chat, you can drop me a note at thestatsguy90[a
 
 ## [boring] Some history
 
-This blog you are looking at right now (mid 2020) is the result of years of trying to settle down on a platform and write content. Ever since I joined the workforce in Jul 2015, I have always wanted to have a consolidated place to write, consistently and painlessly. If you scrutinise a little on the post dates, it's quite obvious there are bouts of time over the years where I was able to diligently write, piece after piece, idea after idea. At the start it was just short writings (~2-3 mins of slow reading) with sporadic ideas, and over time the pieces became longer and (hopefully) more in-depth and interesting. In addition, what I paid attention to has changed over time as well.
+This blog you are looking at right now (mid 2020) is the result of years of trying to settle down on a platform and write content. Ever since I joined the workforce in July 2015, I have always wanted to have a consolidated place to write, consistently and painlessly. If you scrutinise a little on the post dates, it's quite obvious there are bouts of time over the years where I was able to diligently write, piece after piece, idea after idea. At the start it was just short writings (~2-3 mins of slow reading) with sporadic ideas, and over time the pieces became longer and (hopefully) more in-depth and interesting. In addition, what I paid attention to has changed over time as well.
 
 ### Blogging platform - now and then
 
@@ -51,10 +51,10 @@ Before this, I have tried various platforms:
 
 * [Google sites](https://sites.google.com/new) (mid 2014 to late 2015)
 * [Blogger](https://www.blogger.com) (twice! once in late 2016 to mid 2017 and again in late 2018)
-* [Pelican](http://www.pelicanthemes.com/) + [Jupyter](https://jupyter.org/) + [GitHub Pages](https://pages.github.com) (early 2019)
-* [WordPress](https://wordpress.com) (late 2018 to mid 2019)
+* [Pelican](http://www.pelicanthemes.com/) + [Jupyter](https://jupyter.org/) + [GitHub Pages](https://pages.github.com) (early 2019)^[Check [this](https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/) and [this](https://rasor.github.io/using-pelican-blog-on-github-pages.html) out if you are interested in this stack.]
+* [WordPress](https://wordpress.com) (late 2018 to mid 2019)^[This is still alive [here](https://thestatsguy.home.blog/) by the way, with weeds growing here and there.]
 
-Now, with thestatsguy.rbind.io technically being my 6th attempt, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here.
+Now, with thestatsguy.rbind.io technically being my 6th attempt, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here^[However, I still reference static links of images like [this one](https://thestatsguyhome.files.wordpress.com/2018/12/SSB.jpg) (look at the URL) in my WordPress blog from thestatsguy.rbind.io - something that I have been procrastinating to migrate and fix since it's going to be a boring and time-consuming task. I may never bother to fix this.].
 
 ### [even more boring] My focus for the past 10 years - 2010 to 2020
 
@@ -64,6 +64,6 @@ Nonetheless, some interests didn't change. I was and am still interested in fina
 
 During my NUS days was when data science took the world by storm, and so during the early part of 2010s (2011 to 2016), I spend the most of those years understanding machine learning, data science, data analytics - through my B.Sc degree as well as later, honing my skills on the job as a data science consultant. For a year or so, I also briefly dabbled with product management (of data analytics products).  However, after a while, my focus shifted more to statistics (even matriculating in a M.Sc course in statistics in 2017), after realising that half the time in ML, most people don't have the fundamentals to treat data in the right manner (e.g. Kaggle). Throughout this time, R remained to be my language of choice for many tasks - my first contact with R was during an internship I did in 2012.
 
-At the same time, as a young professional, my humble net worth started to grow, with salary coming in month after month. I started to spend time understanding investing as a retail investor, to "make my money work for me". Mid 2018 was the first time I shifted from simply reading and researching, to putting money where my mind or mouth is. That's when I started writing more on investing as well - and now, also coming back to think more about the use of statistics in finance.
+At the same time, as a young professional, my humble net worth started to grow, with salary coming in month after month. I started to spend time understanding investing as a retail investor, to "make my money work for me". Mid 2018 was the first time I shifted from simply reading and researching, to putting money to where my mind or mouth is. That's when I started writing more on investing as well - and now, also coming back to think more about the use of statistics in finance.
 
 Looking back, I guess it turns out that these topics - R, statistics, machine learning, finance, investing, understanding paid work, employment and the corporate world, stoicism, and others, have very much defined my 20s as a young adult. I enjoy studying and writing about these topics, and I hope that you, the reader will enjoy reading my take on them as well.

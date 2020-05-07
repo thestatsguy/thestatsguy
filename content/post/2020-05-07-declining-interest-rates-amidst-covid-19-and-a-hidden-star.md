@@ -43,7 +43,7 @@ The effective interest rates is now 1.796% for 75K. On the upside, UOB has retai
 Article from The Business Times 5th May 2020. 
 </center>
 
-In particular, SSB rates have fallen significantly over the past months, since early 2019. The June 2020 issue of SSB has a first year yield of 0.57% (10-year yield average of 1.05%) - the lowest it has ever been since the launch of SSBs in 2015.
+SSB rates have fallen significantly over the past months, since early 2019. The June 2020 issue of SSB has a first year yield of 0.57% (10-year yield average of 1.05%) - the lowest it has ever been since the launch of SSBs in 2015.
 
 <center>
 <img src="https://investmentmoats.com/wp-content/uploads/2020/05/20200506-Singapore-Savings-Bond-1.png" width="100%">
