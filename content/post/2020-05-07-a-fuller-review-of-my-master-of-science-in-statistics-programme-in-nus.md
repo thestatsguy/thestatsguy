@@ -83,12 +83,22 @@ Turns out that I got a decent number of views on this post. Not bad considering 
 <img src=>
 </center>
 
-#### A fuller review
+### A fuller review
 
 Since there is **_some_** interest in this topic, I thought I would spend some time in this post to do a more complete review of the programme.
 
-* Review on the stats modules that I took
+* Review of some the stats modules that I took
 * How I went about my life while being a part-time student
-* 
+* Some hacks
 
-WIP
+### Some of the modules that I took
+
+#### ST5201 Basic Statistical Theory
+
+#### ST5202 Applied Regression Analysis
+
+#### ST5225 Statistical Analysis of Networks
+
+#### ST5218 Advanced Statistical Methods in Finance
+
+#### ST5211 Sampling From Finite Populations
