@@ -1,7 +1,7 @@
 ---
 title: "A fuller review of my Master of Science in Statistics programme in NUS"
 author: ~
-date: '2020-05-07'
+date: '2020-05-10'
 slug: a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus
 categories: ["ML & Stats"]
 tags: []
@@ -195,7 +195,7 @@ Of all the MSc modules that I took, this one stands out to be my favorite and re
 * Copulae: tail dependence of asset prices
 * Estimation of covariance matrix and optimization: Markowitz’s portfolio theory
 
-There are many other topics that would just as well fit into the theme of the module, but unfortunately 13 weeks isn't a very long time. I was taught by Prof Xia Yingcun and he is a great lecturer who painstakingly explains each and every little detail and concept so that it's clear for his students^[Other than [copulae](https://en.wikipedia.org/wiki/Copula_(probability_theory)). I had a tough time understanding and appreciating the concept of a copula, and happened to find this [blog post](https://twiecki.io/blog/2018/05/03/copulas/) do an expert job at demystifying it.]. I highly recommend this module if you have a chance to take it.
+There are many other topics that could just as well fit into the theme of the module, but unfortunately 13 weeks isn't a very long time. I was taught by Prof Xia Yingcun and he is a great lecturer who painstakingly explains each and every little detail and concept so that it's clear for his students^[Other than [copulae](https://en.wikipedia.org/wiki/Copula_(probability_theory)). I had a tough time understanding and appreciating the concept of a copula, and happened to find this [blog post](https://twiecki.io/blog/2018/05/03/copulas/) do an expert job at demystifying it.]. I highly recommend this module if you have a chance to take it.
 
 #### ST5211 Sampling From Finite Populations
 
@@ -203,10 +203,10 @@ There are many other topics that would just as well fit into the theme of the mo
 <img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_sampling.png" width="80%">
 </center>
 <center>
-Sample content in Sampling from Finite Populations - Regression Estimation of popluation parameters
+Sample content in Sampling from Finite Populations - Regression Estimation of population parameters
 </center>
 
-Finally, ST5211 Sampling From Finite Populations is my very last module during the MSc. I was taught by Prof Zhou Wang, who is also painstakingly explains every detail to his students.
+Finally, ST5211 Sampling From Finite Populations is my very last module during the MSc. I was taught by Prof Zhou Wang, who also painstakingly explains every detail to his students.
 
 * Simple random sampling
 * Stratified sampling
@@ -242,7 +242,7 @@ Finally, this course is also eligible for Course Fees Relief for your Income Tax
 
 ### How I went about my life while being a part-time student
 
-My time as a part-time student (2.5 years^[Throughout the 2.5 years, I had in fact switched jobs twice (another story for another time). Guess this didn't really affect anything for my studying, other than going to school from different workplaces, and figuring out different printer settings in 3 offices to print my lecture notes.] in total) basically flew by, simply because of the packed schedules and constant back and forth between work and school. Since most lectures happened between 7pm to 10pm on weeknights, on lecture nights I would (gladly) leave work on time or early and make my way to school for dinner and lecture. I tried very much to not skip any lectures regardless of lecture recordings, but this proved to be occasionally impossible. And there were nights where I was simply too exhausted to go to school and sit for 3 hours to absorb content. While most of the time I would take MRT/bus to school, sometimes I would splurge a little and take a Grab. It was always good to reach school earlier, so that I can take my time with my dinner and enjoy the cheap Science canteen food and a cup of coffee.
+My time as a part-time student (2.5 years in total^[Throughout the 2.5 years, I had in fact switched jobs twice (another story for another time). Guess this didn't really affect anything for my studying, other than going to school from different workplaces, and figuring out different printer settings in 3 offices to print my lecture notes.]) basically flew by, simply because of the packed schedules and constant back and forth between work and school. Since most lectures happened between 7pm to 10pm on weeknights, on lecture nights I would (gladly) leave work on time or early and make my way to school for dinner and lecture. I tried very much to not skip any lectures regardless of lecture recordings, but this proved to be occasionally impossible. And there were nights where I was simply too exhausted to go to school and sit for 3 hours to absorb content. While most of the time I would take MRT/bus to school, sometimes I would splurge a little and take a Grab. It was always good to reach school earlier, so that I can take my time with my dinner and enjoy the cheap Science canteen food and a cup of coffee.
 
 On most non-lecture nights I typically don't touch any of my schoolwork - but I would dedicate one day of my weekend (usually the Sunday) to catch up on lectures and work on tutorials and assignments. During these days, I would spend the day in Utown and sort of "blend in" with the other undergraduates. If it's not at Utown, then I would either spend the day in the Medical library or the Science library. Either way, there is still plenty of cheap food and coffee in school to replenish myself throughout my mugging.
 
