@@ -6,7 +6,7 @@
 
 {{ .Content }}
 
-<ul>
+<ol reversed>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
@@ -15,6 +15,6 @@
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
-</ul>
+</ol>
 
 {{ partial "footer.html" . }}

@@ -102,6 +102,11 @@ Since there is **_some_** interest in this topic, I thought I would spend some t
 
 * Admission and logistics
 * Review of some of the stats modules I took
+    * ST5201 Basic Statistical Theory
+    * ST5202 Applied Regression Analysis
+    * ST5225 Statistical Analysis of Networks
+    * ST5218 Advanced Statistical Methods in Finance
+    * ST5211 Sampling From Finite Populations
 * Some relevant Singaporean hacks
     * SkillsFuture Credit
     * Post-Secondary Education Account (PSEA)
