@@ -16,9 +16,7 @@ In this post, I would like to talk about modern portfolio theory (MPT), a key to
 
 > (MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset's risk and return should not be assessed by itself, but by how it contributes to a portfolio's overall risk and return. It uses the variance of asset prices as a proxy for risk.
 
-The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or _risk premium_? It wouldn't make sense.
-
-(Now, it's probably worthy to point out here that in this framework, risk equates to the standard deviation of portfolio's returns - which in my personal opinion is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let's stick to this for now.)
+The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or __risk premium__? It wouldn't make sense. Note that in this and many statistical finance framework, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio^[In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let's stick to this for now.].
 
 ---
 
@@ -30,14 +28,14 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 ## Problem formulation
 
-Suppose there are $N$ assets with returns $R_i, i = 1, ..., N$ respectively, where $\mathbf{R} = (R_1, ..., R_N)^{T}$.
+Suppose there are $N$ assets with $R_i, i = 1, ..., N$ denoting the random variables that represent their respective returns in a given time period, and $\mathbf{R} = (R_1, ..., R_N)^{T}$.
 
-Their expected returns and risks are respectively
+Their returns and risks are respectively
 
 $$
 \begin{array}{c}
 r_i = ER_i \\\
-\sigma_i = \sigma_{R_i}\\\
+\sigma_i = Var(R_i)\\\
 cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
 \end{array}
 $$
@@ -45,19 +43,19 @@ We can then form a portfolio consisting of the $N$ assets such that
 
 $$
 \begin{array}{c}
-R_p = w_1R_1 + ... + w_NR_N = w^TR,
+R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 \end{array}
 $$
 
-where $R_p$ is the return of the portfolio and $w_i$ is the weight of the $i$th asset in the portfolio, with
+where $R_{pf}$ is the return of the portfolio and $w_i$ is the weight of the $i$th asset in the portfolio, with
 
 $$\sum_{i = 1}^{N} w_i = 1$$
 
-In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose $w = (w_1, ..., w_N)^T$ such that expected returns are maximised while minimising risk?
+In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose $\mathbf{w} = (w_1, ..., w_N)^T$ such that expected returns are maximised while minimising risk?
 
 ### Portfolio weights
 
-A technical point to bring out here is that while $\sum_{i = 1}^{N} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. _short selling_. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
+A technical point to bring out here is that while $\sum_{i = 1}^{N} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. __short selling__. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
 
 ---
 
@@ -71,22 +69,59 @@ Holding a **_long_** position in a particular asset simply means buying that par
 
 With this set-up, the expectation and variance of the portfolio would be
 
-$$ER_p = \sum_iw_iER_i = w^TER$$
-$$\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}$$
+$$ER_{pf} = \sum_iw_iER_i = \mathbf{w}^TE\mathbf{R}$$
+$$Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}$$
 where $\sigma_{ij}$ is the covariance between the $i$th and $j$th asset.
 
 Alternatively,
 
-$$\sigma_p^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w$$
+$$Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}$$
+
+## A note on diversification
+
+We all know "not to put our eggs in one basket", and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion) would indicate that we would rather minimize the risk of losing it all in a single stock.
+
+In this sense, what divserification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset's relationships with the others, in terms of correlations.
+
+This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.
+
+Let's consider two instructive examples.
+
+### Two uncorrelated assets
+
+Suppose we have 2 assets with returns $R_1$ and $R_2$, with the same mean and variance:
+
+$$
+\begin{array}{}
+ER_1 = ER_2 = \mu \\\
+Var(R_1) = Var(R_2) = \sigma^2
+\end{array}
+$$
+Also, $R_1$ and $R_2$ are uncorrelated, i.e. $\rho_{12} = 0$.
+
+Investing 100% in either $R_1$ or $R_2$ would yield exactly the same return and the same risk. Now consider a portfiolio with some weight on both assets. Let $w$ be the weight for $R_1$ - then we would have $1-w$ for $R_2$. In this portfolio, we would have
+
+$$ER_{pf} = wER_1 + (1-w)ER_2 = w\mu + (1-w)\mu = \mu$$
+With this, we know that the return of this portfolio does not depend on $w$.
+
+However, given that the assets are uncorrelated, we would have
+
+$$Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + cov(R_1, R_2)$$
+where $cov(R_1, R_2) = 0$.
+
+So, we would have
+
+$$Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2$$
+When $w$ = $0$ or $1$, we would have $Var(R_{pf}) = \sigma^2$. However, for any other value of $w$, $0<w<1$, we would have $Var(R_{pf}) < \sigma^2$^[In particular, choosing $w$ = $\frac{1}{2}$ minimizes $Var(R_{pf})$ at $\frac{\sigma}{\sqrt{2}}$.].
 
 ## Starting with two assets
 
-Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_p$ is large and $\sigma_p^2$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
+Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_{pf}$ is large and $Var(R_{pf})$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
 
 $$
 \begin{array}{c}
 ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
-\sigma_p^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
 w_1+w_2 = 1, w_2 = 1 - w_1
 \end{array}
 $$

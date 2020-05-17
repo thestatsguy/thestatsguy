@@ -14,8 +14,7 @@ categories: ["Stats finance"]
 <blockquote>
 <p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
 </blockquote>
-<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <em>risk premium</em>? It wouldn’t make sense.</p>
-<p>(Now, it’s probably worthy to point out here that in this framework, risk equates to the standard deviation of portfolio’s returns - which in my personal opinion is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.)</p>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance framework, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
@@ -23,27 +22,27 @@ categories: ["Stats finance"]
 </div>
 <div id="problem-formulation" class="section level2">
 <h2>Problem formulation</h2>
-<p>Suppose there are <span class="math inline">\(N\)</span> assets with returns <span class="math inline">\(R_i, i = 1, ..., N\)</span> respectively, where <span class="math inline">\(\mathbf{R} = (R_1, ..., R_N)^{T}\)</span>.</p>
-<p>Their expected returns and risks are respectively</p>
+<p>Suppose there are <span class="math inline">\(N\)</span> assets with <span class="math inline">\(R_i, i = 1, ..., N\)</span> denoting the random variables that represent their respective returns in a given time period, and <span class="math inline">\(\mathbf{R} = (R_1, ..., R_N)^{T}\)</span>.</p>
+<p>Their returns and risks are respectively</p>
 <p><span class="math display">\[
 \begin{array}{c}
 r_i = ER_i \\\
-\sigma_i = \sigma_{R_i}\\\
+\sigma_i = Var(R_i)\\\
 cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
 \end{array}
 \]</span>
 We can then form a portfolio consisting of the <span class="math inline">\(N\)</span> assets such that</p>
 <p><span class="math display">\[
 \begin{array}{c}
-R_p = w_1R_1 + ... + w_NR_N = w^TR,
+R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 \end{array}
 \]</span></p>
-<p>where <span class="math inline">\(R_p\)</span> is the return of the portfolio and <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
+<p>where <span class="math inline">\(R_{pf}\)</span> is the return of the portfolio and <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
 <p><span class="math display">\[\sum_{i = 1}^{N} w_i = 1\]</span></p>
-<p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(w = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+<p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(\mathbf{w} = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
 <div id="portfolio-weights" class="section level3">
 <h3>Portfolio weights</h3>
-<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <em>short selling</em>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
@@ -52,20 +51,47 @@ R_p = w_1R_1 + ... + w_NR_N = w^TR,
 <div id="portfolio-expectation-and-variance" class="section level3">
 <h3>Portfolio expectation and variance</h3>
 <p>With this set-up, the expectation and variance of the portfolio would be</p>
-<p><span class="math display">\[ER_p = \sum_iw_iER_i = w^TER\]</span>
-<span class="math display">\[\sigma_N^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
+<p><span class="math display">\[ER_{pf} = \sum_iw_iER_i = \mathbf{w}^TE\mathbf{R}\]</span>
+<span class="math display">\[Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
 where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between the <span class="math inline">\(i\)</span>th and <span class="math inline">\(j\)</span>th asset.</p>
 <p>Alternatively,</p>
-<p><span class="math display">\[\sigma_p^2 = \sum_i\sum_jw_iw_j\sigma_{ij} = w_T\Sigma w\]</span></p>
+<p><span class="math display">\[Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}\]</span></p>
+</div>
+</div>
+<div id="a-note-on-diversification" class="section level2">
+<h2>A note on diversification</h2>
+<p>We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, <a href="https://en.wikipedia.org/wiki/Loss_aversion">loss aversion</a> would indicate that we would rather minimize the risk of losing it all in a single stock.</p>
+<p>In this sense, what divserification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.</p>
+<p>This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.</p>
+<p>Let’s consider two instructive examples.</p>
+<div id="two-uncorrelated-assets" class="section level3">
+<h3>Two uncorrelated assets</h3>
+<p>Suppose we have 2 assets with returns <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>, with the same mean and variance:</p>
+<p><span class="math display">\[
+\begin{array}{}
+ER_1 = ER_2 = \mu \\\
+Var(R_1) = Var(R_2) = \sigma^2
+\end{array}
+\]</span>
+Also, <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span> are uncorrelated, i.e. <span class="math inline">\(\rho_{12} = 0\)</span>.</p>
+<p>Investing 100% in either <span class="math inline">\(R_1\)</span> or <span class="math inline">\(R_2\)</span> would yield exactly the same return and the same risk. Now consider a portfiolio with some weight on both assets. Let <span class="math inline">\(w\)</span> be the weight for <span class="math inline">\(R_1\)</span> - then we would have <span class="math inline">\(1-w\)</span> for <span class="math inline">\(R_2\)</span>. In this portfolio, we would have</p>
+<p><span class="math display">\[ER_{pf} = wER_1 + (1-w)ER_2 = w\mu + (1-w)\mu = \mu\]</span>
+With this, we know that the return of this portfolio does not depend on <span class="math inline">\(w\)</span>.</p>
+<p>However, given that the assets are uncorrelated, we would have</p>
+<p><span class="math display">\[Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + cov(R_1, R_2)\]</span>
+where <span class="math inline">\(cov(R_1, R_2) = 0\)</span>.</p>
+<p>So, we would have</p>
+<p><span class="math display">\[Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2\]</span>
+When <span class="math inline">\(w\)</span> = <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) = \sigma^2\)</span>. However, for any other value of <span class="math inline">\(w\)</span>, <span class="math inline">\(0&lt;w&lt;1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) &lt; \sigma^2\)</span><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 </div>
 </div>
 <div id="starting-with-two-assets" class="section level2">
 <h2>Starting with two assets</h2>
-<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_p\)</span> is large and <span class="math inline">\(\sigma_p^2\)</span> is small. We can start solving this problem by first considering <span class="math inline">\(p = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between 2 assets only. Inevitably, we would have</p>
+<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is large and <span class="math inline">\(Var(R_{pf})\)</span> is small. We can start solving this problem by first considering <span class="math inline">\(p = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between 2 assets only. Inevitably, we would have</p>
 <p><span class="math display">\[
 \begin{array}{c}
 ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
-\sigma_p^2 = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
 w_1+w_2 = 1, w_2 = 1 - w_1
 \end{array}
 \]</span>
@@ -73,4 +99,11 @@ where <span class="math inline">\(\rho_{12}\)</span> is trhe correlation between
 </div>
 <div id="wip" class="section level2">
 <h2>WIP</h2>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>In particular, choosing <span class="math inline">\(w\)</span> = <span class="math inline">\(\frac{1}{2}\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span> at <span class="math inline">\(\frac{\sigma}{\sqrt{2}}\)</span>.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
