@@ -17,12 +17,13 @@ output:
 <li><a href="#portfolio-weights">Portfolio weights</a></li>
 <li><a href="#portfolio-expectation-and-variance">Portfolio expectation and variance</a></li>
 </ul></li>
-<li><a href="#a-note-on-diversification">A note on diversification</a><ul>
+<li><a href="#the-math-behind-diversification">The math behind diversification</a><ul>
 <li><a href="#two-uncorrelated-assets">Two uncorrelated assets</a></li>
 <li><a href="#two-correlated-assets">Two correlated assets</a></li>
 </ul></li>
 <li><a href="#starting-with-two-assets">Starting with two assets</a><ul>
 <li><a href="#efficient-portfolios">Efficient Portfolios</a></li>
+<li><a href="#minimum-variance-portfolio">Minimum variance portfolio</a></li>
 </ul></li>
 <li><a href="#wip">WIP</a></li>
 </ul>
@@ -78,8 +79,8 @@ where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between
 <p><span class="math display">\[Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}\]</span></p>
 </div>
 </div>
-<div id="a-note-on-diversification" class="section level2">
-<h2>A note on diversification</h2>
+<div id="the-math-behind-diversification" class="section level2">
+<h2>The math behind diversification</h2>
 <p>We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, <a href="https://en.wikipedia.org/wiki/Loss_aversion">loss aversion</a> would indicate that we would rather minimize the risk of losing it all in a single stock.</p>
 <p>In this sense, what divserification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.</p>
 <p>This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.</p>
@@ -171,30 +172,56 @@ plot(risks, returns,
 <li>For every possible value of return, there is one corresponding value of risk.</li>
 <li>However, for every possible value of risk, there are two corresponding values of returns.</li>
 </ul>
-<p>Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half, and we would want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the minimum risk portfolio.</p>
+<p>Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half. In particular, each combination in the top half of the plot are considered as <strong>efficient portfolios</strong>. At this point, we might also want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the <strong>minimum variance portfolio</strong>.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p><strong><em>Efficient portfolios</em></strong> lie on on the <a href="https://en.wikipedia.org/wiki/Efficient_frontier"><strong>efficient frontier</strong></a>, the top half of our plot. By definition, the efficient frontier consists of portfolios such that for each of these portfolios and their respective returns, there exists no other portfolios that carries a lower portfolio risk for a given return (hence “efficient”<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>). The <strong>minimum variance portfolio</strong> is one special case of an efficient portfolio - no other portfolios carries a lower portfolio risk than itself, and is the leftmost point of our plot.</p>
+<hr />
 <pre class="r"><code>min_risk_w &lt;- weights[which(risks == min(risks))]
 min_risk_return &lt;- mean(cal_pf_return(min_risk_w))
 
-plot(risks, returns,
+efficient_idx &lt;- which(returns &gt;= min_risk_return)
+inefficient_idx &lt;- which(returns &lt; min_risk_return)
+
+plot(risks[efficient_idx], returns[efficient_idx],
      xlab = &quot;Portfolio risk&quot;,
      ylab = &quot;Portfolio return&quot;,
-     main = &quot;Risk-return relationship across weights&quot;)
+     main = &quot;The Efficient Frontier&quot;,
+     ylim = c(0,0.2), xlim = c(0.002, 0.01))
 
-abline(h = min_risk_return)</code></pre>
+lines(risks[inefficient_idx], returns[inefficient_idx], lty = &quot;dotted&quot;)
+
+abline(h = min_risk_return)
+text(x = 0.003, y = min_risk_return-0.01, &quot;min variance portfolio&quot;)
+text(x = 0.006, y = 0.15, &quot;efficient frontier&quot;)</code></pre>
 <p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="minimum-variance-portfolio" class="section level3">
+<h3>Minimum variance portfolio</h3>
+<p>In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing <span class="math inline">\(Var(R_{pf})\)</span>.</p>
 </div>
 </div>
 <div id="wip" class="section level2">
 <h2>WIP</h2>
-<p><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
+<ul>
+<li>min variance portfolio</li>
+<li>lagrangian multiplier</li>
+<li>risk free assets</li>
+<li>one risky and one risk free asset</li>
+<li>sharpe ratio, tangency portfolio</li>
+<li>generalise to N assets</li>
+<li>r examples</li>
+</ul>
+<p><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>.</p>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 <li id="fn2"><p>In particular, choosing <span class="math inline">\(w\)</span> = <span class="math inline">\(\frac{1}{2}\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span> at <span class="math inline">\(\frac{\sigma}{\sqrt{2}}\)</span>.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming that this is indeed true, consider the two subdomains <span class="math inline">\(\rho_{12} &lt; 0\)</span> and <span class="math inline">\(\rho_{12} &gt; 0\)</span>. We have <span class="math inline">\(\forall\rho_{12} &lt; 0, Var(R_{pf}) &lt; \frac{1}{2}\sigma^2\)</span> and <span class="math inline">\(\forall\rho_{12} &gt; 0, Var(R_{pf}) &gt; \frac{1}{2}\sigma^2\)</span>, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and <a href="https://www.investopedia.com/terms/s/strategicassetallocation.asp">strategic asset allocation</a>. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming this is true, consider the two subdomains <span class="math inline">\(\rho_{12} &lt; 0\)</span> and <span class="math inline">\(\rho_{12} &gt; 0\)</span>. We have <span class="math inline">\(\forall\rho_{12} &lt; 0, Var(R_{pf}) &lt; \frac{1}{2}\sigma^2\)</span> and <span class="math inline">\(\forall\rho_{12} &gt; 0, Var(R_{pf}) &gt; \frac{1}{2}\sigma^2\)</span>, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and <a href="https://www.investopedia.com/terms/s/strategicassetallocation.asp">strategic asset allocation</a>. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future. Also, the math here is similar to that of <a href="https://thestatsguy.rbind.io/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/">ensemble modelling</a> in machine learning.<a href="#fnref3" class="footnote-back">↩</a></p></li>
 <li id="fn4"><p>Of course the challenge in real life is to estimate them using historical data.<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>Again, for simplification, we only consider long positions <span class="math inline">\(0 \leqslant w \leqslant 1\)</span>, <code>weights &lt;- seq(0, 1, by = 0.01)</code> in this post. If short positions are considered, then <span class="math inline">\(-\infty \leqslant w \leqslant \infty\)</span>.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>The same way an estimator <span class="math inline">\(\hat{\theta}\)</span> is <a href="https://en.wikipedia.org/wiki/Efficient_estimator">efficient</a> if <span class="math inline">\(Var(\hat{\theta})\)</span> is minimized.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>Again, for simplification, we only consider long positions <span class="math inline">\(0 \leqslant w \leqslant 1\)</span>, <code>weights &lt;- seq(0, 1, by = 0.01)</code> in this post. If short positions are considered, then <span class="math inline">\(-\infty \leqslant w \leqslant \infty\)</span>.<a href="#fnref6" class="footnote-back">↩</a></p></li>
 </ol>
 </div>

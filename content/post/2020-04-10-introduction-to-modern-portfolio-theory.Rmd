@@ -80,7 +80,7 @@ Alternatively,
 
 $$Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}$$
 
-## A note on diversification
+## The math behind diversification
 
 We all know "not to put our eggs in one basket", and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion) would indicate that we would rather minimize the risk of losing it all in a single stock.
 
@@ -126,7 +126,7 @@ Var(R_{pf}) = \frac{1}{4}Var(R_1) + \frac{1}{4}Var(R_2) + 2\frac{1}{2}\frac{1}{2
 = \frac{1}{4}\sigma^2 + \frac{1}{4}\sigma^2 + \frac{1}{2}\rho_{12}\sigma^2 \\\
 = \frac{1}{2}(1+\rho_{12})\sigma^2
 $$
-Therefore, for any value of $\rho_{12}$, $-1 < \rho_{12} < 1$, $Var(R_{pf}) < \sigma^2$^[It's commonly said that stocks and bonds are considered to be negatively correlated. Assuming that this is indeed true, consider the two subdomains $\rho_{12} < 0$ and $\rho_{12} > 0$. We have $\forall\rho_{12} < 0, Var(R_{pf}) < \frac{1}{2}\sigma^2$ and $\forall\rho_{12} > 0, Var(R_{pf}) > \frac{1}{2}\sigma^2$, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and [strategic asset allocation](https://www.investopedia.com/terms/s/strategicassetallocation.asp). This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future.].
+Therefore, for any value of $\rho_{12}$, $-1 < \rho_{12} < 1$, $Var(R_{pf}) < \sigma^2$^[It's commonly said that stocks and bonds are considered to be negatively correlated. Assuming this is true, consider the two subdomains $\rho_{12} < 0$ and $\rho_{12} > 0$. We have $\forall\rho_{12} < 0, Var(R_{pf}) < \frac{1}{2}\sigma^2$ and $\forall\rho_{12} > 0, Var(R_{pf}) > \frac{1}{2}\sigma^2$, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and [strategic asset allocation](https://www.investopedia.com/terms/s/strategicassetallocation.asp). This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future. Also, the math here is similar to that of [ensemble modelling](https://thestatsguy.rbind.io/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/) in machine learning.].
 
 ## Starting with two assets
 
@@ -190,21 +190,50 @@ Take a look at the plot above. Notice that
 * For every possible value of return, there is one corresponding value of risk.
 * However, for every possible value of risk, there are two corresponding values of returns.
 
-Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half, and we would want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the minimum risk portfolio.
+Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half. In particular, each combination in the top half of the plot are considered as __efficient portfolios__. At this point, we might also want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the __minimum variance portfolio__.
+
+---
+
+**_Terminology_**
+
+**_Efficient portfolios_** lie on on the [__efficient frontier__](https://en.wikipedia.org/wiki/Efficient_frontier), the top half of our plot. By definition, the efficient frontier consists of portfolios such that for each of these portfolios and their respective returns, there exists no other portfolios that carries a lower portfolio risk for a given return (hence "efficient"^[The same way an estimator $\hat{\theta}$ is [efficient](https://en.wikipedia.org/wiki/Efficient_estimator) if $Var(\hat{\theta})$ is minimized.]). The __minimum variance portfolio__ is one special case of an efficient portfolio - no other portfolios carries a lower portfolio risk than itself, and is the leftmost point of our plot.
+
+---
 
 ```{r, fig.align = "center"}
 min_risk_w <- weights[which(risks == min(risks))]
 min_risk_return <- mean(cal_pf_return(min_risk_w))
 
-plot(risks, returns,
+efficient_idx <- which(returns >= min_risk_return)
+inefficient_idx <- which(returns < min_risk_return)
+
+plot(risks[efficient_idx], returns[efficient_idx],
      xlab = "Portfolio risk",
      ylab = "Portfolio return",
-     main = "Risk-return relationship across weights")
+     main = "The Efficient Frontier",
+     ylim = c(0,0.2), xlim = c(0.002, 0.01))
+
+lines(risks[inefficient_idx], returns[inefficient_idx], lty = "dotted")
 
 abline(h = min_risk_return)
+text(x = 0.003, y = min_risk_return-0.01, "min variance portfolio")
+text(x = 0.006, y = 0.15, "efficient frontier")
 ```
 
+### Minimum variance portfolio
+
+In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing $Var(R_{pf})$.
+
 ## WIP
+
+* min variance portfolio
+* lagrangian multiplier
+* risk free assets
+* one risky and one risk free asset
+* sharpe ratio, tangency portfolio
+* generalise to N assets
+* r examples
+
 
 ^[Again, for simplification, we only consider long positions $0 \leqslant w \leqslant 1$, `weights <- seq(0, 1, by = 0.01)` in this post. If short positions are considered, then $-\infty \leqslant w \leqslant \infty$.].
 
