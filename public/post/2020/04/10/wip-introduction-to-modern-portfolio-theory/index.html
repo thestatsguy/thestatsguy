@@ -38,12 +38,29 @@
 
 <h3 class="categories">[Stats finance]</h3>
 <h3>2020/04/10</h3>
-<h3>6min read</h3>
+<h3>9min read</h3>
 </div>
 
 <main>
 
 
+<div id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#problem-formulation">Problem formulation</a><ul>
+<li><a href="#portfolio-weights">Portfolio weights</a></li>
+<li><a href="#portfolio-expectation-and-variance">Portfolio expectation and variance</a></li>
+</ul></li>
+<li><a href="#a-note-on-diversification">A note on diversification</a><ul>
+<li><a href="#two-uncorrelated-assets">Two uncorrelated assets</a></li>
+<li><a href="#two-correlated-assets">Two correlated assets</a></li>
+</ul></li>
+<li><a href="#starting-with-two-assets">Starting with two assets</a><ul>
+<li><a href="#efficient-portfolios">Efficient Portfolios</a></li>
+</ul></li>
+<li><a href="#wip">WIP</a></li>
+</ul>
+</div>
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
@@ -79,7 +96,7 @@ R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 <p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(\mathbf{w} = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
 <div id="portfolio-weights" class="section level3">
 <h3>Portfolio weights</h3>
-<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset.</p>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset. In this post, we will only consider positive <span class="math inline">\(w_i\)</span> only.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
@@ -121,27 +138,98 @@ where <span class="math inline">\(cov(R_1, R_2) = 0\)</span>.</p>
 <p><span class="math display">\[Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2\]</span>
 When <span class="math inline">\(w\)</span> = <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) = \sigma^2\)</span>. However, for any other value of <span class="math inline">\(w\)</span>, <span class="math inline">\(0&lt;w&lt;1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) &lt; \sigma^2\)</span><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 </div>
+<div id="two-correlated-assets" class="section level3">
+<h3>Two correlated assets</h3>
+<p>Let’s consider a similar scenario, but this time, <span class="math inline">\(cov(R_1, R_2) \neq 0\)</span>. This also means that <span class="math inline">\(-1&lt; \rho_{12} &lt; 1\)</span>. Consider a portfolio where <span class="math inline">\(w = \frac{1}{2}\)</span>, i.e. placing equal weight on both assets <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>. We would then have <span class="math inline">\(ER_{pf} = \frac{1}{2}ER_1 + \frac{1}{2}ER_2 = \mu\)</span>. More importantly,</p>
+<p><span class="math display">\[
+Var(R_{pf}) = \frac{1}{4}Var(R_1) + \frac{1}{4}Var(R_2) + 2\frac{1}{2}\frac{1}{2}Cov(R_1, R_2) \\\
+= \frac{1}{4}\sigma^2 + \frac{1}{4}\sigma^2 + \frac{1}{2}\rho_{12}\sigma^2 \\\
+= \frac{1}{2}(1+\rho_{12})\sigma^2
+\]</span>
+Therefore, for any value of <span class="math inline">\(\rho_{12}\)</span>, <span class="math inline">\(-1 &lt; \rho_{12} &lt; 1\)</span>, <span class="math inline">\(Var(R_{pf}) &lt; \sigma^2\)</span><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+</div>
 </div>
 <div id="starting-with-two-assets" class="section level2">
 <h2>Starting with two assets</h2>
-<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is large and <span class="math inline">\(Var(R_{pf})\)</span> is small. We can start solving this problem by first considering <span class="math inline">\(p = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between 2 assets only. Inevitably, we would have</p>
+<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is large and <span class="math inline">\(Var(R_{pf})\)</span> is small. As with our two instructive examples above, we can start solving this problem by first considering <span class="math inline">\(N = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between two assets only. Inevitably, we would have</p>
 <p><span class="math display">\[
 \begin{array}{c}
-ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
-Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+ER_{pf} = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_jcov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12}\sigma_1\sigma_2 \\\
 w_1+w_2 = 1, w_2 = 1 - w_1
 \end{array}
 \]</span>
-where <span class="math inline">\(\rho_{12}\)</span> is trhe correlation between <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>.</p>
+where <span class="math inline">\(\rho_{12}\)</span> is the correlation between <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>. Again, we can let <span class="math inline">\(w\)</span> be the weight for <span class="math inline">\(R_1\)</span> - then we would have <span class="math inline">\(1-w\)</span> for <span class="math inline">\(R_2\)</span>. Simplifying,</p>
+<p><span class="math display">\[
+ER_{pf} = wER_1 + (1-w)ER_2 = w\mu_1 + (1-w)\mu_2 \\\
+Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + 2w_1w_2cov(R_1, R_2) \\\
+= w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2
+\]</span>
+Notice that in this set-up, <span class="math inline">\(\mu_1\)</span>, <span class="math inline">\(\mu_2\)</span>, <span class="math inline">\(\sigma_1\)</span>, <span class="math inline">\(\sigma_2\)</span>, and <span class="math inline">\(\rho_{12}\)</span> are considered to be known and constant<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. We are concerned with choosing a value for <span class="math inline">\(w\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is maximised, while <span class="math inline">\(Var(R_{pf})\)</span> is minimised, i.e. we treat both <span class="math inline">\(ER_{pf}\)</span> and <span class="math inline">\(Var(R_{pf})\)</span> as univariate functions of <span class="math inline">\(w\)</span>.</p>
+<p>Let’s visualise this with a numerical example.</p>
+<pre class="r"><code># expected returns, standard deviation, and correlation of two assets
+mu1 &lt;- 0.2
+mu2 &lt;- 0.1
+sigma1 &lt;- 0.1
+sigma2 &lt;- 0.05
+rho12 &lt;- 0.25
+
+# calculate return and risks based on w
+cal_pf_return &lt;- function(w){
+  return(w*mu1 + (1-w)*mu2)
+}
+cal_pf_risk &lt;- function(w){
+  return(w^2*sigma1^2 + (1-w)^2*sigma2^2 + 2*w*(1-w)*rho12*sigma1*sigma2)
+}
+
+# weights span from -1 to 1; this considers short positions as well for illustration
+weights &lt;- seq(-1, 1, by = 0.01)
+
+returns &lt;- NULL
+risks &lt;- NULL
+
+for(w in weights){
+  returns &lt;- c(returns, cal_pf_return(w))
+  risks &lt;- c(risks, cal_pf_risk(w))
+}
+
+plot(risks, returns,
+     xlab = &quot;Portfolio risk&quot;,
+     ylab = &quot;Portfolio return&quot;,
+     main = &quot;Risk-return relationship across weights&quot;)</code></pre>
+<p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="efficient-portfolios" class="section level3">
+<h3>Efficient Portfolios</h3>
+<p>Take a look at the plot above. Notice that</p>
+<ul>
+<li>For every possible value of return, there is one corresponding value of risk.</li>
+<li>However, for every possible value of risk, there are two corresponding values of returns.</li>
+</ul>
+<p>Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half, and we would want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the minimum risk portfolio.</p>
+<pre class="r"><code>min_risk_w &lt;- weights[which(risks == min(risks))]
+min_risk_return &lt;- mean(cal_pf_return(min_risk_w))
+
+plot(risks, returns,
+     xlab = &quot;Portfolio risk&quot;,
+     ylab = &quot;Portfolio return&quot;,
+     main = &quot;Risk-return relationship across weights&quot;)
+
+abline(h = min_risk_return)</code></pre>
+<p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
 </div>
 <div id="wip" class="section level2">
 <h2>WIP</h2>
+<p><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 <li id="fn2"><p>In particular, choosing <span class="math inline">\(w\)</span> = <span class="math inline">\(\frac{1}{2}\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span> at <span class="math inline">\(\frac{\sigma}{\sqrt{2}}\)</span>.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming that this is indeed true, consider the two subdomains <span class="math inline">\(\rho_{12} &lt; 0\)</span> and <span class="math inline">\(\rho_{12} &gt; 0\)</span>. We have <span class="math inline">\(\forall\rho_{12} &lt; 0, Var(R_{pf}) &lt; \frac{1}{2}\sigma^2\)</span> and <span class="math inline">\(\forall\rho_{12} &gt; 0, Var(R_{pf}) &gt; \frac{1}{2}\sigma^2\)</span>, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and <a href="https://www.investopedia.com/terms/s/strategicassetallocation.asp">strategic asset allocation</a>. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Of course the challenge in real life is to estimate them using historical data.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Again, for simplification, we only consider long positions <span class="math inline">\(0 \leqslant w \leqslant 1\)</span>, <code>weights &lt;- seq(0, 1, by = 0.01)</code> in this post. If short positions are considered, then <span class="math inline">\(-\infty \leqslant w \leqslant \infty\)</span>.<a href="#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

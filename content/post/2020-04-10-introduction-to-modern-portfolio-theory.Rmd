@@ -4,6 +4,9 @@ title: "[wip] Introduction to modern portfolio theory"
 date: 2020-04-10
 categories: ["Stats finance"]
 #tags: ["R Markdown", "plot", "regression"]
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +58,7 @@ In other words, the portfolio is the linear combination of the various assets un
 
 ### Portfolio weights
 
-A technical point to bring out here is that while $\sum_{i = 1}^{N} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. __short selling__. This is in constrast to a _long_ position, i.e. buying the $i$th asset.
+A technical point to bring out here is that while $\sum_{i = 1}^{N} w_i = 1$, there is no constraint on individual $w_i$ to be non-negative. In fact, a negative $w_i$ implies a short position in the $i$th asset, i.e. __short selling__. This is in constrast to a _long_ position, i.e. buying the $i$th asset. In this post, we will only consider positive $w_i$ only.
 
 ---
 
@@ -114,18 +117,94 @@ So, we would have
 $$Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2$$
 When $w$ = $0$ or $1$, we would have $Var(R_{pf}) = \sigma^2$. However, for any other value of $w$, $0<w<1$, we would have $Var(R_{pf}) < \sigma^2$^[In particular, choosing $w$ = $\frac{1}{2}$ minimizes $Var(R_{pf})$ at $\frac{\sigma}{\sqrt{2}}$.].
 
+### Two correlated assets
+
+Let's consider a similar scenario, but this time, $cov(R_1, R_2) \neq 0$. This also means that $-1< \rho_{12} < 1$. Consider a portfolio where $w = \frac{1}{2}$, i.e. placing equal weight on both assets $R_1$ and $R_2$. We would then have $ER_{pf} = \frac{1}{2}ER_1 + \frac{1}{2}ER_2 = \mu$. More importantly,
+
+$$
+Var(R_{pf}) = \frac{1}{4}Var(R_1) + \frac{1}{4}Var(R_2) + 2\frac{1}{2}\frac{1}{2}Cov(R_1, R_2) \\\
+= \frac{1}{4}\sigma^2 + \frac{1}{4}\sigma^2 + \frac{1}{2}\rho_{12}\sigma^2 \\\
+= \frac{1}{2}(1+\rho_{12})\sigma^2
+$$
+Therefore, for any value of $\rho_{12}$, $-1 < \rho_{12} < 1$, $Var(R_{pf}) < \sigma^2$^[It's commonly said that stocks and bonds are considered to be negatively correlated. Assuming that this is indeed true, consider the two subdomains $\rho_{12} < 0$ and $\rho_{12} > 0$. We have $\forall\rho_{12} < 0, Var(R_{pf}) < \frac{1}{2}\sigma^2$ and $\forall\rho_{12} > 0, Var(R_{pf}) > \frac{1}{2}\sigma^2$, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and [strategic asset allocation](https://www.investopedia.com/terms/s/strategicassetallocation.asp). This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future.].
+
 ## Starting with two assets
 
-Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_{pf}$ is large and $Var(R_{pf})$ is small. We can start solving this problem by first considering $p = 2$, that is, choosing the weights $w_i$ between 2 assets only. Inevitably, we would have
+Again, the objective of treating portfolio selection as a statistical problem is to select individual $w_i$ such that $ER_{pf}$ is large and $Var(R_{pf})$ is small. As with our two instructive examples above, we can start solving this problem by first considering $N = 2$, that is, choosing the weights $w_i$ between two assets only. Inevitably, we would have
 
 $$
 \begin{array}{c}
-ER_p = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
-Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij} = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12} \\\
+ER_{pf} = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_jcov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12}\sigma_1\sigma_2 \\\
 w_1+w_2 = 1, w_2 = 1 - w_1
 \end{array}
 $$
-where $\rho_{12}$ is trhe correlation between $R_1$ and $R_2$.
+where $\rho_{12}$ is the correlation between $R_1$ and $R_2$. Again, we can let $w$ be the weight for $R_1$ - then we would have $1-w$ for $R_2$. Simplifying, 
+
+$$
+ER_{pf} = wER_1 + (1-w)ER_2 = w\mu_1 + (1-w)\mu_2 \\\
+Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + 2w_1w_2cov(R_1, R_2) \\\
+= w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2
+$$
+Notice that in this set-up, $\mu_1$, $\mu_2$, $\sigma_1$, $\sigma_2$, and $\rho_{12}$ are considered to be known and constant^[Of course the challenge in real life is to estimate them using historical data.]. We are concerned with choosing a value for $w$ such that $ER_{pf}$ is maximised, while $Var(R_{pf})$ is minimised, i.e. we treat both $ER_{pf}$ and $Var(R_{pf})$ as univariate functions of $w$.
+
+Let's visualise this with a numerical example.
+
+```{r, fig.align = "center"}
+# expected returns, standard deviation, and correlation of two assets
+mu1 <- 0.2
+mu2 <- 0.1
+sigma1 <- 0.1
+sigma2 <- 0.05
+rho12 <- 0.25
+
+# calculate return and risks based on w
+cal_pf_return <- function(w){
+  return(w*mu1 + (1-w)*mu2)
+}
+cal_pf_risk <- function(w){
+  return(w^2*sigma1^2 + (1-w)^2*sigma2^2 + 2*w*(1-w)*rho12*sigma1*sigma2)
+}
+
+# weights span from -1 to 1; this considers short positions as well for illustration
+weights <- seq(-1, 1, by = 0.01)
+
+returns <- NULL
+risks <- NULL
+
+for(w in weights){
+  returns <- c(returns, cal_pf_return(w))
+  risks <- c(risks, cal_pf_risk(w))
+}
+
+plot(risks, returns,
+     xlab = "Portfolio risk",
+     ylab = "Portfolio return",
+     main = "Risk-return relationship across weights")
+```
+
+### Efficient Portfolios
+
+Take a look at the plot above. Notice that
+
+* For every possible value of return, there is one corresponding value of risk.
+* However, for every possible value of risk, there are two corresponding values of returns.
+
+Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half, and we would want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the minimum risk portfolio.
+
+```{r, fig.align = "center"}
+min_risk_w <- weights[which(risks == min(risks))]
+min_risk_return <- mean(cal_pf_return(min_risk_w))
+
+plot(risks, returns,
+     xlab = "Portfolio risk",
+     ylab = "Portfolio return",
+     main = "Risk-return relationship across weights")
+
+abline(h = min_risk_return)
+```
 
 ## WIP
+
+^[Again, for simplification, we only consider long positions $0 \leqslant w \leqslant 1$, `weights <- seq(0, 1, by = 0.01)` in this post. If short positions are considered, then $-\infty \leqslant w \leqslant \infty$.].
 

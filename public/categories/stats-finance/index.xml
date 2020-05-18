@@ -17,8 +17,8 @@
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/04/10/wip-introduction-to-modern-portfolio-theory/</guid>
-      <description>IntroductionIn this post, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the MPT Wikipedia article explains it very well:
-(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type.</description>
+      <description>IntroductionProblem formulationPortfolio weightsPortfolio expectation and varianceA note on diversificationTwo uncorrelated assetsTwo correlated assetsStarting with two assetsEfficient PortfoliosWIPIntroductionIn this post, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the MPT Wikipedia article explains it very well:
+(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk.</description>
     </item>
     
     <item>
