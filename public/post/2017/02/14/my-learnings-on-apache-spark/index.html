@@ -42,12 +42,8 @@
 </div>
 
 <main>
-
-
 <h2 id="one-simple-way-to-optimise-spark-jobs-on-yarn">One simple way to optimise Spark jobs on YARN</h2>
-
 <p>When submitting Spark jobs to YARN on the CLI, we would use a submission script that typically looks like the following:</p>
-
 <pre><code>spark-submit \
 --master yarn-cluster \
 --driver-memory 20G \
@@ -57,65 +53,61 @@
 --num-executors 10 \
 --total-executor-cores 100\
 script_to_submit.py
-</code></pre>
-
-<p>These are options that allows the user to specify the amount of resources to allocate to the submitted job. Not every option is always available - it depends on the type of cluster manager. There are currently three types available to Spark: standalone, Mesos, and YARN.</p>
-
+</code></pre><p>These are options that allows the user to specify the amount of resources to allocate to the submitted job. Not every option is always available - it depends on the type of cluster manager. There are currently three types available to Spark: standalone, Mesos, and YARN.</p>
 <p>Simply put, the standalone cluster manager comes with the Spark distribution, while Mesos and YARN are clusters managers designed to be compatible to Spark, with YARN coming together with Hadoop distributions.</p>
-
 <p>In brief, the available options for each cluster manager are:</p>
-
 <ul>
 <li>Standalone - driver-cores, executor-cores, total-executor-cores</li>
 <li>Mesos - total-executor-cores</li>
 <li>YARN - driver-cores, executor-cores, num-executors</li>
 </ul>
-
 <p>The rest, namely driver-memory and executor-memory are available to all three.</p>
-
 <p>I haven&rsquo;t had any experience with the standalone manager as well as Mesos, so I will just talk about YARN. On the YARN web UI, under &ldquo;Cluster Metrics&rdquo;, there are two entries that read &ldquo;Memory Total&rdquo; and &ldquo;VCores Total&rdquo;.</p>
-
 <p>To optimise the amount of resources allocated to your job:</p>
-
 <ul>
 <li>&ldquo;Memory Total&rdquo; should be roughly and less than num-executors x executormemory</li>
 <li>&ldquo;VCores Total&rdquo; should be roughly and less than num-executors x executor-cores</li>
 </ul>
-
 <p>Seems intuitive but I didn&rsquo;t fully put this optimisation in my conscious mind until one of our engineers explicitly enlighten me of this.</p>
-
 <h2 id="other-learnings-on-spark">Other learnings on Spark</h2>
-
 <p>This is PySpark.</p>
-
 <ol>
-<li><p>Writing text files to HDFS using sc.saveAsTextFile() - use high driver memory. RDD has to fit in the driver memory when writing.</p></li>
-
-<li><p>Use rdd.coalesce(n) to save to n text files. On the YARN UI, each file will be represented as a task.</p></li>
-
-<li><p>If the saveAsTextFile() stage keeps stopping at the last task, check the data. There is most probably something wrong with the data in the program.</p></li>
-
-<li><p>There is a difference between using 50GB RAM times 10 executors versus 20GB times 30 executors. The memory used reflected on the YARN UI differs greatly - for my case, the former gives 550GB while the latter, 220GB. I&rsquo;m guessing it&rsquo;s best to match the number of executors to the number of datanodes in the cluster.</p></li>
-
-<li><p>Whenever a task or a stage cannot succeed, check the data within the program - columns, counts, datatypes.</p></li>
-
-<li><p>A conventional way to debug code or scripts is always to print statements or data onto the console or terminal. Note that this debugging technique cannot work for some spark Spark apps, because of Spark&rsquo;s lazy evaluation. Methods in Spark can be classified as either actions or transformations. Unlike actions, transformation methods are parsed and interpreted by Spark, without any actual work done on the data structures; only when actions are called will work be done. Therefore interjecting your code with print statements doesn&rsquo;t help too much.</p></li>
-
-<li><p>UDFs can run without checking for errors in the data within the program. Suspect that UDFs are transformations and not actions.</p></li>
-
-<li><p>In YARN, container RAM is the RAM of 1 datanode. When setting the RAM for each container, leave about 5GB for overheads and OS functions.</p></li>
-
-<li><p>df.printSchema() can work even without reading any data into the program - even lazier than transformations if I&rsquo;m not wrong.</p></li>
-
-<li><p>Actions / transformations of one RDD cannot be performed inside the actions / transformations of another RDD, as all actions and transformations of the former RDD will require the spawning of new workers and jobs, within the current workers and jobs on the latter RDD, which is not supported.</p></li>
-
-<li><p>The UDF function turns a regular Python function to a function that is applied on all elements of the input column. This function cannot any Spark functions, as calling any Spark functions may require the needs to spawn new workers and jobs. (10) is a generalisation of this.</p></li>
+<li>
+<p>Writing text files to HDFS using sc.saveAsTextFile() - use high driver memory. RDD has to fit in the driver memory when writing.</p>
+</li>
+<li>
+<p>Use rdd.coalesce(n) to save to n text files. On the YARN UI, each file will be represented as a task.</p>
+</li>
+<li>
+<p>If the saveAsTextFile() stage keeps stopping at the last task, check the data. There is most probably something wrong with the data in the program.</p>
+</li>
+<li>
+<p>There is a difference between using 50GB RAM times 10 executors versus 20GB times 30 executors. The memory used reflected on the YARN UI differs greatly - for my case, the former gives 550GB while the latter, 220GB. I&rsquo;m guessing it&rsquo;s best to match the number of executors to the number of datanodes in the cluster.</p>
+</li>
+<li>
+<p>Whenever a task or a stage cannot succeed, check the data within the program - columns, counts, datatypes.</p>
+</li>
+<li>
+<p>A conventional way to debug code or scripts is always to print statements or data onto the console or terminal. Note that this debugging technique cannot work for some spark Spark apps, because of Spark&rsquo;s lazy evaluation. Methods in Spark can be classified as either actions or transformations. Unlike actions, transformation methods are parsed and interpreted by Spark, without any actual work done on the data structures; only when actions are called will work be done. Therefore interjecting your code with print statements doesn&rsquo;t help too much.</p>
+</li>
+<li>
+<p>UDFs can run without checking for errors in the data within the program. Suspect that UDFs are transformations and not actions.</p>
+</li>
+<li>
+<p>In YARN, container RAM is the RAM of 1 datanode. When setting the RAM for each container, leave about 5GB for overheads and OS functions.</p>
+</li>
+<li>
+<p>df.printSchema() can work even without reading any data into the program - even lazier than transformations if I&rsquo;m not wrong.</p>
+</li>
+<li>
+<p>Actions / transformations of one RDD cannot be performed inside the actions / transformations of another RDD, as all actions and transformations of the former RDD will require the spawning of new workers and jobs, within the current workers and jobs on the latter RDD, which is not supported.</p>
+</li>
+<li>
+<p>The UDF function turns a regular Python function to a function that is applied on all elements of the input column. This function cannot any Spark functions, as calling any Spark functions may require the needs to spawn new workers and jobs. (10) is a generalisation of this.</p>
+</li>
 </ol>
-
 <h2 id="book-getting-started-with-apache-spark-from-inception-to-production">Book: Getting Started with Apache Spark: From Inception to Production</h2>
-
 <p>This book, published by MapR, serves as an introduction to Apache Spark. It&rsquo;s a free book I got from the Strata Hadoop 2016 conference in Singapore. A relatively short and lightweight intro to Spark, this is a good read for anyone who wants to learn a little more about Spark. Topics include installation, architecture overview, Hadoop and Spark, data streaming, and machine learning using MLlib.</p>
-
 <p>Pdf version available here: <a href="http://www.bigdatatoronto.com/2016/assets/getting_started_with_apache_spark.pdf">http://www.bigdatatoronto.com/2016/assets/getting_started_with_apache_spark.pdf</a></p>
 
 </main>
@@ -165,7 +157,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
 </script>
   
   <hr/>
-  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  © The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
   
   </footer>
   </body>
