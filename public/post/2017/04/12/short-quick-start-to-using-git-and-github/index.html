@@ -42,43 +42,90 @@
 </div>
 
 <main>
-<!-- raw HTML omitted -->
+
+
+<p><center>
+<img src="https://miro.medium.com/max/4000/1*8HHpgXJkc6jQSiNT42EiBg.png" width="100%">
+</center></p>
+
 <p>Git is pretty awesome. My most common &ldquo;use case&rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.</p>
+
 <p>Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).</p>
+
 <h3 id="initial-set-up">Initial set-up</h3>
+
 <ul>
 <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a></li>
 <li><a href="https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">Create GitHub account</a></li>
 <li><a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository">Create GitHub repository</a></li>
 </ul>
-<h3 id="1-set-up-credentials-useremail">1. Set up credentials, user.email:</h3>
+
+<h3 id="1-set-up-credentials-user-email">1. Set up credentials, user.email:</h3>
+
 <pre><code>git config --global user.email &quot;&lt;your github email&gt;&quot;
-</code></pre><h3 id="1a-set-up-credentials-useremail-specific-to-a-git-repo-only">1a. Set up credentials, user.email, specific to a git repo only:</h3>
+</code></pre>
+
+<h3 id="1a-set-up-credentials-user-email-specific-to-a-git-repo-only">1a. Set up credentials, user.email, specific to a git repo only:</h3>
+
 <pre><code>git config user.email &quot;&lt;your github email&gt;&quot;
-</code></pre><h3 id="2-set-up-credentials-username">2. Set up credentials, user.name:</h3>
+</code></pre>
+
+<h3 id="2-set-up-credentials-user-name">2. Set up credentials, user.name:</h3>
+
 <pre><code>git config --global user.name &quot;&lt;your github username&gt;&quot;
-</code></pre><h3 id="2a-set-up-credentials-username-specific-to-a-git-repo-only">2a. Set up credentials, user.name, specific to a git repo only:</h3>
+</code></pre>
+
+<h3 id="2a-set-up-credentials-user-name-specific-to-a-git-repo-only">2a. Set up credentials, user.name, specific to a git repo only:</h3>
+
 <pre><code>git config user.name &quot;&lt;your github username&gt;&quot;
-</code></pre><h3 id="2b-show-all-config">2b. Show all config:</h3>
+</code></pre>
+
+<h3 id="2b-show-all-config">2b. Show all config:</h3>
+
 <pre><code>git config --list
-</code></pre><h3 id="3-create-the-remote-repo-online-on-github">3. Create the remote repo online on Github</h3>
+</code></pre>
+
+<h3 id="3-create-the-remote-repo-online-on-github">3. Create the remote repo online on Github</h3>
+
 <h3 id="4-create-a-folder-with-the-same-name-as-the-remote-name-locally">4. Create a folder with the same name as the remote name locally</h3>
+
 <h3 id="5-initialize-an-empty-repo-navigate-to-the-folder-in-command-line-then-run">5. Initialize an empty repo: navigate to the folder in command line, then run:</h3>
+
 <pre><code>git init
-</code></pre><h3 id="6-pull-the-remote">6. Pull the remote:</h3>
+</code></pre>
+
+<h3 id="6-pull-the-remote">6. Pull the remote:</h3>
+
 <pre><code>git pull &lt;url of remote (.git)&gt; &lt;branch name, e.g. master&gt;
-</code></pre><h3 id="7-go-ahead-and-code">*7. Go ahead and code</h3>
+</code></pre>
+
+<h3 id="7-go-ahead-and-code">*7. Go ahead and code</h3>
+
 <h3 id="8-add-remote-repo">8. Add remote repo:</h3>
+
 <pre><code>git remote add &lt;name of repo&gt; &lt;url of repo (.git)&gt;
-</code></pre><h3 id="9-stage-all-changes">*9. Stage all changes:</h3>
+</code></pre>
+
+<h3 id="9-stage-all-changes">*9. Stage all changes:</h3>
+
 <pre><code>git add --all
-</code></pre><h3 id="10-commit-all-staged-changes">*10. Commit all staged changes:</h3>
+</code></pre>
+
+<h3 id="10-commit-all-staged-changes">*10. Commit all staged changes:</h3>
+
 <pre><code>git commit -m &quot;&lt;commit message&gt;&quot;
-</code></pre><h3 id="11-set-remote-as-upstream">11. Set remote as upstream:</h3>
+</code></pre>
+
+<h3 id="11-set-remote-as-upstream">11. Set remote as upstream:</h3>
+
 <pre><code>git push --set-upstream &lt;repo name&gt; &lt;branch name, e.g. master&gt;
-</code></pre><h3 id="12-push-to-remote">*12. Push to remote:</h3>
+</code></pre>
+
+<h3 id="12-push-to-remote">*12. Push to remote:</h3>
+
 <pre><code>git push &lt;repo name&gt;
 </code></pre>
+
 </main>
 
   <footer>
@@ -126,7 +173,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
 </script>
   
   <hr/>
-  © The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
   
   </footer>
   </body>

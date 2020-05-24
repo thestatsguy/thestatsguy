@@ -18,30 +18,29 @@
       
       <guid>/post/2017/03/05/travelling-and-productivity/</guid>
       <description>&lt;p&gt;Two things I want to talk about here: how travelling affects productivity and how to alleviate some of its effects.&lt;/p&gt;
+
 &lt;p&gt;Since October 2016, I have been travelling in out of the Philippines for a data science project. Between October 2016 to February 2017, I made 11 trips to the Philippines, each trip spanning on average about 1 work week.&lt;/p&gt;
+
 &lt;p&gt;At first it seems fun; which young professional wouldn’t want to experience a work life of constant flying, staying in 4 or 5 stars hotels while working on interesting projects? I would be lying if I said these didn’t excite me at the start.&lt;/p&gt;
+
 &lt;p&gt;But, there is one major downside to all the travelling - the loss of routine and schedule. If you are someone like me who values routine for maximal productivity, then you may not like travelling as much. I recall my most productive times when schooling and working is when I follow the same schedule, week in, week out. With travelling, you are almost guaranteed to lose most, if not all of this scheduling.&lt;/p&gt;
+
 &lt;p&gt;Of course on the plus side, you get uninterrupted time on the flight, lest for mealtime and the “please put your seat back up upright sir” from the air stewardess. I usually take this time to read or do some writing or thinking. It does helps, actually, that you have no internet connection.&lt;/p&gt;
+
 &lt;p&gt;So, to help mitigate the lowered productivity due to travelling, these are some of the things I do:&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Have a business trip packing list. This reduces my mental burden when packing. By referring to the same list whenever I pack, over time I know this list is reliable and has everything I need - which means I can pack mindlessly from then on.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ensure that I have an aisle seat. As a tall person, I need to have an aisle seat, otherwise it will be an extremely extremely miserable flight. No way I can do any work if I’m not even comfortable. To ensure that I have an aisle seat, I constantly check seats availability online. You can do so for Singapore Airlines even before check-in is open.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Check-in for my flight. This is so that when I get to the airport, I can go straight to the &amp;ldquo;internet check-in” queue which is a lot faster. This is especially important for MNL-SIN flights because there aren’t any self check-in machines at the Manila airport, and the SIA queues are usually long.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Go to the airport early. Yes early, not &amp;ldquo;just nice”. This is best for productivity because I can work in both Changi Airport and Ninoy Aquino Airport. More importantly, reaching early means I can break my working time up in larger chunks. Compare this to reaching the airport just 1 or 2 hours prior - you get inside the transit area, grab a bite and try to settle down to work. By the time you unpack your laptop and notebook and truly settle down, its probably time to go to the gate.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bring a book and a notebook in my carry-on. Needless to say why.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Get to the hotel as quickly as possible after touch down and check-in. If I’m taking the 7pm SIN-MNL flight, I will go to bed immediately so that I can still get up early the following day. If I’m taking an earlier flight, then I can take my time, check-in and spend the rest of the day working on personal stuff. I usually don’t head to the office on the same day of my flight unless there’s an important meeting.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Have a business trip packing list. This reduces my mental burden when packing. By referring to the same list whenever I pack, over time I know this list is reliable and has everything I need - which means I can pack mindlessly from then on.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ensure that I have an aisle seat. As a tall person, I need to have an aisle seat, otherwise it will be an extremely extremely miserable flight. No way I can do any work if I’m not even comfortable. To ensure that I have an aisle seat, I constantly check seats availability online. You can do so for Singapore Airlines even before check-in is open.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check-in for my flight. This is so that when I get to the airport, I can go straight to the &amp;ldquo;internet check-in” queue which is a lot faster. This is especially important for MNL-SIN flights because there aren’t any self check-in machines at the Manila airport, and the SIA queues are usually long.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Go to the airport early. Yes early, not &amp;ldquo;just nice”. This is best for productivity because I can work in both Changi Airport and Ninoy Aquino Airport. More importantly, reaching early means I can break my working time up in larger chunks. Compare this to reaching the airport just 1 or 2 hours prior - you get inside the transit area, grab a bite and try to settle down to work. By the time you unpack your laptop and notebook and truly settle down, its probably time to go to the gate.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bring a book and a notebook in my carry-on. Needless to say why.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Get to the hotel as quickly as possible after touch down and check-in. If I’m taking the 7pm SIN-MNL flight, I will go to bed immediately so that I can still get up early the following day. If I’m taking an earlier flight, then I can take my time, check-in and spend the rest of the day working on personal stuff. I usually don’t head to the office on the same day of my flight unless there’s an important meeting.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
@@ -53,19 +52,23 @@
       
       <guid>/post/2017/02/13/scientific-desktop-research-tentative-conclusions/</guid>
       <description>&lt;p&gt;Useful tip I got from &amp;ldquo;Extreme Productivity&amp;rdquo; by Robert Pozen, still reading.&lt;/p&gt;
+
 &lt;p&gt;Desktop research, or simply known as googling in today&amp;rsquo;s context, is the act of collecting information about a particular topic or domain, with a broad/generic question in mind, or even without any question at all.&lt;/p&gt;
+
 &lt;p&gt;One way to do this is simply keep googling related search terms and noting down facts and statistics, and constantly drilling down on a specific term until it&amp;rsquo;s milked - sort of like a depth-first search of collecting information. After we are satisfied with all the information we collect, we then try to piece together a story. But is this a good approach?&lt;/p&gt;
+
 &lt;p&gt;Pozen argues that &amp;ldquo;although extensive research might seem a logical first step, it&amp;rsquo;s actually very inefficient.&amp;rdquo; This is because &amp;ldquo;there are literally thousands of facts that could be relevant to any project; do you really want to collect them all?&amp;rdquo;&lt;/p&gt;
+
 &lt;p&gt;Instead, Pozen suggests that we first form &amp;ldquo;tentative conclusions&amp;rdquo;, by first thinking hard about our problem. &amp;ldquo;After a day or so of gathering relevant information, write down your tentative conclusions for the project. These will allow you to more quickly engage in analysis - rather than description - by providing a focus for your subsequent research.&amp;rdquo;&lt;/p&gt;
+
 &lt;p&gt;If you think about it, this makes a lot of sense and sounds more productive. And it&amp;rsquo;s a pretty scientific way of doing things - scientists don&amp;rsquo;t endeavour to do all the experiments that they can possibly imagine and then collecting all the data. Instead, they formulate hypotheses and design experiments to refute their claims. If their claims are not refuted, or are even proven, then they become published and reliable facts, for now.&lt;/p&gt;
+
 &lt;p&gt;And this applies to more than just desktop research:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Think of how you first learn a programming language outside of a school setting. Odds are you &amp;ldquo;hacked&amp;rdquo; your way through to your current level of proficiency, by relying on Google and Stackoverflow. You were probably required to write some production or project code, had an idea, didn&amp;rsquo;t work out, googled, and try again and again. Not going through things like &amp;ldquo;Basic data structures in Python&amp;rdquo; and work from thereon. I am definitely guilty of this - when I first started learning about Spark and writing PySpark code, I tried multiple times to start from some tutorial and slowly work my way up toward proficiency. Each time, I failed either because the material gets boring, or I lose patience, or something like that. It just doesn&amp;rsquo;t work.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Which is the more efficient of doing exploratory data analysis - plotting every single plot and collecting every single summary statistics there is to your data, or coming up with several hypotheses and then visualising and testing them? &amp;ldquo;My guess is that age is not normally distributed in this dataset, let&amp;rsquo;s see.&amp;rdquo;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Think of how you first learn a programming language outside of a school setting. Odds are you &amp;ldquo;hacked&amp;rdquo; your way through to your current level of proficiency, by relying on Google and Stackoverflow. You were probably required to write some production or project code, had an idea, didn&amp;rsquo;t work out, googled, and try again and again. Not going through things like &amp;ldquo;Basic data structures in Python&amp;rdquo; and work from thereon. I am definitely guilty of this - when I first started learning about Spark and writing PySpark code, I tried multiple times to start from some tutorial and slowly work my way up toward proficiency. Each time, I failed either because the material gets boring, or I lose patience, or something like that. It just doesn&amp;rsquo;t work.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Which is the more efficient of doing exploratory data analysis - plotting every single plot and collecting every single summary statistics there is to your data, or coming up with several hypotheses and then visualising and testing them? &amp;ldquo;My guess is that age is not normally distributed in this dataset, let&amp;rsquo;s see.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -77,17 +80,69 @@
       
       <guid>/post/2017/02/12/types-of-tasks/</guid>
       <description>&lt;p&gt;In my work so far, there are typically a few type of tasks:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+
+&lt;p&gt;&lt;li&gt;Analytics tasks (planning, architecture, setup, coding etc)
+&lt;li&gt;Writing (documentations, reflections)
+&lt;li&gt;Desktop research
+&lt;li&gt;Emails (replying, drafting new ones)
+&lt;li&gt;Ideations
+&lt;li&gt;Team huddles
+&lt;li&gt;External meetings with customers
+&lt;li&gt;Internal project meetings
+&lt;li&gt;Preparing decks and presentations
+&lt;li&gt;Organising materials
+&lt;li&gt;Admin&lt;/p&gt;
+
 &lt;p&gt;I think they can divided into four quadrants:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+
+&lt;table&gt;
+ &lt;tr&gt;
+  &lt;td style=&#34;vertical-align:top&#34;&gt;
+  &lt;b&gt;High amount of visible results, low value&lt;/b&gt;
+  &lt;ul&gt;
+       &lt;li&gt;Emails (replying, drafting new ones)&lt;/li&gt;
+       &lt;li&gt;Organising materials&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/td&gt;
+  &lt;td style=&#34;vertical-align:top&#34;&gt;
+  &lt;b&gt;High amount of visible results, high value&lt;/b&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Analytics tasks (coding, planning)&lt;/li&gt;
+    &lt;li&gt;Writing&lt;/li&gt;
+    &lt;li&gt;Preparing decks and presentations&lt;/li&gt;
+    &lt;li&gt;Customer meetings&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ 
+ &lt;tr&gt;
+  &lt;td style=&#34;vertical-align:top&#34;&gt;
+  &lt;b&gt;Low amount of visible results, low value&lt;/b&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Admin&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/td&gt;
+  &lt;td style=&#34;vertical-align:top&#34;&gt;
+  &lt;b&gt;Low amount of visible results, high value&lt;/b&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Desktop research&lt;/li&gt;
+    &lt;li&gt;Ideations, brainstorming&lt;/li&gt;
+    &lt;li&gt;Team huddles&lt;/li&gt;
+    &lt;li&gt;Internal project meetings&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+
 &lt;p&gt;There&amp;rsquo;s a lot of unpack here, so one by one:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Visible results: a deck, an email, a document, a discussion with potential customers - tangible stuff&lt;/li&gt;
 &lt;li&gt;Value: high value means generating a good idea, building strong relationships with customers or fellow colleagues in the same or different team, getting a clearer idea of something that allows you to move forward from current status quo&lt;/li&gt;
 &lt;li&gt;A good day at work would be to spend most if not all of your time in Quadrant 1, generating both value and results&lt;/li&gt;
 &lt;li&gt;Quadrant 2 gives high value because these are the types of tasks that spark the team and yourself off towards a good week or month. These tasks generally give ideas and directions, and hence high value&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;As a morning person, my energy dwindle towards the end of the day, especially with a trough after lunch. Within this framework there must be a way to optimise my productivity in a work day.&lt;/p&gt;
 </description>
     </item>
@@ -99,14 +154,19 @@
       
       <guid>/post/2017/01/02/three-needs-theory-power-achievement-affliation/</guid>
       <description>&lt;p&gt;The Three Needs Theory was developed by psychologist David McClelland in the 1960s. The theory identifies three main needs in the professional setting, which form the drivers of motivation. These needs are&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;The need for power (n-Pow)&lt;/li&gt;
 &lt;li&gt;The need for achievement (n-Ach)&lt;/li&gt;
 &lt;li&gt;The need for affiliation (n-Aff)&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;I first encountered this idea in the book Managing Scientists: Leadership Strategies in Scientific Research by Alice Sapienza, which I have yet to finish reading. Simply put, every individual identifies with one, two (usually one major, one minor), or even three (rare) of these needs. Fulfilling these needs act as motivators, which in turn determine one&amp;rsquo;s course of action in a given set of circumstances and options.&lt;/p&gt;
+
 &lt;p&gt;In general, individuals who identify significantly with a particular need tend towards certain types of behaviour, which may serve as tell-tale signs from the perspective of others. However, this doesn&amp;rsquo;t mean these behaviours are indeed exhibited in reality, due to constraints such as rank or resources.&lt;/p&gt;
+
 &lt;p&gt;Folks with high n-Pow tend to:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Control other people for personal or greater good (need for personal power or need for institutional power; personal power or socialised power)&lt;/li&gt;
 &lt;li&gt;Seek neither recognition nor approval, only agreement and compliance&lt;/li&gt;
@@ -117,8 +177,11 @@
 &lt;li&gt;Arouse emotions in others to push towards a cause&lt;/li&gt;
 &lt;li&gt;There is also a distinction between the need for personal power versus institutional power.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;Needless to say, the need for personal power is not exactly the healthiest need in a professional setting.&lt;/p&gt;
+
 &lt;p&gt;On the other hand, folks with high n-Ach tend to:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Enjoy practising and honing their skillsets&lt;/li&gt;
 &lt;li&gt;Enjoy winning&lt;/li&gt;
@@ -132,15 +195,21 @@
 &lt;li&gt;Be inventive or creative&lt;/li&gt;
 &lt;li&gt;Enjoy working alone&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;Lastly, folks with high n-Aff tend to:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Value interpersonal relationships&lt;/li&gt;
 &lt;li&gt;Conform to norms in the workplace&lt;/li&gt;
 &lt;li&gt;Prefer collaboration over competition&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;Naturally, an individual&amp;rsquo;s dominant need(s) will determine the type of role in which he/she will excel in. For example, entrepreneurs tend to be of high n-Ach. The best senior management leaders tend to be of high n-Pow (institutional power) and high n-Aff. The best middle management leaders, on the other hand, tend to be high n-Ach and a bit less of n-Aff. (Can you figure out why? This is because in a typical corporate setting, middle managers are promoted into their positions due to the competencies they have shown in the working level, displaying high n- Ach. However, to rise further up into senior management, these without high n-Pow will be eliminated eventually.) The best salesperson will be of high-Ach and high n-Aff, while a high n-Aff works well for project managers.&lt;/p&gt;
+
 &lt;p&gt;Personally, I find this theory to be a useful mental model - look into your workplace, and consider both your colleagues (peers and reportees), and your immediate boss. Can you confidently identify their motivational needs, be it power, achievement, or affiliation? It&amp;rsquo;s not hard to do so, isn&amp;rsquo;t it&lt;/p&gt;
+
 &lt;p&gt;It&amp;rsquo;s probably worthwhile to learn more about these needs, how they manifest in the workplace and the role they play in motivation, productivity, and workplace relationships. I will definitely write another piece on this. Even if you are not interested in how these needs play out amongst others in your workplace, you would still be interested in identifying your personal needs (though if you think this way, you probably belong to the low n-Pow, high n-Ach, and low n-Aff camp).&lt;/p&gt;
+
 &lt;p&gt;For now, here&amp;rsquo;s a rather insightful HBR article discussing the three needs and the role they play in leadership: &lt;a href=&#34;https://hbr.org/2003/01/power-is-the-great-motivator&#34;&gt;https://hbr.org/2003/01/power-is-the-great-motivator&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
@@ -155,9 +224,12 @@
 consultant at McKinsey. The forty-odd principles in the book, while easily understood, stood out
 when they are collated together in a single book, as many productivity and professional hacks
 strung together. A rather interesting read.&lt;/p&gt;
+
 &lt;p&gt;Following are his principles divided into four chapters, and in bold are those that I thought to be
 particularly useful, and would like to expound on them in future writings.&lt;/p&gt;
+
 &lt;p&gt;Building the Better Self&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;Focus on what really matters&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Start with the hard stuff in the morning&lt;/strong&gt;&lt;/li&gt;
@@ -176,7 +248,9 @@ particularly useful, and would like to expound on them in future writings.&lt;/p
 &lt;li&gt;Go jogging to smell the flowers&lt;/li&gt;
 &lt;li&gt;Create a commitment plan&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;Growing with Others&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Always memorize the first three sentences of a presentation&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Communicate using fewer words&lt;/li&gt;
@@ -196,7 +270,9 @@ particularly useful, and would like to expound on them in future writings.&lt;/p
 &lt;li&gt;Deliver feedback using positive criticism&lt;/li&gt;
 &lt;li&gt;Please your assistants and support staff&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;Execlling in Process Management&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Always prepare an agenda before meetings&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Create &amp;ldquo;four boxes&amp;rdquo; to dos&lt;/li&gt;
@@ -207,7 +283,9 @@ particularly useful, and would like to expound on them in future writings.&lt;/p
 &lt;li&gt;Create a minimalist presentation toolkit&lt;/li&gt;
 &lt;li&gt;Create an easy-to-use template for updates&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;Going the Extra mile&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Give away knowledge and tools unsparingly&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Get rid of your physical barriers&lt;/li&gt;

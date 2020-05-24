@@ -46,3 +46,6 @@ footnotereturnlinkcontents = "↩"
 [params]
     description = "Explorations in topics that I enjoy the most."
     footer = "&copy; The Stats Guy 2020 | [Home](https://thestatsguy.netlify.app) | [GitHub](https://github.com/thestatsguy)"
+    
+# [markup.goldmark.renderer]
+#     unsafe = true    

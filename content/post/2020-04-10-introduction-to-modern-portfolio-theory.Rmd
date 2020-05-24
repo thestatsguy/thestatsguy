@@ -236,4 +236,3 @@ In the example above, we arrived at the minimum variance portfolio by doing some
 
 
 ^[Again, for simplification, we only consider long positions $0 \leqslant w \leqslant 1$, `weights <- seq(0, 1, by = 0.01)` in this post. If short positions are considered, then $-\infty \leqslant w \leqslant \infty$.].
-

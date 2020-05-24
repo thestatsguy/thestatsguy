@@ -243,11 +243,20 @@ text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&l
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/03/19/short-statistical-methods-in-finance-series/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://miro.medium.com/max/1280/1*LZnClq6o0kEU88-BZnkvCw.jpeg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
 &lt;p&gt;It&amp;rsquo;s a sleepless night, so I decided to write a little. This will be the first part of a series that I would like to write about, circling around the use of statistical methods in finance. Most of the content that I will be exploring would originate from one of my NUS M.Sc Statistics modules, Advanced Statistical Methods in Finance. I was taught by Prof Xia Yingcun when I did this module.&lt;/p&gt;
+
 &lt;p&gt;Of all the modules that I did during my M.Sc, I always found this one to resonate with me the most - guess that&amp;rsquo;s mainly because I like topic, as well as of the fact that I was heavily experimenting with investing on my own during that time. I also found that using finance as the backdrop or context to study certain statistical concepts, such as copula or factor analysis, to be more engaging than perhaps studying these topics in vaccum.&lt;/p&gt;
+
 &lt;h1 id=&#34;statistical-methods-in-finance&#34;&gt;Statistical methods in finance&lt;/h1&gt;
+
 &lt;p&gt;There are a number of statistical methods that can be directly mapped to their applications in finance:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Statistical distributions: Value-at-Risk (VaR)&lt;/li&gt;
 &lt;li&gt;Linear regression: Capital Asset Pricing Model (CAPM)&lt;/li&gt;
@@ -260,18 +269,26 @@ text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&l
 &lt;li&gt;Estimation of covariance matrix and optimization: Markowitz&amp;rsquo;s portfolio theory&lt;/li&gt;
 &lt;li&gt;and many more&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;In this series, I would like to tackle some of these topics, by combining statistical theory, finance theory, and the use of R where relevant.&lt;/p&gt;
+
 &lt;h1 id=&#34;broader-question-can-statistics-be-used-to-make-a-profit&#34;&gt;Broader question: can statistics be used to make a profit?&lt;/h1&gt;
+
 &lt;p&gt;Since there are folks who decided to spend the time and energy to study the application of statistical methods in capital markets, surely it&amp;rsquo;s a worthwhile effort and making money is possible? Well, yes and no. It&amp;rsquo;s well known in statistical finance is that financial data has extremely low signal-to-noise (SNR) ratio. This means that for a model that predicts price, even if the model is correctly specified, due to the low SNR, it&amp;rsquo;s unlikely for the predictions to be useful. Most folks would hence consider the study of price volatility to be more important than price itself. If we are able to have an informed point of view about future volatility (perhaps due to the fact that volatility autocorrelation is strong =&amp;gt; volatility may be predicted in a GARCH/ARCH model), we would be able to act accordingly. We will talk about this along the way in this series.&lt;/p&gt;
+
 &lt;h1 id=&#34;stylized-fact-in-statistical-finance&#34;&gt;Stylized fact in statistical finance&lt;/h1&gt;
+
 &lt;p&gt;I previously (well, a year ago) wrote about &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/04/04/short-stylized-facts-in-statistical-finance/&#34;&gt;stylized facts&lt;/a&gt; in statistical finance, where I briefly listed without explanations various &amp;ldquo;facts&amp;rdquo;. Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic. There are a number of well-known ones, such as:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Financial data has extremely low signal-to-noise ratio.&lt;/li&gt;
 &lt;li&gt;Price changes are less volatile in bull markets and more volatile bear markets.&lt;/li&gt;
 &lt;li&gt;Volatility clustering is typically observed in financial data; that is, large changes tend to be followed by large changes of either sign, and small changes tend to be followed by small changes of either sign.&lt;/li&gt;
 &lt;li&gt;and others&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;In this series, we will necessarily also delve a little deeper into some of these stylized facts, by considering both empirical (historical data) and theoretical perspectives.&lt;/p&gt;
+
 &lt;p&gt;That&amp;rsquo;s it for a brief introduction to series - looking forward to do deep dives into various topics!&lt;/p&gt;
 </description>
     </item>
@@ -282,12 +299,19 @@ text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&l
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/04/04/short-stylized-facts-in-statistical-finance/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://miro.medium.com/max/1280/1*LZnClq6o0kEU88-BZnkvCw.jpeg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;In statistical finance (as well as in certain areas in social science), &lt;a href=&#34;https://en.wikipedia.org/wiki/Stylized_fact&#34;&gt;stylized facts&lt;/a&gt; are empirical observations summarized in a theory-like form, and are generally representative under broad circumstances.&lt;/p&gt;
+
+&lt;p&gt;Stylized facts are commonly used in statistical finance to address and summarize phenomenon directly observed from historical data, and explainable with a certain level of theoretical consistency and logic (&#34;... this makes sense to me&#34;). Stylized facts may often guide investigations and explorations into certain topics of interest, functioning perhaps as assumptions to be either built upon or proven otherwise. Specifically, invalidating a stylized fact could be considered insightful, much like using data analysis and machine learning to invalidate certain entrenched assumptions held by business users.&lt;/p&gt;
+
+&lt;p&gt;In this first statistical finance post, I would like to list out a couple of stylized facts (SF), without explanation, that are observed and used in finance, for future referencing as well as for my own explorations.&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;(SF1)&lt;/strong&gt; Financial data has extremely low signal-to-noise ratio.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF2)&lt;/strong&gt; Price changes are less volatile in bull markets and more volatile bear markets.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF3)&lt;/strong&gt; The autocorrelations of the returns of an asset is weak, hence univariate prediction of returns is not possible. However, volatility autocorrelation is strong, and volatility can be reasonably predicted (using e.g. &lt;a href=&#34;https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity&#34;&gt;GARCH&lt;/a&gt; models).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF4)&lt;/strong&gt; Financial data usually have more extreme events or values than expected (fat tails, &lt;a href=&#34;https://en.wikipedia.org/wiki/Black_swan_theory&#34;&gt;black swans&lt;/a&gt;).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF5)&lt;/strong&gt; Tail dependence between different assets are high, making &lt;a href=&#34;https://en.wikipedia.org/wiki/Copula_(probability_theory)&#34;&gt;copula&lt;/a&gt; fitting worthwhile.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF6)&lt;/strong&gt; Past price changes are negatively correlated with future volatility.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF7)&lt;/strong&gt; Aggregate stock market returns (e.g. an index) display negative skewness; individual stock returns display positive skewness.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF8)&lt;/strong&gt; In the long run, stocks in a given market will be positively correlated.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;(SF9)&lt;/strong&gt; Volatility clustering is typically observed in financial data; that is, large changes tend to be followed by large changes of either sign, and small changes tend to be followed by small changes of either sign.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;There are probably more and more advanced ones that I have yet to come across, so I will probably add on to the list over time. In any case, I will start with these SFs and other techniques in the meantime, in my exploration of statistical finance. I also be using these SF indices (SF1 etc.) as references in future posts to reduce verbose.&lt;/p&gt;
 </description>
     </item>
     
