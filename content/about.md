@@ -8,7 +8,7 @@ date: ""
 This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – R, statistics, machine learning, investing, personal finance, analyzing financial data, and stoicism, while writing behind a pseudonym.
 
 <center>
-<img src="https://i.redd.it/5193db0avbey.jpg" width="80%">
+<img style="float right;" src="https://i.redd.it/5193db0avbey.jpg" width="80%">
 </center>
 <center>[A post I saw on Reddit](https://www.reddit.com/r/ProgrammerHumor/comments/5si1f0/machine_learning_approaches/)
 </center>

@@ -69,7 +69,7 @@
 <blockquote>
 <p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
 </blockquote>
-<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance framework, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
@@ -232,7 +232,17 @@ text(x = 0.006, y = 0.15, &quot;efficient frontier&quot;)</code></pre>
 </div>
 <div id="minimum-variance-portfolio" class="section level3">
 <h3>Minimum variance portfolio</h3>
-<p>In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing <span class="math inline">\(Var(R_{pf})\)</span>.</p>
+<p>In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing <span class="math inline">\(Var(R_{pf})\)</span>. This can be simply solved some basic calculus.</p>
+<p><span class="math display">\[
+Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
+\frac{dVar(R_{pf})}{dw} = 2w\sigma_1^2 - 2(1-w)\sigma_2^2 + 2(1-2w)\rho_{12}\sigma_1\sigma_2 \\
+\]</span>
+Also, since</p>
+<p><span class="math display">\[
+\frac{d^2Var(R_{pf})}{dw^2} = 2\sigma_1^2 + 2\sigma_2^2 - 4\rho_{12}\sigma_1\sigma_2
+\geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
+\]</span>
+where <span class="math inline">\(\rho_{12} &lt; 1\)</span>. We would have <span class="math inline">\(\frac{d^2Var(R_{pf})}{dw^2} &gt; 0\)</span>, i.e. solving <span class="math inline">\(\frac{dVar(R_{pf})}{dw} = 0\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span>, giving the minimium variance portfolio.</p>
 </div>
 </div>
 <div id="wip" class="section level2">

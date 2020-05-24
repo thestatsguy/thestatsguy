@@ -44,7 +44,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance framework, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Risk premium&lt;/em&gt;&lt;/strong&gt; refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.&lt;/p&gt;
@@ -207,7 +207,17 @@ text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&l
 &lt;/div&gt;
 &lt;div id=&#34;minimum-variance-portfolio&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Minimum variance portfolio&lt;/h3&gt;
-&lt;p&gt;In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;. This can be simply solved some basic calculus.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
+\frac{dVar(R_{pf})}{dw} = 2w\sigma_1^2 - 2(1-w)\sigma_2^2 + 2(1-2w)\rho_{12}\sigma_1\sigma_2 \\
+\]&lt;/span&gt;
+Also, since&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{d^2Var(R_{pf})}{dw^2} = 2\sigma_1^2 + 2\sigma_2^2 - 4\rho_{12}\sigma_1\sigma_2
+\geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 1\)&lt;/span&gt;. We would have &lt;span class=&#34;math inline&#34;&gt;\(\frac{d^2Var(R_{pf})}{dw^2} &amp;gt; 0\)&lt;/span&gt;, i.e. solving &lt;span class=&#34;math inline&#34;&gt;\(\frac{dVar(R_{pf})}{dw} = 0\)&lt;/span&gt; minimizes &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;, giving the minimium variance portfolio.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;wip&#34; class=&#34;section level2&#34;&gt;
