@@ -84,7 +84,7 @@ Well, this post first appeared on my WordPress blog [here](https://thestatsguy.h
 <img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_google_search.PNG" width="100%">
 </center>
 <center>
-Google search for "nus msc statistics review" - 4th result here (early May 2020)
+Google search for ["nus msc statistics review"](https://www.google.com/search?q=nus+msc+statistics+review) - 4th result here (early May 2020)
 </center>
 
 Turns out that I got a decent number of views on this post. Not bad considering that I don't expect much (if any at all) traffic on my blog.
@@ -180,7 +180,7 @@ ST5225 Statistical Analysis of Networks was taught by Dr Wang Wanjie. Quite an i
 * The World Wide Web, PageRank
 * Graph models, random graph, stochastic block model, exponential random graph model
 
-Another interesting point for me on this module was that the lectures took place on Saturdays 1pm to 3pm, which turned out to be a good timing for lectures^[What I did was that I would spend the whole Saturday morning to rest and get ready and then have lunch in school. After the lecture, I would then head over to VivoCity for dinner, coffee, and then do a bit more of work or studying. It was rather therapeutic.]. I don't believe this module offered regularly.
+Another interesting point for me on this module was that the lectures took place on Saturdays 1pm to 3pm, which turned out to be a good timing for lectures^[What I did was that I would spend the whole Saturday morning to rest and get ready and then have lunch in school. After the lecture, I would then head over to VivoCity for dinner, coffee, and then do a bit more of work or studying. It was rather therapeutic.]. I don't believe this module is offered regularly.
 
 #### ST5218 Advanced Statistical Methods in Finance
 

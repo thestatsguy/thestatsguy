@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ML &amp; Stats on The Stats Guy</title>
@@ -17,9 +17,315 @@
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/05/10/a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus/</guid>
-      <description>Sparrows taking shelter from the afternoon shower at the Faculty of Science (December 2018) 
-Back in January 2017, I first seriously considered taking up a postgraduate degree, as a means to improve myself and continue learning. Well, it wasn&amp;rsquo;t a long and hard decision, really, as I had and still have the freedom, the capacity and the means to study more.
- Taking a part-time Masters this year in 2017</description>
+      <description>
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_sparrows.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sparrows taking shelter from the afternoon shower at the Faculty of Science (December 2018)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Back in January 2017, I first seriously considered taking up a postgraduate degree, as a means to improve myself and continue learning. Well, it wasn&amp;rsquo;t a long and hard decision, really, as I had and still have the freedom, the capacity and the means to study more.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Taking a part-time Masters this year in 2017&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2017/01/30&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Masters or PhD?&lt;/li&gt;
+&lt;li&gt;Full-time or part-time?&lt;/li&gt;
+&lt;li&gt;(If masters) technical or non-technical?&lt;/li&gt;
+&lt;li&gt;(If full-time) Overseas or local?&lt;/li&gt;
+&lt;li&gt;(If local) NUS or NTU?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full-time is personally a non-option for me, as I don’t see the financial sense in taking a sabbatical to pursue a full-time programme. That leaves full-time and overseas out.&lt;/p&gt;
+
+&lt;p&gt;Based on what I know about a PhD programme, part-time PhD sounds like a nightmare. That leaves part-time Masters in Singapore as my option.&lt;/p&gt;
+
+&lt;p&gt;Next question: technical or non-technical? Well I am leaning towards to doing something with technical content when studying - non-technical content can be picked up most of the time simply by being widely read and learning from work experiences. This means statistics or computing for me.&lt;/p&gt;
+
+&lt;p&gt;And NUS is probably the better choice than NTU. SMU is not in my consideration.&lt;/p&gt;
+
+&lt;p&gt;So for now, my choice is going to be M.Sc. Statistics from NUS.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;center&gt;Quoting myself in January 2017, &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt;. Was I rigourous in my decision-making? Hmm&amp;hellip;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;So I decided to go with a Master of Science in Statistics programme in NUS, and starting my first semester in August 2017. I then took 5 semesters, all the way to December 2019, to complete the programme. Today, I have since happily graduated and have had a good experience with the programme.&lt;/p&gt;
+
+&lt;p&gt;Around midway through the programme, I wrote a short review on the logistics and my experience of the programme so far.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;My Master of Science in Statistics programme in NUS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2019/02/09&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I have gotten quite a couple of questions regarding my current &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;MSc Statistics programme&lt;/a&gt; in NUS. Here are some broadstroke information about the programme and how I am approaching it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one. Basically dependent on whether you have a Honours in your Bachelor&amp;rsquo;s degree. I&amp;rsquo;m doing the Track 1 programme - 40MC is equivalent to 10 modules. Under usual circumstances, it takes 2 full-time semesters to finish 10 modules, i.e. 1 academic year. Semesters run as per typical undergraduate semesters in Singapore.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There&amp;rsquo;s also the part-time option, where one would take 4 to 5 semesters to finish the 10 modules - 5 semesters is basically 2 modules x 5 semesters = 10 modules.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m on the part-time programme. Personally, 3 modules on a part-time basis per semester is too much for me to handle - so I opt to finish my MSc in 5 semesters, or 2.5 academic years.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m currently in my 4th semester, so would be finishing the programme requirements by Dec 2019 and graduate during July 2020 (commencement).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For MSc Statistics, lectures typically run from 7pm to 10pm weeknights. Each module has 1 lecture per week, with the typical workload of tutorials, homework assignments, individual or group projects, subjected to respective lecturer&amp;rsquo;s discretion.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lastly, the programme &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GDTuitionCurrent.pdf&#34;&gt;cost&lt;/a&gt; &lt;b&gt;$2,500 per semester for Singaporeans who are taking this MSc programme as their first higher qualification programme under the &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GD-Eligibility-Guidelines.pdf&#34;&gt;MOE Subsidy&lt;/a&gt;&lt;/b&gt;. Yes it&amp;rsquo;s pretty value for money if you ask me. This tuition fee amount is not unique to MSc Statistics, and is general to many other programmes in NUS, again provided if you belong to the above category.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My experience with the programme is a positive one so far.  Difficulty and commitment level is within my comfort zone, and I managed to learn quite a couple of new things. Modules that I have taken include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Applied Data Mining&lt;/li&gt;
+&lt;li&gt;Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;Spatial Statistics&lt;/li&gt;
+&lt;li&gt;Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;Experimental Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, in any case, it feels good to be a student again. Each time I go to my stats lecture after a long day of work, it &lt;em&gt;almost&lt;/em&gt; always feels therapeutic. Yea, almost.&lt;/p&gt;
+
+&lt;p&gt;Finally, if you are looking to advance your data science street cred via a postgraduate degree, this is just one of many options, even within NUS or Singapore. Do your research wisely before committing to any!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;center&gt;Quoting myself in Febuary 2019, &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt;.&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, this post first appeared on my WordPress blog &lt;a href=&#34;https://thestatsguy.home.blog/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt;, and I realised that this post on WordPress turned out to be one of the top results in a number of Google searches on this topic. The other search results are of course dominated by links to NUS and Faculty of Science itself.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_google_search.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Google search for &lt;a href=&#34;https://www.google.com/search?q=nus+msc+statistics+review&#34;&gt;&amp;ldquo;nus msc statistics review&amp;rdquo;&lt;/a&gt; - 4th result here (early May 2020)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out that I got a decent number of views on this post. Not bad considering that I don&amp;rsquo;t expect much (if any at all) traffic on my blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_msc_post_wordpress_stats.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Post views on WordPress (early May 2020)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;a-fuller-review&#34;&gt;A fuller review&lt;/h3&gt;
+
+&lt;p&gt;Since there is &lt;strong&gt;&lt;em&gt;some&lt;/em&gt;&lt;/strong&gt; interest in this topic, I thought I would spend some time in this post to do a more complete review of the programme and my experience.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Admission and logistics&lt;/li&gt;
+&lt;li&gt;Review of some of the stats modules I took
+
+&lt;ul&gt;
+&lt;li&gt;ST5201 Basic Statistical Theory&lt;/li&gt;
+&lt;li&gt;ST5202 Applied Regression Analysis&lt;/li&gt;
+&lt;li&gt;ST5225 Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;ST5218 Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;ST5211 Sampling From Finite Populations&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Some relevant Singaporean hacks
+
+&lt;ul&gt;
+&lt;li&gt;SkillsFuture Credit&lt;/li&gt;
+&lt;li&gt;Post-Secondary Education Account (PSEA)&lt;/li&gt;
+&lt;li&gt;Income Tax Course Fees Relief&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;How I went about my life while being a part-time student&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;admission-and-logistics&#34;&gt;Admission and logistics&lt;/h3&gt;
+
+&lt;p&gt;On this, what I have written before &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt; pretty much summarized it, except that I just want to quickly refer you to this &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;link&lt;/a&gt; for the admission criteria and requirements.&lt;/p&gt;
+
+&lt;h3 id=&#34;review-of-some-of-the-stats-modules-i-took&#34;&gt;Review of some of the stats modules I took&lt;/h3&gt;
+
+&lt;h4 id=&#34;st5201-basic-statistical-theory&#34;&gt;ST5201 Basic Statistical Theory&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_5201.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Basic Statistical Theory - Estimator Consistency
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5201 Basic Statistical Theory, later renamed to Statistical Foundations of Data Science&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:I-believe-the-co&#34;&gt;&lt;a href=&#34;#fn:I-believe-the-co&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, is one of the two core modules for the MSc. Recommended to take during the very first semester of the programme, this module is the pre-requisite to several other MSc modules&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Though-later-on&#34;&gt;&lt;a href=&#34;#fn:Though-later-on&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, and covers basic statistics and probability theory - &amp;ldquo;basic&amp;rdquo; as in fundamental and theoretical, not easy.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Exploratory data analysis including heat map and concentration map&lt;/li&gt;
+&lt;li&gt;Random variables&lt;/li&gt;
+&lt;li&gt;Joint distributions&lt;/li&gt;
+&lt;li&gt;Expected values&lt;/li&gt;
+&lt;li&gt;Limit theorems.&lt;/li&gt;
+&lt;li&gt;Estimation of parameters including maximum likelihood estimation, Bayesian approach to parameter estimation&lt;/li&gt;
+&lt;li&gt;Testing hypotheses and confidence intervals, bootstrap method of finding confidence interval, generalized likelihood ratio statistics&lt;/li&gt;
+&lt;li&gt;Summarizing data: measures of location and dispersion, estimating variability using Bootstrap method, empirical cumulative distribution function, survival function, kernel probability density estimate&lt;/li&gt;
+&lt;li&gt;Basic ideas of predictive analytics using multiple linear and logistic regressions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was quite a challenging module for me as I never had a formal background in theoretical statistics via my BSc. The only way I could counteract this was to spend more time and energy in making up for my not-so-strong theoretical background. It was also my first semester in the MSc so this module was the one that set my expectations for the subsequent semesters, in terms of the amount of work needed per module. I was taught by Dr Choi Yunjin.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5202-applied-regression-analysis&#34;&gt;ST5202 Applied Regression Analysis&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_5202.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Applied Regression Analysis - Bias-variance tradeoff
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5202 Applied Regression Analysis is the second of the 2 core modules in the programme. Unlike 5201, content in 5202 was more platable to me, with these regression modelling techniques being more applied than theoretical. If you are largely familiar with regression analysis then this module is mainly a refresher more than anything else. Like 5201, 5202 is a pre-req to many other modules in the programme. I was also taught by Dr Choi Yunjin for this module.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiple regression&lt;/li&gt;
+&lt;li&gt;Model diagnostics, remedial measures&lt;/li&gt;
+&lt;li&gt;Variable selection techniques&lt;/li&gt;
+&lt;li&gt;Non-least squares estimation&lt;/li&gt;
+&lt;li&gt;Nonlinear models&lt;/li&gt;
+&lt;li&gt;One and two factor analysis of variance, analysis of covariance&lt;/li&gt;
+&lt;li&gt;Linear model as special case of generalized linear model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;st5225-statistical-analysis-of-networks&#34;&gt;ST5225 Statistical Analysis of Networks&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_networks.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Statistical Analysis of Networks - Exponential Random Graph Models
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5225 Statistical Analysis of Networks was taught by Dr Wang Wanjie. Quite an interesting module that is a little different from the other stats modules. Typically, network / graph analysis are covered more by a computer science course than a statistics course.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Graph structures, adjacency matrix&lt;/li&gt;
+&lt;li&gt;Graph sampling&lt;/li&gt;
+&lt;li&gt;Centrality, cohesion, density, cliques, clustering&lt;/li&gt;
+&lt;li&gt;Graph partitions&lt;/li&gt;
+&lt;li&gt;Matching markets&lt;/li&gt;
+&lt;li&gt;The World Wide Web, PageRank&lt;/li&gt;
+&lt;li&gt;Graph models, random graph, stochastic block model, exponential random graph model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Another interesting point for me on this module was that the lectures took place on Saturdays 1pm to 3pm, which turned out to be a good timing for lectures&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:What-I-did-was-t&#34;&gt;&lt;a href=&#34;#fn:What-I-did-was-t&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I don&amp;rsquo;t believe this module is offered regularly.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5218-advanced-statistical-methods-in-finance&#34;&gt;ST5218 Advanced Statistical Methods in Finance&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_finance.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Advanced Statistical Methods in Finance - Capital Asset Pricing Model
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Of all the MSc modules that I took, this one stands out to be my favorite and resonates with me the most. Guess that’s mainly because I like topic, as well as of the fact that I was heavily experimenting with investing on my own during that time. I also found that using finance as the backdrop or context to study certain statistical concepts, such as copula or factor analysis, to be more engaging than perhaps studying these topics in vaccum.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Statistical distributions: Value-at-Risk (VaR)&lt;/li&gt;
+&lt;li&gt;Linear regression: Capital Asset Pricing Model (CAPM)&lt;/li&gt;
+&lt;li&gt;Factor analysis: Arbitrage Pricing Theory&lt;/li&gt;
+&lt;li&gt;Time series analysis: price forecast, volatility modelling&lt;/li&gt;
+&lt;li&gt;Copulae: tail dependence of asset prices&lt;/li&gt;
+&lt;li&gt;Estimation of covariance matrix and optimization: Markowitz’s portfolio theory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many other topics that could just as well fit into the theme of the module, but unfortunately 13 weeks isn&amp;rsquo;t a very long time. I was taught by Prof Xia Yingcun and he is a great lecturer who painstakingly explains each and every little detail and concept so that it&amp;rsquo;s clear for his students&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Other-than-copul&#34;&gt;&lt;a href=&#34;#fn:Other-than-copul&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. I highly recommend this module if you have a chance to take it.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5211-sampling-from-finite-populations&#34;&gt;ST5211 Sampling From Finite Populations&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_sampling.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Sampling from Finite Populations - Regression Estimation of population parameters
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, ST5211 Sampling From Finite Populations is my very last module during the MSc. I was taught by Prof Zhou Wang, who also painstakingly explains every detail to his students.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simple random sampling&lt;/li&gt;
+&lt;li&gt;Stratified sampling&lt;/li&gt;
+&lt;li&gt;Ratio and regression estimation&lt;/li&gt;
+&lt;li&gt;Sampling with unequal probabilities&lt;/li&gt;
+&lt;li&gt;Systematic sampling&lt;/li&gt;
+&lt;li&gt;Single stage cluster sampling&lt;/li&gt;
+&lt;li&gt;Two-stage cluster sampling&lt;/li&gt;
+&lt;li&gt;Design-based versus model-based inference&lt;/li&gt;
+&lt;li&gt;Small domain estimation&lt;/li&gt;
+&lt;li&gt;Nonresponse and other nonsampling errors&lt;/li&gt;
+&lt;li&gt;Survey quality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I had a lot of fun with this module as it was the only module I had left during my final semester, so it was more enjoyable than it was hard work. And the content in this module is genuinely interesting and applicable in real life problems.&lt;/p&gt;
+
+&lt;h3 id=&#34;some-relevant-singaporean-hacks&#34;&gt;Some relevant Singaporean hacks&lt;/h3&gt;
+
+&lt;h4 id=&#34;skillsfuture-credit&#34;&gt;SkillsFuture Credit&lt;/h4&gt;
+
+&lt;p&gt;This course is eligible for claim from your &lt;a href=&#34;https://www.skillsfuture.sg/Credit&#34;&gt;SkillsFuture Credit (SFC)&lt;/a&gt; - if you haven&amp;rsquo;t yet use any SFC before, then you should have $500 worth of opening credits to boot. To claim for SFC, log in into your SkillsFuture account and go to this &lt;a href=&#34;https://www.myskillsfuture.sg/content/portal/en/training-exchange/course-directory/course-detail.html?courseReferenceNumber=NUS-200604346E-01-1006ST1CWK&#34;&gt;page&lt;/a&gt; and click on &amp;ldquo;Claim SkillsFuture Credit&amp;rdquo;. Of course you can only claim for any one semester so feel free to claim it as early as possible.&lt;/p&gt;
+
+&lt;p&gt;You have to do this before the semester for which you want to claim for SFC, and &lt;strong&gt;before (not after)&lt;/strong&gt; your Student Bill is finalized. What happens is that once approved, SkillsFuture will credit your $500 SFC credit directly to NUS, which will then appear in your Student Bill. You then pay the balance for your tuition fees.&lt;/p&gt;
+
+&lt;h4 id=&#34;post-secondary-education-account-psea&#34;&gt;Post-Secondary Education Account (PSEA)&lt;/h4&gt;
+
+&lt;p&gt;As a Singaporean student, the PSEA account is created when you turn 16, and balance from your Edusave account will be transferred to the PSEA account. Like the Edusave account, the PSEA can be used for education purposes. In addition, with the PSEA account, you get an interest of 2.5% per annum, and this account will be held until you are 30 years old - after which the balance will be transferred into your CPF-OA&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Don-t-ask-me-why&#34;&gt;&lt;a href=&#34;#fn:Don-t-ask-me-why&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;To use the PSEA for your MSc, go to this NUS Student Service &lt;a href=&#34;https://www.askstudentservice.nus.edu.sg/app/answers/detail/a_id/2425/related/1&#34;&gt;page&lt;/a&gt; and complete the Standing Order (SO) form, then submit it accordingly.&lt;/p&gt;
+
+&lt;h4 id=&#34;income-tax-course-fees-relief&#34;&gt;Income Tax Course Fees Relief&lt;/h4&gt;
+
+&lt;p&gt;Finally, this course is also eligible for Course Fees Relief for your Income Tax, up to a maximum of $5,500 per year. This &lt;a href=&#34;https://www.iras.gov.sg/IRASHome/Individuals/Locals/Working-Out-Your-Taxes/Deductions-for-Individuals/Course-Fees-Relief/&#34;&gt;page&lt;/a&gt; on the IRAS website spells out all the necessary details. Like most other reliefs, you can claim the Course Fees Relief by submitting it in your annual tax assessment - so that means claiming 2 semesters at a time. Of course, this only applies if you are an employed part-time student.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-i-went-about-my-life-while-being-a-part-time-student&#34;&gt;How I went about my life while being a part-time student&lt;/h3&gt;
+
+&lt;p&gt;My time as a part-time student (2.5 years in total&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Throughout-the-2&#34;&gt;&lt;a href=&#34;#fn:Throughout-the-2&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;) basically flew by, simply because of the packed schedules and constant back and forth between work and school. Since most lectures happened between 7pm to 10pm on weeknights, on lecture nights I would (gladly) leave work on time or early and make my way to school for dinner and lecture. I tried very much to not skip any lectures regardless of lecture recordings, but this proved to be occasionally impossible. And there were nights where I was simply too exhausted to go to school and sit for 3 hours to absorb content. While most of the time I would take MRT/bus to school, sometimes I would splurge a little and take a Grab. It was always good to reach school earlier, so that I can take my time with my dinner and enjoy the cheap Science canteen food and a cup of coffee.&lt;/p&gt;
+
+&lt;p&gt;On most non-lecture nights I typically don&amp;rsquo;t touch any of my schoolwork - but I would dedicate one day of my weekend (usually the Sunday) to catch up on lectures and work on tutorials and assignments. During these days, I would spend the day in Utown and sort of &amp;ldquo;blend in&amp;rdquo; with the other undergraduates. If it&amp;rsquo;s not at Utown, then I would either spend the day in the Medical library or the Science library. Either way, there is still plenty of cheap food and coffee in school to replenish myself throughout my mugging.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_utown.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Utown (July 2017)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, sometimes one day simply isn&amp;rsquo;t enough so it would spill over to the other weeknights from time to time. Even as a part-time student, Recess Week was always great as it means no need to travel to school, no new content, and more time to catch up, and of course prepare for the mid-term exam or assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_exam_schedule.PNG&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Final exam schedule (May 2018)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;When it comes to the final exams, my protocol has always been to take roughly about 1.5 weeks of paid or study leave to prepare for the 2 final exams I have per semester. This was always a good break from work&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Studying-to-prep&#34;&gt;&lt;a href=&#34;#fn:Studying-to-prep&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;, as I typically don&amp;rsquo;t spend that much time away from work&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Yes-I-am-a-littl&#34;&gt;&lt;a href=&#34;#fn:Yes-I-am-a-littl&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. I might also take one extra day of leave after the last paper to just relax and &amp;ldquo;celebrate&amp;rdquo; the fact that I finished yet another semester, before going back to work.&lt;/p&gt;
+
+&lt;p&gt;In all, it was a rewarding experience and I am very glad that I took the plunge to commit to the MSc for the 5 semesters. It was great being a student again, having blocks of time during weeknights and weekends focusing on nothing else but the content on my lecture notes and assignments. I guess for those of you who have been in the workforce for a while now and would like a change of pace or a break in stagnancy, going back to school is definitely an option, be it full-time or part-time. In any case, I hope this post was as fun for you to read as it was for me to write. Thanks for reading!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:I-believe-the-co&#34;&gt;I believe the content in this module became more applied and less theoretical after the renaming. I took it before the renaming. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:I-believe-the-co&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Though-later-on&#34;&gt;Though later on I realise that in the MSc programme, fulfilling pre-requisites is understandably loosely followed. It&amp;rsquo;s OK to take 5201 beyond your first semester. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Though-later-on&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:What-I-did-was-t&#34;&gt;What I did was that I would spend the whole Saturday morning to rest and get ready and then have lunch in school. After the lecture, I would then head over to VivoCity for dinner, coffee, and then do a bit more of work or studying. It was rather therapeutic. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:What-I-did-was-t&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Other-than-copul&#34;&gt;Other than &lt;a href=&#34;https://en.wikipedia.org/wiki/Copula_(probability_theory)&#34;&gt;copulae&lt;/a&gt;. I had a tough time understanding and appreciating the concept of a copula, and happened to find this &lt;a href=&#34;https://twiecki.io/blog/2018/05/03/copulas/&#34;&gt;blog post&lt;/a&gt; do an expert job at demystifying it. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Other-than-copul&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Don-t-ask-me-why&#34;&gt;Don&amp;rsquo;t ask me why this Edusave -&amp;gt; PSEA -&amp;gt; CPF-OA transferring exists. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Don-t-ask-me-why&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Throughout-the-2&#34;&gt;Throughout the 2.5 years, I had in fact switched jobs twice (another story for another time). Guess this didn&amp;rsquo;t really affect anything for my studying, other than going to school from different workplaces, and figuring out different printer settings in 3 offices to print my lecture notes. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Throughout-the-2&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Studying-to-prep&#34;&gt;Studying to prepare for final exams is fun, but writing those &amp;ldquo;cheatsheets&amp;rdquo; definitely is not. They were a bane. If you don&amp;rsquo;t know what &amp;ldquo;cheatsheets&amp;rdquo; are, good for you. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Studying-to-prep&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Yes-I-am-a-littl&#34;&gt;Yes, I am a little bit of a workaholic. Just a bit. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Yes-I-am-a-littl&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -28,8 +334,95 @@ Back in January 2017, I first seriously considered taking up a postgraduate degr
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/05/11/short-an-uncommon-approach-in-tackling-class-imbalance/</guid>
-      <description>In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.
-The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/05/f5126-1h01epkhncswjxdtyxzuq6g.jpeg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph {&#34;align&#34;:&#34;left&#34;} --&gt;
+
+&lt;p&gt;&lt;p class=&#34;has-text-align-left&#34;&gt;In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.g. &lt;a href=&#34;https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis#SMOTE&#34;&gt;SMOTE&lt;/a&gt;). Of course, downsampling of majority class is often frowned upon as precious datapoints are being discarded.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In many situations, these approaches work reasonably well. However, in contexts in which there is an inherent asymmetry between false positives and false negatives, these approaches are less than ideal. For example,&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list --&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;In cyber security, the inability to detect an intrusion into networks (false negative) incurs a different cost as compared to a false alarm (false positive).&lt;/li&gt;&lt;li&gt;In human resources, the inability to detect impending attrition of a high-potential employee (false negative) incurs a different cost as compared to incorrectly detecting said attrition (false positive).&lt;/li&gt;&lt;li&gt;In a clinical setting, the inability to detect post-surgical complications (false negative) incurs a different cost as compared to incorrectly detecting a complication (false positive). &lt;/li&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In most practical contexts, false positives and negatives incur different waste and costs. In addition, given that a prediction error is going to occur, there is often a &lt;strong&gt;preferred &lt;/strong&gt;outcome or error. For instance, a healthcare practitioner would likely rather to not miss out on a post-surgical complication, than save on manpower and resources with poor prognosis.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Assuming that is the case, a simple but less commonplace approach to tackling class imbalance is to design a utility function &lt;em&gt;U(m)&lt;/em&gt; that captures the inherent asymmetry of prediction outcomes, and use &lt;em&gt;U(m) &lt;/em&gt;as the loss function in the ML training process for model &lt;em&gt;m&lt;/em&gt;. Such utility functions are often used in econometrics to capture choices and preferences. Following illustrates an instructive but naive example of &lt;em&gt;U(m)&lt;/em&gt;:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:table --&gt;
+
+&lt;p&gt;&lt;figure class=&#34;wp-block-table&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+  &lt;strong&gt;Prediction Outcome&lt;/strong&gt;
+  &lt;/td&gt;&lt;td&gt;
+  &lt;strong&gt;Utility Score&lt;/strong&gt;
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+  True positive
+  &lt;/td&gt;&lt;td&gt;
+  1
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+  True negative
+  &lt;/td&gt;&lt;td&gt;
+  1
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+  False positive
+  &lt;/td&gt;&lt;td&gt;
+  -5
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+  False negative
+  &lt;/td&gt;&lt;td&gt;
+  -50
+  &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- /wp:table --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;em&gt;U(m)&lt;/em&gt; would then be:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:preformatted --&gt;
+
+&lt;p&gt;&lt;pre class=&#34;wp-block-preformatted&#34;&gt;U(m) = TP(n&lt;sub&gt;1&lt;/sub&gt;) + TN(n&lt;sub&gt;2&lt;/sub&gt;) - 5FP(n&lt;sub&gt;3&lt;/sub&gt;) - 50FN(n&lt;sub&gt;4&lt;/sub&gt;)&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;where &lt;em&gt;n&lt;sub&gt;i &lt;/sub&gt;&amp;nbsp;&lt;/em&gt;are the respective case counts of each prediction outcome. &lt;em&gt;U(m) &lt;/em&gt;can then be used as the loss function in tuning individual ML models, heavily penalizing false negatives.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;The utility scores of each prediction outcome is a function of the expert judgement of clinicians and practitioners, in evaluating relative costs and tradeoffs between each outcome. They are also largely context-driven and should ideally differ between surgical complications, diseases, or even hospitals and departments. Finally, loss functions are general to supervised learning algorithms, i.e. &lt;em&gt;U(m)&lt;/em&gt; can be experimented with and built into various ML models.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Of course, the challenge then, in using utility functions in machine learning, is in the design of the function - how to best to capture the inherent asymmetry and tradeoffs, and evaluate and summarize relative costs. This has to be done together with domain experts as they are the ones who can providing the expert opinion and judgement, in articulating the tradeoffs in utility. While network intrusion and employee attrition can be quantified in dollar value, the loss of a human life is definitely not so straightforward.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -38,14 +431,91 @@ The typical approaches in alleviating class imbalance include using robust metri
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/03/17/seven-tips-for-working-on-analytics-delivery-projects/</guid>
-      <description>Following are seven tips / tricks / hacks that I came to learnt (some of them the hard way) and compiled as a data scientist / delivery consultant / data science consultant. In brief, they are:
-You to Yourself
- Develop a strategy
- Keep a delivery journal
- Plan your daily activities
- Frontload your projects
-  You to Others
- Show mediocre output to no one</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/03/4c7f8-creativitygap.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Following are seven tips / tricks / hacks that I came to learnt (some of them the hard way) and compiled as a data scientist / delivery consultant / data science consultant. In brief, they are:&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;You to Yourself&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Develop a strategy&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keep a delivery journal&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Plan your daily activities&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Frontload your projects&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;You to Others&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Show mediocre output to no one&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Follow up on everything&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Have 30 seconds responses to every possible question from the customer you can think of&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Before I elaborate, let me clarify that by &amp;ldquo;customers&amp;rdquo;, I mean anyone who is related to the project, most possibly only with the exception of yourself, your teammates, and your project manager. If you work as a consultant, the idea of a customer is obvious. If you work in an in-house analytics outfit, then your customer is someone who will use your final output; could be your boss, the business owners, the IT department and engineers, the end-users etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;YOU TO YOURSELF&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;DEVELOP A STRATEGY&lt;/b&gt; - At the start of the project, develop a strategy or a plan. Take a piece of paper and a pen, write down how you want to tackle the problem. &lt;b&gt;Writing it down is key&lt;/b&gt;. Consider everything - how data flows from point A and B, what models do you want to try/you think might work, what data pre-proc do you think you need/might be necessary, what is the ideal set of results/output for you - down to the data structures (R: data frame, list, vector, matrix; python: pandas dataframe, dictionaries, lists; pyspark: broadcasts, accumulators, local vs. distributed etc.), what packages do you think you will require (version numbers/compatibility?), what visualizations do you want to see, what would the ideal plot look like, what assumptions are you making, how much time do you think you need for each task, how big are the intermediate results, is the cluster/HDFS sized correctly, what difficulties do you think you will face. Draw flowcharts and diagrams, draw your pipelines. &lt;b&gt;EVERYTHING&lt;/b&gt;. Again, &lt;b&gt;writing them down is key&lt;/b&gt;. I strongly recommend using pen and paper for this, or a notebook. Don&amp;rsquo;t be afraid to take 1 or 2 hours on this. Be thorough. After you are done, take a picture of it with your phone and save it somewhere. Unless you are extremely clear right at the beginning what you want to do, this should probably be one of many drafts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;b&gt;KEEP A DELIVERY JOURNAL&lt;/b&gt; - Keep a delivery journal. Document everything - What happened today, problems faced, how long did a certain procedure take, your modelling strategy, your thoughts, your gut feelings, meeting notes, what went wrong, what went right, insights, mistakes… everything. Think of it as a diary. Do it on a daily basis. Show this journal to no one but yourself. Write as the day progresses, don’t wait until the end of the day. If you find it hard to do this, try to jot down in concise but substantive points, and expound on them at the end of your day. Also, make reference to the strategy you developed. Did anything change for the better or the worse after today? Personally, I keep a Evernote window open while I work and write in it as the day progresses.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;b&gt;PLAN YOUR DAILY ACTIVITIES&lt;/b&gt; - Plan your daily activities. At the end of your day, plan what do you want to achieve at the end of the next manday. Write them down. Don’t do this in the customer’s office - do this after you had your dinner, took a shower. I find myself writing more accurate projections of my following manday when I write this at home or in the hotel room, i.e. outside of the office. I do this using Evernote as well.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;b&gt;FRONTLOAD YOUR PROJECT&lt;/b&gt; - To frontload your project means to do as much of the work as possible at the start of the project - preferably in the first week. I always had this idea subconsciously, even when I was still in university, but never verbalized it until I read &lt;a href=&#34;https://www.bookdepository.com/McKinsey-Edge-Success-Principles-from-Worlds-Most-Powerful-Consulting-Firm-Shu-Hattori/9781259588686&#34;&gt;The McKinsey Edge by Shu Hattori&lt;/a&gt;. Basically, if you say this to yourself: “This is the first week of the project, so I should just take it easy”, &lt;b&gt;YOU ARE DEAD WRONG&lt;/b&gt;. If you have this sentiment during the first 5 mandays of your project, you are not doing the right thing. The first manweek is critical. Use it for the following:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Information (get up to speed with project kickoff materials, timeline, exact format of deliverables etc.)&lt;/li&gt;
+&lt;li&gt;Clarifications (clarifications with your customers - this is the most important)&lt;/li&gt;
+&lt;li&gt;Strategy (delivery or dev strategy, as above)&lt;/li&gt;
+&lt;li&gt;Workflow (software, tools, access credentials)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, frontloading your project does not mean you jump right into developing the scripts and codebase and writing as much as possible. This is counter-productive, and most likely your codebase will turn out to be utterly useless by the second or third manweek. Instead, use the time to get the above issues out of the way, so that once you get into the dev rhythm, you don&amp;rsquo;t have to stop and mind about these pesky nonsense that will hurt your productivity.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;YOU TO OTHERS&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;SHOW MEDIOCRE OUTPUT TO NO ONE - AKA you always need a story to tell&lt;/b&gt; - As it turns out, impressions matter even in a delivery project, with defined deliverables and outcomes. When you meet your customers for the first time during presales or sign-off or the like, you get sized up. The next and the most crucial juncture in which you are sized up again is perhaps at your first intermediate output or milestone, whether it&amp;rsquo;s a MVP dashboard or some intermediate flat table of results or a deck depicting your first iteration of modelling using CRISP-DM. Never show mediocre output to your customers, even if you prefaced it with &amp;ldquo;This is just some intermediary results&amp;rdquo;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you ponder about this point for a little, you might realise that for a modelling project, this might be difficult to accomplish. What if after putting in 2 or 3 manweeks of modelling effort, your ROC-AUC is still stuck at 0.65? In this case, there are several things you can think about and show to your customers, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Some EDA plot or statistic or metric to illustrate the quality of the data, or lack thereof&lt;/li&gt;
+&lt;li&gt;Likewise, some plot or statistic or metric to show that one or more assumptions made in the project is not true, but only ostensible or perhaps even outright false. (In the latter case, you should go hammer your presales guy who scoped and sized this project. If you are the one who scoped it, you deserve it.)&lt;/li&gt;
+&lt;li&gt;An alternative approach, not limited to changing performance metrics, including additional data or features, targetting or neglecting a specific subsample of the data for subsequent efforts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Basically, you need a &lt;b&gt;story&lt;/b&gt;. If your immediate output looks great, great, you have a story to tell. But if your immediate output is less than ideal, then you need to craft a story on how to improve things going forward.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;FOLLOW UP ON EVERYTHING&lt;/b&gt; - This ties in with frontloading your project - follow up on every single doubt you have in your mind. This is important because you will meet customers who know that you, as the delivery consultant, lack a certain piece of critical information, but didn&amp;rsquo;t share it with you anyway - simply because you didn&amp;rsquo;t ask. I had to learn this this hard way. And it&amp;rsquo;s a sure-lose situation for you because there is no good answer to their question &amp;ldquo;Why didn&amp;rsquo;t you ask me?&amp;rdquo;. However, do be careful when you follow up on questions with your customers. Make sure your question is thought-out and well-researched. Remember, impressions count.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;b&gt;HAVE A 30-SECOND RESPONSE TO EVERY POSSIBLE QUESTION from the customer you can think of&lt;/b&gt; - This is another one that I picked up from the McKinsey Edge, and I really like this a lot. It&amp;rsquo;s simple to implement, yet so impactful and well thought-out. Inevitably, you can&amp;rsquo;t have responses to every single question there is - just make sure you have the responses to the key and obvious questions. For example,&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Why do you use this feature over the other?&lt;/li&gt;
+&lt;li&gt;Why do you log-transform this feature?&lt;/li&gt;
+&lt;li&gt;Why are you using &lt;programming language A&gt; over &lt;programming language B&gt;?&lt;/li&gt;
+&lt;li&gt;Why are you using &lt;machine learning model A&gt; over &lt;machine learning model B&gt;?&lt;/li&gt;
+&lt;li&gt;How do you interpret these results?&lt;/li&gt;
+&lt;li&gt;How can I use these results?&lt;/li&gt;
+&lt;li&gt;Etc etc etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The objective is to not babble like a fool for 2 or 3 mins and have zero concrete ideas or responses put across. No one has the time or patience to listen to your uninsightful babbling. We all know this one person in our workplace who keeps talking continuously but nothing substantial is actually put forth. Therefore, make sure you convey your idea across as concisely and succinctly as possible. 30 seconds is just a heuristic.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -54,9 +524,71 @@ You to Yourself
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/02/24/paper-review-to-tune-or-not-to-tune-the-number-of-trees-in-random-forest/</guid>
-      <description>Plotting different performance metrics against the number of trees in random forest. Source 
-I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:
-Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number of Trees in Random Forest. Journal of Machine Learning Research, 18(181), 1-18.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/02/download2-1.png&#34; width=&#34;100%&#34;&gt;
+Plotting different performance metrics against the number of trees in random forest. &lt;a href=&#34;https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I came across the following paper during my Masters coursework that addresses a practical issue in the use of the random forest model, and in general, any other bootstrap aggregating ensembles:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jmlr.org/papers/v18/17-269.html&#34;&gt;Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number of Trees in Random Forest. Journal of Machine Learning Research, 18(181), 1-18. &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;1. Motivation&lt;/h2&gt;
+
+&lt;p&gt;This is an interesting paper as it directly addresses a fundamental question on whether the number of base learners in a bagging ensemble should be tuned. In the case of random forest (RF), the number of trees &lt;em&gt;T&lt;/em&gt; is often regarded as a hyperparameter, in the sense that either too high or too low of a value would yield sub-par model performance. Tuning of &lt;em&gt;T&lt;/em&gt; is typically done by plotting the one or multiple chosen out-of-bag (OOB) metrics, such as the error rate, as a function of &lt;em&gt;T&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/02/download.png&#34; width=&#34;100%&#34;&gt;
+Different OOB metrics (error rate, Brier score, log loss, AUC) as a function of &lt;em&gt;T&lt;/em&gt;. &lt;a href=&#34;https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;In the case above, there are clear indications of convergence in &lt;em&gt;T&lt;/em&gt;, and any further increase in &lt;em&gt;T&lt;/em&gt; brings either marginal or zero improvements in model performance. However, that&#39;s not always the case, prompting the treatment of &lt;em&gt;T&lt;/em&gt; as a model hyperparameter:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/02/download2.png&#34; width=&#34;100%&#34;&gt;
+Non-convergence of &lt;em&gt;T&lt;/em&gt;. &lt;a href=&#34;https://github.com/PhilippPro/tuneNtree/blob/master/graphics/binary_classification.pdf&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2&gt;2. Objectives of paper&lt;/h2&gt;
+
+&lt;p&gt;Based on this motivation, the authors move step by the step to give this issue a structured treatment along the following objectives:&lt;/p&gt;
+
+&lt;figure class=&#34;wp-block-table&#34;&gt;&lt;table class=&#34;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Quoted from abstract&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Layman explanations&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(i) Provide theoretical results showing that the expected error rate may be a non-monotonous function of &lt;em&gt;T&lt;/em&gt;, and explaining under which circumstances this happens&lt;/td&gt;&lt;td&gt;Show that the error rate of RF may increase or decrease as &lt;em&gt;T&lt;/em&gt; increases (non-monotonous), depending on a certain phenomenon that could be observed from the testing dataset.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(ii) Provide theoretical results showing that such non-monotonous patterns cannot be observed for other performance measures such as the Brier score and the log loss (for classification) and the MSE (for regression)&lt;/td&gt;&lt;td&gt;Show that such non-monotonicity cannot be observed for performance metrics such as the Brier score, log loss and MSE, even though it can be observed for the error rate - sorry for the double negative, take a moment to digest that before you get confused further.&lt;br&gt;&lt;br&gt;(It is also shown in the paper that the ROC-AUC follows such non-monotonicity.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(iii) Illustrate the extent of the problem through an application to a large number (306) datasets&lt;/td&gt;&lt;td&gt;Validate findings via empirical experimentations using public ML datasets&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(iv) Argue in favor of setting &lt;em&gt;T&lt;/em&gt; to a computationally feasible large number as long as classical error measures based on average loss are considered&lt;/td&gt;&lt;td&gt;Conclude that &lt;em&gt;T&lt;/em&gt; should not be tuned, but set to a feasibly large number.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2&gt;3. Structure of paper&lt;/h2&gt;
+
+&lt;ol&gt;&lt;li&gt;Motivation and literature review&lt;/li&gt;&lt;li&gt;Build up RF and various performance metrics for theoretical context&lt;/li&gt;&lt;li&gt;Theoretical treatment (mainly binary classification, results for multiclass classification and regression are extrapolated and inferred)&lt;/li&gt;&lt;li&gt;Empirical validation&lt;/li&gt;&lt;li&gt;Conclusions and extensions&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h2&gt;4. Five takeaways from the authors&lt;/h2&gt;
+
+&lt;p&gt;Without boring you as the reader on the specifics of the theoretical and empirical treatments to the problem, here are the key takeaways from the authors (with my translations):&lt;/p&gt;
+
+&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Non-monotonicity (as a function of &lt;/strong&gt;&lt;em&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;) can only be observed for the error rate and the ROC-AUC&lt;/strong&gt;, but not for typical performance metrics such as the Brier score, log loss, or MSE.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;*The behaviour of the error rate as a function of &lt;/strong&gt;&lt;em&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt; (error rate curve) is largely dependent on the empirical OOB distributions of the prediction errors ε&lt;/strong&gt;&lt;sub&gt;&lt;strong&gt;i&lt;/strong&gt;&lt;/sub&gt; - this is the most important point in this paper for me, to be elaborated further.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;For regression, non-monotonicity can be observed from median-based (as opposed to mean-based) performance metrics&lt;/strong&gt;. This makes sense since typical recursive partitioning in the base learners goes for squared error minimization.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The biggest OOB performance gain comes from the first 250 trees; going from 250 to 2000 trees yields minimal performance gains&lt;/strong&gt;. This is true for binary classification, multiclass classification, and regression.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;More trees are better&lt;/strong&gt; - non-monotonicity is only observed under specific conditions, with specific performance metrics. Even under non-monotonicity, the difference between the converged metric and its global extreme is minimal. Therefore, &lt;strong&gt;set &lt;/strong&gt;&lt;em&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt; to a computationally feasible large number&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h2&gt;5. Empirical OOB distributions of prediction errors&lt;/h2&gt;
+
+&lt;p&gt;One of the key takeaways from this paper is that the behaviour of the error rate as a function of &lt;em&gt;T&lt;/em&gt; (error rate curve) is largely dependent on the empirical OOB distributions of the prediction errors ε&lt;sub&gt;i&lt;/sub&gt;. In the paper, it was shown theoretically that the convergence rate of the error rate curve is only dependent on the distribution of ε&lt;sub&gt;i&lt;/sub&gt;. In particular,&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;In a largely accurate (many observations with ε&lt;sub&gt;i&lt;/sub&gt;  ≈ 0, few observations with ε&lt;sub&gt;i&lt;/sub&gt;  ≈ 1) ensemble, observations with ε&lt;sub&gt;i&lt;/sub&gt; &amp;gt; 0.5 will be compensated by observations with ε&lt;sub&gt;i&lt;/sub&gt; &amp;lt; 0.5 , in such a way that the error rate curve is monotonously decreasing.&lt;/li&gt;&lt;li&gt;However, in ensembles with many ε&lt;sub&gt;i&lt;/sub&gt;  ≈ 0 and a few ε&lt;sub&gt;i&lt;/sub&gt; ≥ 0.5 that are close to 0.5, a problem arises. By the authors&#39; computations, due to these fringe cases (model is uncertain &lt;strong&gt;∴&lt;/strong&gt; ε&lt;sub&gt;i&lt;/sub&gt;  ≈ 0.5), the error rate curve falls down quickly, then grows again slowly to convergence. The following should make a convincing case:&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/02/untitled.png&#34; width=&#34;100%&#34;&gt;
+OOB error rate curves for three datasets from OpenML. &lt;a href=&#34;http://jmlr.org/papers/v18/17-269.html&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2019/02/untitled2.png&#34; width=&#34;100%&#34;&gt;
+OOB ε&lt;sub&gt;i&lt;/sub&gt; distributions from RF models on the same three datasets. &lt;a href=&#34;http://jmlr.org/papers/v18/17-269.html&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;These are rather high impact findings as &lt;strong&gt;in practice, the empirical OOB distributions of ε&lt;/strong&gt;&lt;sub&gt;&lt;strong&gt;i&lt;/strong&gt;&lt;/sub&gt;&lt;strong&gt; are often not reviewed, especially in the setting of RF or any other ensemble&amp;nbsp;modeling&amp;nbsp;exercise&lt;/strong&gt;. (On the other hand, if your training is in statistics, then linear regression diagnostics should be very familiar. Just sayin&#39;.)&lt;/p&gt;
+
+&lt;h2&gt;6. Practical implications from this paper&lt;/h2&gt;
+
+&lt;p&gt;Finally, all that talk for what we can do in practice:&lt;/p&gt;
+
+&lt;ol&gt;&lt;li&gt;As part of model maintenance, check on the distribution of ε&lt;sub&gt;i&lt;/sub&gt;. When concept drift kicks in in the future, your model could become doubly misspecified - one count from training-testing data disparity and one count on the selection of &lt;em&gt;T&lt;/em&gt;. Also notice that the distribution of ε&lt;sub&gt;i&amp;nbsp;&lt;/sub&gt;is a function of e.g. size of the dataset (both &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;p&lt;/em&gt;). This should be intuitive.&lt;/li&gt;&lt;li&gt;Understand the behavior of your selected performance metric as a function of &lt;em&gt;T&lt;/em&gt;. To give a naive example, optimizing ROC-AUC vs. optimizing log loss with respect to &lt;em&gt;T&lt;/em&gt; should now be very different to you.&lt;/li&gt;&lt;li&gt;Finally, under normal or slightly perturbed conditions (again on &lt;br&gt;distribution of ε&lt;sub&gt;i)&lt;/sub&gt; , a large &lt;em&gt;T&lt;/em&gt; is still better.&lt;/li&gt;&lt;/ol&gt;
+</description>
     </item>
     
     <item>
@@ -65,9 +597,42 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
       <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</guid>
-      <description>I have gotten quite a couple of questions regarding my current MSc Statistics programme in NUS. Here are some broadstroke information about the programme and how I am approaching it.
- I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.
- Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://www.science.nus.edu.sg/wp-content/uploads/2020/02/fos-logo.png&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I have gotten quite a couple of questions regarding my current &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;MSc Statistics programme&lt;/a&gt; in NUS. Here are some broadstroke information about the programme and how I am approaching it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one. Basically dependent on whether you have a Honours in your Bachelor&amp;rsquo;s degree. I&amp;rsquo;m doing the Track 1 programme - 40MC is equivalent to 10 modules. Under usual circumstances, it takes 2 full-time semesters to finish 10 modules, i.e. 1 academic year. Semesters run as per typical undergraduate semesters in Singapore.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There&amp;rsquo;s also the part-time option, where one would take 4 to 5 semesters to finish the 10 modules - 5 semesters is basically 2 modules x 5 semesters = 10 modules.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m on the part-time programme. Personally, 3 modules on a part-time basis per semester is too much for me to handle - so I opt to finish my MSc in 5 semesters, or 2.5 academic years.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m currently in my 4th semester, so would be finishing the programme requirements by Dec 2019 and graduate during July 2020 (commencement).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For MSc Statistics, lectures typically run from 7pm to 10pm weeknights. Each module has 1 lecture per week, with the typical workload of tutorials, homework assignments, individual or group projects, subjected to respective lecturer&amp;rsquo;s discretion.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lastly, the programme &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GDTuitionCurrent.pdf&#34;&gt;cost&lt;/a&gt; &lt;b&gt;$2,500 per semester for Singaporeans who are taking this MSc programme as their first higher qualification programme under the &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GD-Eligibility-Guidelines.pdf&#34;&gt;MOE Subsidy&lt;/a&gt;&lt;/b&gt;. Yes it&amp;rsquo;s pretty value for money if you ask me. This tuition fee amount is not unique to MSc Statistics, and is general to many other programmes in NUS, again provided if you belong to the above category.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My experience with the programme is a positive one so far.  Difficulty and commitment level is within my comfort zone, and I managed to learn quite a couple of new things. Modules that I have taken include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Applied Data Mining&lt;/li&gt;
+&lt;li&gt;Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;Spatial Statistics&lt;/li&gt;
+&lt;li&gt;Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;Experimental Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, in any case, it feels good to be a student again. Each time I go to my stats lecture after a long day of work, it &lt;em&gt;almost&lt;/em&gt; always feels therapeutic. Yea, almost.&lt;/p&gt;
+
+&lt;p&gt;Finally, if you are looking to advance your data science street cred via a postgraduate degree, this is just one of many options, even within NUS or Singapore. Do your research wisely before committing to any!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -76,8 +641,201 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/01/24/using-waterfall-charts-to-visualize-feature-contributions/</guid>
-      <description>IntroductionI am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found here.
-Waterfall chart: inspired by their commonplace use in finance1, a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term \(\beta_0\). The idea is quickly see which features contribute positively and which negatively, and by how much.</description>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found &lt;a href=&#34;https://github.com/thestatsguy/thestatsguy/blob/master/content/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions.Rmd&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waterfall chart: inspired by their commonplace use in finance&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term &lt;span class=&#34;math inline&#34;&gt;\(\beta_0\)&lt;/span&gt;. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample &lt;span class=&#34;math inline&#34;&gt;\([x_1, x_2, ..., x_p]\)&lt;/span&gt;, get the prediction, then visualize individual &lt;strong&gt;absolute&lt;/strong&gt; feature contribution to the prediction &lt;span class=&#34;math inline&#34;&gt;\(\hat{y}\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample &lt;span class=&#34;math inline&#34;&gt;\([x_1, x_2, ..., x_p]\)&lt;/span&gt;), but plotted by ranking the numeric contributions by their proportions &lt;strong&gt;relative&lt;/strong&gt; to the prediction&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; like this: &lt;code&gt;contribution_proportion = feature_contribution / prediction&lt;/code&gt;, written below as &lt;code&gt;cont_prop &amp;lt;- featcont/pred&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Regression&lt;/h2&gt;
+&lt;div id=&#34;preparation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(MASS)
+library(caret)
+## Loading required package: lattice
+## Loading required package: ggplot2
+## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3
+library(magrittr)
+library(ggplot2)
+
+data(Boston)
+set.seed(123)
+
+# mean centering
+b2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)
+
+idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)
+train &amp;lt;- Boston[idx,]
+test &amp;lt;- Boston[-idx,]
+
+mod0 &amp;lt;- lm(data = train, medv ~.)
+
+sm &amp;lt;- summary(mod0)
+betas &amp;lt;- sm$coefficients[,1]
+
+testcase &amp;lt;- test[1,]
+pred &amp;lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &amp;lt;- testcase[-which(testcase %&amp;gt;% names == &amp;quot;medv&amp;quot;)] %&amp;gt;% as.matrix
+betas2 &amp;lt;- betas[-1]
+
+nm &amp;lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &amp;lt;- betas2*featvec
+featcont &amp;lt;- c(betas[1], featcont, pred)
+names(featcont) &amp;lt;- c(nm, &amp;quot;Prediction&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;waterfall-chart-on-regression-feature-contributions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Waterfall chart on regression feature contributions&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# waterfall chart on feature contribution
+plotdata &amp;lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &amp;lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &amp;lt;- seq_along(plotdata$coef)
+plotdata$Impact &amp;lt;- ifelse(plotdata$featcont &amp;gt; 0, &amp;quot;+ve&amp;quot;, &amp;quot;-ve&amp;quot;)
+plotdata[plotdata$coef %in% c(&amp;quot;(Intercept)&amp;quot;, &amp;quot;Prediction&amp;quot;), &amp;quot;Impact&amp;quot;] &amp;lt;- &amp;quot;Initial/Net&amp;quot;
+plotdata$end &amp;lt;- cumsum(plotdata$featcont)
+plotdata$end &amp;lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &amp;lt;- c(0, head(plotdata$end, -1))
+plotdata &amp;lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &amp;lt;- ggplot(plotdata, aes(fill = Impact)) +
+ geom_rect(aes(coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;))
+ scale_fill_manual(values=c(&amp;quot;darkred&amp;quot;, &amp;quot;darkgreen&amp;quot;, &amp;quot;darkblue&amp;quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+#coord_flip()
+
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &amp;lt;- gg + geom_hline(yintercept = 0)
+gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+cont_prop &amp;lt;- featcont/pred
+
+plot_data &amp;lt;- data.frame(coef = names(cont_prop),
+                        cont_prop = cont_prop,
+                        row.names = NULL)
+plot_data &amp;lt;- plot_data[-nrow(plot_data),]
+
+plot_data &amp;lt;- plot_data[order(plot_data$cont_prop, decreasing = FALSE),]
+
+plot_data$coef &amp;lt;- factor(plot_data$coef, levels = plot_data$coef)
+
+p&amp;lt;-ggplot(data=plot_data, aes(x=coef, y = cont_prop)) +
+    geom_bar(stat=&amp;quot;identity&amp;quot;, fill = &amp;quot;darkblue&amp;quot;) +
+    coord_flip() +
+    theme_minimal() +
+    xlab(&amp;quot;Features&amp;quot;) +
+    ggtitle(&amp;quot;Feature Contributions&amp;quot;)
+p&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;classification&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Classification&lt;/h2&gt;
+&lt;div id=&#34;preparation-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(kernlab)
+## Warning: package &amp;#39;kernlab&amp;#39; was built under R version 3.5.3
+## 
+## Attaching package: &amp;#39;kernlab&amp;#39;
+## The following object is masked from &amp;#39;package:ggplot2&amp;#39;:
+## 
+##     alpha
+library(caret)
+library(magrittr)
+library(ggplot2)
+
+data(spam)
+set.seed(123)
+
+# mean centering
+s2 &amp;lt;- preProcess(spam, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., spam)
+
+idx &amp;lt;- createDataPartition(s2$type, p = 0.8, list = FALSE)
+train &amp;lt;- s2[idx,]
+test &amp;lt;- s2[-idx,]
+
+mod0 &amp;lt;- glm(data = train, type ~., family =  binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+sm &amp;lt;- summary(mod0)
+betas &amp;lt;- sm$coefficients[,1]
+
+testcase &amp;lt;- test[1,]
+pred &amp;lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &amp;lt;- testcase[-which(testcase %&amp;gt;% names == &amp;quot;type&amp;quot;)] %&amp;gt;% as.matrix
+betas2 &amp;lt;- betas[-1]
+
+nm &amp;lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &amp;lt;- betas2*featvec
+featcont &amp;lt;- c(betas[1], featcont, pred)
+names(featcont) &amp;lt;- c(nm, &amp;quot;Prediction&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;waterfall-chart-on-classification-feature-contributions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Waterfall chart on classification feature contributions&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# waterfall chart on feature contribution
+plotdata &amp;lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &amp;lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &amp;lt;- seq_along(plotdata$coef)
+plotdata$Impact &amp;lt;- ifelse(plotdata$featcont &amp;gt; 0, &amp;quot;+ve&amp;quot;, &amp;quot;-ve&amp;quot;)
+plotdata[plotdata$coef %in% c(&amp;quot;(Intercept)&amp;quot;, &amp;quot;Prediction&amp;quot;), &amp;quot;Impact&amp;quot;] &amp;lt;- &amp;quot;Initial/Net&amp;quot;
+plotdata$end &amp;lt;- cumsum(plotdata$featcont)
+plotdata$end &amp;lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &amp;lt;- c(0, head(plotdata$end, -1))
+plotdata &amp;lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &amp;lt;- ggplot(plotdata, aes(coef, fill = Impact)) +
+ geom_rect(aes(x = coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;))
+ scale_fill_manual(values=c(&amp;quot;darkred&amp;quot;, &amp;quot;darkgreen&amp;quot;, &amp;quot;darkblue&amp;quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+ #coord_flip()
+ 
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &amp;lt;- gg + geom_hline(yintercept = 0)
+gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/c_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Something like &lt;a href=&#34;https://en.wikipedia.org/wiki/Waterfall_chart&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;http://blog.slidemagic.com/2008/08/how-to-create-mckinsey-waterfall-chart.html&#34;&gt;this&lt;/a&gt;, for example&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;See &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/&#34;&gt;this&lt;/a&gt; on feature contributions.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -86,9 +844,37 @@ Probst, P. &amp;amp; Boulestix, A-L. (2018). To Tune or Not to Tune the Number o
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
-      <description>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.
-Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-server-downloads. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:
-Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio.</description>
+      <description>
+
+
+&lt;p&gt;This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.&lt;/p&gt;
+&lt;p&gt;Step 1: Install SQL Server from &lt;a href=&#34;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&#34; class=&#34;uri&#34;&gt;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&lt;/a&gt;. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;p&gt;Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio. Once done, connect to the server:&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture3.PNG&#34;&gt;
+&lt;/center&gt;
+&lt;p&gt;Step 3: Create a database on the server. You may follow the steps given in this page as a quick start: &lt;a href=&#34;https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017&#34; class=&#34;uri&#34;&gt;https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017&lt;/a&gt;. If you do, you should have a database created named “TutorialDB” and a table named “Customers”.&lt;/p&gt;
+&lt;p&gt;Step 4: Install and load the RODBC package in R.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#install.packages(&amp;quot;RODBC&amp;quot;)
+library(RODBC)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 5: Connect to the server and the database, and run a sample query.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conn &amp;lt;- odbcDriverConnect(&amp;#39;driver={SQL Server};server=SNG1049387\\SQLEXPRESS;database=TutorialDB;trusted_connection=true&amp;#39;)
+customers &amp;lt;- sqlQuery(conn, &amp;#39;select * from dbo.Customers&amp;#39;)
+str(customers)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;# &amp;#39;data.frame&amp;#39;: 4 obs. of  4 variables:
+#  $ CustomerId: int  1 2 3 4
+#  $ Name      : Factor w/ 4 levels &amp;quot;Donna&amp;quot;,&amp;quot;Janet&amp;quot;,..: 4 3 1 2
+#  $ Location  : Factor w/ 4 levels &amp;quot;Australia&amp;quot;,&amp;quot;Germany&amp;quot;,..: 1 3 2 4
+#  $ Email     : Factor w/ 4 levels &amp;quot;&amp;quot;,&amp;quot;donna0@adventure-works.com&amp;quot;,..: 1 4 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 6: Write an R data frame into your database.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- read.csv(&amp;quot;data/adult.csv&amp;quot;)
+sqlSave(conn, df)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 7: Refresh the Database node in SMSS to verify if the data frame has been written into the database as a table.&lt;/p&gt;
+&lt;p&gt;You are now ready to use SQL Server, SSMS, and R to run some analysis and modelling.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -97,7 +883,67 @@ Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-s
       <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/01/20/the-machine-learning-life-cycle-how-to-run-a-ml-project/</guid>
-      <description>I recently came across this page in the DataRobot Artificial Intelligence Wiki. If you don&#39;t already know, DataRobot is currently one of the top automated machine learning platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://3gp10c1vpy442j63me73gy3s-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-22-at-10.41.30-AM-1024x579.png&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently came across this &lt;a href=&#34;https://www.datarobot.com/wiki/machine-learning-life-cycle/&#34;&gt;page&lt;/a&gt; in the &lt;a href=&#34;https://www.datarobot.com/wiki/&#34;&gt;DataRobot Artificial Intelligence Wiki&lt;/a&gt;. If you don&#39;t already know, &lt;a href=&#34;https://www.datarobot.com/sg/&#34;&gt;DataRobot&lt;/a&gt; is currently one of the top &lt;a href=&#34;https://en.wikipedia.org/wiki/Automated_machine_learning&#34;&gt;automated machine learning&lt;/a&gt; platform in the market, with emphasis on supervised learning and citizen data science. I am quite a big fan of their platform - even though I don&#39;t use it in my work, I believe that they and their competitors in the market are heading into the right direction towards automated machine learning. In any case, this is not my intended topic for today.&lt;/p&gt;
+
+&lt;p&gt;If you have worked on data science projects previously, odds are you would have heard of the term CRISP-DM, short of &lt;a href=&#34;https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining&#34;&gt;CRoss Industry Standard Process for Data Mining&lt;/a&gt;. CRISP-DM was developed by five European countries, including Teradata, in 1997, though it&#39;s now largely recognized as being associated with IBM and SPSS.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CRISP-DM_Process_Diagram.png/800px-CRISP-DM_Process_Diagram.png&#34; width=&#34;100%&#34;&gt;
+The CRISP-DM Process
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The official CRISP-DM manual is this &lt;a href=&#34;ftp://public.dhe.ibm.com/software/analytics/spss/documentation/modeler/18.0/en/ModelerCRISPDM.pdf&#34;&gt;50-page document&lt;/a&gt;, which if I said that I have read it, I would be lying. Nonetheless, CRISP-DM is intuitive enough for me to use it in my work, in order to scope and run data science projects. There are multiple ways to use CRISP-DM, such as manhours scoping and costing and milestones and success criteria setting. So naturally, I was intrigued by the DataRobot&#39;s version of CRISP-DM, and decided to look a little bit deeper.&lt;/p&gt;
+
+&lt;h3&gt;How to run a ML project - a hypothetical walkthrough&lt;/h3&gt;
+
+&lt;p&gt;In essence, I will also use this post to illustrate how a typical data science project can be run and managed hypothetically.&lt;/p&gt;
+
+&lt;h3&gt;Running a project using the DataRobot Machine Learning Cycle - 5 major steps&lt;/h3&gt;
+
+&lt;p&gt;There are five majors steps in the DataRobot (DR) Machine Cycle:&lt;/p&gt;
+
+&lt;ol&gt;&lt;li&gt;Define project objectives&lt;/li&gt;&lt;li&gt;Acquire and explore data&lt;/li&gt;&lt;li&gt;Model data&lt;/li&gt;&lt;li&gt;Interpret and communicate&lt;/li&gt;&lt;li&gt;Implement, document and maintain&lt;/li&gt;&lt;/ol&gt;
+
+&lt;p&gt;Let&#39;s walk through each of them and look slightly deeper.&lt;/p&gt;
+
+&lt;h3&gt;1. Define project objectives&lt;/h3&gt;
+
+&lt;p&gt;Under this step, there are:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Specify business problem&lt;/strong&gt; - this is usually related to defining the motherhood statement or problem statement of the project. Typically, a problem statement can be broken into multiple usecases. To give you an example in HR analytics, the problem statement of &lt;em&gt;&#34;How can the impact of employee attrition to the company be minimized?&#34;&amp;nbsp;&lt;/em&gt;can be broken down into at least 2 usecases:&lt;ol&gt;&lt;li&gt;Predict the attrition risk of a given employee&lt;/li&gt;&lt;li&gt;Predict the performance of a given employee&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Acquire subject matter expertise&lt;/strong&gt; - primarily, consulting the SMEs to make initial and final assessments on whether the project is feasible. Questions can include potential drivers of phenomenon, availability of data, or potential value created.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Define unit of analysis and prediction target&lt;/strong&gt; - this sounds trivial, right? In actual fact, this can turn out to be the most contentious and make-or-break factor in certain types of projects. To illustrate an example, consider a typical product hierarchy of a company that produces goods. There is typically a SKU or UPN level which describes a product in the most granular terms, which then cascades up multiple levels to the top. &lt;strong&gt;At which level do you think predictions of sales or demand makes the most sense?&lt;/strong&gt; Remember that this directly impacts model count - the lower the level, the more models there will be, while the higher the level, the less meaningful the models might possibly become. It&#39;s interesting how in some companies, demand planning and FP&amp;amp;A are set out into different directions on this from the get-go.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Prioritize modelling criteria&lt;/strong&gt; - it&#39;s not abundantly clear to me what modelling criteria meant, but my best guess would be the modelling performance metrics, whether it&#39;s accuracy, log-loss, RMSE, ROC-AUC or others. Each has it&#39;s own context and significance in the business setting.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Consider risks and success criteria&lt;/strong&gt; - this should be straightforward. In many data science and ML projects, the emphasis typically lies in accuracy and/or automation. For example, if the as-is prediction or forecasting is already highly accurate then the emphasis should be on the to-be automation, with a success criteria of certain reduction in FTE.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Decide whether to continue&lt;/strong&gt; - a call that should be co-owned by business, IT, and data science.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;2. Acquire and explore data&lt;/h3&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Find appropriate data&lt;/strong&gt; - yep.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Merge data into a single table&lt;/strong&gt; - yep.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Conduct exploratory data analysis&lt;/strong&gt; (EDA) - this is extremely important. Illustrating and validating business assumptions, as well as retrieving any data artifacts or surprising insights, such as trends or correlations, improves both customer experience and the subsequent modelling process. 1 to 2 iterations of EDA would be ideal.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Find and remove any target leakage&lt;/strong&gt; - yep, though target leakage is not a concept that many are familiar with. Again, the DR AI Wiki does a good job &lt;a href=&#34;https://www.datarobot.com/wiki/target-leakage/&#34;&gt;explaining&lt;/a&gt; target leakage.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Feature engineering&lt;/strong&gt; - yep, though I would say that feature engineering should be a sustained and continuous activity throughout the project. For example, the 1 to 2 EDA iterations should give hints towards potential features to engineer.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;3. Model data&lt;/h3&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Variable selection&lt;/strong&gt; - yep. There are many, many ways to do variable selection in a data-driven manner, but I would like emphasize here on &lt;strong&gt;customer-driven variable selection&lt;/strong&gt;. Build some preliminary models based on a feature set that your customers, with their business knowledge, think are important. These prelim models can serve multiple purposes including EDA, assumption validation and setting a baseline model performance.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Build candidate models&lt;/strong&gt; - yep.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Model validation and selection&lt;/strong&gt; - yep.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;4. Interpret and communciate&lt;/h3&gt;
+
+&lt;p&gt;This is where it gets hairy, and where I see most data scientists struggle. Needless to say, this is also one of the most important steps in any project.&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Interpret model&lt;/strong&gt; - where to even begin... No customer wants to hear that you are delivering a black box model to them, because no one wants to use a black box for day-to-day operations. Therefore, it&#39;s our job as data scientists to break things as much as possible for our customers. Here are some things that I usually consider:&lt;ul&gt;&lt;li&gt;How the selected algorithms work (in brief)&lt;/li&gt;&lt;li&gt;Why certain features are dropped (e.g. multicollinearity, leakage, low predictive power, low significance, unactionable in the future, low/no data availability in the future)&lt;/li&gt;&lt;li&gt;How are certain features engineered&lt;/li&gt;&lt;li&gt;Which are the important features&lt;/li&gt;&lt;li&gt;How to interpret feature importance&lt;/li&gt;&lt;li&gt;How/why certain test cases are given respective predictions (&lt;a href=&#34;https://thestatsguy.home.blog/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/&#34;&gt;feature contributions&lt;/a&gt;)&lt;/li&gt;&lt;li&gt;How do certain features interact (effect modification, statistical interaction, confounding)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Communicate model insights&lt;/strong&gt; - build a nice ppt deck with the pointers illustrated above to get customers buy-in.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;5. Implement, document and maintain&lt;/h3&gt;
+
+&lt;p&gt;After buy-in and green light to productionize, last but definitely not the least we do the following:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Set up batch or API prediction system&lt;/strong&gt; - depending on problem statement / usecases / future data availability / business context / customer infrastructure readiness&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Document modelling process for reproducibility&lt;/strong&gt; - don&#39;t be lazy. In fact, this shouldn&#39;t be here in the last steps. This should be done consistently throughout the project!&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Create model monitoring and maintenance plan&lt;/strong&gt; - again dependent on multiple factors. There are multiple ways to refresh a model, from simply retuning with updated data, to start from scratch with the business assumptions. The right answer is always somewhere in the middle.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Running data science projects using process models&lt;/h3&gt;
+
+&lt;p&gt;As mentioned above, I wanted to use this post to illustrate how a typical data science project can be run and managed hypothetically. Overall, my understanding on running ML projects is pretty close to the DR Machine Learning Cycle. Finally, note that each of these process models are built with their respective software in mind:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;DR Machine Learning Cycle for DR&lt;/li&gt;&lt;li&gt;CRISP-DM for IBM&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/SEMMA&#34;&gt;SEMMA&lt;/a&gt; for SAS - I didn&#39;t talk about SEMMA because it&#39;s too simplistic and focused on the actual data analysis and modelling rather than the business side of things.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;But that doesn&#39;t mean that these can&#39;t be extrapolated and modified to your needs. That&#39;s all for this post, thanks for reading!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -106,7 +952,88 @@ Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-s
       <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/</guid>
-      <description>A typical feature importance plot. Image source.  In many machine learning models, feature importance or variable importance is an important output from the model as it informs us about the relative or absolute importance of each feature in contributing to the model. More specifically, feature importance tells us which are the features that are highly differentiating, in the case of classification, and which are those that are not.</description>
+      <description>&lt;!-- wp:image --&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure class=&#34;wp-block-image&#34;&gt;&lt;img src=&#34;https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/XGBoost-Feature-Importance-Bar-Chart.png&#34; alt=&#34;&#34;/&gt;&lt;figcaption&gt;A typical feature importance plot. &lt;a href=&#34;https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/XGBoost-Feature-Importance-Bar-Chart.png&#34;&gt;Image source&lt;/a&gt;.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/center&gt;
+&lt;!-- /wp:image --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In many machine learning models, feature importance or variable importance is an important output from the model as it informs us about the relative or absolute importance of each feature in contributing to the model. More specifically, feature importance tells us which are the features that are highly differentiating, in the case of classification, and which are those that are not.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;However, one shortfall of feature importance is that it&amp;rsquo;s global in nature - it informs the data scientist about the overall strength of the features as a whole in the dataset. What if something more granular and refined is required? Just because a feature is high up on the feature importance list does not mean that it&amp;rsquo;s always important.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Logistic regression as an example&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Suppose you have some logistic regression model in the form&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:preformatted --&gt;
+
+&lt;p&gt;&lt;pre class=&#34;wp-block-preformatted&#34;&gt;logit(p) =  β&lt;sub&gt;0&lt;/sub&gt; + β&lt;sub&gt;1&lt;/sub&gt;x&lt;sub&gt;1&lt;/sub&gt; + &amp;hellip; + β&lt;sub&gt;p&lt;/sub&gt;x&lt;sub&gt;p&lt;/sub&gt;&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;For a given test case with p features, you would get the predicted probability by substituting each actualized feature value into the model (and do the inverse logit transformation). Naturally, different test cases would have different actualized feature value, summing up to different predicted probabilities.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Therefore, it&amp;rsquo;s intuitive to think about how a feature contributes to the predicted probability of a given test case:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:preformatted --&gt;
+
+&lt;p&gt;&lt;pre class=&#34;wp-block-preformatted&#34;&gt;feature contribution of x&lt;sub&gt;k&lt;/sub&gt; = |β&lt;sub&gt;k&lt;/sub&gt;x&lt;sub&gt;k&lt;/sub&gt;| / (|β&lt;sub&gt;0|&lt;/sub&gt; + Σ|β&lt;sub&gt;i&lt;/sub&gt;x&lt;sub&gt;i&lt;/sub&gt;|) ∈ [0,1]&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;With this, we can say the x&lt;sub&gt;k&lt;/sub&gt; contributes to the predicted probability of a given test case for some proportion or percentage, i.e. the feature contribution.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Generalizing to tree-based models&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;This way of evaluating individual feature contribution can be generalized to beyond linear models. For example, in a decision tree, a given test case would have a given prediction pathway that it takes down the decision tree - passing through to multiple junctions in the tree. The gain or loss in predicted probabilities or predicted values can be tracked accordingly, leading to a similar notion of feature contribution.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Moreover, this can further generalized to ensemble models, such as Random Forest, ExtraTrees and even XGBoost.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;I leave you with these two blog posts and the treeinterpreter package in Python as it has already been explored:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list --&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;http://blog.datadive.net/interpreting-random-forests/&#34;&gt;http://blog.datadive.net/interpreting-random-forests/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://blog.datadive.net/random-forest-interpretation-conditional-feature-contributions/&#34;&gt;https://blog.datadive.net/random-forest-interpretation-conditional-feature-contributions/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://github.com/andosa/treeinterpreter&#34;&gt;https://github.com/andosa/treeinterpreter&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;That&amp;rsquo;s all for this short post, hope it helps in bringing you to think slightly deeper about feature importance.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -115,8 +1042,373 @@ Step 1: Install SQL Server from https://www.microsoft.com/en-us/sql-server/sql-s
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/12/28/some-data-scientist-interview-questions-with-a-twist/</guid>
-      <description>Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. Source 
-Been wanting to do this consolidation for some time, so here goes. I won&amp;rsquo;t be touching on any language-specific questions (e.g. packages or functions), as I don&amp;rsquo;t believe they are relevant in this Google/Stack Overflow era - kind of missing the forest for the trees. Also, won&amp;rsquo;t be going over basic questions like &amp;ldquo;What is logistic regression&amp;rdquo; or &amp;ldquo;How does collaborative filtering works&amp;rdquo; or the like.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2018/12/machine_learning.png&#34; width=&#34;50%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Machine Learning. Nothing to do with my intended topic, just a random xkcd comic that I thought is funny. &lt;a href=&#34;https://xkcd.com/1838/&#34;&gt;Source&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Been wanting to do this consolidation for some time, so here goes. I won&amp;rsquo;t be touching on any language-specific questions (e.g. packages or functions), as I don&amp;rsquo;t believe they are relevant in this Google/Stack Overflow era - kind of missing the forest for the trees. Also, won&amp;rsquo;t be going over basic questions like &amp;ldquo;What is logistic regression&amp;rdquo; or &amp;ldquo;How does collaborative filtering works&amp;rdquo; or the like.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Rather, I want to be more focused on ML concepts that are closely tied to &lt;strong&gt;the consumption of ML models by business&lt;/strong&gt;. Once ML matures in the market, the next more well-sought after set of skills should be closely related to &lt;strong&gt;translation of business requirements&lt;/strong&gt;, &lt;strong&gt;model deep-diving&lt;/strong&gt;, &lt;strong&gt;ML pipeline management (roadmapping)&lt;/strong&gt;, and&amp;nbsp;&lt;strong&gt;curation of models&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Questions will be categorized according to the following:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+
+&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Business understanding&lt;/strong&gt; - developing business understanding in a short amount of time is a key skillset for a data scientist, in order to build superb ML models. In addition, managing your customers in the context between your ML practice and their business expertise is key to project success&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Statistics&lt;/strong&gt; - contrary to plenty of data scientists out there, I continue to believe statistics is a pre-requisite core skillset to being a good data scientist (hence even the name of my blog)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Model Building&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Model Selection&lt;/strong&gt; - it&amp;rsquo;s easy to select models based on metrics like accuracy or ROC-AUC. What happens if there are additional concerns or complications from the business?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Model Maintenance&lt;/strong&gt; - a data scientist&amp;rsquo;s job doesn&amp;rsquo;t stop at building the models, it should also include keeping our models healthy for business consumption&lt;/li&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Business Understanding&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;1. As data scientists, a big part of our job is to understand the business in which our usecases originate from, and glean subtle ways in which our analysis and modelling could be influenced or impacted. This typically starts from multiple requirements gathering meetings we have with our customers. Given a predictive usecase, what would be some of the questions that you ask your customers in order to arrive at the relevant information?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Identify drivers, (strength of) business assumptions, get clarity of data availability of drivers, span of historical data available, exceptions, macro-environment changes and their impact, availability of external data&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;2. In the initial stages of modelling/exploratory data analysis, how would you validate your new found understanding the business and validate them with your customers?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Construct preliminary models, use customers&amp;rsquo; input directly as feature selection means&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;3. Suppose your analysis and/or models are giving plenty of output that deviates substantially from your customers&amp;rsquo; expectations - for example, unintuitive feature importance from a high quality model, or unexpected predicted values. How would you develop a compromise between good ML practice and their business knowledge and negotiate your way through the project?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;4. What is customer success and why is it important in data science projects?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In many data science units, including both inward- and outward-facing units, customer success (CS) is often neglected as a form of &amp;ldquo;post-sales&amp;rdquo; activity. CS refers to the continued and sustained effort to ensure that the deliverables, regardless of models or tools etc., become an integral part of the customer&amp;rsquo;s processes or workflows.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;CS is about maximizing the adoption and usage of the deliverables, to ensure that the customer is successful in operating the tools that have been delivered to them.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;While it seems reasonable to scope a project in terms of producing the deliverables subsequently ending the engagement thereafter, this is an unhealthy way of running any projects, including data science. CS is important because it is an indication of the return of investment for a project - for a outward-facing data science unit, CS and post-sales activities maximizes customer experience and quality of account, leading to sales/presales pipeline development. This is relevant for both software as well as professional services vendors. For a inward-facing unit, user adoption and value delivered can be directly measured to assess true value throughput of the data science unit in serving the company.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;As it turns out, CS is a function of multiple factors, including customer experience, user experience, and change management. As data scientists, there are a couple of things which we can do to directly contribute to CS:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+
+&lt;p&gt;&lt;ol&gt;&lt;li&gt;During project scoping and requirements gathering, &lt;strong&gt;ensure that the project is well-scoped in time and space&lt;/strong&gt;, in terms of e.g. unit of analysis, target variable, number of models, modelling criteria and success criteria. Strive to &lt;strong&gt;deliver clear understanding on data science terminologies&lt;/strong&gt; to business stakeholders and users, minimize ambiguity and &lt;strong&gt;align expectations&lt;/strong&gt;. For example, ML projects are typically pitched to create value in accuracy and/or automation. Ensure this expectation on accuracy and/or automation is aligned.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Reduce the use of ad-hoc data&lt;/strong&gt; (e.g. standalone, manually curated/maintained spreadsheets) where possible. If these datapoints turn out to be valuable to the models, create scripts or workflows to ensure data refreshes can be done as hassle-free as possible.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Build confidence with customers&lt;/strong&gt; by performing e.g. 1 to 2 rounds of exploratory data analysis (EDA). Illustrating and validating business assumptions, as well as retrieving any data artifacts or surprising insights, such as trends or correlations, improves customer experience and the subsequent modelling process. Present these pre-modelling results to customers for validation and communication.&lt;/li&gt;&lt;li&gt;Ensure the &lt;strong&gt;modelling process is clearly illustrated&lt;/strong&gt; in an &amp;ldquo;explain-like-I&amp;rsquo;m-5&amp;rdquo; manner. Let customers understand why certain features are dropped, or why a certain feature is engineered in a particular manner. Customers should be able to understand feature importance in a model. Most importantly, &lt;strong&gt;customers should not feel that models are black-box&lt;/strong&gt; as this increases the fear of the unknown and reduces model adoption.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Document all work products&lt;/strong&gt; throughout the project, from business assumptions, data preparation, modelling, to model deployment. This ensure reproducibility.&lt;/li&gt;&lt;li&gt;Finally, &lt;strong&gt;develop a reasonable model monitoring and maintenance process&lt;/strong&gt;. Both data refreshes as well as model refreshes should be not too frequent, manual or time-consuming. A reasonable maintenance cadence maximizes model adoption and customer success.&lt;/li&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Statistics&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;1. How do you detect statistical interactions in a dataset, and how would that affect your modelling?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Effect modification. Classical way is to use multiplicative terms in modelling, though not always scalable - O(n^2)-type complexity.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;2. How do you detect confounding in a dataset, and how would that affect your modelling? How does confounding differ from multicollinearity?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Tackle from epidemiology standpoint&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;3. Would it be apt to use p-values, either from univariate- or multivariate-type analysis, as indications of feature importance or as a means of feature selection? If yes, how would you use it? If no, what are your considerations?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;No. Definition of p-values and null hypothesis differs subtly from feature importance, but with substantial impact in interpretation.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;4. What is bias, and how would bias affect your analysis, modelling and interpretations of data?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Selection bias, information bias&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;5. What is the bias-variance tradeoff, and how would the tradeoff affect your modelling?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Model Building&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;1. Why is there a general tradeoff between model performance and interpretability? Suppose you constructed a high performing model that is essentially a black box e.g. a deep learning model. How would you present the model to your customers in an more interpretable manner?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Complexity of business environment, opaque drivers with unknown interactions. Build simple regression or decision tree models with important features from black box as proxy for interpretation.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;2. Given a reasonably clean dataset in a predictive usecase, what are the tasks standing between the dataset and a good model? Which are the tasks that would, in principle, take the longest time to perform?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Feature transformation, feature engineering, hyperparameter tuning, model selection. Feature engineering should be the challenging and take the longest. A good feature set can easily beat a well-tune model because the former is closer to the true underlying business context than the latter.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;3. Having a dataset with temporal element means that it lends itself to both typical supervised learning models as well as time series models. Again, in a predictive usecase, how would you decide which is a better way to reach quality predictions?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;4. Would your general modelling methodology differ substantially or at all if your customers are seeking explanations instead of predictions?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Broadly speaking, suppose we consider the divide between tree-based methods against linear regression methods. In the construction of a decision tree, the training dataset is divided into multiple discrete p-dimensional subspaces, where p is the number of features. To transcend from one subspace to its adjacent neighbor, one would have to make multiple unit increments in one direction towards a given subspace boundary, until the boundary is transcended. This means that throughout the unit increments, the predicted value of a test case remains the same, until the boundary is transcended. Contrast this to a linear regression-type method, where we can see the impact on predicted value for every unit increment of a given feature with its given coefficient. Intuitively, this could better aid in explanations and understanding, and can be used to perform sensitivity or what-if analysis for deeper insights.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In addition, we could consider fit-emphasizing metrics such as R&lt;sup&gt;2&lt;/sup&gt; instead of prediction-emphasizing metrics such as accuracy for model evaluation.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;5. In a multiclass classification problem, it is typically challenging to develop a high performing model. How would you tackle a multiclass classification problem?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Collapse class, multi-tier modelling, though errors in classification will cascade. If class is ordinal, measure error wrt distance to the correct class rather than in absolute terms.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Model Selection&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;1. Given two black box models, how would you choose one over the other?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Generally, we can consider the following: i) model performances on the testing&amp;nbsp; sets, ii) model performances on fitted training sets, iii) feature importance, and iv) model simplicity.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;i) Model performances on the testing set is obviously important as it directly points to the model&amp;rsquo;s ability to generalize to unseen cases.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;ii) Model performances on the fitted training sets can given an indication on the fundamental quality of the model itself. For example, if training performance outweigh testing performance by a large margin, then overfitting could be a concern. On its own, a low training performance indicates underfitting, while extremely high training performance could indicate target leakage.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;iii) Feature importance illustrates the relative weightages of underlying features in the model and how they contribute to reaching a prediction or outcome. In a scenario where a strong model outperforms a weaker model but with a somewhat bizarre and unintuitive set of feature importance, it becomes a business decision to make a prudent model selection. This is especially important in industries e.g. banking, where decisions to reject a loan may need to be entirely transparent.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;iv) Finally, Occam&amp;rsquo;s razor would be a good heuristic to apply - for a given model performance, the simpler a model is, the better it is for human and business consumption.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;2. In usecases that typically exhibit class imbalance and yet not the extent where anomaly detection algorithms are appropriate, how would we ensure that the models selected are adequate for business consumption?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In classification problems with class imbalance, one of the first things to experiment is upsampling the minority class or downsampling the majority class. Typically, the former is preferred as then we don&amp;rsquo;t lose training samples. Subsequently, we can then follow up with the modelling, and more importantly, the selection of a metric robust to class imbalance, such as ROC-AUC or sensitivity or specificity per se. This is trivial.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;More importantly and very often neglected is a deliberate consideration of the risk or cost of a wrong prediction, especially in a class imbalance setting. For instance, suppose we are tackling an employee attrition usecase, where we are predicting if an employee is about to leave the company within the next 3 months, as an example. This is of course a typical class imbalance problem - most reasonably large companies have about 10 to 20% attrition rate as a healthy number.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;However, suppose the usecase is specific to high potential individuals within the employee population - employees who are earmarked by HR and management as e.g. successors of critical roles in the company (hence high potential). In this context, a false negative, i.e. wrongly predicting no attrition, becomes a costly mistake. In contrast, a false positive is a false alarm and is much less costly.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;How do we capture this asymmetry in cost/risk in our model evaluation process? A solution would be develop a utility function &lt;em&gt;U(m)&lt;/em&gt;, and assign relative utility to our prediction outcomes, as below:&lt;br&gt;
+&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:table --&gt;
+
+&lt;p&gt;&lt;figure class=&#34;wp-block-table&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Prediction outcome&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Utility&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;True positive&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;True negative&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;False positive&lt;/td&gt;&lt;td&gt;-5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;False negative&lt;/td&gt;&lt;td&gt;-50&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- /wp:table --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Then, the utility of a model &lt;em&gt;m&lt;/em&gt; would be
+&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:preformatted --&gt;
+
+&lt;p&gt;&lt;pre class=&#34;wp-block-preformatted&#34;&gt;U(m) = TP(n&lt;sub&gt;1&lt;/sub&gt;) + TN(n&lt;sub&gt;2&lt;/sub&gt;) - 5FP(n&lt;sub&gt;3&lt;/sub&gt;) - 50FN(n&lt;sub&gt;4&lt;/sub&gt;)&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;where &lt;em&gt;n&lt;sub&gt;i&lt;/sub&gt;&lt;/em&gt; are the respective case counts of each prediction outcome. Model tuning and validation can then be done by maximizing utility.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;3. In most projects, multiple models are selected to be production-grade and their respective output are combined. What are the different ways we can combine multiple models?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;There are various ways in which models can be combined, such as boosting, ensemble learning and stacking. I would like to focus here on a less well-known approach known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Analytic_hierarchy_process&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;analytical hierarchy process&lt;/a&gt;&amp;nbsp;(AHP).&amp;nbsp;In essence, AHP is utility-driven way of combining different types of models to reach a single conclusion. The best way to illustrate AHP is the use of an example.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Consider a HR analytics problem statement: how can the impact of employee attrition to the company be minimized?&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Typically, in HR analytics, we can say that primary outcomes that are impactful and can evaluated are performance, potential, and attrition. We can therefore formulate three usecases to culminate into our problem statement:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+
+&lt;p&gt;&lt;ol&gt;&lt;li&gt;Predict the short-term performance of a given employee&lt;/li&gt;&lt;li&gt;Predict the potential/runway of a given employee&lt;/li&gt;&lt;li&gt;Predict the attrition risk of a given employee&lt;/li&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;This necessarily means that we would at least have three different models, with three different target variables, to construct. How would we then combine these models to address the problem statement of minimizing employee attrition? This is done using AHP to build a utility function, by assign utilities or weights to the predicted probabilities of each model. Without going through the details of AHP, following are examples of simple utility functions:
+&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:preformatted --&gt;
+
+&lt;p&gt;&lt;pre class=&#34;wp-block-preformatted&#34;&gt;impact of attrition =
+attrition risk * short-term performance + 5 * attrition risk * potential&lt;/p&gt;
+
+&lt;p&gt;impact of attrition =
+attrition risk * employee rank * (short-term performance + potential)&lt;/p&gt;
+
+&lt;p&gt;impact of attrition =
+attrition risk * (40 - tenure) * potential&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Note that we can include additional layers of modelling in the AHP to capture specific intricacies and requirements - for example, the utility function need not be a linear combination of weights, but a decision tree or a matrix.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In general, AHP is an extremely powerful method to combine multiple models to address a large and encompassing problem statement.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+
+&lt;p&gt;&lt;h3&gt;Model Maintenance&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;1. What are the points of consideration in deciding when and how to update or refresh a model?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;In general, the performance of a model erodes over time, with changes in business environment. Model refresh is therefore an important consideration even before commencement of any data science project.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;There are a number of factors when considering when and how to refresh a model:&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+
+&lt;p&gt;&lt;ol&gt;&lt;li&gt;Availability of data - when can fresh datapoints be captured and sufficiently verified? For example, fresh datapoints could be captured on a weekly or monthly basis. This implies that models can be refreshed at most at a weekly or monthly basis. On the other hand, with monthly captures but only quarterly validation means that models can be refreshed at most at a quarterly basis.&lt;/li&gt;&lt;li&gt;Changes in business environment - has there been a major change in the environment? For example, new policies announced or implemented by authorities, entry of new competitors, new product launches, major news or events could all justify model refreshes. Of course, this is also dependent on data availability.&lt;/li&gt;&lt;li&gt;Refresh/no refresh cost-benefit analysis - for example, a model refresh could require collection of updated datapoints with some man effort in the executing the refresh, which leads some dollar value cost. On the other hand, the benefit of the refresh is deemed to be of low consequence and unlikely to steer decision making or operations in significant manner, which leads to some dollar value benefit.&lt;/li&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;2. What are the ways you can refresh a model (from ML perspective, not engineering perspective)?&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;The simplest way to refresh a model is the simply rerun the training algorithm on the updated data with a fresh round of hyperparameter tuning. The next order of complexity would be to re-execute the training process with the same feature set (with updated data), but re-experimenting with the various training algorithms. Layering on that could be additional feature engineering for potentially better model performances.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;p&gt;&lt;p&gt;Finally, the most labour-intensive form of refresh would be to rework the entire model from scratch, starting again with requirements gathering and assumptions validation, with possibly new feature sets.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -125,8 +1417,48 @@ Been wanting to do this consolidation for some time, so here goes. I won&amp;rsq
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/</guid>
-      <description>Putting models together in an ensemble learning fashion is a popular technique amongst data scientists 
-Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.</description>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://thestatsguyhome.files.wordpress.com/2018/12/r-user-group-singapore-data-mining-with-r-workshop-ii-random-forests-12-638.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Putting models together in an ensemble learning fashion is a popular technique amongst data scientists
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensemble learning is the simultaneous use of multiple predictive models to arrive at a single prediction, based on a collective decision made together by all models in the ensemble. It&#39;s a common and popular technique used in predictive modelling, especially when individual models are failing to produce the required performance levels, in terms of e.g. accuracy.&lt;/p&gt;
+&lt;p&gt;Ensemble learning is often introduced towards the end of any Data Science 101-type content, and often emphasized in terms of implementation rather than the underlying reason behind its success. It&#39;s also a question I get asked often.&lt;/p&gt;
+&lt;p&gt;In this post I will conduct a simple statistical treatment to illustrate why ensemble learning works, and &lt;strong&gt;one important catch that most data scientists neglect&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Binary classifiers as biased coin flips&lt;/h3&gt;
+&lt;p&gt;Consider a binary classifier c&lt;sub&gt;1&lt;/sub&gt; on a yes/no classification problem. Being a reasonably constructed classifier, c&lt;sub&gt;1&lt;/sub&gt; has an accuracy of 60%. This means that the probability of c&lt;sub&gt;1&lt;/sub&gt;&amp;nbsp;giving the correct prediction is 0.60, like a flip of a biased coin.&lt;/p&gt;
+&lt;p&gt;Now consider putting three such classifiers together in a democratic fashion. This means that the set of classifiers (the ensemble) would give the correct prediction if and only if two of the three (doesn&#39;t matter which two) or more give the correct prediction.&lt;/p&gt;
+&lt;p&gt;If you do your combinations calculations correctly, you would be able to arrive at the overall performance of the ensemble being 0.648:&lt;/p&gt;
+&lt;pre&gt;Pr({correct, correct, wrong})   = (0.6²)(0.4)&amp;nbsp;= 0.144
+Pr({correct, correct, correct}) = 0.6³ = 0.216
+
+Accuracy of ensemble = 0.216 + (0.144)(3) = 0.648 &amp;gt; 0.6
+(&lt;em&gt;3 times because there are 3 different ways of getting 2 correct, 1 wrong.&lt;/em&gt;)
+&lt;/pre&gt;
+&lt;p&gt;Generally, we can say that as the number of models within the ensemble increase, so does the accuracy of the ensemble. &lt;strong&gt;However, this result is valid only if the individual classifiers are independent amongst each other&lt;/strong&gt; - something which most data scientists fail to understand or appreciate. Consider this next piece of math.&lt;/p&gt;
+&lt;p&gt;(In reality, true independence is hard to either attain or assess, so we settle with low or zero correlation.)&lt;/p&gt;
+&lt;h3&gt;Binary classifiers as Bernoulli trials&lt;/h3&gt;
+&lt;p&gt;Every time we ask our binary classifier c&lt;sub&gt;1&lt;/sub&gt; for a prediction, we are essentially conducting a Bernoulli trial with:&lt;/p&gt;
+&lt;pre&gt;E(c&lt;sub&gt;1&lt;/sub&gt;) = p
+Var(c&lt;sub&gt;1&lt;/sub&gt;) = p(1-p)&lt;/pre&gt;
+&lt;p&gt;Putting together our ensemble of 3 independent classifiers again:&lt;/p&gt;
+&lt;pre&gt;(&lt;em&gt;ens.&lt;/em&gt;) = ⅓(c&lt;sub&gt;1&lt;/sub&gt; + c&lt;sub&gt;2&lt;/sub&gt; + c&lt;sub&gt;3&lt;/sub&gt;)
+E(&lt;em&gt;ens.&lt;/em&gt;) = p (&lt;em&gt;unbiased&lt;/em&gt;)
+Var(&lt;em&gt;ens.&lt;/em&gt;) = ⅓p(1-p) &amp;lt; p(1-p) = Var(c&lt;sub&gt;1&lt;/sub&gt;)&lt;/pre&gt;
+&lt;p&gt;With this, it&#39;s clear why the independence or negligible correlation condition is necessary - otherwise:&lt;/p&gt;
+&lt;pre&gt;Var(&lt;em&gt;ens.&lt;/em&gt;) = ⅓p(1-p) + Cov(c&lt;sub&gt;1&lt;/sub&gt;,c&lt;sub&gt;2&lt;/sub&gt;) + Cov(c&lt;sub&gt;1&lt;/sub&gt;,c&lt;sub&gt;3&lt;/sub&gt;) + Cov(c&lt;sub&gt;2&lt;/sub&gt;,c&lt;sub&gt;3&lt;/sub&gt;)
+(&lt;em&gt;all pairwise covariances&lt;/em&gt;)&lt;/pre&gt;
+&lt;p&gt;With the additional pairwise covariance terms, it is &lt;strong&gt;no longer guaranteed&lt;/strong&gt; that&lt;/p&gt;
+&lt;pre&gt;Var(&lt;em&gt;ens.&lt;/em&gt;) &amp;lt; Var(c&lt;sub&gt;1&lt;/sub&gt;)&lt;/pre&gt;
+&lt;p&gt;Without going through the math again, this set of results can be applied to regression problems with no loss of generality.&lt;/p&gt;
+&lt;h3&gt;What does this mean and what I can do with this&lt;/h3&gt;
+&lt;p&gt;Clearly, we need our ensemble to be reliable and not wobble all over the place with high prediction variance. It&#39;s&amp;nbsp;intuitive why the negligible correlation condition makes sense - correlated models would more often than not support each other and make the same yes/no predictions simultaneously, even if the given test case could jolly well be in the grey zone.&lt;/p&gt;
+&lt;p&gt;In addition, it should be clear to you now that there&#39;s not much use in assembling strong learners together in an ensemble - they are likely to be accurate per se, and thereby correlated with each other with the test cases. All you are doing is to increase the variance of your predictions. On the other hand, putting a bunch of weak learners would make sense because they are likely to be less correlated amongst each other.&lt;/p&gt;
+&lt;p&gt;Finally, the next time when someone presents an ensemble learning approach, ask if they ever consider the correlations amongst the underlying models. Odds are that they would take you a blank look and not sure why that&#39;s necessary :P&lt;/p&gt;
+&lt;p&gt;(If you are interested to learn more about ensemble learning and how it works in algorithms like random forests, feel free to take a look at this &lt;a href=&#34;https://github.com/thestatsguy/RUGS-RF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repo&lt;/a&gt; on my Github.)&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -135,8 +1467,90 @@ Ensemble learning is the simultaneous use of multiple predictive models to arriv
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/2017/04/12/short-quick-start-to-using-git-and-github/</guid>
-      <description>Git is pretty awesome. My most common &amp;ldquo;use case&amp;rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.
-Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).</description>
+      <description>
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://miro.medium.com/max/4000/1*8HHpgXJkc6jQSiNT42EiBg.png&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Git is pretty awesome. My most common &amp;ldquo;use case&amp;rdquo; for Git is working as a solo developer, working on different machines (home and work machines) and using GitHub to keep my work in place.&lt;/p&gt;
+
+&lt;p&gt;Following is the most straightforward way to start use Git and Github in this no-brainer manner. During development, only run steps indicated by * (7 - code, 9 - stage, 10 - commit, 12 - push).&lt;/p&gt;
+
+&lt;h3 id=&#34;initial-set-up&#34;&gt;Initial set-up&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Install Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account&#34;&gt;Create GitHub account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository&#34;&gt;Create GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;1-set-up-credentials-user-email&#34;&gt;1. Set up credentials, user.email:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global user.email &amp;quot;&amp;lt;your github email&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;1a-set-up-credentials-user-email-specific-to-a-git-repo-only&#34;&gt;1a. Set up credentials, user.email, specific to a git repo only:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config user.email &amp;quot;&amp;lt;your github email&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-set-up-credentials-user-name&#34;&gt;2. Set up credentials, user.name:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;&amp;lt;your github username&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2a-set-up-credentials-user-name-specific-to-a-git-repo-only&#34;&gt;2a. Set up credentials, user.name, specific to a git repo only:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config user.name &amp;quot;&amp;lt;your github username&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2b-show-all-config&#34;&gt;2b. Show all config:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-create-the-remote-repo-online-on-github&#34;&gt;3. Create the remote repo online on Github&lt;/h3&gt;
+
+&lt;h3 id=&#34;4-create-a-folder-with-the-same-name-as-the-remote-name-locally&#34;&gt;4. Create a folder with the same name as the remote name locally&lt;/h3&gt;
+
+&lt;h3 id=&#34;5-initialize-an-empty-repo-navigate-to-the-folder-in-command-line-then-run&#34;&gt;5. Initialize an empty repo: navigate to the folder in command line, then run:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;6-pull-the-remote&#34;&gt;6. Pull the remote:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git pull &amp;lt;url of remote (.git)&amp;gt; &amp;lt;branch name, e.g. master&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;7-go-ahead-and-code&#34;&gt;*7. Go ahead and code&lt;/h3&gt;
+
+&lt;h3 id=&#34;8-add-remote-repo&#34;&gt;8. Add remote repo:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add &amp;lt;name of repo&amp;gt; &amp;lt;url of repo (.git)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;9-stage-all-changes&#34;&gt;*9. Stage all changes:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git add --all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;10-commit-all-staged-changes&#34;&gt;*10. Commit all staged changes:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;&amp;lt;commit message&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;11-set-remote-as-upstream&#34;&gt;11. Set remote as upstream:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git push --set-upstream &amp;lt;repo name&amp;gt; &amp;lt;branch name, e.g. master&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;12-push-to-remote&#34;&gt;*12. Push to remote:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git push &amp;lt;repo name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
@@ -145,8 +1559,82 @@ Following is the most straightforward way to start use Git and Github in this no
       <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/2017/02/14/my-learnings-on-apache-spark/</guid>
-      <description>One simple way to optimise Spark jobs on YARN When submitting Spark jobs to YARN on the CLI, we would use a submission script that typically looks like the following:
-spark-submit \ --master yarn-cluster \ --driver-memory 20G \ --driver-cores 10 \ --executor-cores 10 \ --executor-memory 20G \ --num-executors 10 \ --total-executor-cores 100\ script_to_submit.py  These are options that allows the user to specify the amount of resources to allocate to the submitted job.</description>
+      <description>
+
+&lt;h2 id=&#34;one-simple-way-to-optimise-spark-jobs-on-yarn&#34;&gt;One simple way to optimise Spark jobs on YARN&lt;/h2&gt;
+
+&lt;p&gt;When submitting Spark jobs to YARN on the CLI, we would use a submission script that typically looks like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spark-submit \
+--master yarn-cluster \
+--driver-memory 20G \
+--driver-cores 10 \
+--executor-cores 10 \
+--executor-memory 20G \
+--num-executors 10 \
+--total-executor-cores 100\
+script_to_submit.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These are options that allows the user to specify the amount of resources to allocate to the submitted job. Not every option is always available - it depends on the type of cluster manager. There are currently three types available to Spark: standalone, Mesos, and YARN.&lt;/p&gt;
+
+&lt;p&gt;Simply put, the standalone cluster manager comes with the Spark distribution, while Mesos and YARN are clusters managers designed to be compatible to Spark, with YARN coming together with Hadoop distributions.&lt;/p&gt;
+
+&lt;p&gt;In brief, the available options for each cluster manager are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Standalone - driver-cores, executor-cores, total-executor-cores&lt;/li&gt;
+&lt;li&gt;Mesos - total-executor-cores&lt;/li&gt;
+&lt;li&gt;YARN - driver-cores, executor-cores, num-executors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rest, namely driver-memory and executor-memory are available to all three.&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t had any experience with the standalone manager as well as Mesos, so I will just talk about YARN. On the YARN web UI, under &amp;ldquo;Cluster Metrics&amp;rdquo;, there are two entries that read &amp;ldquo;Memory Total&amp;rdquo; and &amp;ldquo;VCores Total&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;To optimise the amount of resources allocated to your job:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Memory Total&amp;rdquo; should be roughly and less than num-executors x executormemory&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;VCores Total&amp;rdquo; should be roughly and less than num-executors x executor-cores&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Seems intuitive but I didn&amp;rsquo;t fully put this optimisation in my conscious mind until one of our engineers explicitly enlighten me of this.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-learnings-on-spark&#34;&gt;Other learnings on Spark&lt;/h2&gt;
+
+&lt;p&gt;This is PySpark.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Writing text files to HDFS using sc.saveAsTextFile() - use high driver memory. RDD has to fit in the driver memory when writing.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use rdd.coalesce(n) to save to n text files. On the YARN UI, each file will be represented as a task.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If the saveAsTextFile() stage keeps stopping at the last task, check the data. There is most probably something wrong with the data in the program.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There is a difference between using 50GB RAM times 10 executors versus 20GB times 30 executors. The memory used reflected on the YARN UI differs greatly - for my case, the former gives 550GB while the latter, 220GB. I&amp;rsquo;m guessing it&amp;rsquo;s best to match the number of executors to the number of datanodes in the cluster.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Whenever a task or a stage cannot succeed, check the data within the program - columns, counts, datatypes.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A conventional way to debug code or scripts is always to print statements or data onto the console or terminal. Note that this debugging technique cannot work for some spark Spark apps, because of Spark&amp;rsquo;s lazy evaluation. Methods in Spark can be classified as either actions or transformations. Unlike actions, transformation methods are parsed and interpreted by Spark, without any actual work done on the data structures; only when actions are called will work be done. Therefore interjecting your code with print statements doesn&amp;rsquo;t help too much.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;UDFs can run without checking for errors in the data within the program. Suspect that UDFs are transformations and not actions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In YARN, container RAM is the RAM of 1 datanode. When setting the RAM for each container, leave about 5GB for overheads and OS functions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;df.printSchema() can work even without reading any data into the program - even lazier than transformations if I&amp;rsquo;m not wrong.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Actions / transformations of one RDD cannot be performed inside the actions / transformations of another RDD, as all actions and transformations of the former RDD will require the spawning of new workers and jobs, within the current workers and jobs on the latter RDD, which is not supported.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The UDF function turns a regular Python function to a function that is applied on all elements of the input column. This function cannot any Spark functions, as calling any Spark functions may require the needs to spawn new workers and jobs. (10) is a generalisation of this.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;book-getting-started-with-apache-spark-from-inception-to-production&#34;&gt;Book: Getting Started with Apache Spark: From Inception to Production&lt;/h2&gt;
+
+&lt;p&gt;This book, published by MapR, serves as an introduction to Apache Spark. It&amp;rsquo;s a free book I got from the Strata Hadoop 2016 conference in Singapore. A relatively short and lightweight intro to Spark, this is a good read for anyone who wants to learn a little more about Spark. Topics include installation, architecture overview, Hadoop and Spark, data streaming, and machine learning using MLlib.&lt;/p&gt;
+
+&lt;p&gt;Pdf version available here: &lt;a href=&#34;http://www.bigdatatoronto.com/2016/assets/getting_started_with_apache_spark.pdf&#34;&gt;http://www.bigdatatoronto.com/2016/assets/getting_started_with_apache_spark.pdf&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -155,9 +1643,26 @@ spark-submit \ --master yarn-cluster \ --driver-memory 20G \ --driver-cores 10 \
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/2017/01/30/taking-a-part-time-masters-this-year-in-2017/</guid>
-      <description>I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:
- Masters or PhD? Full-time or part-time? (If masters) technical or non-technical? (If full-time) Overseas or local? (If local) NUS or NTU?  Full-time is personally a non-option for me, as I don&amp;rsquo;t see the financial sense in taking a sabbatical to pursue a full-time programme. That leaves full-time and overseas out.
-Based on what I know about a PhD programme, part-time PhD sounds like a nightmare.</description>
+      <description>&lt;p&gt;I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Masters or PhD?&lt;/li&gt;
+&lt;li&gt;Full-time or part-time?&lt;/li&gt;
+&lt;li&gt;(If masters) technical or non-technical?&lt;/li&gt;
+&lt;li&gt;(If full-time) Overseas or local?&lt;/li&gt;
+&lt;li&gt;(If local) NUS or NTU?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full-time is personally a non-option for me, as I don&amp;rsquo;t see the financial sense in taking a sabbatical to pursue a full-time programme. That leaves full-time and overseas out.&lt;/p&gt;
+
+&lt;p&gt;Based on what I know about a PhD programme, part-time PhD sounds like a nightmare. That leaves part-time Masters in Singapore as my option.&lt;/p&gt;
+
+&lt;p&gt;Next question: technical or non-technical? Well I am leaning towards to doing something with technical content when studying - non-technical content can be picked up most of the time simply by being widely read and learning from work experiences. This means statistics or computing for me.&lt;/p&gt;
+
+&lt;p&gt;And NUS is probably the better choice than NTU. SMU is not in my consideration.&lt;/p&gt;
+
+&lt;p&gt;So for now, my choice is going to be M.Sc. Statistics from NUS.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -166,8 +1671,630 @@ Based on what I know about a PhD programme, part-time PhD sounds like a nightmar
       <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/07/20/random-forests-in-r/</guid>
-      <description>IntroductionAs the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.
-In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems.</description>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.&lt;/p&gt;
+&lt;p&gt;In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems. Each section of this tutorial corresponds to an individual R script that can be found in the GitHub repo at &lt;a href=&#34;https://github.com/thestatsguy/RUGS-RF&#34; class=&#34;uri&#34;&gt;https://github.com/thestatsguy/RUGS-RF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This tutorial is divided into two sections. We will first use tree-based methods for classification on the &lt;strong&gt;spam&lt;/strong&gt; dataset from the &lt;strong&gt;kernlab&lt;/strong&gt; package - the same dataset used in the previous RUGS workshop on support vector machines (SVM). Subsequently, we will apply these methods on a regression problem, with the &lt;strong&gt;imports85&lt;/strong&gt; dataset from the &lt;strong&gt;randomForest&lt;/strong&gt; package.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tree-based-methods-for-classification&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tree-based methods for classification&lt;/h2&gt;
+&lt;div id=&#34;preparation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Let’s start by loading the spam dataset and doing some preparations:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# packages that we will need:
+#  @ kernlab:      for the spam dataset
+#  @ tree:         for decision tree construction
+#  @ randomForest: for bagging and RF
+#  @ beepr:        for a little beep
+#  @ pROC:         for plotting of ROC
+
+# code snippet to install and load multiple packages at once
+# pkgs &amp;lt;- c(&amp;quot;kernlab&amp;quot;,&amp;quot;tree&amp;quot;,&amp;quot;randomForest&amp;quot;,&amp;quot;beepr&amp;quot;,&amp;quot;pROC&amp;quot;)
+# sapply(pkgs,FUN=function(p){
+#        print(p)
+#        if(!require(p)) install.packages(p)
+#        require(p)
+# })
+
+# load required packages
+suppressWarnings(library(kernlab))
+suppressWarnings(library(tree))
+suppressWarnings(library(randomForest))
+## randomForest 4.6-14
+## Type rfNews() to see new features/changes/bug fixes.
+suppressWarnings(library(beepr)) # try it! beep()
+suppressWarnings(library(pROC))
+## Type &amp;#39;citation(&amp;quot;pROC&amp;quot;)&amp;#39; for a citation.
+## 
+## Attaching package: &amp;#39;pROC&amp;#39;
+## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     cov, smooth, var
+
+# load dataset
+data(spam)
+
+# take a look
+str(spam)
+## &amp;#39;data.frame&amp;#39;:    4601 obs. of  58 variables:
+##  $ make             : num  0 0.21 0.06 0 0 0 0 0 0.15 0.06 ...
+##  $ address          : num  0.64 0.28 0 0 0 0 0 0 0 0.12 ...
+##  $ all              : num  0.64 0.5 0.71 0 0 0 0 0 0.46 0.77 ...
+##  $ num3d            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ our              : num  0.32 0.14 1.23 0.63 0.63 1.85 1.92 1.88 0.61 0.19 ...
+##  $ over             : num  0 0.28 0.19 0 0 0 0 0 0 0.32 ...
+##  $ remove           : num  0 0.21 0.19 0.31 0.31 0 0 0 0.3 0.38 ...
+##  $ internet         : num  0 0.07 0.12 0.63 0.63 1.85 0 1.88 0 0 ...
+##  $ order            : num  0 0 0.64 0.31 0.31 0 0 0 0.92 0.06 ...
+##  $ mail             : num  0 0.94 0.25 0.63 0.63 0 0.64 0 0.76 0 ...
+##  $ receive          : num  0 0.21 0.38 0.31 0.31 0 0.96 0 0.76 0 ...
+##  $ will             : num  0.64 0.79 0.45 0.31 0.31 0 1.28 0 0.92 0.64 ...
+##  $ people           : num  0 0.65 0.12 0.31 0.31 0 0 0 0 0.25 ...
+##  $ report           : num  0 0.21 0 0 0 0 0 0 0 0 ...
+##  $ addresses        : num  0 0.14 1.75 0 0 0 0 0 0 0.12 ...
+##  $ free             : num  0.32 0.14 0.06 0.31 0.31 0 0.96 0 0 0 ...
+##  $ business         : num  0 0.07 0.06 0 0 0 0 0 0 0 ...
+##  $ email            : num  1.29 0.28 1.03 0 0 0 0.32 0 0.15 0.12 ...
+##  $ you              : num  1.93 3.47 1.36 3.18 3.18 0 3.85 0 1.23 1.67 ...
+##  $ credit           : num  0 0 0.32 0 0 0 0 0 3.53 0.06 ...
+##  $ your             : num  0.96 1.59 0.51 0.31 0.31 0 0.64 0 2 0.71 ...
+##  $ font             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num000           : num  0 0.43 1.16 0 0 0 0 0 0 0.19 ...
+##  $ money            : num  0 0.43 0.06 0 0 0 0 0 0.15 0 ...
+##  $ hp               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ hpl              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ george           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num650           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ lab              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ labs             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ telnet           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num857           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ data             : num  0 0 0 0 0 0 0 0 0.15 0 ...
+##  $ num415           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num85            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ technology       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num1999          : num  0 0.07 0 0 0 0 0 0 0 0 ...
+##  $ parts            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ pm               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ direct           : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ cs               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ meeting          : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ original         : num  0 0 0.12 0 0 0 0 0 0.3 0 ...
+##  $ project          : num  0 0 0 0 0 0 0 0 0 0.06 ...
+##  $ re               : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ edu              : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ table            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ conference       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charSemicolon    : num  0 0 0.01 0 0 0 0 0 0 0.04 ...
+##  $ charRoundbracket : num  0 0.132 0.143 0.137 0.135 0.223 0.054 0.206 0.271 0.03 ...
+##  $ charSquarebracket: num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charExclamation  : num  0.778 0.372 0.276 0.137 0.135 0 0.164 0 0.181 0.244 ...
+##  $ charDollar       : num  0 0.18 0.184 0 0 0 0.054 0 0.203 0.081 ...
+##  $ charHash         : num  0 0.048 0.01 0 0 0 0 0 0.022 0 ...
+##  $ capitalAve       : num  3.76 5.11 9.82 3.54 3.54 ...
+##  $ capitalLong      : num  61 101 485 40 40 15 4 11 445 43 ...
+##  $ capitalTotal     : num  278 1028 2259 191 191 ...
+##  $ type             : Factor w/ 2 levels &amp;quot;nonspam&amp;quot;,&amp;quot;spam&amp;quot;: 2 2 2 2 2 2 2 2 2 2 ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, we will attempt to predict whether an email is spam or nonspam. To do so, we will construct models on one subset of the data (training data), and use the constructed model on another disparate subset of the data (the testing data). This is known as cross validation.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# preparation for cross validation:
+# split the dataset into 2 halves,
+# 2300 samples for training and 2301 for testing
+num.samples &amp;lt;- nrow(spam) # 4,601
+num.train   &amp;lt;- round(num.samples/2) # 2,300
+num.test    &amp;lt;- num.samples - num.train # 2,301
+num.var     &amp;lt;- ncol(spam) # 58
+
+# set up the indices
+set.seed(150715)
+idx       &amp;lt;- sample(1:num.samples)
+train.idx &amp;lt;- idx[seq(num.train)]
+test.idx  &amp;lt;- setdiff(idx,train.idx)
+
+# subset the data
+spam.train &amp;lt;- spam[train.idx,]
+spam.test  &amp;lt;- spam[test.idx,]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Taking a quick glance at the &lt;strong&gt;type&lt;/strong&gt; variable:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(spam.train$type)
+## 
+## nonspam    spam 
+##    1397     903
+table(spam.test$type)
+## 
+## nonspam    spam 
+##    1391     910&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decision-tree&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Decision tree&lt;/h3&gt;
+&lt;p&gt;Now that we are done with the preparation, let’s start by constructing a decision tree model, using the &lt;strong&gt;tree&lt;/strong&gt; package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tree.mod &amp;lt;- tree(type ~ ., data = spam.train)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s how our model looks like:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(tree.mod)
+title(&amp;quot;Decision tree&amp;quot;)
+text(tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The model may be overtly complicated. Typically, after constructing a decision tree model, we may want to prune the model, by collapsing certain edges, nodes and leaves together without much loss of performance. This is done by iteratively comparing the number of leaf nodes with the model’s performance (by k-fold cross validation &lt;em&gt;within the training set&lt;/em&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cv.prune &amp;lt;- cv.tree(tree.mod, FUN = prune.misclass)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &amp;quot;red&amp;quot;, type = &amp;quot;b&amp;quot;,
+     main = &amp;quot;Decision tree: Cross validation to find optimal size of tree&amp;quot;,
+     xlab = &amp;quot;Size of tree&amp;quot;, ylab = &amp;quot;Misclassifications&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Having 9 leaf nodes may be good (maximising performance while minimising complexity).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;best.tree.size &amp;lt;- 9
+
+# pruning (cost-complexity pruning)
+pruned.tree.mod &amp;lt;- prune.misclass(tree.mod, best = best.tree.size)
+
+# here&amp;#39;s the new tree model
+plot(pruned.tree.mod)
+title(paste(&amp;quot;Pruned decision tree (&amp;quot;, best.tree.size, &amp;quot; leaf nodes)&amp;quot;,sep = &amp;quot;&amp;quot;))
+text(pruned.tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Now with our new model, let’s make some predictions on the testing data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tree.pred &amp;lt;- predict(pruned.tree.mod,
+                     subset(spam.test, select = -type), 
+                     type = &amp;quot;class&amp;quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(tree.pred.results &amp;lt;- table(tree.pred, spam.test$type))
+##          
+## tree.pred nonspam spam
+##   nonspam    1308  164
+##   spam         83  746
+
+# What is the accuracy of our tree model?
+print(tree.accuracy &amp;lt;- (tree.pred.results[1,1] + tree.pred.results[2,2]) / sum(tree.pred.results))
+## [1] 0.8926554&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our decision tree model is able to predict spam vs. nonspam emails with about 89.27% accuracy. We will make comparisons of accuracies with other models later.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bagging&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bagging&lt;/h3&gt;
+&lt;p&gt;Next, we turn our attention to the bagging model. Recall that bagging, a.k.a. &lt;em&gt;bootstrap aggregating&lt;/em&gt;, is the process of sampling (with replacement), samples from the training data. Each of these subsets are known as bags, and we construct individual decision tree models using each of these bags. Finally, to make a classification prediction, we use the majority vote from the ensemble of decision tree models.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.mod&amp;lt;-randomForest(type ~ ., data = spam.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     proximity = TRUE,
+                     importance = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the bagging, and also the random forest model, there are often only two hyperparameters that we are interested in: &lt;strong&gt;mtry&lt;/strong&gt;, which is the number of variables to try from for each tree and at each split, and &lt;strong&gt;ntree&lt;/strong&gt;, the number of trees in the ensemble. Tuning the number of trees is relatively easy by looking at the out-of-bag (OOB) error estimate of the ensemble at each step of the way. For more details, refer to the slides. We set &lt;strong&gt;proximity = TRUE&lt;/strong&gt; and &lt;strong&gt;importance = TRUE&lt;/strong&gt;, in order to get some form of visualization of the model, and the variable importances respectively.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(bg.mod$err.rate[,1], type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Bagging: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, 300 trees seems more than sufficient. One advantage of bagging and random forest models is that they provide a way of doing feature or variable selection, by considering the importance of each variable in the model. For exact details on how these importance measures are defined, refer to the slides.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;varImpPlot(bg.mod,
+           main = &amp;quot;Bagging: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In addition, we can visualize the classification done by the model using a multidimensional plot on the proximity matrix. The green samples in the figure represent nonspams, while the red samples are spams.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MDSplot(bg.mod,
+        fac = spam.train$type,
+        palette = c(&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
+        main = &amp;quot;Bagging: MDS&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Finally, let’s make some predictions on the testing data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.pred &amp;lt;- predict(bg.mod,
+                   subset(spam.test, select = -type), 
+                   type = &amp;quot;class&amp;quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(bg.pred.results &amp;lt;- table(bg.pred, spam.test$type))
+##          
+## bg.pred   nonspam spam
+##   nonspam    1336   87
+##   spam         55  823
+
+# what is the accuracy of our bagging model?
+print(bg.accuracy &amp;lt;- sum(diag((bg.pred.results))) / sum(bg.pred.results))
+## [1] 0.9382877&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our bagging model predicts whether an email is spam or not with about 93.83% accuracy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;random-forest&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Random Forest&lt;/h3&gt;
+&lt;p&gt;The only difference between the bagging model and random forest model is that the latter uses chooses only from a subset of variables to split on at each node of each tree. In other words, only the &lt;strong&gt;mtry&lt;/strong&gt; argument differs between bagging and random forest.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rf.mod &amp;lt;- randomForest(type ~ ., data = spam.train,
+                       mtry = floor(sqrt(num.var - 1)), # 7; only difference from bagging is here
+                       ntree = 300,
+                       proximity = TRUE,
+                       importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees:
+plot(rf.mod$err.rate[,1], type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Random forest: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Besides tuning the &lt;strong&gt;ntree&lt;/strong&gt; hyperparameter, we might also be interested in tuning the &lt;strong&gt;mtry&lt;/strong&gt; hyperparameter in random forest. The random forest model may be built using the &lt;strong&gt;mtry&lt;/strong&gt; value that minimises the OOB error.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tuneRF(subset(spam.train, select = -type),
+       spam.train$type,
+       ntreeTry = 100)
+## mtry = 7  OOB error = 5.52% 
+## Searching left ...
+## mtry = 4     OOB error = 6.26% 
+## -0.1338583 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 5.83% 
+## -0.05511811 0.05
+##        mtry   OOBError
+## 4.OOB     4 0.06260870
+## 7.OOB     7 0.05521739
+## 14.OOB   14 0.05826087
+title(&amp;quot;Random forest: Tuning the mtry hyperparameter&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# variable importance
+varImpPlot(rf.mod,
+           main = &amp;quot;Random forest: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# multidimensional scaling plot
+# green samples are non-spam,
+# red samples are spam
+MDSplot(rf.mod,
+        fac = spam.train$type,
+        palette = c(&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
+        main = &amp;quot;Random forest: MDS&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# now, let&amp;#39;s make some predictions
+rf.pred &amp;lt;- predict(rf.mod,
+                   subset(spam.test,select = -type), 
+                   type=&amp;quot;class&amp;quot;)
+
+# confusion matrix
+print(rf.pred.results &amp;lt;- table(rf.pred, spam.test$type))
+##          
+## rf.pred   nonspam spam
+##   nonspam    1353   82
+##   spam         38  828
+
+# Accuracy of our RF model:
+print(rf.accuracy &amp;lt;- sum(diag((rf.pred.results))) / sum(rf.pred.results))
+## [1] 0.9478488&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our random forest model predicts whether an email is spam or not with about 94.78% accuracy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualization-of-performances&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualization of performances&lt;/h3&gt;
+&lt;p&gt;Let’s go ahead and make some comparisons on the performances of our model. For comparison sake, let’s also construct a logistic regression model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;log.mod &amp;lt;- glm(type ~ . , data = spam.train,
+             family = binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+# predictions
+log.pred.prob &amp;lt;- predict(log.mod,
+                         subset(spam.test, select = -type), 
+                         type = &amp;quot;response&amp;quot;)
+log.pred.class &amp;lt;- factor(sapply(log.pred.prob,
+                                FUN = function(x){
+                                        if(x &amp;gt;= 0.5) return(&amp;quot;spam&amp;quot;)
+                                        else return(&amp;quot;nonspam&amp;quot;)
+                                }))
+
+# confusion matrix
+log.pred.results &amp;lt;- table(log.pred.class, spam.test$type)
+
+# Accuracy of logistic regression model:
+print(log.accuracy &amp;lt;- sum(diag((log.pred.results))) / sum(log.pred.results))
+## [1] 0.9135159&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let’s compare the performances, considering first the model accuracies.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;barplot(c(tree.accuracy,
+          bg.accuracy,
+          rf.accuracy,
+          log.accuracy),
+        main=&amp;quot;Accuracies of various models&amp;quot;,
+        names.arg=c(&amp;quot;Tree&amp;quot;,&amp;quot;Bagging&amp;quot;,&amp;quot;RF&amp;quot;, &amp;quot;Logistic&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_viz1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can see here that the ensemble models (bagging and random forest) outperforms the single decision tree, and also the logistic regression model. It turns out here that the bagging and the random forest models have about the same classification performance. Understanding the rationale of &lt;em&gt;random subspace sampling&lt;/em&gt; (refer to slides) should allow us to appreciate the potential improvement of random forest over the bagging model.&lt;/p&gt;
+&lt;p&gt;Finally, let’s plot the ROC curves of the various models. The ROC is only valid for models that give probabilistic output.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.pred.prob &amp;lt;- predict(bg.mod ,
+                        subset(spam.test, select = -type),
+                        type = &amp;quot;prob&amp;quot;)
+
+rf.pred.prob &amp;lt;- predict(rf.mod ,
+                        subset(spam.test, select = -type),
+                        type = &amp;quot;prob&amp;quot;)
+
+plot.roc(spam.test$type,
+         bg.pred.prob[,1], col = &amp;quot;blue&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.3,
+         main = &amp;quot;ROC-AUC of various models&amp;quot;)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;gt; cases
+
+plot.roc(spam.test$type,
+         rf.pred.prob[,1], col = &amp;quot;green&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.2,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;gt; cases
+
+plot.roc(spam.test$type,
+         log.pred.prob, col = &amp;quot;red&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.1,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;lt; cases
+
+legend(x = 0.6, y = 0.8, legend = c(&amp;quot;Bagging&amp;quot;,
+                                    &amp;quot;Random forest&amp;quot;,
+                                    &amp;quot;Logistic regression&amp;quot;),
+       col = c(&amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;red&amp;quot;), lwd = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_viz2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tree-based-methods-for-regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tree-based methods for regression&lt;/h2&gt;
+&lt;p&gt;In the following section, we will consider the use of tree-based methods for regression. The materials that follows are analogous to that above, if not the similar.&lt;/p&gt;
+&lt;div id=&#34;preparation-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tree)
+library(randomForest)
+
+data(imports85)
+imp &amp;lt;- imports85
+
+# The following data preprocessing steps on
+# the imports85 dataset are suggested by
+# the authors of the randomForest package
+# look at
+# &amp;gt; ?imports85
+imp &amp;lt;- imp[,-2]  # Too many NAs in normalizedLosses.
+imp &amp;lt;- imp[complete.cases(imp), ]
+# ## Drop empty levels for factors
+imp[] &amp;lt;- lapply(imp, function(x) if (is.factor(x)) x[, drop=TRUE] else x)
+
+# Also removing the numOfCylinders and fuelSystem
+# variables due to sparsity of data
+# to see this, run the following lines:
+# &amp;gt; table(imp$numOfCylinders)
+# &amp;gt; table(imp$fuelSystem)
+# This additional step is only necessary because we will be
+# making comparisons between the tree-based models
+# and linear regression, and linear regression cannot
+# handle sparse data well
+imp &amp;lt;- subset(imp, select = -c(numOfCylinders,fuelSystem))
+
+# also removing the make variable
+imp &amp;lt;- subset(imp, select = -make)
+
+# Preparation for cross validation:
+# split the dataset into 2 halves,
+# 96 samples for training and 97 for testing
+num.samples &amp;lt;- nrow(imp) # 193
+num.train   &amp;lt;- round(num.samples / 2) # 96
+num.test    &amp;lt;- num.samples - num.train # 97
+num.var     &amp;lt;- ncol(imp) # 25
+
+# set up the indices
+set.seed(150715)
+idx       &amp;lt;- sample(1:num.samples)
+train.idx &amp;lt;- idx[seq(num.train)]
+test.idx  &amp;lt;- setdiff(idx,train.idx)
+
+# subset the data
+imp.train &amp;lt;- imp[train.idx,]
+imp.test  &amp;lt;- imp[test.idx,]
+
+str(imp.train)
+## &amp;#39;data.frame&amp;#39;:    96 obs. of  22 variables:
+##  $ symboling       : int  1 0 0 3 2 1 1 1 3 2 ...
+##  $ fuelType        : Factor w/ 2 levels &amp;quot;diesel&amp;quot;,&amp;quot;gas&amp;quot;: 2 2 2 2 1 2 2 2 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &amp;quot;std&amp;quot;,&amp;quot;turbo&amp;quot;: 2 1 2 1 1 1 1 1 2 2 ...
+##  $ numOfDoors      : Factor w/ 2 levels &amp;quot;four&amp;quot;,&amp;quot;two&amp;quot;: 1 1 1 2 2 2 1 2 2 1 ...
+##  $ bodyStyle       : Factor w/ 5 levels &amp;quot;convertible&amp;quot;,..: 4 4 4 3 4 4 4 3 3 4 ...
+##  $ driveWheels     : Factor w/ 3 levels &amp;quot;4wd&amp;quot;,&amp;quot;fwd&amp;quot;,&amp;quot;rwd&amp;quot;: 2 2 3 3 2 3 2 2 2 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &amp;quot;front&amp;quot;,&amp;quot;rear&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  96.3 97.2 108 102.9 97.3 ...
+##  $ length          : num  172 173 187 184 172 ...
+##  $ width           : num  65.4 65.2 68.3 67.7 65.5 64 63.8 66.5 65.4 66.5 ...
+##  $ height          : num  51.6 54.7 56 52 55.7 52.6 54.5 53.7 49.4 56.1 ...
+##  $ curbWeight      : int  2403 2302 3130 2976 2261 2265 1971 2385 2370 2847 ...
+##  $ engineType      : Factor w/ 5 levels &amp;quot;dohc&amp;quot;,&amp;quot;l&amp;quot;,&amp;quot;ohc&amp;quot;,..: 3 3 2 1 3 1 3 3 3 1 ...
+##  $ engineSize      : int  110 120 134 171 97 98 97 122 110 121 ...
+##  $ bore            : num  3.17 3.33 3.61 3.27 3.01 3.24 3.15 3.39 3.17 3.54 ...
+##  $ stroke          : num  3.46 3.47 3.21 3.35 3.4 3.08 3.29 3.39 3.46 3.07 ...
+##  $ compressionRatio: num  7.5 8.5 7 9.3 23 9.4 9.4 8.6 7.5 9 ...
+##  $ horsepower      : int  116 97 142 161 52 112 69 84 116 160 ...
+##  $ peakRpm         : int  5500 5200 5600 5200 4800 6600 5200 4800 5500 5500 ...
+##  $ cityMpg         : int  23 27 18 20 37 26 31 26 23 19 ...
+##  $ highwayMpg      : int  30 34 24 24 46 29 37 32 30 26 ...
+##  $ price           : int  9279 9549 18150 16558 7775 9298 7499 10595 9959 18620 ...
+str(imp.test)
+## &amp;#39;data.frame&amp;#39;:    97 obs. of  22 variables:
+##  $ symboling       : int  -1 1 -1 1 1 -2 0 0 2 2 ...
+##  $ fuelType        : Factor w/ 2 levels &amp;quot;diesel&amp;quot;,&amp;quot;gas&amp;quot;: 2 2 1 2 2 2 1 2 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &amp;quot;std&amp;quot;,&amp;quot;turbo&amp;quot;: 1 1 2 1 1 1 2 1 1 1 ...
+##  $ numOfDoors      : Factor w/ 2 levels &amp;quot;four&amp;quot;,&amp;quot;two&amp;quot;: 1 1 1 2 2 1 2 2 2 2 ...
+##  $ bodyStyle       : Factor w/ 5 levels &amp;quot;convertible&amp;quot;,..: 4 4 5 4 4 4 2 4 1 3 ...
+##  $ driveWheels     : Factor w/ 3 levels &amp;quot;4wd&amp;quot;,&amp;quot;fwd&amp;quot;,&amp;quot;rwd&amp;quot;: 3 3 3 3 2 3 3 3 3 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &amp;quot;front&amp;quot;,&amp;quot;rear&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  115.6 103.5 110 94.5 94.5 ...
+##  $ length          : num  203 189 191 169 165 ...
+##  $ width           : num  71.7 66.9 70.3 64 63.8 67.2 70.3 70.6 65.6 64.4 ...
+##  $ height          : num  56.5 55.7 58.7 52.6 54.5 56.2 54.9 47.8 53 50.8 ...
+##  $ curbWeight      : int  3740 3055 3750 2169 1918 2935 3495 3950 2975 1944 ...
+##  $ engineType      : Factor w/ 5 levels &amp;quot;dohc&amp;quot;,&amp;quot;l&amp;quot;,&amp;quot;ohc&amp;quot;,..: 5 3 3 3 3 3 3 5 3 3 ...
+##  $ engineSize      : int  234 164 183 98 97 141 183 326 146 92 ...
+##  $ bore            : num  3.46 3.31 3.58 3.19 3.15 3.78 3.58 3.54 3.62 2.97 ...
+##  $ stroke          : num  3.1 3.19 3.64 3.03 3.29 3.15 3.64 2.76 3.5 3.23 ...
+##  $ compressionRatio: num  8.3 9 21.5 9 9.4 9.5 21.5 11.5 9.3 9.4 ...
+##  $ horsepower      : int  155 121 123 70 69 114 123 262 116 68 ...
+##  $ peakRpm         : int  4750 4250 4350 4800 5200 5400 4350 5000 4800 5500 ...
+##  $ cityMpg         : int  16 20 22 29 31 24 22 13 24 31 ...
+##  $ highwayMpg      : int  18 25 25 34 37 28 25 17 30 38 ...
+##  $ price           : int  34184 24565 28248 8058 6649 15985 28176 36000 17669 6189 ...
+
+# take a quick look
+hist(imp.train$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(imp.test$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We will be predicting the price of imported automobiles in this example. While tree-based methods are scale-invariant with respect to predictor variables, this is not true for the response variable. Hence, let’s take a log-transformation on &lt;strong&gt;price&lt;/strong&gt; here.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;imp.train$price &amp;lt;- log(imp.train$price)
+imp.test$price &amp;lt;- log(imp.test$price)
+
+# take a look again
+hist(imp.train$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(imp.test$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decision-tree-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Decision tree&lt;/h3&gt;
+&lt;p&gt;Done with the preparation, let’s begin with decision trees.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Construct decision tree model
+tree.mod &amp;lt;- tree(price ~ ., data = imp.train)
+
+# here&amp;#39;s how the model looks like
+plot(tree.mod)
+title(&amp;quot;Decision tree&amp;quot;)
+text(tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s see if our decision tree requires pruning
+cv.prune &amp;lt;- cv.tree(tree.mod, FUN = prune.tree)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &amp;quot;red&amp;quot;, type = &amp;quot;b&amp;quot;,
+     main = &amp;quot;Cross validation to find optimal size of tree&amp;quot;,
+     xlab = &amp;quot;Size of tree&amp;quot;, ylab = &amp;quot;Mean squared error&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# looks fine
+
+# now let&amp;#39;s make some predictions
+tree.pred &amp;lt;- predict(tree.mod,
+                     subset(imp.test,select = -price), 
+                     type = &amp;quot;vector&amp;quot;)
+
+# Comparing our predictions with the test data:
+plot(tree.pred, imp.test$price, main = &amp;quot;Decision tree: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1) # A prediction with zero error will lie on the y = x line&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# What is the MSE of our model?
+print(tree.mse &amp;lt;- mean((tree.pred - imp.test$price) ** 2))
+## [1] 0.04716916&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our decision tree model predicts the price of imported automobiles with a mean squared error of 0.0472. As with the previous section, we will make comparsions on model performances later.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bagging-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bagging&lt;/h3&gt;
+&lt;p&gt;Next, bagging.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.mod&amp;lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+# here, the error is the mean squared error,
+# not classification error
+plot(bg.mod$mse, type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Bagging: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# variable importance
+varImpPlot(bg.mod,
+           main = &amp;quot;Bagging: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s make some predictions
+bg.pred &amp;lt;- predict(bg.mod,
+                   subset(imp.test,select = -price))
+
+# Comparing our predictions with test data:
+plot(bg.pred,imp.test$price, main = &amp;quot;Bagging: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE of bagged model
+print(bg.mse &amp;lt;- mean((bg.pred - imp.test$price) ** 2))
+## [1] 0.03004431&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our bagging model predicts the price of imported automobiles with a mean squared error of 0.03.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;random-forest-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Random forest&lt;/h3&gt;
+&lt;p&gt;Finally, the random forest model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rf.mod&amp;lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = floor((num.var - 1) / 3), # 7; only difference from bagging is here
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+plot(rf.mod$mse, type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Random forest: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# tuning the mtry hyperparameter:
+# model may be rebuilt if desired
+tuneRF(subset(imp.train, select = -price),
+       imp.train$price,
+       ntreetry = 100)
+## mtry = 7  OOB error = 0.02543962 
+## Searching left ...
+## mtry = 4     OOB error = 0.03064481 
+## -0.2046095 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 0.02643948 
+## -0.03930348 0.05
+##    mtry   OOBError
+## 4     4 0.03064481
+## 7     7 0.02543962
+## 14   14 0.02643948
+title(&amp;quot;Random forest: Tuning the mtry hyperparameter&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+
+# variable importance
+varImpPlot(rf.mod,
+           main = &amp;quot;Random forest: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s make some predictions
+rf.pred &amp;lt;- predict(rf.mod,
+                   subset(imp.test, select = -price))
+
+# Comparing our predictions with test data:
+plot(rf.pred, imp.test$price, main = &amp;quot;Random forest: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE of RF model
+print(rf.mse &amp;lt;- mean((rf.pred - imp.test$price) ** 2))
+## [1] 0.03139744&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our random forest model incurs a mean squared error of 0.0314 for the prediction of imported automobile prices&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualization-of-performances-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualization of performances&lt;/h3&gt;
+&lt;p&gt;For comparison purposes, let’s also construct a ordinary least squares (linear regression) model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ols.mod &amp;lt;- lm(price ~ ., data = imp.train)
+
+# predictions
+ols.pred &amp;lt;- predict(ols.mod,
+                   subset(imp.test, select = -price))
+
+# comparisons with test data:
+plot(ols.pred, imp.test$price, main = &amp;quot;OLS: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_ols1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE
+print(ols.mse &amp;lt;- mean((ols.pred-imp.test$price) ** 2))
+## [1] 0.03556617&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let’s compare their performances.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Comparing MSEs of various models:
+barplot(c(tree.mse,
+          bg.mse,
+          rf.mse,
+          ols.mse),
+        main = &amp;quot;Mean squared errors of various models&amp;quot;,
+        names.arg = c(&amp;quot;Tree&amp;quot;, &amp;quot;Bagging&amp;quot;, &amp;quot;RF&amp;quot;, &amp;quot;OLS&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_viz1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Our top performer here is the random forest model, followed by the bagging model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>
