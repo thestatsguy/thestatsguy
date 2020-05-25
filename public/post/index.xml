@@ -428,6 +428,9 @@ CIMB FastSaver interest structure.
 &lt;li&gt;&lt;a href=&#34;#efficient-portfolios&#34;&gt;Efficient Portfolios&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#minimum-variance-portfolio&#34;&gt;Minimum variance portfolio&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#risk-free-assets&#34;&gt;Risk-free assets&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#one-risky-asset-and-one-risk-free-asset&#34;&gt;One “risky” asset and one risk-free asset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#wip&#34;&gt;WIP&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -441,7 +444,7 @@ CIMB FastSaver interest structure.
 &lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Risk premium&lt;/em&gt;&lt;/strong&gt; refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Risk premium&lt;/em&gt;&lt;/strong&gt; refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;problem-formulation&#34; class=&#34;section level2&#34;&gt;
@@ -612,6 +615,37 @@ Also, since&lt;/p&gt;
 \geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
 \]&lt;/span&gt;
 where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 1\)&lt;/span&gt;. We would have &lt;span class=&#34;math inline&#34;&gt;\(\frac{d^2Var(R_{pf})}{dw^2} &amp;gt; 0\)&lt;/span&gt;, i.e. solving &lt;span class=&#34;math inline&#34;&gt;\(\frac{dVar(R_{pf})}{dw} = 0\)&lt;/span&gt; minimizes &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;, giving the minimium variance portfolio.&lt;/p&gt;
+&lt;p&gt;Solving,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+w \equiv w_{minvar} = \frac{\sigma_2^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]&lt;/span&gt;
+and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+1 - w_{minvar} = \frac{\sigma_1^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;risk-free-assets&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Risk-free assets&lt;/h2&gt;
+&lt;p&gt;Now let’s make this a little more interesting than just 2 assets. Since it’s always possible to not invest all our capital in these assets, and in fact leave a portion of capital in something that is &lt;strong&gt;risk-free&lt;/strong&gt;, such as cash, we could include risk-free assets as part of our framework as well. In particular, we could have &lt;span class=&#34;math inline&#34;&gt;\(w_1 + w_2 &amp;lt; 1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(1 - w_1 - w_2\)&lt;/span&gt; being the portion not invested, but instead diverted to risk-free assets. Doing this directly reduces portfolio variance, and of course reduces portfolio return.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As pointed out above, &lt;strong&gt;risk-free assets&lt;/strong&gt; are simply assets that are generally deemed as 100% safe&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;, such as cash in a deposit account&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;, Treasury Bills, or Singapore Savings Bonds. Typically, the three-month &lt;a href=&#34;https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield&#34;&gt;US Treasury Bills&lt;/a&gt; are used as proxies for risk-free assets, and their yield or return are considered accordingly. In context of Singapore, we could consider the yield of SSBs as risk-free returns.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(R_{free}\)&lt;/span&gt; be the random variable representing the return of a risk-free asset. Then we have &lt;span class=&#34;math inline&#34;&gt;\(ER_{free} = \mu_{free}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{free}) = 0\)&lt;/span&gt;&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;. Naturally, &lt;span class=&#34;math inline&#34;&gt;\(ER_{free}\)&lt;/span&gt; would be small and contributes a small return to portfolio. On the other hand, directly adjusting the &lt;span class=&#34;math inline&#34;&gt;\(1 - w_1 - w_2\)&lt;/span&gt; provides a convenient of controlling portfolio variance.&lt;/p&gt;
+&lt;p&gt;Also, note that since &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{free}) = 0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\forall i cov(R_{free}, R_i) = 0\)&lt;/span&gt;, i.e. the risk-free is not correlated with any other “risky” assets&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;one-risky-asset-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;One “risky” asset and one risk-free asset&lt;/h3&gt;
+&lt;p&gt;Now let’s consider combining a “risky” asset with a risk-free one. Let &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; be the weight invested in the risky asset, with its return being &lt;span class=&#34;math inline&#34;&gt;\(ER\)&lt;/span&gt; and variance being &lt;span class=&#34;math inline&#34;&gt;\(Var(R)\)&lt;/span&gt;. The portfolio would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = wER + (1-w)R_{free} \implies \mu_{pf} = w\mu_R + (1-w)\mu_{free} \\
+Var(R_{pf}) = w^2Var(R) \implies \sigma_{pf} = w\sigma_R
+\]&lt;/span&gt;
+In particular, observe that the portfolio variance is now a function of &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;, i.e. solving &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf}) = w^2Var(R)\)&lt;/span&gt; gives &lt;span class=&#34;math inline&#34;&gt;\(w = \frac{\sigma_{pf}}{\sigma_R}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{pf}\)&lt;/span&gt; is the standard deviation of the portfolio and &lt;span class=&#34;math inline&#34;&gt;\(\sigma_R\)&lt;/span&gt; is the standard deviation of the risky asset.&lt;/p&gt;
+&lt;p&gt;This gives the following relationship between the portfolio return &lt;span class=&#34;math inline&#34;&gt;\(\mu_{pf}\)&lt;/span&gt; and variance &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{pf}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
+\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;wip&#34; class=&#34;section level2&#34;&gt;
@@ -625,7 +659,7 @@ where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 1\)&lt;/span&
 &lt;li&gt;generalise to N assets&lt;/li&gt;
 &lt;li&gt;r examples&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
@@ -635,7 +669,11 @@ where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 1\)&lt;/span&
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming this is true, consider the two subdomains &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;gt; 0\)&lt;/span&gt;. We have &lt;span class=&#34;math inline&#34;&gt;\(\forall\rho_{12} &amp;lt; 0, Var(R_{pf}) &amp;lt; \frac{1}{2}\sigma^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\forall\rho_{12} &amp;gt; 0, Var(R_{pf}) &amp;gt; \frac{1}{2}\sigma^2\)&lt;/span&gt;, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and &lt;a href=&#34;https://www.investopedia.com/terms/s/strategicassetallocation.asp&#34;&gt;strategic asset allocation&lt;/a&gt;. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future. Also, the math here is similar to that of &lt;a href=&#34;https://thestatsguy.rbind.io/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/&#34;&gt;ensemble modelling&lt;/a&gt; in machine learning.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Of course the challenge in real life is to estimate them using historical data.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;The same way an estimator &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is &lt;a href=&#34;https://en.wikipedia.org/wiki/Efficient_estimator&#34;&gt;efficient&lt;/a&gt; if &lt;span class=&#34;math inline&#34;&gt;\(Var(\hat{\theta})\)&lt;/span&gt; is minimized.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Again, for simplification, we only consider long positions &lt;span class=&#34;math inline&#34;&gt;\(0 \leqslant w \leqslant 1\)&lt;/span&gt;, &lt;code&gt;weights &amp;lt;- seq(0, 1, by = 0.01)&lt;/code&gt; in this post. If short positions are considered, then &lt;span class=&#34;math inline&#34;&gt;\(-\infty \leqslant w \leqslant \infty\)&lt;/span&gt;.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Of course there is no such thing in real life.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;In Singapore, up to SGD75K is insured by &lt;a href=&#34;https://www.sdic.org.sg/&#34;&gt;SDIC&lt;/a&gt;.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;We could in fact use a constant instead of a random variable.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both “risky” and risk-free assets.&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Again, for simplification, we only consider long positions &lt;span class=&#34;math inline&#34;&gt;\(0 \leqslant w \leqslant 1\)&lt;/span&gt;, &lt;code&gt;weights &amp;lt;- seq(0, 1, by = 0.01)&lt;/code&gt; in this post. If short positions are considered, then &lt;span class=&#34;math inline&#34;&gt;\(-\infty \leqslant w \leqslant \infty\)&lt;/span&gt;.&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

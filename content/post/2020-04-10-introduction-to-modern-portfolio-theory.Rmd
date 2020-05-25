@@ -25,7 +25,7 @@ The objective of the MPT is to simultaneously maximise the returns of a portfoli
 
 **_Terminology_**
 
-**_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of a risk-free asset, like a Treasury Bill or a Singapore Savings Bond. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
+**_Risk premium_** refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there's no reason to invest in anything other than risk-free assets.
 
 ---
 
@@ -235,6 +235,49 @@ $$
 \geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
 $$
 where $\rho_{12} < 1$. We would have $\frac{d^2Var(R_{pf})}{dw^2} > 0$, i.e. solving $\frac{dVar(R_{pf})}{dw} = 0$ minimizes $Var(R_{pf})$, giving the minimium variance portfolio.
+
+Solving,
+
+$$
+w \equiv w_{minvar} = \frac{\sigma_2^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+$$
+and
+
+$$
+1 - w_{minvar} = \frac{\sigma_1^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+$$
+
+## Risk-free assets
+
+Now let's make this a little more interesting than just 2 assets. Since it's always possible to not invest all our capital in these assets, and in fact leave a portion of capital in something that is __risk-free__, such as cash, we could include risk-free assets as part of our framework as well. In particular, we could have $w_1 + w_2 < 1$, and $1 - w_1 - w_2$ being the portion not invested, but instead diverted to risk-free assets. Doing this directly reduces portfolio variance, and of course reduces portfolio return.
+
+---
+
+**_Terminology_**
+
+As pointed out above, __risk-free assets__ are simply assets that are generally deemed as 100% safe^[Of course there is no such thing in real life.], such as cash in a deposit account^[In Singapore, up to SGD75K is insured by [SDIC](https://www.sdic.org.sg/).], Treasury Bills, or Singapore Savings Bonds. Typically, the three-month [US Treasury Bills](https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield) are used as proxies for risk-free assets, and their yield or return are considered accordingly. In context of Singapore, we could consider the yield of SSBs as risk-free returns.
+
+---
+
+Let $R_{free}$ be the random variable representing the return of a risk-free asset. Then we have $ER_{free} = \mu_{free}$, and $Var(R_{free}) = 0$^[We could in fact use a constant instead of a random variable.]. Naturally, $ER_{free}$ would be small and contributes a small return to portfolio. On the other hand, directly adjusting the $1 - w_1 - w_2$ provides a convenient of controlling portfolio variance.
+
+Also, note that since $Var(R_{free}) = 0$, $\forall i cov(R_{free}, R_i) = 0$, i.e. the risk-free is not correlated with any other "risky" assets^[Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both "risky" and risk-free assets.].
+
+### One "risky" asset and one risk-free asset
+
+Now let's consider combining a "risky" asset with a risk-free one. Let $w$ be the weight invested in the risky asset, with its return being $ER$ and variance being $Var(R)$. The portfolio would look like this:
+
+$$
+ER_{pf} = wER + (1-w)R_{free} \implies \mu_{pf} = w\mu_R + (1-w)\mu_{free} \\
+Var(R_{pf}) = w^2Var(R) \implies \sigma_{pf} = w\sigma_R
+$$
+In particular, observe that the portfolio variance is now a function of $w$, i.e. solving $Var(R_{pf}) = w^2Var(R)$ gives $w = \frac{\sigma_{pf}}{\sigma_R}$, where $\sigma_{pf}$ is the standard deviation of the portfolio and $\sigma_R$ is the standard deviation of the risky asset.
+
+This gives the following relationship between the portfolio return $\mu_{pf}$ and variance $\sigma_{pf}$:
+
+$$
+\mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
+$$
 
 ## WIP
 
