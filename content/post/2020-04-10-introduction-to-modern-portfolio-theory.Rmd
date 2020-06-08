@@ -278,6 +278,38 @@ This gives the following relationship between the portfolio return $\mu_{pf}$ an
 $$
 \mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
 $$
+Again, let's visualize this relationship with a numerical example.
+
+```{r, fig.align = "center"}
+# expected returns of both "risky" and risk-free asset, variance
+mu_R    <- 0.2
+mu_free <- 0.04
+sigma_R <- 0.1
+
+# calculate return and risks based on w
+cal_pf_return <- function(w){
+  return(w*mu_R + (1-w)*mu_free)
+}
+cal_pf_sd <- function(w){ # standard deviation, not variance
+  return(w*sigma_R)
+}
+
+weights <- seq(0, 1, by = 0.01)
+
+returns <- NULL
+risks <- NULL
+
+for(w in weights){
+  returns <- c(returns, cal_pf_return(w))
+  risks <- c(risks, cal_pf_sd(w))
+}
+
+plot(risks, returns,
+     xlab = "Portfolio sd",
+     ylab = "Portfolio return",
+     main = "Risk-return relationship across weights")
+```
+
 
 ## WIP
 

@@ -645,7 +645,36 @@ In particular, observe that the portfolio variance is now a function of &lt;span
 &lt;p&gt;This gives the following relationship between the portfolio return &lt;span class=&#34;math inline&#34;&gt;\(\mu_{pf}\)&lt;/span&gt; and variance &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{pf}\)&lt;/span&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 \mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
-\]&lt;/span&gt;&lt;/p&gt;
+\]&lt;/span&gt;
+Again, let’s visualize this relationship with a numerical example.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# expected returns of both &amp;quot;risky&amp;quot; and risk-free asset, variance
+mu_R    &amp;lt;- 0.2
+mu_free &amp;lt;- 0.04
+sigma_R &amp;lt;- 0.1
+
+# calculate return and risks based on w
+cal_pf_return &amp;lt;- function(w){
+  return(w*mu_R + (1-w)*mu_free)
+}
+cal_pf_sd &amp;lt;- function(w){ # standard deviation, not variance
+  return(w*sigma_R)
+}
+
+weights &amp;lt;- seq(0, 1, by = 0.01)
+
+returns &amp;lt;- NULL
+risks &amp;lt;- NULL
+
+for(w in weights){
+  returns &amp;lt;- c(returns, cal_pf_return(w))
+  risks &amp;lt;- c(risks, cal_pf_sd(w))
+}
+
+plot(risks, returns,
+     xlab = &amp;quot;Portfolio sd&amp;quot;,
+     ylab = &amp;quot;Portfolio return&amp;quot;,
+     main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;wip&#34; class=&#34;section level2&#34;&gt;
