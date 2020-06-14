@@ -38,7 +38,7 @@ Back in January 2017, I first seriously considered taking up a postgraduate degr
 
 > So for now, my choice is going to be M.Sc. Statistics from NUS.
 
-<center>Quoting myself in January 2017, [here](https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/). Was I rigourous in my decision-making? Hmm...</center>
+<center>Quoting myself in January 2017, [here](https://thestatsguy.rbind.io/post/2017/01/30/taking-a-part-time-masters-this-year-in-2017/). Was I rigourous in my decision-making? Hmm...</center>
 
 So I decided to go with a Master of Science in Statistics programme in NUS, and starting my first semester in August 2017. I then took 5 semesters, all the way to December 2019, to complete the programme. Today, I have since happily graduated and have had a good experience with the programme.
 
