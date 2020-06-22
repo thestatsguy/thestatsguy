@@ -36,9 +36,11 @@ plot(simulation_set$error~simulation_set$guess)
 
 plot(simulation_set$sq_error~simulation_set$guess)
 
+boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess), main = "no mean")
+
 # ----
 
-v <- runif(10000, min = 1, max = 10)
+v <- runif(1000, min = 0, max = 10)
 mean(v)
 length(v)
 
@@ -105,6 +107,19 @@ plot(simulation_set$sq_error~simulation_set$guess, main = "with mean")
 
 boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess), main = "with mean")
 
+# ---- groupby
+
+ss <- simulation_set
+ss$guess <- as.character(ss$guess)
+ss$guess[which(ss$guess == as.character(mean(v)))] <- "mean"
+
+ss %>%
+  group_by(guess) %>%
+  summarize(mean_sq_err = mean(sq_error))
+
+metadata %>%
+  group_by(cit) %>%
+  summarize(mean_size = mean(genome_size, na.rm = TRUE))
 
 
 simulation_set %>%
@@ -116,4 +131,19 @@ simulation_set %>%
 
 
 
+
+
+# library
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+
+
+# Represent it
+p <- ss %>%
+  ggplot( aes(x=error, fill=guess)) +
+  geom_histogram(position = 'identity') +
+  theme_ipsum() +
+  labs(fill="")
+p
 
