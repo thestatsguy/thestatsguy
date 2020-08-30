@@ -13,7 +13,7 @@ Prior to this, I have been receiving more questions about the MSc. Stats program
 
 In this post, I have collated a number of questions that I have received, most rephrased to be more generic, as well as my responses to them. Moving forward, I may also update this post as I receive more questions.
 
-Before I continue, I would like to sincerely thank my readers for reaching out to me and asking these questions. I hope that my answers were helpful for you in your decision-making and I hope you excel in the programme. I also hope you don't mind me sharing of these generic questions to a wider audience.
+Before I continue, I would like to sincerely thank my readers for reaching out to me and asking these questions. I hope that my answers were helpful for you in your decision-making and I hope you excel in the programme. I also hope you don't mind me sharing these generic questions to a wider audience.
 
 And for those of you starting the AY in NUS - hope you have a good year ahead!
 
