@@ -36,6 +36,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#risk-free-assets&#34;&gt;Risk-free assets&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#one-risky-asset-and-one-risk-free-asset&#34;&gt;One “risky” asset and one risk-free asset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#two-risky-assets-and-one-risk-free-asset&#34;&gt;Two “risky” assets and one risk-free asset&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#wip&#34;&gt;WIP&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -94,7 +95,7 @@ where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{ij}\)&lt;/span&gt; is th
 &lt;div id=&#34;the-math-behind-diversification&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;The math behind diversification&lt;/h2&gt;
 &lt;p&gt;We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, &lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_aversion&#34;&gt;loss aversion&lt;/a&gt; would indicate that we would rather minimize the risk of losing it all in a single stock.&lt;/p&gt;
-&lt;p&gt;In this sense, what divserification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.&lt;/p&gt;
+&lt;p&gt;In this sense, what diversification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.&lt;/p&gt;
 &lt;p&gt;This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.&lt;/p&gt;
 &lt;p&gt;Let’s consider two instructive examples.&lt;/p&gt;
 &lt;div id=&#34;two-uncorrelated-assets&#34; class=&#34;section level3&#34;&gt;
@@ -210,7 +211,7 @@ text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&l
 &lt;/div&gt;
 &lt;div id=&#34;minimum-variance-portfolio&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Minimum variance portfolio&lt;/h3&gt;
-&lt;p&gt;In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;. This can be simply solved some basic calculus.&lt;/p&gt;
+&lt;p&gt;In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;. This can be done by simply solving some basic calculus.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
 \frac{dVar(R_{pf})}{dw} = 2w\sigma_1^2 - 2(1-w)\sigma_2^2 + 2(1-2w)\rho_{12}\sigma_1\sigma_2 \\
@@ -281,6 +282,24 @@ plot(risks, returns,
      ylab = &amp;quot;Portfolio return&amp;quot;,
      main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-risky-assets-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two “risky” assets and one risk-free asset&lt;/h3&gt;
+&lt;p&gt;Now, let’s go one step further, and look at having two “risky” assets with one risk-free asset. What does the math look like? Again, Let &lt;span class=&#34;math inline&#34;&gt;\(w_1\)&lt;/span&gt; be the weight invested in the first risky asset, &lt;span class=&#34;math inline&#34;&gt;\(w_2\)&lt;/span&gt; in the second risky asset and &lt;span class=&#34;math inline&#34;&gt;\(w_{free}\)&lt;/span&gt; in the risk-free asset, with respective returns being &lt;span class=&#34;math inline&#34;&gt;\(ER_1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(ER_2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(ER_{free}\)&lt;/span&gt;, and variances being &lt;span class=&#34;math inline&#34;&gt;\(Var(R_1)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_2)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Since there are now two risky assets, we also need to consider their correlation, &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12}\)&lt;/span&gt;. The portfolio would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = w_1ER_1 + w_2ER_2 + (1-w_1-w_2)R_{free} \implies \mu_{pf} = w_1\mu_{R_1} + w_2\mu_{R_2} + (1-w_1-w_2)\mu_{free} \\
+Var(R_{pf}) = w_1^2Var(R_1) + w_2^2Var(R_2) + 2w_1w_2cov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2 \\
+w_{free} = 1-w_1-w_2
+\]&lt;/span&gt;
+In particular, note that we can write &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf}\)&lt;/span&gt; in the following manner as well:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = (1-w_{free})(\bar{w_1}R_1 + \bar{w_2}R_2) + w_{free}R_{free} \\
+\bar{w_1} = \frac{w_1}{1-w_{free}}, \bar{w_2} = \frac{w_2}{1-w_{free}} \implies \bar{w_1} + \bar{w_2} = 1
+\]&lt;/span&gt;
+In this sense, we can now view portfolio selection as a two-stage problem. First, we construct a portfolio based on risky assets only (e.g. chooosing &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_1}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_2}\)&lt;/span&gt; only). Then, we include the risk-free asset by choosing &lt;span class=&#34;math inline&#34;&gt;\(w_{free}\)&lt;/span&gt;. From the perspective, we gain an interesting tool in controlling for the risk we take on in our portfolio, by the inclusion of the risk-free asset - since its inclusion always decreases the portfolio risk, regardless of the risky assets we take on.&lt;/p&gt;
+&lt;p&gt;Also note that once the first stage is completed, we are effectively dealing with one risky asset and one risk-free asset again, with the “single risky asset” being a combination of 2 risky assets, with &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_1}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; assets.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;wip&#34; class=&#34;section level2&#34;&gt;

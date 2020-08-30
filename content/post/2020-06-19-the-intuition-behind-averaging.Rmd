@@ -71,7 +71,7 @@ Let's consider each of these approaches.
 * __Approach 3 - it doesn't matter, guess any number__: this is useless as we can't make any intelligent guess of any sorts.
 * __Approach 4 - what can reduce our error?__: firstly, what does "belong to the same group" mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - i.e. we have no reason to think that it's smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number. A reasonable intuition.
 
-So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum `r min(v)` and maximium`r max(v)`.
+So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum `r min(v)` and maximium `r max(v)`.
 
 What then, minimizes the error? Well we must first define the error.
 

@@ -14,9 +14,9 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 As the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.
 
-In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems. Each section of this tutorial corresponds to an individual R script that can be found in the GitHub repo at <https://github.com/thestatsguy/RUGS-RF>.
+In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems.
 
-This tutorial is divided into two sections. We will first use tree-based methods for classification on the __spam__ dataset from the __kernlab__ package - the same dataset used in the previous RUGS workshop on support vector machines (SVM). Subsequently, we will apply these methods on a regression problem, with the __imports85__ dataset from the __randomForest__ package.
+This tutorial is divided into two sections. We will first use tree-based methods for classification on the __spam__ dataset from the __kernlab__ package. Subsequently, we will apply these methods on a regression problem, with the __imports85__ dataset from the __randomForest__ package.
 
 ## Tree-based methods for classification
 

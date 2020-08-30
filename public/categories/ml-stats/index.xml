@@ -67,7 +67,7 @@ length(v)
 &lt;li&gt;&lt;strong&gt;Approach 3 - it doesn’t matter, guess any number&lt;/strong&gt;: this is useless as we can’t make any intelligent guess of any sorts.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Approach 4 - what can reduce our error?&lt;/strong&gt;: firstly, what does “belong to the same group” mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - i.e. we have no reason to think that it’s smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number. A reasonable intuition.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum 2 and maximium10.&lt;/p&gt;
+&lt;p&gt;So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum 2 and maximium 10.&lt;/p&gt;
 &lt;p&gt;What then, minimizes the error? Well we must first define the error.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;minimizing-our-error&#34; class=&#34;section level3&#34;&gt;
@@ -1844,8 +1844,8 @@ script_to_submit.py
 &lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;As the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.&lt;/p&gt;
-&lt;p&gt;In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems. Each section of this tutorial corresponds to an individual R script that can be found in the GitHub repo at &lt;a href=&#34;https://github.com/thestatsguy/RUGS-RF&#34; class=&#34;uri&#34;&gt;https://github.com/thestatsguy/RUGS-RF&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This tutorial is divided into two sections. We will first use tree-based methods for classification on the &lt;strong&gt;spam&lt;/strong&gt; dataset from the &lt;strong&gt;kernlab&lt;/strong&gt; package - the same dataset used in the previous RUGS workshop on support vector machines (SVM). Subsequently, we will apply these methods on a regression problem, with the &lt;strong&gt;imports85&lt;/strong&gt; dataset from the &lt;strong&gt;randomForest&lt;/strong&gt; package.&lt;/p&gt;
+&lt;p&gt;In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems.&lt;/p&gt;
+&lt;p&gt;This tutorial is divided into two sections. We will first use tree-based methods for classification on the &lt;strong&gt;spam&lt;/strong&gt; dataset from the &lt;strong&gt;kernlab&lt;/strong&gt; package. Subsequently, we will apply these methods on a regression problem, with the &lt;strong&gt;imports85&lt;/strong&gt; dataset from the &lt;strong&gt;randomForest&lt;/strong&gt; package.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;tree-based-methods-for-classification&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Tree-based methods for classification&lt;/h2&gt;

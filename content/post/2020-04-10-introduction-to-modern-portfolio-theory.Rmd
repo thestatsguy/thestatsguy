@@ -84,7 +84,7 @@ $$Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}$$
 
 We all know "not to put our eggs in one basket", and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion) would indicate that we would rather minimize the risk of losing it all in a single stock.
 
-In this sense, what divserification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset's relationships with the others, in terms of correlations.
+In this sense, what diversification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset's relationships with the others, in terms of correlations.
 
 This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.
 
@@ -222,7 +222,7 @@ text(x = 0.006, y = 0.15, "efficient frontier")
 
 ### Minimum variance portfolio
 
-In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing $Var(R_{pf})$. This can be simply solved some basic calculus.
+In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing $Var(R_{pf})$. This can be done by simply solving some basic calculus.
 
 $$
 Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
@@ -309,6 +309,30 @@ plot(risks, returns,
      ylab = "Portfolio return",
      main = "Risk-return relationship across weights")
 ```
+
+### Two "risky" assets and one risk-free asset
+
+Now, let's go one step further, and look at having two "risky" assets with one risk-free asset. What does the math look like? Again, Let $w_1$ be the weight invested in the first risky asset, $w_2$ in the second risky asset and $w_{free}$ in the risk-free asset, with respective returns being $ER_1$, $ER_2$ and $ER_{free}$, and variances being $Var(R_1)$ and $Var(R_2)$.
+
+Since there are now two risky assets, we also need to consider their correlation, $\rho_{12}$. The portfolio would look like this:
+
+$$
+ER_{pf} = w_1ER_1 + w_2ER_2 + (1-w_1-w_2)R_{free} \implies \mu_{pf} = w_1\mu_{R_1} + w_2\mu_{R_2} + (1-w_1-w_2)\mu_{free} \\
+Var(R_{pf}) = w_1^2Var(R_1) + w_2^2Var(R_2) + 2w_1w_2cov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2 \\
+w_{free} = 1-w_1-w_2
+$$
+In particular, note that we can write $ER_{pf}$ in the following manner as well:
+
+$$
+ER_{pf} = (1-w_{free})(\bar{w_1}R_1 + \bar{w_2}R_2) + w_{free}R_{free} \\
+\bar{w_1} = \frac{w_1}{1-w_{free}}, \bar{w_2} = \frac{w_2}{1-w_{free}} \implies \bar{w_1} + \bar{w_2} = 1
+$$
+In this sense, we can now view portfolio selection as a two-stage problem. First, we construct a portfolio based on risky assets only (e.g. chooosing $\bar{w_1}$ and $\bar{w_2}$ only). Then, we include the risk-free asset by choosing $w_{free}$. From the perspective, we gain an interesting tool in controlling for the risk we take on in our portfolio, by the inclusion of the risk-free asset - since its inclusion always decreases the portfolio risk, regardless of the risky assets we take on.
+
+Also note that once the first stage is completed, we are effectively dealing with one risky asset and one risk-free asset again, with the "single risky asset" being a combination of 2 risky assets, with $\bar{w_1}$ and $\bar{w_2}$.
+
+Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to $N$ assets.
+
 
 
 ## WIP
