@@ -6,17 +6,17 @@
     <description>Recent content in Stats finance on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/stats-finance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A gentle introduction to the modern portfolio theory</title>
-      <link>/post/2020/04/10/a-gentle-introduction-to-the-modern-portfolio-theory/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <link>/post/2020/09/27/a-gentle-introduction-to-the-modern-portfolio-theory/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020/04/10/a-gentle-introduction-to-the-modern-portfolio-theory/</guid>
+      <guid>/post/2020/09/27/a-gentle-introduction-to-the-modern-portfolio-theory/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -178,7 +178,7 @@ plot(risks, returns,
      xlab = &amp;quot;Portfolio risk&amp;quot;,
      ylab = &amp;quot;Portfolio return&amp;quot;,
      main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;efficient-portfolios&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Efficient Portfolios&lt;/h3&gt;
 &lt;p&gt;Take a look at the plot above. Notice that&lt;/p&gt;
@@ -208,7 +208,7 @@ lines(risks[inefficient_idx], returns[inefficient_idx], lty = &amp;quot;dotted&a
 abline(h = min_risk_return)
 text(x = 0.003, y = min_risk_return-0.01, &amp;quot;min variance portfolio&amp;quot;)
 text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;minimum-variance-portfolio&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Minimum variance portfolio&lt;/h3&gt;
@@ -282,7 +282,7 @@ plot(risks, returns,
      xlab = &amp;quot;Portfolio sd&amp;quot;,
      ylab = &amp;quot;Portfolio return&amp;quot;,
      main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;two-risky-assets-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Two “risky” assets and one risk-free asset&lt;/h3&gt;

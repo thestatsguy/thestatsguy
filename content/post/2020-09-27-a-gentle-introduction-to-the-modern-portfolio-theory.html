@@ -1,7 +1,7 @@
 ---
 title: "A gentle introduction to the modern portfolio theory"
 #author: ""
-date: 2020-04-10
+date: 2020-09-27
 categories: ["Stats finance"]
 #tags: ["R Markdown", "plot", "regression"]
 output:
@@ -169,7 +169,7 @@ plot(risks, returns,
      xlab = &quot;Portfolio risk&quot;,
      ylab = &quot;Portfolio return&quot;,
      main = &quot;Risk-return relationship across weights&quot;)</code></pre>
-<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div id="efficient-portfolios" class="section level3">
 <h3>Efficient Portfolios</h3>
 <p>Take a look at the plot above. Notice that</p>
@@ -199,7 +199,7 @@ lines(risks[inefficient_idx], returns[inefficient_idx], lty = &quot;dotted&quot;
 abline(h = min_risk_return)
 text(x = 0.003, y = min_risk_return-0.01, &quot;min variance portfolio&quot;)
 text(x = 0.006, y = 0.15, &quot;efficient frontier&quot;)</code></pre>
-<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="minimum-variance-portfolio" class="section level3">
 <h3>Minimum variance portfolio</h3>
@@ -273,7 +273,7 @@ plot(risks, returns,
      xlab = &quot;Portfolio sd&quot;,
      ylab = &quot;Portfolio return&quot;,
      main = &quot;Risk-return relationship across weights&quot;)</code></pre>
-<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="two-risky-assets-and-one-risk-free-asset" class="section level3">
 <h3>Two “risky” assets and one risk-free asset</h3>

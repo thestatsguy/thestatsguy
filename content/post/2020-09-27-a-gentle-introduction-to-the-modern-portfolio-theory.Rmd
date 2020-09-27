@@ -1,7 +1,7 @@
 ---
 title: "A gentle introduction to the modern portfolio theory"
 #author: ""
-date: 2020-04-10
+date: 2020-09-27
 categories: ["Stats finance"]
 #tags: ["R Markdown", "plot", "regression"]
 output:

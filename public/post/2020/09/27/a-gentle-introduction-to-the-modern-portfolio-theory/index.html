@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A gentle introduction to the modern portfolio theory | The Stats Guy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/ml-stats/">ML &amp; Stats</a></li>
+      
+      <li><a href="/categories/stats-finance/">Stats finance</a></li>
+      
+      <li><a href="/categories/finance-investing/">Finance &amp; Investing</a></li>
+      
+      <li><a href="/categories/corporate-rat-race/">Corporate rat race</a></li>
+      
+      <li><a href="/categories/stoicism/">Stoicism</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">A gentle introduction to the modern portfolio theory</span></h2>
+
+<h3 class="categories">[Stats finance]</h3>
+<h3>2020/09/27</h3>
+<h3>15min read</h3>
+</div>
+
+<main>
+
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#problem-formulation">Problem formulation</a><ul>
+<li><a href="#portfolio-weights">Portfolio weights</a></li>
+<li><a href="#portfolio-expectation-and-variance">Portfolio expectation and variance</a></li>
+</ul></li>
+<li><a href="#the-math-behind-diversification">The math behind diversification</a><ul>
+<li><a href="#two-uncorrelated-assets">Two uncorrelated assets</a></li>
+<li><a href="#two-correlated-assets">Two correlated assets</a></li>
+</ul></li>
+<li><a href="#starting-with-two-assets">Starting with two assets</a><ul>
+<li><a href="#efficient-portfolios">Efficient Portfolios</a></li>
+<li><a href="#minimum-variance-portfolio">Minimum variance portfolio</a></li>
+</ul></li>
+<li><a href="#risk-free-assets">Risk-free assets</a><ul>
+<li><a href="#one-risky-asset-and-one-risk-free-asset">One “risky” asset and one risk-free asset</a></li>
+<li><a href="#two-risky-assets-and-one-risk-free-asset">Two “risky” assets and one risk-free asset</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>In this post, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the <a href="https://en.wikipedia.org/wiki/Modern_portfolio_theory">MPT Wikipedia article</a> explains it very well:</p>
+<blockquote>
+<p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
+</blockquote>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimise the risk of the portfolio. Generally, we all know that higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>As a “gentle introduction” to MPT, in this post, all you need is the basic understanding of mean, variance, and covariance. I will do the rest by repeatedly applying these three statistics in the context of a portfolio - nothing more, nothing less!</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
+<hr />
+</div>
+<div id="problem-formulation" class="section level2">
+<h2>Problem formulation</h2>
+<p>Suppose there are <span class="math inline">\(N\)</span> assets with <span class="math inline">\(R_i, i = 1, ..., N\)</span> denoting the random variables that represent their respective returns in a given time period, and <span class="math inline">\(\mathbf{R} = (R_1, ..., R_N)^{T}\)</span>.</p>
+<p>Their returns and risks are respectively</p>
+<p><span class="math display">\[
+\begin{array}{c}
+r_i = ER_i \\\
+\sigma_i = Var(R_i)\\\
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
+\end{array}
+\]</span>
+We can then form a portfolio consisting of the <span class="math inline">\(N\)</span> assets such that</p>
+<p><span class="math display">\[
+\begin{array}{c}
+R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
+\end{array}
+\]</span></p>
+<p>where <span class="math inline">\(R_{pf}\)</span> is the return of the portfolio and <span class="math inline">\(w_i\)</span> is the weight of the <span class="math inline">\(i\)</span>th asset in the portfolio, with</p>
+<p><span class="math display">\[\sum_{i = 1}^{N} w_i = 1\]</span></p>
+<p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(\mathbf{w} = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
+<div id="portfolio-weights" class="section level3">
+<h3>Portfolio weights</h3>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset. In this post, we will only consider positive <span class="math inline">\(w_i\)</span> only.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then returned to the lender. This closes the short position, and the idea is that if one is able to sell the borrowed stock at a higher price and return it at a lower price, a profit is made.</p>
+<hr />
+</div>
+<div id="portfolio-expectation-and-variance" class="section level3">
+<h3>Portfolio expectation and variance</h3>
+<p>With this set-up, the expectation and variance of the portfolio would be</p>
+<p><span class="math display">\[ER_{pf} = \sum_iw_iER_i = \mathbf{w}^TE\mathbf{R}\]</span>
+<span class="math display">\[Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]</span>
+where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between the <span class="math inline">\(i\)</span>th and <span class="math inline">\(j\)</span>th asset.</p>
+<p>Alternatively,</p>
+<p><span class="math display">\[Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}\]</span></p>
+</div>
+</div>
+<div id="the-math-behind-diversification" class="section level2">
+<h2>The math behind diversification</h2>
+<p>We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, <a href="https://en.wikipedia.org/wiki/Loss_aversion">loss aversion</a> would dictate that we would rather minimise the risk of losing it all in a single stock.</p>
+<p>In this sense, what diversification does to a portfolio is that it minimises risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.</p>
+<p>This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.</p>
+<p>Let’s consider two instructive examples.</p>
+<div id="two-uncorrelated-assets" class="section level3">
+<h3>Two uncorrelated assets</h3>
+<p>Suppose we have 2 assets with returns <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>, with the same mean and variance:</p>
+<p><span class="math display">\[
+\begin{array}{}
+ER_1 = ER_2 = \mu \\\
+Var(R_1) = Var(R_2) = \sigma^2
+\end{array}
+\]</span>
+Also, <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span> are uncorrelated, i.e. <span class="math inline">\(\rho_{12} = 0\)</span>.</p>
+<p>Investing 100% in either <span class="math inline">\(R_1\)</span> or <span class="math inline">\(R_2\)</span> would yield exactly the same return and the same risk. Now consider a portfiolio with some weight on both assets. Let <span class="math inline">\(w\)</span> be the weight for <span class="math inline">\(R_1\)</span> - then we would have <span class="math inline">\(1-w\)</span> for <span class="math inline">\(R_2\)</span>. In this portfolio, we would have</p>
+<p><span class="math display">\[ER_{pf} = wER_1 + (1-w)ER_2 = w\mu + (1-w)\mu = \mu\]</span>
+With this, we know that the return of this portfolio does not depend on <span class="math inline">\(w\)</span>.</p>
+<p>However, given that the assets are uncorrelated, we would have</p>
+<p><span class="math display">\[Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + cov(R_1, R_2)\]</span>
+where <span class="math inline">\(cov(R_1, R_2) = 0\)</span>.</p>
+<p>So, we would have</p>
+<p><span class="math display">\[Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2\]</span>
+When <span class="math inline">\(w\)</span> = <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) = \sigma^2\)</span>. However, for any other value of <span class="math inline">\(w\)</span>, <span class="math inline">\(0&lt;w&lt;1\)</span>, we would have <span class="math inline">\(Var(R_{pf}) &lt; \sigma^2\)</span><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
+</div>
+<div id="two-correlated-assets" class="section level3">
+<h3>Two correlated assets</h3>
+<p>Let’s consider a similar scenario, but this time, <span class="math inline">\(cov(R_1, R_2) \neq 0\)</span>. This also means that <span class="math inline">\(-1&lt; \rho_{12} &lt; 1\)</span>. Consider a portfolio where <span class="math inline">\(w = \frac{1}{2}\)</span>, i.e. placing equal weight on both assets <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>. We would then have <span class="math inline">\(ER_{pf} = \frac{1}{2}ER_1 + \frac{1}{2}ER_2 = \mu\)</span>. More importantly,</p>
+<p><span class="math display">\[
+Var(R_{pf}) = \frac{1}{4}Var(R_1) + \frac{1}{4}Var(R_2) + 2\frac{1}{2}\frac{1}{2}Cov(R_1, R_2) \\\
+= \frac{1}{4}\sigma^2 + \frac{1}{4}\sigma^2 + \frac{1}{2}\rho_{12}\sigma^2 \\\
+= \frac{1}{2}(1+\rho_{12})\sigma^2
+\]</span>
+Therefore, for any value of <span class="math inline">\(\rho_{12}\)</span>, <span class="math inline">\(-1 &lt; \rho_{12} &lt; 1\)</span>, <span class="math inline">\(Var(R_{pf}) &lt; \sigma^2\)</span><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+</div>
+</div>
+<div id="starting-with-two-assets" class="section level2">
+<h2>Starting with two assets</h2>
+<p>Again, the objective of treating portfolio selection as a statistical problem is to select individual <span class="math inline">\(w_i\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is large and <span class="math inline">\(Var(R_{pf})\)</span> is small. As with our two instructive examples above, we can start solving this problem by first considering <span class="math inline">\(N = 2\)</span>, that is, choosing the weights <span class="math inline">\(w_i\)</span> between two assets only. Inevitably, we would have</p>
+<p><span class="math display">\[
+\begin{array}{c}
+ER_{pf} = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_jcov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12}\sigma_1\sigma_2 \\\
+w_1+w_2 = 1, w_2 = 1 - w_1
+\end{array}
+\]</span>
+where <span class="math inline">\(\rho_{12}\)</span> is the correlation between <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>. Again, we can let <span class="math inline">\(w\)</span> be the weight for <span class="math inline">\(R_1\)</span> - then we would have <span class="math inline">\(1-w\)</span> for <span class="math inline">\(R_2\)</span>. Simplifying,</p>
+<p><span class="math display">\[
+ER_{pf} = wER_1 + (1-w)ER_2 = w\mu_1 + (1-w)\mu_2 \\\
+Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + 2w_1w_2cov(R_1, R_2) \\\
+= w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2
+\]</span>
+Notice that in this set-up, <span class="math inline">\(\mu_1\)</span>, <span class="math inline">\(\mu_2\)</span>, <span class="math inline">\(\sigma_1\)</span>, <span class="math inline">\(\sigma_2\)</span>, and <span class="math inline">\(\rho_{12}\)</span> are considered to be known and constant<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. We are concerned with choosing a value for <span class="math inline">\(w\)</span> such that <span class="math inline">\(ER_{pf}\)</span> is maximised, while <span class="math inline">\(Var(R_{pf})\)</span> is minimised, i.e. we treat both <span class="math inline">\(ER_{pf}\)</span> and <span class="math inline">\(Var(R_{pf})\)</span> as univariate functions of <span class="math inline">\(w\)</span>.</p>
+<p>Let’s visualise this with a numerical example.</p>
+<pre class="r"><code># expected returns, standard deviation, and correlation of two assets
+mu1 &lt;- 0.2
+mu2 &lt;- 0.1
+sigma1 &lt;- 0.1
+sigma2 &lt;- 0.05
+rho12 &lt;- 0.25
+
+# calculate return and risks based on w
+cal_pf_return &lt;- function(w){
+  return(w*mu1 + (1-w)*mu2)
+}
+cal_pf_risk &lt;- function(w){
+  return(w^2*sigma1^2 + (1-w)^2*sigma2^2 + 2*w*(1-w)*rho12*sigma1*sigma2)
+}
+
+# weights span from -1 to 1; this considers short positions as well for illustration
+weights &lt;- seq(-1, 1, by = 0.01)
+
+returns &lt;- NULL
+risks &lt;- NULL
+
+for(w in weights){
+  returns &lt;- c(returns, cal_pf_return(w))
+  risks &lt;- c(risks, cal_pf_risk(w))
+}
+
+plot(risks, returns,
+     xlab = &quot;Portfolio risk&quot;,
+     ylab = &quot;Portfolio return&quot;,
+     main = &quot;Risk-return relationship across weights&quot;)</code></pre>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="efficient-portfolios" class="section level3">
+<h3>Efficient Portfolios</h3>
+<p>Take a look at the plot above. Notice that</p>
+<ul>
+<li>For every possible value of return, there is one corresponding value of risk.</li>
+<li>However, for every possible value of risk, there are two corresponding values of returns.</li>
+</ul>
+<p>Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half. In particular, each combination in the top half of the plot are considered as <strong>efficient portfolios</strong>. At this point, we might also want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the <strong>minimum variance portfolio</strong>.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p><strong><em>Efficient portfolios</em></strong> lie on on the <a href="https://en.wikipedia.org/wiki/Efficient_frontier"><strong>efficient frontier</strong></a>, the top half of our plot. By definition, the efficient frontier consists of portfolios such that for each of these portfolios and their respective returns, there exists no other portfolios that carries a lower portfolio risk for a given return (hence “efficient”<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>). The <strong>minimum variance portfolio</strong> is one special case of an efficient portfolio - no other portfolios carries a lower portfolio risk than itself, and is the leftmost point of our plot.</p>
+<hr />
+<pre class="r"><code>min_risk_w &lt;- weights[which(risks == min(risks))]
+min_risk_return &lt;- mean(cal_pf_return(min_risk_w))
+
+efficient_idx &lt;- which(returns &gt;= min_risk_return)
+inefficient_idx &lt;- which(returns &lt; min_risk_return)
+
+plot(risks[efficient_idx], returns[efficient_idx],
+     xlab = &quot;Portfolio risk&quot;,
+     ylab = &quot;Portfolio return&quot;,
+     main = &quot;The Efficient Frontier&quot;,
+     ylim = c(0,0.2), xlim = c(0.002, 0.01))
+
+lines(risks[inefficient_idx], returns[inefficient_idx], lty = &quot;dotted&quot;)
+
+abline(h = min_risk_return)
+text(x = 0.003, y = min_risk_return-0.01, &quot;min variance portfolio&quot;)
+text(x = 0.006, y = 0.15, &quot;efficient frontier&quot;)</code></pre>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="minimum-variance-portfolio" class="section level3">
+<h3>Minimum variance portfolio</h3>
+<p>In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing <span class="math inline">\(Var(R_{pf})\)</span>. This can be done by simply solving some basic calculus.</p>
+<p><span class="math display">\[
+Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
+\frac{dVar(R_{pf})}{dw} = 2w\sigma_1^2 - 2(1-w)\sigma_2^2 + 2(1-2w)\rho_{12}\sigma_1\sigma_2 \\
+\]</span>
+Also, since</p>
+<p><span class="math display">\[
+\frac{d^2Var(R_{pf})}{dw^2} = 2\sigma_1^2 + 2\sigma_2^2 - 4\rho_{12}\sigma_1\sigma_2
+\geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
+\]</span>
+where <span class="math inline">\(\rho_{12} &lt; 1\)</span>. We would have <span class="math inline">\(\frac{d^2Var(R_{pf})}{dw^2} &gt; 0\)</span>, i.e. solving <span class="math inline">\(\frac{dVar(R_{pf})}{dw} = 0\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span>, giving the minimium variance portfolio.</p>
+<p>Solving,</p>
+<p><span class="math display">\[
+w \equiv w_{minvar} = \frac{\sigma_2^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]</span>
+and</p>
+<p><span class="math display">\[
+1 - w_{minvar} = \frac{\sigma_1^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]</span></p>
+</div>
+</div>
+<div id="risk-free-assets" class="section level2">
+<h2>Risk-free assets</h2>
+<p>Now let’s make this a little more interesting than just 2 assets. Since it’s always possible to not invest all our capital in these assets, and in fact leave a portion of capital in something that is <strong>risk-free</strong>, such as cash, we could include risk-free assets as part of our framework as well. In particular, we could have <span class="math inline">\(w_1 + w_2 &lt; 1\)</span>, and <span class="math inline">\(1 - w_1 - w_2\)</span> being the portion not invested, but instead diverted to risk-free assets. Doing this directly reduces portfolio variance, and of course reduces portfolio return.</p>
+<hr />
+<p><strong><em>Terminology</em></strong></p>
+<p>As pointed out above, <strong>risk-free assets</strong> are simply assets that are generally deemed as 100% safe<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>, such as cash in a deposit account<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>, Treasury Bills, or Singapore Savings Bonds. Typically, the three-month <a href="https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield">US Treasury Bills</a> are used as proxies for risk-free assets, and their yield or return are considered accordingly. In context of Singapore, we could consider the yield of SSBs as risk-free returns.</p>
+<hr />
+<p>Let <span class="math inline">\(R_{free}\)</span> be the random variable representing the return of a risk-free asset. Then we have <span class="math inline">\(ER_{free} = \mu_{free}\)</span>, and <span class="math inline">\(Var(R_{free}) = 0\)</span><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>. Naturally, <span class="math inline">\(ER_{free}\)</span> would be small and contributes a small return to portfolio. On the other hand, directly adjusting the <span class="math inline">\(1 - w_1 - w_2\)</span> provides a convenient of controlling portfolio variance.</p>
+<p>Also, note that since <span class="math inline">\(Var(R_{free}) = 0\)</span>, <span class="math inline">\(\forall i cov(R_{free}, R_i) = 0\)</span>, i.e. the risk-free is not correlated with any other “risky” assets<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>.</p>
+<div id="one-risky-asset-and-one-risk-free-asset" class="section level3">
+<h3>One “risky” asset and one risk-free asset</h3>
+<p>Now let’s consider combining a “risky” asset with a risk-free one. Let <span class="math inline">\(w\)</span> be the weight invested in the risky asset, with its return being <span class="math inline">\(ER\)</span> and variance being <span class="math inline">\(Var(R)\)</span>. The portfolio would look like this:</p>
+<p><span class="math display">\[
+ER_{pf} = wER + (1-w)R_{free} \implies \mu_{pf} = w\mu_R + (1-w)\mu_{free} \\
+Var(R_{pf}) = w^2Var(R) \implies \sigma_{pf} = w\sigma_R
+\]</span>
+In particular, observe that the portfolio variance is now a function of <span class="math inline">\(w\)</span>, i.e. solving <span class="math inline">\(Var(R_{pf}) = w^2Var(R)\)</span> gives <span class="math inline">\(w = \frac{\sigma_{pf}}{\sigma_R}\)</span>, where <span class="math inline">\(\sigma_{pf}\)</span> is the standard deviation of the portfolio and <span class="math inline">\(\sigma_R\)</span> is the standard deviation of the risky asset.</p>
+<p>This gives the following relationship between the portfolio return <span class="math inline">\(\mu_{pf}\)</span> and variance <span class="math inline">\(\sigma_{pf}\)</span>:</p>
+<p><span class="math display">\[
+\mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
+\]</span>
+Again, let’s visualize this relationship with a numerical example.</p>
+<pre class="r"><code># expected returns of both &quot;risky&quot; and risk-free asset, variance
+mu_R    &lt;- 0.2
+mu_free &lt;- 0.04
+sigma_R &lt;- 0.1
+
+# calculate return and risks based on w
+cal_pf_return &lt;- function(w){
+  return(w*mu_R + (1-w)*mu_free)
+}
+cal_pf_sd &lt;- function(w){ # standard deviation, not variance
+  return(w*sigma_R)
+}
+
+weights &lt;- seq(0, 1, by = 0.01)
+
+returns &lt;- NULL
+risks &lt;- NULL
+
+for(w in weights){
+  returns &lt;- c(returns, cal_pf_return(w))
+  risks &lt;- c(risks, cal_pf_sd(w))
+}
+
+plot(risks, returns,
+     xlab = &quot;Portfolio sd&quot;,
+     ylab = &quot;Portfolio return&quot;,
+     main = &quot;Risk-return relationship across weights&quot;)</code></pre>
+<p><img src="/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="two-risky-assets-and-one-risk-free-asset" class="section level3">
+<h3>Two “risky” assets and one risk-free asset</h3>
+<p>Now, let’s go one step further, and look at having two “risky” assets with one risk-free asset. What does the math look like? Again, Let <span class="math inline">\(w_1\)</span> be the weight invested in the first risky asset, <span class="math inline">\(w_2\)</span> in the second risky asset and <span class="math inline">\(w_{free}\)</span> in the risk-free asset, with respective returns being <span class="math inline">\(ER_1\)</span>, <span class="math inline">\(ER_2\)</span> and <span class="math inline">\(ER_{free}\)</span>, and variances being <span class="math inline">\(Var(R_1)\)</span> and <span class="math inline">\(Var(R_2)\)</span>.</p>
+<p>Since there are now two risky assets, we also need to consider their correlation, <span class="math inline">\(\rho_{12}\)</span>. The portfolio would look like this:</p>
+<p><span class="math display">\[
+ER_{pf} = w_1ER_1 + w_2ER_2 + (1-w_1-w_2)R_{free} \implies \mu_{pf} = w_1\mu_{R_1} + w_2\mu_{R_2} + (1-w_1-w_2)\mu_{free} \\
+Var(R_{pf}) = w_1^2Var(R_1) + w_2^2Var(R_2) + 2w_1w_2cov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2 \\
+w_{free} = 1-w_1-w_2
+\]</span>
+In particular, note that we can write <span class="math inline">\(ER_{pf}\)</span> in the following manner as well:</p>
+<p><span class="math display">\[
+ER_{pf} = (1-w_{free})(\bar{w_1}R_1 + \bar{w_2}R_2) + w_{free}R_{free} \\
+\bar{w_1} = \frac{w_1}{1-w_{free}}, \bar{w_2} = \frac{w_2}{1-w_{free}} \implies \bar{w_1} + \bar{w_2} = 1
+\]</span>
+In this sense, we can now view portfolio selection as a two-stage problem. First, we construct a portfolio based on risky assets only (e.g. chooosing <span class="math inline">\(\bar{w_1}\)</span> and <span class="math inline">\(\bar{w_2}\)</span> only). Then, we include the risk-free asset by choosing <span class="math inline">\(w_{free}\)</span>. From the perspective, we gain an interesting tool in controlling for the risk we take on in our portfolio, by the inclusion of the risk-free asset - since its inclusion always decreases the portfolio risk, regardless of the risky assets we take on.</p>
+<p>Also note that once the first stage is completed, we are effectively dealing with one risky asset and one risk-free asset again, with the “single risky asset” being a combination of 2 risky assets, with <span class="math inline">\(\bar{w_1}\)</span> and <span class="math inline">\(\bar{w_2}\)</span>.</p>
+<p>Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to <span class="math inline">\(N\)</span> assets.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>In this post, I have attempted to give a brief and hopefully gentle enough introduction to the Modern Portfolio Theory, using only statistics like mean, variance, and covariance. We looked at the math behind diversification, computed the Efficient Frontier, and generalised the problem from <span class="math inline">\(N=2\)</span> assets to <span class="math inline">\(N&gt;2\)</span> assets.</p>
+<p>If you are interested to go a bit further, you might want to find out more about the <a href="https://pgpfm.wordpress.com/tag/tangency-portfolio/">Tangency Portfolio</a> and the <a href="https://en.wikipedia.org/wiki/Sharpe_ratio">Sharpe Ratio</a> - both further extends our analysis and this post would have given you sufficient understanding for further exploration.</p>
+<p>That’s all from me today, thank you for reading!</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>In particular, choosing <span class="math inline">\(w\)</span> = <span class="math inline">\(\frac{1}{2}\)</span> minimizes <span class="math inline">\(Var(R_{pf})\)</span> at <span class="math inline">\(\frac{\sigma}{\sqrt{2}}\)</span>.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming this is true, consider the two subdomains <span class="math inline">\(\rho_{12} &lt; 0\)</span> and <span class="math inline">\(\rho_{12} &gt; 0\)</span>. We have <span class="math inline">\(\forall\rho_{12} &lt; 0, Var(R_{pf}) &lt; \frac{1}{2}\sigma^2\)</span> and <span class="math inline">\(\forall\rho_{12} &gt; 0, Var(R_{pf}) &gt; \frac{1}{2}\sigma^2\)</span>, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and <a href="https://www.investopedia.com/terms/s/strategicassetallocation.asp">strategic asset allocation</a>. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future. Also, the math here is similar to that of <a href="https://thestatsguy.rbind.io/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/">ensemble modelling</a> in machine learning.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Of course the challenge in real life is to estimate them using historical data.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>The same way an estimator <span class="math inline">\(\hat{\theta}\)</span> is <a href="https://en.wikipedia.org/wiki/Efficient_estimator">efficient</a> if <span class="math inline">\(Var(\hat{\theta})\)</span> is minimized.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>Of course there is no such thing in real life.<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>In Singapore, up to SGD75K is insured by <a href="https://www.sdic.org.sg/">SDIC</a>.<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>We could in fact use a constant instead of a random variable.<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both “risky” and risk-free assets.<a href="#fnref9" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+</main>
+
+  <footer>
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thestatsguy90" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165274801-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  
+  <hr/>
+  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  
+  </footer>
+  </body>
+</html>
