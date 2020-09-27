@@ -1,5 +1,5 @@
 ---
-title: "[wip] Introduction to modern portfolio theory"
+title: "A gentle introduction to the modern portfolio theory"
 #author: ""
 date: 2020-04-10
 categories: ["Stats finance"]
@@ -29,7 +29,7 @@ output:
 <li><a href="#one-risky-asset-and-one-risk-free-asset">One “risky” asset and one risk-free asset</a></li>
 <li><a href="#two-risky-assets-and-one-risk-free-asset">Two “risky” assets and one risk-free asset</a></li>
 </ul></li>
-<li><a href="#wip">WIP</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </div>
 
@@ -39,7 +39,8 @@ output:
 <blockquote>
 <p>(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.</p>
 </blockquote>
-<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimise the risk of the portfolio. Generally, we all know that higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or <strong>risk premium</strong>? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>As a “gentle introduction” to MPT, in this post, all you need is the basic understanding of mean, variance, and covariance. I will do the rest by repeatedly applying these three statistics in the context of a portfolio - nothing more, nothing less!</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p><strong><em>Risk premium</em></strong> refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.</p>
@@ -70,7 +71,7 @@ R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 <p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset. In this post, we will only consider positive <span class="math inline">\(w_i\)</span> only.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
-<p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.</p>
+<p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then returned to the lender. This closes the short position, and the idea is that if one is able to sell the borrowed stock at a higher price and return it at a lower price, a profit is made.</p>
 <hr />
 </div>
 <div id="portfolio-expectation-and-variance" class="section level3">
@@ -85,8 +86,8 @@ where <span class="math inline">\(\sigma_{ij}\)</span> is the covariance between
 </div>
 <div id="the-math-behind-diversification" class="section level2">
 <h2>The math behind diversification</h2>
-<p>We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, <a href="https://en.wikipedia.org/wiki/Loss_aversion">loss aversion</a> would indicate that we would rather minimize the risk of losing it all in a single stock.</p>
-<p>In this sense, what diversification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.</p>
+<p>We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, <a href="https://en.wikipedia.org/wiki/Loss_aversion">loss aversion</a> would dictate that we would rather minimise the risk of losing it all in a single stock.</p>
+<p>In this sense, what diversification does to a portfolio is that it minimises risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.</p>
 <p>This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.</p>
 <p>Let’s consider two instructive examples.</p>
 <div id="two-uncorrelated-assets" class="section level3">
@@ -168,7 +169,7 @@ plot(risks, returns,
      xlab = &quot;Portfolio risk&quot;,
      ylab = &quot;Portfolio return&quot;,
      main = &quot;Risk-return relationship across weights&quot;)</code></pre>
-<p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div id="efficient-portfolios" class="section level3">
 <h3>Efficient Portfolios</h3>
 <p>Take a look at the plot above. Notice that</p>
@@ -198,7 +199,7 @@ lines(risks[inefficient_idx], returns[inefficient_idx], lty = &quot;dotted&quot;
 abline(h = min_risk_return)
 text(x = 0.003, y = min_risk_return-0.01, &quot;min variance portfolio&quot;)
 text(x = 0.006, y = 0.15, &quot;efficient frontier&quot;)</code></pre>
-<p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="minimum-variance-portfolio" class="section level3">
 <h3>Minimum variance portfolio</h3>
@@ -272,7 +273,7 @@ plot(risks, returns,
      xlab = &quot;Portfolio sd&quot;,
      ylab = &quot;Portfolio return&quot;,
      main = &quot;Risk-return relationship across weights&quot;)</code></pre>
-<p><img src="/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="two-risky-assets-and-one-risk-free-asset" class="section level3">
 <h3>Two “risky” assets and one risk-free asset</h3>
@@ -293,18 +294,11 @@ In this sense, we can now view portfolio selection as a two-stage problem. First
 <p>Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to <span class="math inline">\(N\)</span> assets.</p>
 </div>
 </div>
-<div id="wip" class="section level2">
-<h2>WIP</h2>
-<ul>
-<li>min variance portfolio</li>
-<li>lagrangian multiplier</li>
-<li>risk free assets</li>
-<li>one risky and one risk free asset</li>
-<li>sharpe ratio, tangency portfolio</li>
-<li>generalise to N assets</li>
-<li>r examples</li>
-</ul>
-<p><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>.</p>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>In this post, I have attempted to give a brief and hopefully gentle enough introduction to the Modern Portfolio Theory, using only statistics like mean, variance, and covariance. We looked at the math behind diversification, computed the Efficient Frontier, and generalised the problem from <span class="math inline">\(N=2\)</span> assets to <span class="math inline">\(N&gt;2\)</span> assets.</p>
+<p>If you are interested to go a bit further, you might want to find out more about the <a href="https://pgpfm.wordpress.com/tag/tangency-portfolio/">Tangency Portfolio</a> and the <a href="https://en.wikipedia.org/wiki/Sharpe_ratio">Sharpe Ratio</a> - both further extends our analysis and this post would have given you sufficient understanding for further exploration.</p>
+<p>That’s all from me today, thank you for reading!</p>
 </div>
 <div class="footnotes">
 <hr />
@@ -318,6 +312,5 @@ In this sense, we can now view portfolio selection as a two-stage problem. First
 <li id="fn7"><p>In Singapore, up to SGD75K is insured by <a href="https://www.sdic.org.sg/">SDIC</a>.<a href="#fnref7" class="footnote-back">↩</a></p></li>
 <li id="fn8"><p>We could in fact use a constant instead of a random variable.<a href="#fnref8" class="footnote-back">↩</a></p></li>
 <li id="fn9"><p>Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both “risky” and risk-free assets.<a href="#fnref9" class="footnote-back">↩</a></p></li>
-<li id="fn10"><p>Again, for simplification, we only consider long positions <span class="math inline">\(0 \leqslant w \leqslant 1\)</span>, <code>weights &lt;- seq(0, 1, by = 0.01)</code> in this post. If short positions are considered, then <span class="math inline">\(-\infty \leqslant w \leqslant \infty\)</span>.<a href="#fnref10" class="footnote-back">↩</a></p></li>
 </ol>
 </div>

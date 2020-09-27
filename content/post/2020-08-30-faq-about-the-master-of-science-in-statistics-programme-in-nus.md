@@ -15,7 +15,7 @@ In this post, I have collated a number of questions that I have received, most r
 
 Before I continue, I would like to sincerely thank my readers for reaching out to me and asking these questions. I hope that my answers were helpful for you in your decision-making and I hope you excel in the programme. I also hope you don't mind me sharing these generic questions to a wider audience.
 
-And for those of you starting the AY in NUS - hope you have a good year ahead!
+And for those of you starting the new AY in NUS - hope you have a good year ahead!
 
 ----
 
@@ -23,7 +23,7 @@ And for those of you starting the AY in NUS - hope you have a good year ahead!
 
 __Q1. May I know what your educational/professional background is before the MSc?__
 
-A1. My degree was in biostatistics before the msc
+A1. My degree was in biostatistics before the Msc.
 	
 __Q2. What field were you in before joining the programme?__
 

@@ -27,7 +27,7 @@
 
 &lt;p&gt;Before I continue, I would like to sincerely thank my readers for reaching out to me and asking these questions. I hope that my answers were helpful for you in your decision-making and I hope you excel in the programme. I also hope you don&amp;rsquo;t mind me sharing these generic questions to a wider audience.&lt;/p&gt;
 
-&lt;p&gt;And for those of you starting the AY in NUS - hope you have a good year ahead!&lt;/p&gt;
+&lt;p&gt;And for those of you starting the new AY in NUS - hope you have a good year ahead!&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -35,7 +35,7 @@
 
 &lt;p&gt;&lt;strong&gt;Q1. May I know what your educational/professional background is before the MSc?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;A1. My degree was in biostatistics before the msc&lt;/p&gt;
+&lt;p&gt;A1. My degree was in biostatistics before the Msc.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Q2. What field were you in before joining the programme?&lt;/strong&gt;&lt;/p&gt;
 
@@ -685,11 +685,11 @@ CIMB FastSaver interest structure.
     </item>
     
     <item>
-      <title>[wip] Introduction to modern portfolio theory</title>
-      <link>/post/2020/04/10/wip-introduction-to-modern-portfolio-theory/</link>
+      <title>A gentle introduction to the modern portfolio theory</title>
+      <link>/post/2020/04/10/a-gentle-introduction-to-the-modern-portfolio-theory/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020/04/10/wip-introduction-to-modern-portfolio-theory/</guid>
+      <guid>/post/2020/04/10/a-gentle-introduction-to-the-modern-portfolio-theory/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -711,7 +711,7 @@ CIMB FastSaver interest structure.
 &lt;li&gt;&lt;a href=&#34;#one-risky-asset-and-one-risk-free-asset&#34;&gt;One “risky” asset and one risk-free asset&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#two-risky-assets-and-one-risk-free-asset&#34;&gt;Two “risky” assets and one risk-free asset&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#wip&#34;&gt;WIP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
@@ -721,7 +721,8 @@ CIMB FastSaver interest structure.
 &lt;blockquote&gt;
 &lt;p&gt;(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimize the risk of the portfolio. Generally, we all know that as higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimise the risk of the portfolio. Generally, we all know that higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a “gentle introduction” to MPT, in this post, all you need is the basic understanding of mean, variance, and covariance. I will do the rest by repeatedly applying these three statistics in the context of a portfolio - nothing more, nothing less!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Risk premium&lt;/em&gt;&lt;/strong&gt; refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.&lt;/p&gt;
@@ -752,7 +753,7 @@ R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 &lt;p&gt;A technical point to bring out here is that while &lt;span class=&#34;math inline&#34;&gt;\(\sum_{i = 1}^{N} w_i = 1\)&lt;/span&gt;, there is no constraint on individual &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; to be non-negative. In fact, a negative &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; implies a short position in the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th asset, i.e. &lt;strong&gt;short selling&lt;/strong&gt;. This is in constrast to a &lt;em&gt;long&lt;/em&gt; position, i.e. buying the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th asset. In this post, we will only consider positive &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; only.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Holding a &lt;strong&gt;&lt;em&gt;long&lt;/em&gt;&lt;/strong&gt; position in a particular asset simply means buying that particular asset. On the other hand, &lt;strong&gt;&lt;em&gt;short selling&lt;/em&gt;&lt;/strong&gt; is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then return to the lender. This closes the short position, and the idea is that if one is able to selling the borrowed stock at a higher price and returning it at a lower price, a profit is made.&lt;/p&gt;
+&lt;p&gt;Holding a &lt;strong&gt;&lt;em&gt;long&lt;/em&gt;&lt;/strong&gt; position in a particular asset simply means buying that particular asset. On the other hand, &lt;strong&gt;&lt;em&gt;short selling&lt;/em&gt;&lt;/strong&gt; is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then returned to the lender. This closes the short position, and the idea is that if one is able to sell the borrowed stock at a higher price and return it at a lower price, a profit is made.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;portfolio-expectation-and-variance&#34; class=&#34;section level3&#34;&gt;
@@ -767,8 +768,8 @@ where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{ij}\)&lt;/span&gt; is th
 &lt;/div&gt;
 &lt;div id=&#34;the-math-behind-diversification&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;The math behind diversification&lt;/h2&gt;
-&lt;p&gt;We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, &lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_aversion&#34;&gt;loss aversion&lt;/a&gt; would indicate that we would rather minimize the risk of losing it all in a single stock.&lt;/p&gt;
-&lt;p&gt;In this sense, what diversification does to a portfolio is that it minimizes risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.&lt;/p&gt;
+&lt;p&gt;We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, &lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_aversion&#34;&gt;loss aversion&lt;/a&gt; would dictate that we would rather minimise the risk of losing it all in a single stock.&lt;/p&gt;
+&lt;p&gt;In this sense, what diversification does to a portfolio is that it minimises risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.&lt;/p&gt;
 &lt;p&gt;This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.&lt;/p&gt;
 &lt;p&gt;Let’s consider two instructive examples.&lt;/p&gt;
 &lt;div id=&#34;two-uncorrelated-assets&#34; class=&#34;section level3&#34;&gt;
@@ -850,7 +851,7 @@ plot(risks, returns,
      xlab = &amp;quot;Portfolio risk&amp;quot;,
      ylab = &amp;quot;Portfolio return&amp;quot;,
      main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;efficient-portfolios&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Efficient Portfolios&lt;/h3&gt;
 &lt;p&gt;Take a look at the plot above. Notice that&lt;/p&gt;
@@ -880,7 +881,7 @@ lines(risks[inefficient_idx], returns[inefficient_idx], lty = &amp;quot;dotted&a
 abline(h = min_risk_return)
 text(x = 0.003, y = min_risk_return-0.01, &amp;quot;min variance portfolio&amp;quot;)
 text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;minimum-variance-portfolio&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Minimum variance portfolio&lt;/h3&gt;
@@ -954,7 +955,7 @@ plot(risks, returns,
      xlab = &amp;quot;Portfolio sd&amp;quot;,
      ylab = &amp;quot;Portfolio return&amp;quot;,
      main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-introduction-to-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-10-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;two-risky-assets-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Two “risky” assets and one risk-free asset&lt;/h3&gt;
@@ -975,18 +976,11 @@ In this sense, we can now view portfolio selection as a two-stage problem. First
 &lt;p&gt;Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; assets.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;wip&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;WIP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;min variance portfolio&lt;/li&gt;
-&lt;li&gt;lagrangian multiplier&lt;/li&gt;
-&lt;li&gt;risk free assets&lt;/li&gt;
-&lt;li&gt;one risky and one risk free asset&lt;/li&gt;
-&lt;li&gt;sharpe ratio, tangency portfolio&lt;/li&gt;
-&lt;li&gt;generalise to N assets&lt;/li&gt;
-&lt;li&gt;r examples&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this post, I have attempted to give a brief and hopefully gentle enough introduction to the Modern Portfolio Theory, using only statistics like mean, variance, and covariance. We looked at the math behind diversification, computed the Efficient Frontier, and generalised the problem from &lt;span class=&#34;math inline&#34;&gt;\(N=2\)&lt;/span&gt; assets to &lt;span class=&#34;math inline&#34;&gt;\(N&amp;gt;2\)&lt;/span&gt; assets.&lt;/p&gt;
+&lt;p&gt;If you are interested to go a bit further, you might want to find out more about the &lt;a href=&#34;https://pgpfm.wordpress.com/tag/tangency-portfolio/&#34;&gt;Tangency Portfolio&lt;/a&gt; and the &lt;a href=&#34;https://en.wikipedia.org/wiki/Sharpe_ratio&#34;&gt;Sharpe Ratio&lt;/a&gt; - both further extends our analysis and this post would have given you sufficient understanding for further exploration.&lt;/p&gt;
+&lt;p&gt;That’s all from me today, thank you for reading!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
@@ -1000,7 +994,6 @@ In this sense, we can now view portfolio selection as a two-stage problem. First
 &lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;In Singapore, up to SGD75K is insured by &lt;a href=&#34;https://www.sdic.org.sg/&#34;&gt;SDIC&lt;/a&gt;.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;We could in fact use a constant instead of a random variable.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both “risky” and risk-free assets.&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Again, for simplification, we only consider long positions &lt;span class=&#34;math inline&#34;&gt;\(0 \leqslant w \leqslant 1\)&lt;/span&gt;, &lt;code&gt;weights &amp;lt;- seq(0, 1, by = 0.01)&lt;/code&gt; in this post. If short positions are considered, then &lt;span class=&#34;math inline&#34;&gt;\(-\infty \leqslant w \leqslant \infty\)&lt;/span&gt;.&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
