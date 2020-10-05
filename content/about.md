@@ -7,7 +7,7 @@ date: ""
 
 Some of the blogs that I frequent:
 
-* [R-bloggers](https://www.r-bloggers.com/): been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
+* [R-bloggers](https://www.r-bloggers.com/): by Tal Galili. Been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
 * [Musings on Markets](http://aswathdamodaran.blogspot.com/): blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.
 * [Gwern.net](https://www.gwern.net/index): Gwern Branwen's website. In-depth essays on psychology, statistics, and technology.
 
