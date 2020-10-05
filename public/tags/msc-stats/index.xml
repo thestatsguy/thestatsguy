@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MSc Stats on The Stats Guy</title>
+    <link>/tags/msc-stats/</link>
+    <description>Recent content in MSc Stats on The Stats Guy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/msc-stats/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FAQ about the Master of Science in Statistics programme in NUS</title>
+      <link>/post/2020/08/30/faq-about-the-master-of-science-in-statistics-programme-in-nus/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/08/30/faq-about-the-master-of-science-in-statistics-programme-in-nus/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s been a while since I last worked on this blog, but today (Sunday!) I have some time in my hands to write a little bit here.&lt;/p&gt;
+
+&lt;p&gt;Prior to this, I have been receiving more questions about the MSc. Stats programme in NUS - the timing makes a lot of sense since it was just before the start of the new Academic Year in NUS (AY20/21).&lt;/p&gt;
+
+&lt;p&gt;In this post, I have collated a number of questions that I have received, most rephrased to be more generic, as well as my responses to them. Moving forward, I may also update this post as I receive more questions.&lt;/p&gt;
+
+&lt;p&gt;Before I continue, I would like to sincerely thank my readers for reaching out to me and asking these questions. I hope that my answers were helpful for you in your decision-making and I hope you excel in the programme. I also hope you don&amp;rsquo;t mind me sharing these generic questions to a wider audience.&lt;/p&gt;
+
+&lt;p&gt;And for those of you starting the new AY in NUS - hope you have a good year ahead!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;on-my-background&#34;&gt;On my background&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Q1. May I know what your educational/professional background is before the MSc?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A1. My degree was in biostatistics before the Msc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q2. What field were you in before joining the programme?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A2. I was and still am in the data science field.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q3. What made you want to join the programme?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A3. I was a few years into the workforce and wanted to go back and study something. Stats happened to be the area that I am most interested in.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;on-the-programme-in-general&#34;&gt;On the programme in general&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Q1. Does the programme require knowledge on programming languages for data science (R, Python)? Does it teach any programming languages for data science?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A1. There is no emphasis in programming in the Stats masters. Some modules may require you to code in R, but not many, and not much within those modules.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q2. Is the programme grueling?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A2. I found it manageable, but the start was a little challenging, getting used to studying again. And certain modules are more theoretical in nature, with some bit of theorem proving.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q3. Would you recommend the programme?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A3. Yes definitely. I found it useful for my work, and managed to learn what I wanted to.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q4 .Do you find the statistics content that you have learnt useful for your current job?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A4. I would say yes. I work in the data science industry and it&amp;rsquo;s always useful to fall back on fundamental statistics principles to think through certain issues and problems.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;on-admission&#34;&gt;On admission&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Q1. Do you know the competitiveness of the program? Is it hard to get in for NUS grads?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A1. It really depends on your background prior to the MSc. Competitiveness in terms of getting in may not be difficult, but coping in the workload may be so, both for full time (5 msc modules) or part time (2-3 msc modules + a day job). Also, having an honours would help as you can be in Track 1 straightaway (the shorter track with 40MCs).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q2. Do you know around when you got your results of the admissions?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A2. I got my offer letter via email sometime near late May during the year I applied.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;on-modules-and-workload&#34;&gt;On modules and workload&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Q1. Do you have any advice on which module combination to take in each semester? (MOE subsidy for AY2020/21 requires students to complete the required modules within 2 years for part time track)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A1. I would recommend finishing the two core modules of 5201 and 5202 as soon as possible. It’s hard to plan ahead of time for the MSc in terms of modules because modules offered can differ significantly from academic year to academic year. It depends heavily on lecturer availability and some modules only appear once in 4 semesters I believe.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q2. What is the difference between &amp;ldquo;Coursework&amp;rdquo; and non-coursework? Seems like some non-coursework modules are also offered at 7-10pm for part-time students.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A2. For the &amp;ldquo;Coursework&amp;rdquo; tag, it is used by the department to tag whether it&amp;rsquo;s meant more for the MSc Research students as opposed to 100% course work students. Technically the non-coursework modules are supposed to be harder - but not always the case. And also whether it&amp;rsquo;s possibly taught during working hours vs. 7-10pm.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q3. For most of the statistics modules that you have taken so far, is it true that they are very theoretical, with majority of the tutorial questions based on proving theories rather than application questions?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A3. It heavily depends on the nature of the module, and more importantly the lecturer. E.g. the same topic on regression can be taught in both heavily theoretical and more applied methods, depending on the lecturer&amp;rsquo;s style. And some lecturers are &amp;ldquo;renowned&amp;rdquo; for being theoretical no matter what topic they are teaching. That said, since these are all stats modules, proving-type of questions are inevitable. I would recommend finding out more about the lecturer&amp;rsquo;s style.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q4. For the ten modules that you have taken, was the workload and difficulty level for those modules somewhat similar to ST5201?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A4. Yes, largely the same with minor variations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q5. On average, how many hours per week do you think you spent on your lectures and tutorials?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A5. I typically spend 1 Sunday (morning + until before dinner) and ~1 to 1.5 weeknights per week on catching up on lectures and working on tutorials, on top of the 7-10pm lectures.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q6. Were there a lot of group projects or assignments?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A6. Not for me, usually stats mods in NUS don&amp;rsquo;t have many group projects. I only had one with ST5227 applied data mining.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q7. How was the bell curve for the statistics modules? i.e. Were the exam papers rather simple but with steep bell curves or very difficult with shallower bell curves?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A7. Again this heavily depends on the lecturer again. The variation in style, content level, exam format etc in the MSc is larger than that in NUS undergrad courses, because there isn&amp;rsquo;t really a tight oversight from the Faculty or Registrar, as compared to undergrad courses. I think I have equally sat in both steep and shallow bell curves.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q8. Do you think reading lecture notes and doing tutorials alone is sufficient to score a B+ for most of the statistics modules?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A8. Doubt so. For the majority of students, B+ is a respectable 2nd Upper standard. Reading lecture notes and doing tuts can warrant a pass (C/C+/B-?) probably. I would say attending lectures, reading the recommended textbooks (just very briefly on some of the harder topics) and consistent revision are important. If you are a part-time student, consistency is even more important because we would only have some portions of our week allocated to the MSc, and on top of work and life. Also, the tutorials themselves can be very short (4-5, at most 6 questions?). It&amp;rsquo;s not enough to assess yourself to see whether you have a holistic understanding of the chapter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q9. Of all the statistics modules that you have taken so far, is there any that you would not recommend to take?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A9. None I think. I enjoyed my modules. The hardest part for me was at the start, taking ST5201 during the first semester. It was relatively theoretical plus the fact that I was a little &amp;ldquo;rusty&amp;rdquo; in the theoretical stuff, plus the need to get used to studying again. After that, it got a lot better and more manageable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q10. Are you able to share some materials from the MSc?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A10. Sure, write to me at my gmail (see &lt;a href=&#34;https://thestatsguy.rbind.io/about/&#34;&gt;About&lt;/a&gt;) and we will see how I can help you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A fuller review of my Master of Science in Statistics programme in NUS</title>
+      <link>/post/2020/05/10/a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/05/10/a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus/</guid>
+      <description>
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_sparrows.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sparrows taking shelter from the afternoon shower at the Faculty of Science (December 2018)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Back in January 2017, I first seriously considered taking up a postgraduate degree, as a means to improve myself and continue learning. Well, it wasn&amp;rsquo;t a long and hard decision, really, as I had and still have the freedom, the capacity and the means to study more.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Taking a part-time Masters this year in 2017&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2017/01/30&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Masters or PhD?&lt;/li&gt;
+&lt;li&gt;Full-time or part-time?&lt;/li&gt;
+&lt;li&gt;(If masters) technical or non-technical?&lt;/li&gt;
+&lt;li&gt;(If full-time) Overseas or local?&lt;/li&gt;
+&lt;li&gt;(If local) NUS or NTU?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full-time is personally a non-option for me, as I don’t see the financial sense in taking a sabbatical to pursue a full-time programme. That leaves full-time and overseas out.&lt;/p&gt;
+
+&lt;p&gt;Based on what I know about a PhD programme, part-time PhD sounds like a nightmare. That leaves part-time Masters in Singapore as my option.&lt;/p&gt;
+
+&lt;p&gt;Next question: technical or non-technical? Well I am leaning towards to doing something with technical content when studying - non-technical content can be picked up most of the time simply by being widely read and learning from work experiences. This means statistics or computing for me.&lt;/p&gt;
+
+&lt;p&gt;And NUS is probably the better choice than NTU. SMU is not in my consideration.&lt;/p&gt;
+
+&lt;p&gt;So for now, my choice is going to be M.Sc. Statistics from NUS.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;center&gt;Quoting myself in January 2017, &lt;a href=&#34;https://thestatsguy.rbind.io/post/2017/01/30/taking-a-part-time-masters-this-year-in-2017/&#34;&gt;here&lt;/a&gt;. Was I rigourous in my decision-making? Hmm&amp;hellip;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;So I decided to go with a Master of Science in Statistics programme in NUS, and starting my first semester in August 2017. I then took 5 semesters, all the way to December 2019, to complete the programme. Today, I have since happily graduated and have had a good experience with the programme.&lt;/p&gt;
+
+&lt;p&gt;Around midway through the programme, I wrote a short review on the logistics and my experience of the programme so far.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;My Master of Science in Statistics programme in NUS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2019/02/09&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I have gotten quite a couple of questions regarding my current &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;MSc Statistics programme&lt;/a&gt; in NUS. Here are some broadstroke information about the programme and how I am approaching it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one. Basically dependent on whether you have a Honours in your Bachelor&amp;rsquo;s degree. I&amp;rsquo;m doing the Track 1 programme - 40MC is equivalent to 10 modules. Under usual circumstances, it takes 2 full-time semesters to finish 10 modules, i.e. 1 academic year. Semesters run as per typical undergraduate semesters in Singapore.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There&amp;rsquo;s also the part-time option, where one would take 4 to 5 semesters to finish the 10 modules - 5 semesters is basically 2 modules x 5 semesters = 10 modules.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m on the part-time programme. Personally, 3 modules on a part-time basis per semester is too much for me to handle - so I opt to finish my MSc in 5 semesters, or 2.5 academic years.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m currently in my 4th semester, so would be finishing the programme requirements by Dec 2019 and graduate during July 2020 (commencement).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For MSc Statistics, lectures typically run from 7pm to 10pm weeknights. Each module has 1 lecture per week, with the typical workload of tutorials, homework assignments, individual or group projects, subjected to respective lecturer&amp;rsquo;s discretion.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lastly, the programme &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GDTuitionCurrent.pdf&#34;&gt;cost&lt;/a&gt; &lt;b&gt;$2,500 per semester for Singaporeans who are taking this MSc programme as their first higher qualification programme under the &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GD-Eligibility-Guidelines.pdf&#34;&gt;MOE Subsidy&lt;/a&gt;&lt;/b&gt;. Yes it&amp;rsquo;s pretty value for money if you ask me. This tuition fee amount is not unique to MSc Statistics, and is general to many other programmes in NUS, again provided if you belong to the above category.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My experience with the programme is a positive one so far.  Difficulty and commitment level is within my comfort zone, and I managed to learn quite a couple of new things. Modules that I have taken include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Applied Data Mining&lt;/li&gt;
+&lt;li&gt;Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;Spatial Statistics&lt;/li&gt;
+&lt;li&gt;Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;Experimental Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, in any case, it feels good to be a student again. Each time I go to my stats lecture after a long day of work, it &lt;em&gt;almost&lt;/em&gt; always feels therapeutic. Yea, almost.&lt;/p&gt;
+
+&lt;p&gt;Finally, if you are looking to advance your data science street cred via a postgraduate degree, this is just one of many options, even within NUS or Singapore. Do your research wisely before committing to any!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;center&gt;Quoting myself in Febuary 2019, &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt;.&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, this post first appeared on my WordPress blog &lt;a href=&#34;https://thestatsguy.home.blog/2019/02/09/my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt;, and I realised that this post on WordPress turned out to be one of the top results in a number of Google searches on this topic. The other search results are of course dominated by links to NUS and Faculty of Science itself.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_google_search.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Google search for &lt;a href=&#34;https://www.google.com/search?q=nus+msc+statistics+review&#34;&gt;&amp;ldquo;nus msc statistics review&amp;rdquo;&lt;/a&gt; - 4th result here (early May 2020)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out that I got a decent number of views on this post. Not bad considering that I don&amp;rsquo;t expect much (if any at all) traffic on my blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_msc_post_wordpress_stats.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Post views on WordPress (early May 2020)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;a-fuller-review&#34;&gt;A fuller review&lt;/h3&gt;
+
+&lt;p&gt;Since there is &lt;strong&gt;&lt;em&gt;some&lt;/em&gt;&lt;/strong&gt; interest in this topic, I thought I would spend some time in this post to do a more complete review of the programme and my experience.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Admission and logistics&lt;/li&gt;
+&lt;li&gt;Review of some of the stats modules I took
+
+&lt;ul&gt;
+&lt;li&gt;ST5201 Basic Statistical Theory&lt;/li&gt;
+&lt;li&gt;ST5202 Applied Regression Analysis&lt;/li&gt;
+&lt;li&gt;ST5225 Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;ST5218 Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;ST5211 Sampling From Finite Populations&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Some relevant Singaporean hacks
+
+&lt;ul&gt;
+&lt;li&gt;SkillsFuture Credit&lt;/li&gt;
+&lt;li&gt;Post-Secondary Education Account (PSEA)&lt;/li&gt;
+&lt;li&gt;Income Tax Course Fees Relief&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;How I went about my life while being a part-time student&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;admission-and-logistics&#34;&gt;Admission and logistics&lt;/h3&gt;
+
+&lt;p&gt;On this, what I have written before &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/&#34;&gt;here&lt;/a&gt; pretty much summarized it, except that I just want to quickly refer you to this &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;link&lt;/a&gt; for the admission criteria and requirements.&lt;/p&gt;
+
+&lt;h3 id=&#34;review-of-some-of-the-stats-modules-i-took&#34;&gt;Review of some of the stats modules I took&lt;/h3&gt;
+
+&lt;h4 id=&#34;st5201-basic-statistical-theory&#34;&gt;ST5201 Basic Statistical Theory&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_5201.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Basic Statistical Theory - Estimator Consistency
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5201 Basic Statistical Theory, later renamed to Statistical Foundations of Data Science&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:I-believe-the-co&#34;&gt;&lt;a href=&#34;#fn:I-believe-the-co&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, is one of the two core modules for the MSc. Recommended to take during the very first semester of the programme, this module is the pre-requisite to several other MSc modules&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Though-later-on&#34;&gt;&lt;a href=&#34;#fn:Though-later-on&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, and covers basic statistics and probability theory - &amp;ldquo;basic&amp;rdquo; as in fundamental and theoretical, not easy.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Exploratory data analysis including heat map and concentration map&lt;/li&gt;
+&lt;li&gt;Random variables&lt;/li&gt;
+&lt;li&gt;Joint distributions&lt;/li&gt;
+&lt;li&gt;Expected values&lt;/li&gt;
+&lt;li&gt;Limit theorems.&lt;/li&gt;
+&lt;li&gt;Estimation of parameters including maximum likelihood estimation, Bayesian approach to parameter estimation&lt;/li&gt;
+&lt;li&gt;Testing hypotheses and confidence intervals, bootstrap method of finding confidence interval, generalized likelihood ratio statistics&lt;/li&gt;
+&lt;li&gt;Summarizing data: measures of location and dispersion, estimating variability using Bootstrap method, empirical cumulative distribution function, survival function, kernel probability density estimate&lt;/li&gt;
+&lt;li&gt;Basic ideas of predictive analytics using multiple linear and logistic regressions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was quite a challenging module for me as I never had a formal background in theoretical statistics via my BSc. The only way I could counteract this was to spend more time and energy in making up for my not-so-strong theoretical background. It was also my first semester in the MSc so this module was the one that set my expectations for the subsequent semesters, in terms of the amount of work needed per module. I was taught by Dr Choi Yunjin.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5202-applied-regression-analysis&#34;&gt;ST5202 Applied Regression Analysis&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_5202.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Applied Regression Analysis - Bias-variance tradeoff
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5202 Applied Regression Analysis is the second of the 2 core modules in the programme. Unlike 5201, content in 5202 was more platable to me, with these regression modelling techniques being more applied than theoretical. If you are largely familiar with regression analysis then this module is mainly a refresher more than anything else. Like 5201, 5202 is a pre-req to many other modules in the programme. I was also taught by Dr Choi Yunjin for this module.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiple regression&lt;/li&gt;
+&lt;li&gt;Model diagnostics, remedial measures&lt;/li&gt;
+&lt;li&gt;Variable selection techniques&lt;/li&gt;
+&lt;li&gt;Non-least squares estimation&lt;/li&gt;
+&lt;li&gt;Nonlinear models&lt;/li&gt;
+&lt;li&gt;One and two factor analysis of variance, analysis of covariance&lt;/li&gt;
+&lt;li&gt;Linear model as special case of generalized linear model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;st5225-statistical-analysis-of-networks&#34;&gt;ST5225 Statistical Analysis of Networks&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_networks.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Statistical Analysis of Networks - Exponential Random Graph Models
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;ST5225 Statistical Analysis of Networks was taught by Dr Wang Wanjie. Quite an interesting module that is a little different from the other stats modules. Typically, network / graph analysis are covered more by a computer science course than a statistics course.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Graph structures, adjacency matrix&lt;/li&gt;
+&lt;li&gt;Graph sampling&lt;/li&gt;
+&lt;li&gt;Centrality, cohesion, density, cliques, clustering&lt;/li&gt;
+&lt;li&gt;Graph partitions&lt;/li&gt;
+&lt;li&gt;Matching markets&lt;/li&gt;
+&lt;li&gt;The World Wide Web, PageRank&lt;/li&gt;
+&lt;li&gt;Graph models, random graph, stochastic block model, exponential random graph model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Another interesting point for me on this module was that the lectures took place on Saturdays 1pm to 3pm, which turned out to be a good timing for lectures&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:What-I-did-was-t&#34;&gt;&lt;a href=&#34;#fn:What-I-did-was-t&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I don&amp;rsquo;t believe this module is offered regularly.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5218-advanced-statistical-methods-in-finance&#34;&gt;ST5218 Advanced Statistical Methods in Finance&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_finance.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Advanced Statistical Methods in Finance - Capital Asset Pricing Model
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Of all the MSc modules that I took, this one stands out to be my favorite and resonates with me the most. Guess that’s mainly because I like topic, as well as of the fact that I was heavily experimenting with investing on my own during that time. I also found that using finance as the backdrop or context to study certain statistical concepts, such as copula or factor analysis, to be more engaging than perhaps studying these topics in vaccum.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Statistical distributions: Value-at-Risk (VaR)&lt;/li&gt;
+&lt;li&gt;Linear regression: Capital Asset Pricing Model (CAPM)&lt;/li&gt;
+&lt;li&gt;Factor analysis: Arbitrage Pricing Theory&lt;/li&gt;
+&lt;li&gt;Time series analysis: price forecast, volatility modelling&lt;/li&gt;
+&lt;li&gt;Copulae: tail dependence of asset prices&lt;/li&gt;
+&lt;li&gt;Estimation of covariance matrix and optimization: Markowitz’s portfolio theory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many other topics that could just as well fit into the theme of the module, but unfortunately 13 weeks isn&amp;rsquo;t a very long time. I was taught by Prof Xia Yingcun and he is a great lecturer who painstakingly explains each and every little detail and concept so that it&amp;rsquo;s clear for his students&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Other-than-copul&#34;&gt;&lt;a href=&#34;#fn:Other-than-copul&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. I highly recommend this module if you have a chance to take it.&lt;/p&gt;
+
+&lt;h4 id=&#34;st5211-sampling-from-finite-populations&#34;&gt;ST5211 Sampling From Finite Populations&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_sampling.png&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Sample content in Sampling from Finite Populations - Regression Estimation of population parameters
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, ST5211 Sampling From Finite Populations is my very last module during the MSc. I was taught by Prof Zhou Wang, who also painstakingly explains every detail to his students.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simple random sampling&lt;/li&gt;
+&lt;li&gt;Stratified sampling&lt;/li&gt;
+&lt;li&gt;Ratio and regression estimation&lt;/li&gt;
+&lt;li&gt;Sampling with unequal probabilities&lt;/li&gt;
+&lt;li&gt;Systematic sampling&lt;/li&gt;
+&lt;li&gt;Single stage cluster sampling&lt;/li&gt;
+&lt;li&gt;Two-stage cluster sampling&lt;/li&gt;
+&lt;li&gt;Design-based versus model-based inference&lt;/li&gt;
+&lt;li&gt;Small domain estimation&lt;/li&gt;
+&lt;li&gt;Nonresponse and other nonsampling errors&lt;/li&gt;
+&lt;li&gt;Survey quality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I had a lot of fun with this module as it was the only module I had left during my final semester, so it was more enjoyable than it was hard work. And the content in this module is genuinely interesting and applicable in real life problems.&lt;/p&gt;
+
+&lt;h3 id=&#34;some-relevant-singaporean-hacks&#34;&gt;Some relevant Singaporean hacks&lt;/h3&gt;
+
+&lt;h4 id=&#34;skillsfuture-credit&#34;&gt;SkillsFuture Credit&lt;/h4&gt;
+
+&lt;p&gt;This course is eligible for claim from your &lt;a href=&#34;https://www.skillsfuture.sg/Credit&#34;&gt;SkillsFuture Credit (SFC)&lt;/a&gt; - if you haven&amp;rsquo;t yet use any SFC before, then you should have $500 worth of opening credits to boot. To claim for SFC, log in into your SkillsFuture account and go to this &lt;a href=&#34;https://www.myskillsfuture.sg/content/portal/en/training-exchange/course-directory/course-detail.html?courseReferenceNumber=NUS-200604346E-01-1006ST1CWK&#34;&gt;page&lt;/a&gt; and click on &amp;ldquo;Claim SkillsFuture Credit&amp;rdquo;. Of course you can only claim for any one semester so feel free to claim it as early as possible.&lt;/p&gt;
+
+&lt;p&gt;You have to do this before the semester for which you want to claim for SFC, and &lt;strong&gt;before (not after)&lt;/strong&gt; your Student Bill is finalized. What happens is that once approved, SkillsFuture will credit your $500 SFC credit directly to NUS, which will then appear in your Student Bill. You then pay the balance for your tuition fees.&lt;/p&gt;
+
+&lt;h4 id=&#34;post-secondary-education-account-psea&#34;&gt;Post-Secondary Education Account (PSEA)&lt;/h4&gt;
+
+&lt;p&gt;As a Singaporean student, the PSEA account is created when you turn 16, and balance from your Edusave account will be transferred to the PSEA account. Like the Edusave account, the PSEA can be used for education purposes. In addition, with the PSEA account, you get an interest of 2.5% per annum, and this account will be held until you are 30 years old - after which the balance will be transferred into your CPF-OA&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Don-t-ask-me-why&#34;&gt;&lt;a href=&#34;#fn:Don-t-ask-me-why&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;To use the PSEA for your MSc, go to this NUS Student Service &lt;a href=&#34;https://www.askstudentservice.nus.edu.sg/app/answers/detail/a_id/2425/related/1&#34;&gt;page&lt;/a&gt; and complete the Standing Order (SO) form, then submit it accordingly.&lt;/p&gt;
+
+&lt;h4 id=&#34;income-tax-course-fees-relief&#34;&gt;Income Tax Course Fees Relief&lt;/h4&gt;
+
+&lt;p&gt;Finally, this course is also eligible for Course Fees Relief for your Income Tax, up to a maximum of $5,500 per year. This &lt;a href=&#34;https://www.iras.gov.sg/IRASHome/Individuals/Locals/Working-Out-Your-Taxes/Deductions-for-Individuals/Course-Fees-Relief/&#34;&gt;page&lt;/a&gt; on the IRAS website spells out all the necessary details. Like most other reliefs, you can claim the Course Fees Relief by submitting it in your annual tax assessment - so that means claiming 2 semesters at a time. Of course, this only applies if you are an employed part-time student.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-i-went-about-my-life-while-being-a-part-time-student&#34;&gt;How I went about my life while being a part-time student&lt;/h3&gt;
+
+&lt;p&gt;My time as a part-time student (2.5 years in total&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Throughout-the-2&#34;&gt;&lt;a href=&#34;#fn:Throughout-the-2&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;) basically flew by, simply because of the packed schedules and constant back and forth between work and school. Since most lectures happened between 7pm to 10pm on weeknights, on lecture nights I would (gladly) leave work on time or early and make my way to school for dinner and lecture. I tried very much to not skip any lectures regardless of lecture recordings, but this proved to be occasionally impossible. And there were nights where I was simply too exhausted to go to school and sit for 3 hours to absorb content. While most of the time I would take MRT/bus to school, sometimes I would splurge a little and take a Grab. It was always good to reach school earlier, so that I can take my time with my dinner and enjoy the cheap Science canteen food and a cup of coffee.&lt;/p&gt;
+
+&lt;p&gt;On most non-lecture nights I typically don&amp;rsquo;t touch any of my schoolwork - but I would dedicate one day of my weekend (usually the Sunday) to catch up on lectures and work on tutorials and assignments. During these days, I would spend the day in Utown and sort of &amp;ldquo;blend in&amp;rdquo; with the other undergraduates. If it&amp;rsquo;s not at Utown, then I would either spend the day in the Medical library or the Science library. Either way, there is still plenty of cheap food and coffee in school to replenish myself throughout my mugging.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_utown.jpg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Utown (July 2017)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, sometimes one day simply isn&amp;rsquo;t enough so it would spill over to the other weeknights from time to time. Even as a part-time student, Recess Week was always great as it means no need to travel to school, no new content, and more time to catch up, and of course prepare for the mid-term exam or assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-05-10_exam_schedule.PNG&#34; width=&#34;80%&#34;&gt;
+&lt;/center&gt;
+&lt;center&gt;
+Final exam schedule (May 2018)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;When it comes to the final exams, my protocol has always been to take roughly about 1.5 weeks of paid or study leave to prepare for the 2 final exams I have per semester. This was always a good break from work&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Studying-to-prep&#34;&gt;&lt;a href=&#34;#fn:Studying-to-prep&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;, as I typically don&amp;rsquo;t spend that much time away from work&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Yes-I-am-a-littl&#34;&gt;&lt;a href=&#34;#fn:Yes-I-am-a-littl&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. I might also take one extra day of leave after the last paper to just relax and &amp;ldquo;celebrate&amp;rdquo; the fact that I finished yet another semester, before going back to work.&lt;/p&gt;
+
+&lt;p&gt;In all, it was a rewarding experience and I am very glad that I took the plunge to commit to the MSc for the 5 semesters. It was great being a student again, having blocks of time during weeknights and weekends focusing on nothing else but the content on my lecture notes and assignments. I guess for those of you who have been in the workforce for a while now and would like a change of pace or a break in stagnancy, going back to school is definitely an option, be it full-time or part-time. In any case, I hope this post was as fun for you to read as it was for me to write. Thanks for reading!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:I-believe-the-co&#34;&gt;I believe the content in this module became more applied and less theoretical after the renaming. I took it before the renaming. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:I-believe-the-co&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Though-later-on&#34;&gt;Though later on I realise that in the MSc programme, fulfilling pre-requisites is understandably loosely followed. It&amp;rsquo;s OK to take 5201 beyond your first semester. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Though-later-on&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:What-I-did-was-t&#34;&gt;What I did was that I would spend the whole Saturday morning to rest and get ready and then have lunch in school. After the lecture, I would then head over to VivoCity for dinner, coffee, and then do a bit more of work or studying. It was rather therapeutic. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:What-I-did-was-t&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Other-than-copul&#34;&gt;Other than &lt;a href=&#34;https://en.wikipedia.org/wiki/Copula_(probability_theory)&#34;&gt;copulae&lt;/a&gt;. I had a tough time understanding and appreciating the concept of a copula, and happened to find this &lt;a href=&#34;https://twiecki.io/blog/2018/05/03/copulas/&#34;&gt;blog post&lt;/a&gt; do an expert job at demystifying it. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Other-than-copul&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Don-t-ask-me-why&#34;&gt;Don&amp;rsquo;t ask me why this Edusave -&amp;gt; PSEA -&amp;gt; CPF-OA transferring exists. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Don-t-ask-me-why&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Throughout-the-2&#34;&gt;Throughout the 2.5 years, I had in fact switched jobs twice (another story for another time). Guess this didn&amp;rsquo;t really affect anything for my studying, other than going to school from different workplaces, and figuring out different printer settings in 3 offices to print my lecture notes. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Throughout-the-2&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Studying-to-prep&#34;&gt;Studying to prepare for final exams is fun, but writing those &amp;ldquo;cheatsheets&amp;rdquo; definitely is not. They were a bane. If you don&amp;rsquo;t know what &amp;ldquo;cheatsheets&amp;rdquo; are, good for you. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Studying-to-prep&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Yes-I-am-a-littl&#34;&gt;Yes, I am a little bit of a workaholic. Just a bit. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Yes-I-am-a-littl&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[short] My Master of Science in Statistics programme in NUS</title>
+      <link>/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019/02/09/short-my-master-of-science-in-statistics-programme-in-nus/</guid>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://www.science.nus.edu.sg/wp-content/uploads/2020/02/fos-logo.png&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I have gotten quite a couple of questions regarding my current &lt;a href=&#34;https://www.stat.nus.edu.sg/index.php/prospective-students/graduate-programme/m-sc-by-coursework-programme&#34;&gt;MSc Statistics programme&lt;/a&gt; in NUS. Here are some broadstroke information about the programme and how I am approaching it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m doing the MSc by Coursework programme, which means a research thesis is not part of my curriculum. A MSc by Research option is available.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Under the Coursework programme, there is a Track 1 (40MC) programme and a Track 2 (80MC) one. Basically dependent on whether you have a Honours in your Bachelor&amp;rsquo;s degree. I&amp;rsquo;m doing the Track 1 programme - 40MC is equivalent to 10 modules. Under usual circumstances, it takes 2 full-time semesters to finish 10 modules, i.e. 1 academic year. Semesters run as per typical undergraduate semesters in Singapore.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There&amp;rsquo;s also the part-time option, where one would take 4 to 5 semesters to finish the 10 modules - 5 semesters is basically 2 modules x 5 semesters = 10 modules.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m on the part-time programme. Personally, 3 modules on a part-time basis per semester is too much for me to handle - so I opt to finish my MSc in 5 semesters, or 2.5 academic years.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m currently in my 4th semester, so would be finishing the programme requirements by Dec 2019 and graduate during July 2020 (commencement).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For MSc Statistics, lectures typically run from 7pm to 10pm weeknights. Each module has 1 lecture per week, with the typical workload of tutorials, homework assignments, individual or group projects, subjected to respective lecturer&amp;rsquo;s discretion.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lastly, the programme &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GDTuitionCurrent.pdf&#34;&gt;cost&lt;/a&gt; &lt;b&gt;$2,500 per semester for Singaporeans who are taking this MSc programme as their first higher qualification programme under the &lt;a href=&#34;http://www.nus.edu.sg/registrar/info/gd/GD-Eligibility-Guidelines.pdf&#34;&gt;MOE Subsidy&lt;/a&gt;&lt;/b&gt;. Yes it&amp;rsquo;s pretty value for money if you ask me. This tuition fee amount is not unique to MSc Statistics, and is general to many other programmes in NUS, again provided if you belong to the above category.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My experience with the programme is a positive one so far.  Difficulty and commitment level is within my comfort zone, and I managed to learn quite a couple of new things. Modules that I have taken include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Applied Data Mining&lt;/li&gt;
+&lt;li&gt;Advanced Statistical Methods in Finance&lt;/li&gt;
+&lt;li&gt;Spatial Statistics&lt;/li&gt;
+&lt;li&gt;Statistical Analysis of Networks&lt;/li&gt;
+&lt;li&gt;Experimental Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, in any case, it feels good to be a student again. Each time I go to my stats lecture after a long day of work, it &lt;em&gt;almost&lt;/em&gt; always feels therapeutic. Yea, almost.&lt;/p&gt;
+
+&lt;p&gt;Finally, if you are looking to advance your data science street cred via a postgraduate degree, this is just one of many options, even within NUS or Singapore. Do your research wisely before committing to any!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[short] Taking a part-time Masters this year in 2017</title>
+      <link>/post/2017/01/30/taking-a-part-time-masters-this-year-in-2017/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/01/30/taking-a-part-time-masters-this-year-in-2017/</guid>
+      <description>&lt;p&gt;I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Masters or PhD?&lt;/li&gt;
+&lt;li&gt;Full-time or part-time?&lt;/li&gt;
+&lt;li&gt;(If masters) technical or non-technical?&lt;/li&gt;
+&lt;li&gt;(If full-time) Overseas or local?&lt;/li&gt;
+&lt;li&gt;(If local) NUS or NTU?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full-time is personally a non-option for me, as I don&amp;rsquo;t see the financial sense in taking a sabbatical to pursue a full-time programme. That leaves full-time and overseas out.&lt;/p&gt;
+
+&lt;p&gt;Based on what I know about a PhD programme, part-time PhD sounds like a nightmare. That leaves part-time Masters in Singapore as my option.&lt;/p&gt;
+
+&lt;p&gt;Next question: technical or non-technical? Well I am leaning towards to doing something with technical content when studying - non-technical content can be picked up most of the time simply by being widely read and learning from work experiences. This means statistics or computing for me.&lt;/p&gt;
+
+&lt;p&gt;And NUS is probably the better choice than NTU. SMU is not in my consideration.&lt;/p&gt;
+
+&lt;p&gt;So for now, my choice is going to be M.Sc. Statistics from NUS.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

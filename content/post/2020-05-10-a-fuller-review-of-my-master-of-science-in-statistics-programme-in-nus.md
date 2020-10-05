@@ -4,7 +4,7 @@ author: ~
 date: '2020-05-10'
 slug: a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus
 categories: ["ML & Stats"]
-tags: []
+tags: ["MSc Stats"]
 ---
 
 <center>

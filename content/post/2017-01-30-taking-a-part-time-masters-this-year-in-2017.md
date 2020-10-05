@@ -4,7 +4,7 @@ author: ~
 date: '2017-01-30'
 slug: taking-a-part-time-masters-this-year-in-2017
 categories: ["ML & Stats"]
-tags: []
+tags: ["MSc Stats"]
 ---
 
 I am leaning towards taking a part-time Masters this year in 2017. Points of considerations:

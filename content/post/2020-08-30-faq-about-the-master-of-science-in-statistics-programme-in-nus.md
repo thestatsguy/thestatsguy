@@ -4,7 +4,7 @@ author: ~
 date: '2020-08-30'
 slug: faq-about-the-master-of-science-in-statistics-programme-in-nus
 categories: ["ML & Stats"]
-tags: []
+tags: ["MSc Stats"]
 ---
 
 It's been a while since I last worked on this blog, but today (Sunday!) I have some time in my hands to write a little bit here.

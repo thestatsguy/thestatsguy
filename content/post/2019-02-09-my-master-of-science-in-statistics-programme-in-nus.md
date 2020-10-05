@@ -2,6 +2,7 @@
 title: "[short] My Master of Science in Statistics programme in NUS"
 date: 2019-02-09
 categories: ["ML & Stats"]
+tags: ["MSc Stats"]
 ---
 
 <center>
