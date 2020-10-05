@@ -3,7 +3,7 @@ title: "Using waterfall charts to visualize feature contributions"
 #author: ""
 date: 2019-01-24
 categories: ["ML & Stats"]
-#tags: ["R Markdown", "plot", "regression"]
+tags: ["R"]
 ---
 
 ```{r setup, include=FALSE}

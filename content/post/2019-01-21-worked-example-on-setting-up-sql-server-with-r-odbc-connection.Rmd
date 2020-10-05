@@ -2,6 +2,7 @@
 title: "[short] Worked example on setting up SQL Server with R ODBC connection"
 date: 2019-01-21
 categories: ["ML & Stats"]
+tags: ["R"]
 ---
 
 ```{r setup, include=FALSE}

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on The Stats Guy</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on The Stats Guy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A gentle introduction to the modern portfolio theory</title>
+      <link>/post/2020/09/27/a-gentle-introduction-to-the-modern-portfolio-theory/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/09/27/a-gentle-introduction-to-the-modern-portfolio-theory/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-formulation&#34;&gt;Problem formulation&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#portfolio-weights&#34;&gt;Portfolio weights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#portfolio-expectation-and-variance&#34;&gt;Portfolio expectation and variance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-math-behind-diversification&#34;&gt;The math behind diversification&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#two-uncorrelated-assets&#34;&gt;Two uncorrelated assets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#two-correlated-assets&#34;&gt;Two correlated assets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#starting-with-two-assets&#34;&gt;Starting with two assets&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#efficient-portfolios&#34;&gt;Efficient Portfolios&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#minimum-variance-portfolio&#34;&gt;Minimum variance portfolio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#risk-free-assets&#34;&gt;Risk-free assets&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#one-risky-asset-and-one-risk-free-asset&#34;&gt;One “risky” asset and one risk-free asset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#two-risky-assets-and-one-risk-free-asset&#34;&gt;Two “risky” assets and one risk-free asset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this post, I would like to talk about modern portfolio theory (MPT), a key topic in finance. The first couple of lines in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Modern_portfolio_theory&#34;&gt;MPT Wikipedia article&lt;/a&gt; explains it very well:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(MPT) is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk. It is a formalization and extension of diversification in investing, the idea that owning different kinds of financial assets is less risky than owning only one type. Its key insight is that an asset’s risk and return should not be assessed by itself, but by how it contributes to a portfolio’s overall risk and return. It uses the variance of asset prices as a proxy for risk.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The objective of the MPT is to simultaneously maximise the returns of a portfolio, while at the same time, minimise the risk of the portfolio. Generally, we all know that higher returns come with higher risk, and therefore the dual goals of maximising returns while minimising risk are at odds with each other. After all, why would an investor place himself in a riskier position without any due reward or &lt;strong&gt;risk premium&lt;/strong&gt;? It wouldn’t make sense. Note that in this and many statistical finance frameworks, risk is often measured by means of standard deviation of returns, either that of the asset or the portfolio&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a “gentle introduction” to MPT, in this post, all you need is the basic understanding of mean, variance, and covariance. I will do the rest by repeatedly applying these three statistics in the context of a portfolio - nothing more, nothing less!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Risk premium&lt;/em&gt;&lt;/strong&gt; refers to the difference between the expected return between a risky asset, like a stock, and that of something that basically has no risk, like cash, Treasury Bills or Singapore Savings Bonds. Without any risk premium, there’s no reason to invest in anything other than risk-free assets.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;problem-formulation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem formulation&lt;/h2&gt;
+&lt;p&gt;Suppose there are &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; assets with &lt;span class=&#34;math inline&#34;&gt;\(R_i, i = 1, ..., N\)&lt;/span&gt; denoting the random variables that represent their respective returns in a given time period, and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{R} = (R_1, ..., R_N)^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Their returns and risks are respectively&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{c}
+r_i = ER_i \\\
+\sigma_i = Var(R_i)\\\
+cov(\mathbf{R}) = \Sigma = (\sigma_{ij})_{1 \le i,j \le N}
+\end{array}
+\]&lt;/span&gt;
+We can then form a portfolio consisting of the &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; assets such that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{c}
+R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
+\end{array}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(R_{pf}\)&lt;/span&gt; is the return of the portfolio and &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; is the weight of the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th asset in the portfolio, with&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i = 1}^{N} w_i = 1\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{w} = (w_1, ..., w_N)^T\)&lt;/span&gt; such that expected returns are maximised while minimising risk?&lt;/p&gt;
+&lt;div id=&#34;portfolio-weights&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Portfolio weights&lt;/h3&gt;
+&lt;p&gt;A technical point to bring out here is that while &lt;span class=&#34;math inline&#34;&gt;\(\sum_{i = 1}^{N} w_i = 1\)&lt;/span&gt;, there is no constraint on individual &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; to be non-negative. In fact, a negative &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; implies a short position in the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th asset, i.e. &lt;strong&gt;short selling&lt;/strong&gt;. This is in constrast to a &lt;em&gt;long&lt;/em&gt; position, i.e. buying the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th asset. In this post, we will only consider positive &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; only.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Holding a &lt;strong&gt;&lt;em&gt;long&lt;/em&gt;&lt;/strong&gt; position in a particular asset simply means buying that particular asset. On the other hand, &lt;strong&gt;&lt;em&gt;short selling&lt;/em&gt;&lt;/strong&gt; is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then returned to the lender. This closes the short position, and the idea is that if one is able to sell the borrowed stock at a higher price and return it at a lower price, a profit is made.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;portfolio-expectation-and-variance&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Portfolio expectation and variance&lt;/h3&gt;
+&lt;p&gt;With this set-up, the expectation and variance of the portfolio would be&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ER_{pf} = \sum_iw_iER_i = \mathbf{w}^TE\mathbf{R}\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_j\sigma_{ij}\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{ij}\)&lt;/span&gt; is the covariance between the &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;th and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;th asset.&lt;/p&gt;
+&lt;p&gt;Alternatively,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Var(R_{pf}) = \sum_i\sum_jw_iw_j\sigma_{ij} = \mathbf{w}_T\Sigma \mathbf{w}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-math-behind-diversification&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The math behind diversification&lt;/h2&gt;
+&lt;p&gt;We all know “not to put our eggs in one basket”, and have a diversified portfolio. Intutitively, we know that if we were to put all our money on a single stock, then we have placed a large bet on that one company. While we could instantly make it big just by having our one stock making it big, &lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_aversion&#34;&gt;loss aversion&lt;/a&gt; would dictate that we would rather minimise the risk of losing it all in a single stock.&lt;/p&gt;
+&lt;p&gt;In this sense, what diversification does to a portfolio is that it minimises risk of the portfolio. While the mean return of a portfolio depends on the mean returns of the individual assets and their respective weights, the risk of the portfolio depends on both the risk of the individual assets, as well as each asset’s relationships with the others, in terms of correlations.&lt;/p&gt;
+&lt;p&gt;This means that placing a right mix of weights and assets would reduce the risk of the portfolio - a fundamental idea in portfolio theory. Diversification, by way of investing in multiple assets, reduces risks.&lt;/p&gt;
+&lt;p&gt;Let’s consider two instructive examples.&lt;/p&gt;
+&lt;div id=&#34;two-uncorrelated-assets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two uncorrelated assets&lt;/h3&gt;
+&lt;p&gt;Suppose we have 2 assets with returns &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt;, with the same mean and variance:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{}
+ER_1 = ER_2 = \mu \\\
+Var(R_1) = Var(R_2) = \sigma^2
+\end{array}
+\]&lt;/span&gt;
+Also, &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt; are uncorrelated, i.e. &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} = 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Investing 100% in either &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt; would yield exactly the same return and the same risk. Now consider a portfiolio with some weight on both assets. Let &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; be the weight for &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; - then we would have &lt;span class=&#34;math inline&#34;&gt;\(1-w\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt;. In this portfolio, we would have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ER_{pf} = wER_1 + (1-w)ER_2 = w\mu + (1-w)\mu = \mu\]&lt;/span&gt;
+With this, we know that the return of this portfolio does not depend on &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;However, given that the assets are uncorrelated, we would have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + cov(R_1, R_2)\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(cov(R_1, R_2) = 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So, we would have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Var(R_{pf}) = (w^2 + (1-w)^2)\sigma^2\]&lt;/span&gt;
+When &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt;, we would have &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf}) = \sigma^2\)&lt;/span&gt;. However, for any other value of &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(0&amp;lt;w&amp;lt;1\)&lt;/span&gt;, we would have &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf}) &amp;lt; \sigma^2\)&lt;/span&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-correlated-assets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two correlated assets&lt;/h3&gt;
+&lt;p&gt;Let’s consider a similar scenario, but this time, &lt;span class=&#34;math inline&#34;&gt;\(cov(R_1, R_2) \neq 0\)&lt;/span&gt;. This also means that &lt;span class=&#34;math inline&#34;&gt;\(-1&amp;lt; \rho_{12} &amp;lt; 1\)&lt;/span&gt;. Consider a portfolio where &lt;span class=&#34;math inline&#34;&gt;\(w = \frac{1}{2}\)&lt;/span&gt;, i.e. placing equal weight on both assets &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt;. We would then have &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf} = \frac{1}{2}ER_1 + \frac{1}{2}ER_2 = \mu\)&lt;/span&gt;. More importantly,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+Var(R_{pf}) = \frac{1}{4}Var(R_1) + \frac{1}{4}Var(R_2) + 2\frac{1}{2}\frac{1}{2}Cov(R_1, R_2) \\\
+= \frac{1}{4}\sigma^2 + \frac{1}{4}\sigma^2 + \frac{1}{2}\rho_{12}\sigma^2 \\\
+= \frac{1}{2}(1+\rho_{12})\sigma^2
+\]&lt;/span&gt;
+Therefore, for any value of &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(-1 &amp;lt; \rho_{12} &amp;lt; 1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf}) &amp;lt; \sigma^2\)&lt;/span&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;starting-with-two-assets&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Starting with two assets&lt;/h2&gt;
+&lt;p&gt;Again, the objective of treating portfolio selection as a statistical problem is to select individual &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf}\)&lt;/span&gt; is large and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt; is small. As with our two instructive examples above, we can start solving this problem by first considering &lt;span class=&#34;math inline&#34;&gt;\(N = 2\)&lt;/span&gt;, that is, choosing the weights &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; between two assets only. Inevitably, we would have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{c}
+ER_{pf} = \sum_iw_iER_i = w_1ER_1 + w_2ER_2 \\\
+Var(R_{pf}) = \sum_iw_i^2\sigma_i^2 + \sum_i\sum_{j\neq i}w_iw_jcov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + w_1w_2\rho_{12}\sigma_1\sigma_2 \\\
+w_1+w_2 = 1, w_2 = 1 - w_1
+\end{array}
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12}\)&lt;/span&gt; is the correlation between &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt;. Again, we can let &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; be the weight for &lt;span class=&#34;math inline&#34;&gt;\(R_1\)&lt;/span&gt; - then we would have &lt;span class=&#34;math inline&#34;&gt;\(1-w\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(R_2\)&lt;/span&gt;. Simplifying,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = wER_1 + (1-w)ER_2 = w\mu_1 + (1-w)\mu_2 \\\
+Var(R_{pf}) = w^2Var(R_1) + (1-w)^2Var(R_2) + 2w_1w_2cov(R_1, R_2) \\\
+= w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2
+\]&lt;/span&gt;
+Notice that in this set-up, &lt;span class=&#34;math inline&#34;&gt;\(\mu_1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\mu_2\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\sigma_2\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12}\)&lt;/span&gt; are considered to be known and constant&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. We are concerned with choosing a value for &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf}\)&lt;/span&gt; is maximised, while &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt; is minimised, i.e. we treat both &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt; as univariate functions of &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s visualise this with a numerical example.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# expected returns, standard deviation, and correlation of two assets
+mu1 &amp;lt;- 0.2
+mu2 &amp;lt;- 0.1
+sigma1 &amp;lt;- 0.1
+sigma2 &amp;lt;- 0.05
+rho12 &amp;lt;- 0.25
+
+# calculate return and risks based on w
+cal_pf_return &amp;lt;- function(w){
+  return(w*mu1 + (1-w)*mu2)
+}
+cal_pf_risk &amp;lt;- function(w){
+  return(w^2*sigma1^2 + (1-w)^2*sigma2^2 + 2*w*(1-w)*rho12*sigma1*sigma2)
+}
+
+# weights span from -1 to 1; this considers short positions as well for illustration
+weights &amp;lt;- seq(-1, 1, by = 0.01)
+
+returns &amp;lt;- NULL
+risks &amp;lt;- NULL
+
+for(w in weights){
+  returns &amp;lt;- c(returns, cal_pf_return(w))
+  risks &amp;lt;- c(risks, cal_pf_risk(w))
+}
+
+plot(risks, returns,
+     xlab = &amp;quot;Portfolio risk&amp;quot;,
+     ylab = &amp;quot;Portfolio return&amp;quot;,
+     main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;efficient-portfolios&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Efficient Portfolios&lt;/h3&gt;
+&lt;p&gt;Take a look at the plot above. Notice that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For every possible value of return, there is one corresponding value of risk.&lt;/li&gt;
+&lt;li&gt;However, for every possible value of risk, there are two corresponding values of returns.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Naturally, for a given amount of risk that we would like to take on, we would want a higher return than a lower one. Therefore, any combination of risk-return that belongs to the top half of the plot would be portfolios that we would want, as compared to the lower half. In particular, each combination in the top half of the plot are considered as &lt;strong&gt;efficient portfolios&lt;/strong&gt;. At this point, we might also want to know which is the portfolio or weight that has the lowest risks. This portfolio is also known as the &lt;strong&gt;minimum variance portfolio&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Efficient portfolios&lt;/em&gt;&lt;/strong&gt; lie on on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Efficient_frontier&#34;&gt;&lt;strong&gt;efficient frontier&lt;/strong&gt;&lt;/a&gt;, the top half of our plot. By definition, the efficient frontier consists of portfolios such that for each of these portfolios and their respective returns, there exists no other portfolios that carries a lower portfolio risk for a given return (hence “efficient”&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;). The &lt;strong&gt;minimum variance portfolio&lt;/strong&gt; is one special case of an efficient portfolio - no other portfolios carries a lower portfolio risk than itself, and is the leftmost point of our plot.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;min_risk_w &amp;lt;- weights[which(risks == min(risks))]
+min_risk_return &amp;lt;- mean(cal_pf_return(min_risk_w))
+
+efficient_idx &amp;lt;- which(returns &amp;gt;= min_risk_return)
+inefficient_idx &amp;lt;- which(returns &amp;lt; min_risk_return)
+
+plot(risks[efficient_idx], returns[efficient_idx],
+     xlab = &amp;quot;Portfolio risk&amp;quot;,
+     ylab = &amp;quot;Portfolio return&amp;quot;,
+     main = &amp;quot;The Efficient Frontier&amp;quot;,
+     ylim = c(0,0.2), xlim = c(0.002, 0.01))
+
+lines(risks[inefficient_idx], returns[inefficient_idx], lty = &amp;quot;dotted&amp;quot;)
+
+abline(h = min_risk_return)
+text(x = 0.003, y = min_risk_return-0.01, &amp;quot;min variance portfolio&amp;quot;)
+text(x = 0.006, y = 0.15, &amp;quot;efficient frontier&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;minimum-variance-portfolio&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Minimum variance portfolio&lt;/h3&gt;
+&lt;p&gt;In the example above, we arrived at the minimum variance portfolio by doing some simple calculations. A more robust method would be arrive at the minimum variance portfolio analytically by treating the problem as a optimization problem, minimizing &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;. This can be done by simply solving some basic calculus.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+Var(R_{pf}) = w^2\sigma_1^2+ (1-w)^2\sigma_2^2 + 2w(1-w)\rho_{12}\sigma_1\sigma_2 \\
+\frac{dVar(R_{pf})}{dw} = 2w\sigma_1^2 - 2(1-w)\sigma_2^2 + 2(1-2w)\rho_{12}\sigma_1\sigma_2 \\
+\]&lt;/span&gt;
+Also, since&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{d^2Var(R_{pf})}{dw^2} = 2\sigma_1^2 + 2\sigma_2^2 - 4\rho_{12}\sigma_1\sigma_2
+\geqslant 2\sigma_1^2 + 2\sigma_2^2 - 4\sigma_1\sigma_2 = 2(\sigma_1 - \sigma_2)^2 \geqslant 0 
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 1\)&lt;/span&gt;. We would have &lt;span class=&#34;math inline&#34;&gt;\(\frac{d^2Var(R_{pf})}{dw^2} &amp;gt; 0\)&lt;/span&gt;, i.e. solving &lt;span class=&#34;math inline&#34;&gt;\(\frac{dVar(R_{pf})}{dw} = 0\)&lt;/span&gt; minimizes &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt;, giving the minimium variance portfolio.&lt;/p&gt;
+&lt;p&gt;Solving,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+w \equiv w_{minvar} = \frac{\sigma_2^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]&lt;/span&gt;
+and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+1 - w_{minvar} = \frac{\sigma_1^2 - \rho_{12}\sigma_1\sigma_2}{\sigma_1^2 + \sigma_2^2 - 2\rho_{12}\sigma_1\sigma_2}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;risk-free-assets&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Risk-free assets&lt;/h2&gt;
+&lt;p&gt;Now let’s make this a little more interesting than just 2 assets. Since it’s always possible to not invest all our capital in these assets, and in fact leave a portion of capital in something that is &lt;strong&gt;risk-free&lt;/strong&gt;, such as cash, we could include risk-free assets as part of our framework as well. In particular, we could have &lt;span class=&#34;math inline&#34;&gt;\(w_1 + w_2 &amp;lt; 1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(1 - w_1 - w_2\)&lt;/span&gt; being the portion not invested, but instead diverted to risk-free assets. Doing this directly reduces portfolio variance, and of course reduces portfolio return.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminology&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As pointed out above, &lt;strong&gt;risk-free assets&lt;/strong&gt; are simply assets that are generally deemed as 100% safe&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;, such as cash in a deposit account&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;, Treasury Bills, or Singapore Savings Bonds. Typically, the three-month &lt;a href=&#34;https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield&#34;&gt;US Treasury Bills&lt;/a&gt; are used as proxies for risk-free assets, and their yield or return are considered accordingly. In context of Singapore, we could consider the yield of SSBs as risk-free returns.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(R_{free}\)&lt;/span&gt; be the random variable representing the return of a risk-free asset. Then we have &lt;span class=&#34;math inline&#34;&gt;\(ER_{free} = \mu_{free}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{free}) = 0\)&lt;/span&gt;&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;. Naturally, &lt;span class=&#34;math inline&#34;&gt;\(ER_{free}\)&lt;/span&gt; would be small and contributes a small return to portfolio. On the other hand, directly adjusting the &lt;span class=&#34;math inline&#34;&gt;\(1 - w_1 - w_2\)&lt;/span&gt; provides a convenient of controlling portfolio variance.&lt;/p&gt;
+&lt;p&gt;Also, note that since &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{free}) = 0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\forall i cov(R_{free}, R_i) = 0\)&lt;/span&gt;, i.e. the risk-free is not correlated with any other “risky” assets&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;one-risky-asset-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;One “risky” asset and one risk-free asset&lt;/h3&gt;
+&lt;p&gt;Now let’s consider combining a “risky” asset with a risk-free one. Let &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; be the weight invested in the risky asset, with its return being &lt;span class=&#34;math inline&#34;&gt;\(ER\)&lt;/span&gt; and variance being &lt;span class=&#34;math inline&#34;&gt;\(Var(R)\)&lt;/span&gt;. The portfolio would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = wER + (1-w)R_{free} \implies \mu_{pf} = w\mu_R + (1-w)\mu_{free} \\
+Var(R_{pf}) = w^2Var(R) \implies \sigma_{pf} = w\sigma_R
+\]&lt;/span&gt;
+In particular, observe that the portfolio variance is now a function of &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;, i.e. solving &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf}) = w^2Var(R)\)&lt;/span&gt; gives &lt;span class=&#34;math inline&#34;&gt;\(w = \frac{\sigma_{pf}}{\sigma_R}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{pf}\)&lt;/span&gt; is the standard deviation of the portfolio and &lt;span class=&#34;math inline&#34;&gt;\(\sigma_R\)&lt;/span&gt; is the standard deviation of the risky asset.&lt;/p&gt;
+&lt;p&gt;This gives the following relationship between the portfolio return &lt;span class=&#34;math inline&#34;&gt;\(\mu_{pf}\)&lt;/span&gt; and variance &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{pf}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mu_{pf} = \mu_{free} + \frac{\mu_R - \mu_{free}}{\sigma_R}\sigma_{pf}
+\]&lt;/span&gt;
+Again, let’s visualize this relationship with a numerical example.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# expected returns of both &amp;quot;risky&amp;quot; and risk-free asset, variance
+mu_R    &amp;lt;- 0.2
+mu_free &amp;lt;- 0.04
+sigma_R &amp;lt;- 0.1
+
+# calculate return and risks based on w
+cal_pf_return &amp;lt;- function(w){
+  return(w*mu_R + (1-w)*mu_free)
+}
+cal_pf_sd &amp;lt;- function(w){ # standard deviation, not variance
+  return(w*sigma_R)
+}
+
+weights &amp;lt;- seq(0, 1, by = 0.01)
+
+returns &amp;lt;- NULL
+risks &amp;lt;- NULL
+
+for(w in weights){
+  returns &amp;lt;- c(returns, cal_pf_return(w))
+  risks &amp;lt;- c(risks, cal_pf_sd(w))
+}
+
+plot(risks, returns,
+     xlab = &amp;quot;Portfolio sd&amp;quot;,
+     ylab = &amp;quot;Portfolio return&amp;quot;,
+     main = &amp;quot;Risk-return relationship across weights&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-09-27-a-gentle-introduction-to-the-modern-portfolio-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-risky-assets-and-one-risk-free-asset&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two “risky” assets and one risk-free asset&lt;/h3&gt;
+&lt;p&gt;Now, let’s go one step further, and look at having two “risky” assets with one risk-free asset. What does the math look like? Again, Let &lt;span class=&#34;math inline&#34;&gt;\(w_1\)&lt;/span&gt; be the weight invested in the first risky asset, &lt;span class=&#34;math inline&#34;&gt;\(w_2\)&lt;/span&gt; in the second risky asset and &lt;span class=&#34;math inline&#34;&gt;\(w_{free}\)&lt;/span&gt; in the risk-free asset, with respective returns being &lt;span class=&#34;math inline&#34;&gt;\(ER_1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(ER_2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(ER_{free}\)&lt;/span&gt;, and variances being &lt;span class=&#34;math inline&#34;&gt;\(Var(R_1)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Var(R_2)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Since there are now two risky assets, we also need to consider their correlation, &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12}\)&lt;/span&gt;. The portfolio would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = w_1ER_1 + w_2ER_2 + (1-w_1-w_2)R_{free} \implies \mu_{pf} = w_1\mu_{R_1} + w_2\mu_{R_2} + (1-w_1-w_2)\mu_{free} \\
+Var(R_{pf}) = w_1^2Var(R_1) + w_2^2Var(R_2) + 2w_1w_2cov(R_1, R_2) = w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho_{12}\sigma_1\sigma_2 \\
+w_{free} = 1-w_1-w_2
+\]&lt;/span&gt;
+In particular, note that we can write &lt;span class=&#34;math inline&#34;&gt;\(ER_{pf}\)&lt;/span&gt; in the following manner as well:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+ER_{pf} = (1-w_{free})(\bar{w_1}R_1 + \bar{w_2}R_2) + w_{free}R_{free} \\
+\bar{w_1} = \frac{w_1}{1-w_{free}}, \bar{w_2} = \frac{w_2}{1-w_{free}} \implies \bar{w_1} + \bar{w_2} = 1
+\]&lt;/span&gt;
+In this sense, we can now view portfolio selection as a two-stage problem. First, we construct a portfolio based on risky assets only (e.g. chooosing &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_1}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_2}\)&lt;/span&gt; only). Then, we include the risk-free asset by choosing &lt;span class=&#34;math inline&#34;&gt;\(w_{free}\)&lt;/span&gt;. From the perspective, we gain an interesting tool in controlling for the risk we take on in our portfolio, by the inclusion of the risk-free asset - since its inclusion always decreases the portfolio risk, regardless of the risky assets we take on.&lt;/p&gt;
+&lt;p&gt;Also note that once the first stage is completed, we are effectively dealing with one risky asset and one risk-free asset again, with the “single risky asset” being a combination of 2 risky assets, with &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_1}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\bar{w_2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Therefore, the scenario of using two risky assets and one risk-free asset simplifies that of using one risky asset and one risk-free asset! This results also generalises to &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; assets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this post, I have attempted to give a brief and hopefully gentle enough introduction to the Modern Portfolio Theory, using only statistics like mean, variance, and covariance. We looked at the math behind diversification, computed the Efficient Frontier, and generalised the problem from &lt;span class=&#34;math inline&#34;&gt;\(N=2\)&lt;/span&gt; assets to &lt;span class=&#34;math inline&#34;&gt;\(N&amp;gt;2\)&lt;/span&gt; assets.&lt;/p&gt;
+&lt;p&gt;If you are interested to go a bit further, you might want to find out more about the &lt;a href=&#34;https://pgpfm.wordpress.com/tag/tangency-portfolio/&#34;&gt;Tangency Portfolio&lt;/a&gt; and the &lt;a href=&#34;https://en.wikipedia.org/wiki/Sharpe_ratio&#34;&gt;Sharpe Ratio&lt;/a&gt; - both further extends our analysis and this post would have given you sufficient understanding for further exploration.&lt;/p&gt;
+&lt;p&gt;That’s all from me today, thank you for reading!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;In my personal opinion, using standard deviation as a measure of risk is a little iffy, for several reasons. For example, risk could be better represented as a probability of huge losses, rather than the sd of expected returns - but let’s stick to this for now.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;In particular, choosing &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{2}\)&lt;/span&gt; minimizes &lt;span class=&#34;math inline&#34;&gt;\(Var(R_{pf})\)&lt;/span&gt; at &lt;span class=&#34;math inline&#34;&gt;\(\frac{\sigma}{\sqrt{2}}\)&lt;/span&gt;.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;It’s commonly said that stocks and bonds are considered to be negatively correlated. Assuming this is true, consider the two subdomains &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;lt; 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\rho_{12} &amp;gt; 0\)&lt;/span&gt;. We have &lt;span class=&#34;math inline&#34;&gt;\(\forall\rho_{12} &amp;lt; 0, Var(R_{pf}) &amp;lt; \frac{1}{2}\sigma^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\forall\rho_{12} &amp;gt; 0, Var(R_{pf}) &amp;gt; \frac{1}{2}\sigma^2\)&lt;/span&gt;, i.e. portfolio risk reduces when you have two negatively correlated assets in the portfolio - an intuitive result and justification for proper diversification and &lt;a href=&#34;https://www.investopedia.com/terms/s/strategicassetallocation.asp&#34;&gt;strategic asset allocation&lt;/a&gt;. This of course begs the question on whether stocks and bonds are indeed negatively correlated, in good economic times and in bad, and correlated by how much. We can explore this topic deeper in the future. Also, the math here is similar to that of &lt;a href=&#34;https://thestatsguy.rbind.io/post/2018/12/25/why-ensemble-modelling-works-so-well-and-one-often-neglected-principle/&#34;&gt;ensemble modelling&lt;/a&gt; in machine learning.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Of course the challenge in real life is to estimate them using historical data.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;The same way an estimator &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is &lt;a href=&#34;https://en.wikipedia.org/wiki/Efficient_estimator&#34;&gt;efficient&lt;/a&gt; if &lt;span class=&#34;math inline&#34;&gt;\(Var(\hat{\theta})\)&lt;/span&gt; is minimized.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Of course there is no such thing in real life.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;In Singapore, up to SGD75K is insured by &lt;a href=&#34;https://www.sdic.org.sg/&#34;&gt;SDIC&lt;/a&gt;.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;We could in fact use a constant instead of a random variable.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Again, this is not always true in real life. For example, we have a coronavirus pandemic decimating the return of both “risky” and risk-free assets.&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using waterfall charts to visualize feature contributions</title>
+      <link>/post/2019/01/24/using-waterfall-charts-to-visualize-feature-contributions/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019/01/24/using-waterfall-charts-to-visualize-feature-contributions/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I am using waterfall charts drawn in ggplot2 to visualize GLM coefficients, for regression and classification. Source Rmd file can be found &lt;a href=&#34;https://github.com/thestatsguy/thestatsguy/blob/master/content/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions.Rmd&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waterfall chart: inspired by their commonplace use in finance&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, a simple visualization to illustrate the constituent components (numeric values) that make up the final model prediction, starting from the intercept term &lt;span class=&#34;math inline&#34;&gt;\(\beta_0\)&lt;/span&gt;. The idea is quickly see which features contribute positively and which negatively, and by how much. Important thing to note here is that the waterfall chart will differ from test datapoint to test datapoint - we first have to make a prediction using a test sample &lt;span class=&#34;math inline&#34;&gt;\([x_1, x_2, ..., x_p]\)&lt;/span&gt;, get the prediction, then visualize individual &lt;strong&gt;absolute&lt;/strong&gt; feature contribution to the prediction &lt;span class=&#34;math inline&#34;&gt;\(\hat{y}\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Feature contributions chart: this one is simpler. Same idea as above (also dependent on test sample &lt;span class=&#34;math inline&#34;&gt;\([x_1, x_2, ..., x_p]\)&lt;/span&gt;), but plotted by ranking the numeric contributions by their proportions &lt;strong&gt;relative&lt;/strong&gt; to the prediction&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; like this: &lt;code&gt;contribution_proportion = feature_contribution / prediction&lt;/code&gt;, written below as &lt;code&gt;cont_prop &amp;lt;- featcont/pred&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/static/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Regression&lt;/h2&gt;
+&lt;div id=&#34;preparation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(MASS)
+library(caret)
+## Loading required package: lattice
+## Loading required package: ggplot2
+library(magrittr)
+library(ggplot2)
+
+data(Boston)
+set.seed(123)
+
+# mean centering
+b2 &amp;lt;- preProcess(Boston, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., Boston)
+
+idx &amp;lt;- createDataPartition(b2$medv, p = 0.8, list = FALSE)
+train &amp;lt;- Boston[idx,]
+test &amp;lt;- Boston[-idx,]
+
+mod0 &amp;lt;- lm(data = train, medv ~.)
+
+sm &amp;lt;- summary(mod0)
+betas &amp;lt;- sm$coefficients[,1]
+
+testcase &amp;lt;- test[1,]
+pred &amp;lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &amp;lt;- testcase[-which(testcase %&amp;gt;% names == &amp;quot;medv&amp;quot;)] %&amp;gt;% as.matrix
+betas2 &amp;lt;- betas[-1]
+
+nm &amp;lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &amp;lt;- betas2*featvec
+featcont &amp;lt;- c(betas[1], featcont, pred)
+names(featcont) &amp;lt;- c(nm, &amp;quot;Prediction&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;waterfall-chart-on-regression-feature-contributions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Waterfall chart on regression feature contributions&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# waterfall chart on feature contribution
+plotdata &amp;lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &amp;lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &amp;lt;- seq_along(plotdata$coef)
+plotdata$Impact &amp;lt;- ifelse(plotdata$featcont &amp;gt; 0, &amp;quot;+ve&amp;quot;, &amp;quot;-ve&amp;quot;)
+plotdata[plotdata$coef %in% c(&amp;quot;(Intercept)&amp;quot;, &amp;quot;Prediction&amp;quot;), &amp;quot;Impact&amp;quot;] &amp;lt;- &amp;quot;Initial/Net&amp;quot;
+plotdata$end &amp;lt;- cumsum(plotdata$featcont)
+plotdata$end &amp;lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &amp;lt;- c(0, head(plotdata$end, -1))
+plotdata &amp;lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &amp;lt;- ggplot(plotdata, aes(fill = Impact)) +
+ geom_rect(aes(coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;))
+ scale_fill_manual(values=c(&amp;quot;darkred&amp;quot;, &amp;quot;darkgreen&amp;quot;, &amp;quot;darkblue&amp;quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+#coord_flip()
+
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &amp;lt;- gg + geom_hline(yintercept = 0)
+gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+cont_prop &amp;lt;- featcont/pred
+
+plot_data &amp;lt;- data.frame(coef = names(cont_prop),
+                        cont_prop = cont_prop,
+                        row.names = NULL)
+plot_data &amp;lt;- plot_data[-nrow(plot_data),]
+
+plot_data &amp;lt;- plot_data[order(plot_data$cont_prop, decreasing = FALSE),]
+
+plot_data$coef &amp;lt;- factor(plot_data$coef, levels = plot_data$coef)
+
+p&amp;lt;-ggplot(data=plot_data, aes(x=coef, y = cont_prop)) +
+    geom_bar(stat=&amp;quot;identity&amp;quot;, fill = &amp;quot;darkblue&amp;quot;) +
+    coord_flip() +
+    theme_minimal() +
+    xlab(&amp;quot;Features&amp;quot;) +
+    ggtitle(&amp;quot;Feature Contributions&amp;quot;)
+p&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/r_prep2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;classification&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Classification&lt;/h2&gt;
+&lt;div id=&#34;preparation-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(kernlab)
+## Warning: package &amp;#39;kernlab&amp;#39; was built under R version 3.5.3
+## 
+## Attaching package: &amp;#39;kernlab&amp;#39;
+## The following object is masked from &amp;#39;package:ggplot2&amp;#39;:
+## 
+##     alpha
+library(caret)
+library(magrittr)
+library(ggplot2)
+
+data(spam)
+set.seed(123)
+
+# mean centering
+s2 &amp;lt;- preProcess(spam, method = &amp;quot;center&amp;quot;) %&amp;gt;% predict(., spam)
+
+idx &amp;lt;- createDataPartition(s2$type, p = 0.8, list = FALSE)
+train &amp;lt;- s2[idx,]
+test &amp;lt;- s2[-idx,]
+
+mod0 &amp;lt;- glm(data = train, type ~., family =  binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+sm &amp;lt;- summary(mod0)
+betas &amp;lt;- sm$coefficients[,1]
+
+testcase &amp;lt;- test[1,]
+pred &amp;lt;- predict(mod0, testcase)
+
+# dot product between feature vector and beta
+featvec &amp;lt;- testcase[-which(testcase %&amp;gt;% names == &amp;quot;type&amp;quot;)] %&amp;gt;% as.matrix
+betas2 &amp;lt;- betas[-1]
+
+nm &amp;lt;- names(betas)
+#betas2 %*% t(featvec)
+
+# feature contributions
+featcont &amp;lt;- betas2*featvec
+featcont &amp;lt;- c(betas[1], featcont, pred)
+names(featcont) &amp;lt;- c(nm, &amp;quot;Prediction&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;waterfall-chart-on-classification-feature-contributions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Waterfall chart on classification feature contributions&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# waterfall chart on feature contribution
+plotdata &amp;lt;- data.frame(coef = names(featcont), featcont = featcont, row.names = NULL)
+plotdata$coef &amp;lt;- factor(plotdata$coef, levels = plotdata$coef)
+plotdata$id &amp;lt;- seq_along(plotdata$coef)
+plotdata$Impact &amp;lt;- ifelse(plotdata$featcont &amp;gt; 0, &amp;quot;+ve&amp;quot;, &amp;quot;-ve&amp;quot;)
+plotdata[plotdata$coef %in% c(&amp;quot;(Intercept)&amp;quot;, &amp;quot;Prediction&amp;quot;), &amp;quot;Impact&amp;quot;] &amp;lt;- &amp;quot;Initial/Net&amp;quot;
+plotdata$end &amp;lt;- cumsum(plotdata$featcont)
+plotdata$end &amp;lt;- c(head(plotdata$end, -1), 0)
+plotdata$start &amp;lt;- c(0, head(plotdata$end, -1))
+plotdata &amp;lt;- plotdata[, c(3, 1, 4, 6, 5, 2)]
+
+gg &amp;lt;- ggplot(plotdata, aes(coef, fill = Impact)) +
+ geom_rect(aes(x = coef,
+               xmin = id - 0.45,
+               xmax = id + 0.45,
+               ymin = end,
+               ymax = start)) +
+ theme_minimal() +
+ #scale_fill_manual(values=c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;))
+ scale_fill_manual(values=c(&amp;quot;darkred&amp;quot;, &amp;quot;darkgreen&amp;quot;, &amp;quot;darkblue&amp;quot;)) +
+ theme(axis.text.x=element_text(angle=90, hjust=1))
+## Warning: Ignoring unknown aesthetics: x
+ #coord_flip()
+ 
+if(sign(plotdata$end[1]) != sign(plotdata$start[nrow(plotdata)]))
+ gg &amp;lt;- gg + geom_hline(yintercept = 0)
+gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-01-24-using-waterfall-charts-to-visualize-feature-contributions_files/figure-html/c_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Something like &lt;a href=&#34;https://en.wikipedia.org/wiki/Waterfall_chart&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;http://blog.slidemagic.com/2008/08/how-to-create-mckinsey-waterfall-chart.html&#34;&gt;this&lt;/a&gt;, for example&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;See &lt;a href=&#34;https://thestatsguy.rbind.io/post/2019/01/14/feature-contribution-another-way-to-think-about-feature-importance/&#34;&gt;this&lt;/a&gt; on feature contributions.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[short] Worked example on setting up SQL Server with R ODBC connection</title>
+      <link>/post/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019/01/21/short-worked-example-on-setting-up-sql-server-with-r-odbc-connection/</guid>
+      <description>
+
+
+&lt;p&gt;This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.&lt;/p&gt;
+&lt;p&gt;Step 1: Install SQL Server from &lt;a href=&#34;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&#34; class=&#34;uri&#34;&gt;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&lt;/a&gt;. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture.PNG&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;
+&lt;p&gt;Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio. Once done, connect to the server:&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture3.PNG&#34;&gt;
+&lt;/center&gt;
+&lt;p&gt;Step 3: Create a database on the server. You may follow the steps given in this page as a quick start: &lt;a href=&#34;https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017&#34; class=&#34;uri&#34;&gt;https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017&lt;/a&gt;. If you do, you should have a database created named “TutorialDB” and a table named “Customers”.&lt;/p&gt;
+&lt;p&gt;Step 4: Install and load the RODBC package in R.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#install.packages(&amp;quot;RODBC&amp;quot;)
+library(RODBC)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 5: Connect to the server and the database, and run a sample query.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conn &amp;lt;- odbcDriverConnect(&amp;#39;driver={SQL Server};server=SNG1049387\\SQLEXPRESS;database=TutorialDB;trusted_connection=true&amp;#39;)
+customers &amp;lt;- sqlQuery(conn, &amp;#39;select * from dbo.Customers&amp;#39;)
+str(customers)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;# &amp;#39;data.frame&amp;#39;: 4 obs. of  4 variables:
+#  $ CustomerId: int  1 2 3 4
+#  $ Name      : Factor w/ 4 levels &amp;quot;Donna&amp;quot;,&amp;quot;Janet&amp;quot;,..: 4 3 1 2
+#  $ Location  : Factor w/ 4 levels &amp;quot;Australia&amp;quot;,&amp;quot;Germany&amp;quot;,..: 1 3 2 4
+#  $ Email     : Factor w/ 4 levels &amp;quot;&amp;quot;,&amp;quot;donna0@adventure-works.com&amp;quot;,..: 1 4 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 6: Write an R data frame into your database.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- read.csv(&amp;quot;data/adult.csv&amp;quot;)
+sqlSave(conn, df)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Step 7: Refresh the Database node in SMSS to verify if the data frame has been written into the database as a table.&lt;/p&gt;
+&lt;p&gt;You are now ready to use SQL Server, SSMS, and R to run some analysis and modelling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Random Forests in R</title>
+      <link>/post/2016/07/20/random-forests-in-r/</link>
+      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/07/20/random-forests-in-r/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As the name suggests, random forest models basically contain an ensemble of decision tree models, with each decision tree predicting the same response variable. The response may be categorical, in which case being a classification problem, or continuous / numerical, being a regression problem.&lt;/p&gt;
+&lt;p&gt;In this short tutorial, we will go through the use of tree-based methods (decision tree, bagging model, and random forest) for both classification and regression problems.&lt;/p&gt;
+&lt;p&gt;This tutorial is divided into two sections. We will first use tree-based methods for classification on the &lt;strong&gt;spam&lt;/strong&gt; dataset from the &lt;strong&gt;kernlab&lt;/strong&gt; package. Subsequently, we will apply these methods on a regression problem, with the &lt;strong&gt;imports85&lt;/strong&gt; dataset from the &lt;strong&gt;randomForest&lt;/strong&gt; package.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tree-based-methods-for-classification&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tree-based methods for classification&lt;/h2&gt;
+&lt;div id=&#34;preparation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Let’s start by loading the spam dataset and doing some preparations:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# packages that we will need:
+#  @ kernlab:      for the spam dataset
+#  @ tree:         for decision tree construction
+#  @ randomForest: for bagging and RF
+#  @ beepr:        for a little beep
+#  @ pROC:         for plotting of ROC
+
+# code snippet to install and load multiple packages at once
+# pkgs &amp;lt;- c(&amp;quot;kernlab&amp;quot;,&amp;quot;tree&amp;quot;,&amp;quot;randomForest&amp;quot;,&amp;quot;beepr&amp;quot;,&amp;quot;pROC&amp;quot;)
+# sapply(pkgs,FUN=function(p){
+#        print(p)
+#        if(!require(p)) install.packages(p)
+#        require(p)
+# })
+
+# load required packages
+suppressWarnings(library(kernlab))
+suppressWarnings(library(tree))
+suppressWarnings(library(randomForest))
+## randomForest 4.6-14
+## Type rfNews() to see new features/changes/bug fixes.
+suppressWarnings(library(beepr)) # try it! beep()
+suppressWarnings(library(pROC))
+## Type &amp;#39;citation(&amp;quot;pROC&amp;quot;)&amp;#39; for a citation.
+## 
+## Attaching package: &amp;#39;pROC&amp;#39;
+## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     cov, smooth, var
+
+# load dataset
+data(spam)
+
+# take a look
+str(spam)
+## &amp;#39;data.frame&amp;#39;:    4601 obs. of  58 variables:
+##  $ make             : num  0 0.21 0.06 0 0 0 0 0 0.15 0.06 ...
+##  $ address          : num  0.64 0.28 0 0 0 0 0 0 0 0.12 ...
+##  $ all              : num  0.64 0.5 0.71 0 0 0 0 0 0.46 0.77 ...
+##  $ num3d            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ our              : num  0.32 0.14 1.23 0.63 0.63 1.85 1.92 1.88 0.61 0.19 ...
+##  $ over             : num  0 0.28 0.19 0 0 0 0 0 0 0.32 ...
+##  $ remove           : num  0 0.21 0.19 0.31 0.31 0 0 0 0.3 0.38 ...
+##  $ internet         : num  0 0.07 0.12 0.63 0.63 1.85 0 1.88 0 0 ...
+##  $ order            : num  0 0 0.64 0.31 0.31 0 0 0 0.92 0.06 ...
+##  $ mail             : num  0 0.94 0.25 0.63 0.63 0 0.64 0 0.76 0 ...
+##  $ receive          : num  0 0.21 0.38 0.31 0.31 0 0.96 0 0.76 0 ...
+##  $ will             : num  0.64 0.79 0.45 0.31 0.31 0 1.28 0 0.92 0.64 ...
+##  $ people           : num  0 0.65 0.12 0.31 0.31 0 0 0 0 0.25 ...
+##  $ report           : num  0 0.21 0 0 0 0 0 0 0 0 ...
+##  $ addresses        : num  0 0.14 1.75 0 0 0 0 0 0 0.12 ...
+##  $ free             : num  0.32 0.14 0.06 0.31 0.31 0 0.96 0 0 0 ...
+##  $ business         : num  0 0.07 0.06 0 0 0 0 0 0 0 ...
+##  $ email            : num  1.29 0.28 1.03 0 0 0 0.32 0 0.15 0.12 ...
+##  $ you              : num  1.93 3.47 1.36 3.18 3.18 0 3.85 0 1.23 1.67 ...
+##  $ credit           : num  0 0 0.32 0 0 0 0 0 3.53 0.06 ...
+##  $ your             : num  0.96 1.59 0.51 0.31 0.31 0 0.64 0 2 0.71 ...
+##  $ font             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num000           : num  0 0.43 1.16 0 0 0 0 0 0 0.19 ...
+##  $ money            : num  0 0.43 0.06 0 0 0 0 0 0.15 0 ...
+##  $ hp               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ hpl              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ george           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num650           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ lab              : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ labs             : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ telnet           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num857           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ data             : num  0 0 0 0 0 0 0 0 0.15 0 ...
+##  $ num415           : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num85            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ technology       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ num1999          : num  0 0.07 0 0 0 0 0 0 0 0 ...
+##  $ parts            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ pm               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ direct           : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ cs               : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ meeting          : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ original         : num  0 0 0.12 0 0 0 0 0 0.3 0 ...
+##  $ project          : num  0 0 0 0 0 0 0 0 0 0.06 ...
+##  $ re               : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ edu              : num  0 0 0.06 0 0 0 0 0 0 0 ...
+##  $ table            : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ conference       : num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charSemicolon    : num  0 0 0.01 0 0 0 0 0 0 0.04 ...
+##  $ charRoundbracket : num  0 0.132 0.143 0.137 0.135 0.223 0.054 0.206 0.271 0.03 ...
+##  $ charSquarebracket: num  0 0 0 0 0 0 0 0 0 0 ...
+##  $ charExclamation  : num  0.778 0.372 0.276 0.137 0.135 0 0.164 0 0.181 0.244 ...
+##  $ charDollar       : num  0 0.18 0.184 0 0 0 0.054 0 0.203 0.081 ...
+##  $ charHash         : num  0 0.048 0.01 0 0 0 0 0 0.022 0 ...
+##  $ capitalAve       : num  3.76 5.11 9.82 3.54 3.54 ...
+##  $ capitalLong      : num  61 101 485 40 40 15 4 11 445 43 ...
+##  $ capitalTotal     : num  278 1028 2259 191 191 ...
+##  $ type             : Factor w/ 2 levels &amp;quot;nonspam&amp;quot;,&amp;quot;spam&amp;quot;: 2 2 2 2 2 2 2 2 2 2 ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, we will attempt to predict whether an email is spam or nonspam. To do so, we will construct models on one subset of the data (training data), and use the constructed model on another disparate subset of the data (the testing data). This is known as cross validation.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# preparation for cross validation:
+# split the dataset into 2 halves,
+# 2300 samples for training and 2301 for testing
+num.samples &amp;lt;- nrow(spam) # 4,601
+num.train   &amp;lt;- round(num.samples/2) # 2,300
+num.test    &amp;lt;- num.samples - num.train # 2,301
+num.var     &amp;lt;- ncol(spam) # 58
+
+# set up the indices
+set.seed(150715)
+idx       &amp;lt;- sample(1:num.samples)
+train.idx &amp;lt;- idx[seq(num.train)]
+test.idx  &amp;lt;- setdiff(idx,train.idx)
+
+# subset the data
+spam.train &amp;lt;- spam[train.idx,]
+spam.test  &amp;lt;- spam[test.idx,]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Taking a quick glance at the &lt;strong&gt;type&lt;/strong&gt; variable:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(spam.train$type)
+## 
+## nonspam    spam 
+##    1397     903
+table(spam.test$type)
+## 
+## nonspam    spam 
+##    1391     910&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decision-tree&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Decision tree&lt;/h3&gt;
+&lt;p&gt;Now that we are done with the preparation, let’s start by constructing a decision tree model, using the &lt;strong&gt;tree&lt;/strong&gt; package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tree.mod &amp;lt;- tree(type ~ ., data = spam.train)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s how our model looks like:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(tree.mod)
+title(&amp;quot;Decision tree&amp;quot;)
+text(tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The model may be overtly complicated. Typically, after constructing a decision tree model, we may want to prune the model, by collapsing certain edges, nodes and leaves together without much loss of performance. This is done by iteratively comparing the number of leaf nodes with the model’s performance (by k-fold cross validation &lt;em&gt;within the training set&lt;/em&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cv.prune &amp;lt;- cv.tree(tree.mod, FUN = prune.misclass)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &amp;quot;red&amp;quot;, type = &amp;quot;b&amp;quot;,
+     main = &amp;quot;Decision tree: Cross validation to find optimal size of tree&amp;quot;,
+     xlab = &amp;quot;Size of tree&amp;quot;, ylab = &amp;quot;Misclassifications&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Having 9 leaf nodes may be good (maximising performance while minimising complexity).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;best.tree.size &amp;lt;- 9
+
+# pruning (cost-complexity pruning)
+pruned.tree.mod &amp;lt;- prune.misclass(tree.mod, best = best.tree.size)
+
+# here&amp;#39;s the new tree model
+plot(pruned.tree.mod)
+title(paste(&amp;quot;Pruned decision tree (&amp;quot;, best.tree.size, &amp;quot; leaf nodes)&amp;quot;,sep = &amp;quot;&amp;quot;))
+text(pruned.tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_tree4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Now with our new model, let’s make some predictions on the testing data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tree.pred &amp;lt;- predict(pruned.tree.mod,
+                     subset(spam.test, select = -type), 
+                     type = &amp;quot;class&amp;quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(tree.pred.results &amp;lt;- table(tree.pred, spam.test$type))
+##          
+## tree.pred nonspam spam
+##   nonspam    1308  164
+##   spam         83  746
+
+# What is the accuracy of our tree model?
+print(tree.accuracy &amp;lt;- (tree.pred.results[1,1] + tree.pred.results[2,2]) / sum(tree.pred.results))
+## [1] 0.8926554&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our decision tree model is able to predict spam vs. nonspam emails with about 89.27% accuracy. We will make comparisons of accuracies with other models later.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bagging&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bagging&lt;/h3&gt;
+&lt;p&gt;Next, we turn our attention to the bagging model. Recall that bagging, a.k.a. &lt;em&gt;bootstrap aggregating&lt;/em&gt;, is the process of sampling (with replacement), samples from the training data. Each of these subsets are known as bags, and we construct individual decision tree models using each of these bags. Finally, to make a classification prediction, we use the majority vote from the ensemble of decision tree models.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.mod&amp;lt;-randomForest(type ~ ., data = spam.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     proximity = TRUE,
+                     importance = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the bagging, and also the random forest model, there are often only two hyperparameters that we are interested in: &lt;strong&gt;mtry&lt;/strong&gt;, which is the number of variables to try from for each tree and at each split, and &lt;strong&gt;ntree&lt;/strong&gt;, the number of trees in the ensemble. Tuning the number of trees is relatively easy by looking at the out-of-bag (OOB) error estimate of the ensemble at each step of the way. For more details, refer to the slides. We set &lt;strong&gt;proximity = TRUE&lt;/strong&gt; and &lt;strong&gt;importance = TRUE&lt;/strong&gt;, in order to get some form of visualization of the model, and the variable importances respectively.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(bg.mod$err.rate[,1], type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Bagging: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, 300 trees seems more than sufficient. One advantage of bagging and random forest models is that they provide a way of doing feature or variable selection, by considering the importance of each variable in the model. For exact details on how these importance measures are defined, refer to the slides.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;varImpPlot(bg.mod,
+           main = &amp;quot;Bagging: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In addition, we can visualize the classification done by the model using a multidimensional plot on the proximity matrix. The green samples in the figure represent nonspams, while the red samples are spams.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MDSplot(bg.mod,
+        fac = spam.train$type,
+        palette = c(&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
+        main = &amp;quot;Bagging: MDS&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_bagging4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Finally, let’s make some predictions on the testing data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.pred &amp;lt;- predict(bg.mod,
+                   subset(spam.test, select = -type), 
+                   type = &amp;quot;class&amp;quot;)
+
+# confusion matrix
+# rows are the predicted classes
+# columns are the actual classes
+print(bg.pred.results &amp;lt;- table(bg.pred, spam.test$type))
+##          
+## bg.pred   nonspam spam
+##   nonspam    1336   87
+##   spam         55  823
+
+# what is the accuracy of our bagging model?
+print(bg.accuracy &amp;lt;- sum(diag((bg.pred.results))) / sum(bg.pred.results))
+## [1] 0.9382877&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our bagging model predicts whether an email is spam or not with about 93.83% accuracy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;random-forest&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Random Forest&lt;/h3&gt;
+&lt;p&gt;The only difference between the bagging model and random forest model is that the latter uses chooses only from a subset of variables to split on at each node of each tree. In other words, only the &lt;strong&gt;mtry&lt;/strong&gt; argument differs between bagging and random forest.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rf.mod &amp;lt;- randomForest(type ~ ., data = spam.train,
+                       mtry = floor(sqrt(num.var - 1)), # 7; only difference from bagging is here
+                       ntree = 300,
+                       proximity = TRUE,
+                       importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees:
+plot(rf.mod$err.rate[,1], type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Random forest: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Besides tuning the &lt;strong&gt;ntree&lt;/strong&gt; hyperparameter, we might also be interested in tuning the &lt;strong&gt;mtry&lt;/strong&gt; hyperparameter in random forest. The random forest model may be built using the &lt;strong&gt;mtry&lt;/strong&gt; value that minimises the OOB error.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tuneRF(subset(spam.train, select = -type),
+       spam.train$type,
+       ntreeTry = 100)
+## mtry = 7  OOB error = 5.52% 
+## Searching left ...
+## mtry = 4     OOB error = 6.26% 
+## -0.1338583 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 5.83% 
+## -0.05511811 0.05
+##        mtry   OOBError
+## 4.OOB     4 0.06260870
+## 7.OOB     7 0.05521739
+## 14.OOB   14 0.05826087
+title(&amp;quot;Random forest: Tuning the mtry hyperparameter&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# variable importance
+varImpPlot(rf.mod,
+           main = &amp;quot;Random forest: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# multidimensional scaling plot
+# green samples are non-spam,
+# red samples are spam
+MDSplot(rf.mod,
+        fac = spam.train$type,
+        palette = c(&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
+        main = &amp;quot;Random forest: MDS&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_rf3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# now, let&amp;#39;s make some predictions
+rf.pred &amp;lt;- predict(rf.mod,
+                   subset(spam.test,select = -type), 
+                   type=&amp;quot;class&amp;quot;)
+
+# confusion matrix
+print(rf.pred.results &amp;lt;- table(rf.pred, spam.test$type))
+##          
+## rf.pred   nonspam spam
+##   nonspam    1353   82
+##   spam         38  828
+
+# Accuracy of our RF model:
+print(rf.accuracy &amp;lt;- sum(diag((rf.pred.results))) / sum(rf.pred.results))
+## [1] 0.9478488&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our random forest model predicts whether an email is spam or not with about 94.78% accuracy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualization-of-performances&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualization of performances&lt;/h3&gt;
+&lt;p&gt;Let’s go ahead and make some comparisons on the performances of our model. For comparison sake, let’s also construct a logistic regression model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;log.mod &amp;lt;- glm(type ~ . , data = spam.train,
+             family = binomial(link = logit))
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+# predictions
+log.pred.prob &amp;lt;- predict(log.mod,
+                         subset(spam.test, select = -type), 
+                         type = &amp;quot;response&amp;quot;)
+log.pred.class &amp;lt;- factor(sapply(log.pred.prob,
+                                FUN = function(x){
+                                        if(x &amp;gt;= 0.5) return(&amp;quot;spam&amp;quot;)
+                                        else return(&amp;quot;nonspam&amp;quot;)
+                                }))
+
+# confusion matrix
+log.pred.results &amp;lt;- table(log.pred.class, spam.test$type)
+
+# Accuracy of logistic regression model:
+print(log.accuracy &amp;lt;- sum(diag((log.pred.results))) / sum(log.pred.results))
+## [1] 0.9135159&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let’s compare the performances, considering first the model accuracies.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;barplot(c(tree.accuracy,
+          bg.accuracy,
+          rf.accuracy,
+          log.accuracy),
+        main=&amp;quot;Accuracies of various models&amp;quot;,
+        names.arg=c(&amp;quot;Tree&amp;quot;,&amp;quot;Bagging&amp;quot;,&amp;quot;RF&amp;quot;, &amp;quot;Logistic&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_viz1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can see here that the ensemble models (bagging and random forest) outperforms the single decision tree, and also the logistic regression model. It turns out here that the bagging and the random forest models have about the same classification performance. Understanding the rationale of &lt;em&gt;random subspace sampling&lt;/em&gt; (refer to slides) should allow us to appreciate the potential improvement of random forest over the bagging model.&lt;/p&gt;
+&lt;p&gt;Finally, let’s plot the ROC curves of the various models. The ROC is only valid for models that give probabilistic output.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.pred.prob &amp;lt;- predict(bg.mod ,
+                        subset(spam.test, select = -type),
+                        type = &amp;quot;prob&amp;quot;)
+
+rf.pred.prob &amp;lt;- predict(rf.mod ,
+                        subset(spam.test, select = -type),
+                        type = &amp;quot;prob&amp;quot;)
+
+plot.roc(spam.test$type,
+         bg.pred.prob[,1], col = &amp;quot;blue&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.3,
+         main = &amp;quot;ROC-AUC of various models&amp;quot;)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;gt; cases
+
+plot.roc(spam.test$type,
+         rf.pred.prob[,1], col = &amp;quot;green&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.2,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;gt; cases
+
+plot.roc(spam.test$type,
+         log.pred.prob, col = &amp;quot;red&amp;quot;,
+         lwd = 3, print.auc = TRUE, print.auc.y = 0.1,
+         add = TRUE)
+## Setting levels: control = nonspam, case = spam
+## Setting direction: controls &amp;lt; cases
+
+legend(x = 0.6, y = 0.8, legend = c(&amp;quot;Bagging&amp;quot;,
+                                    &amp;quot;Random forest&amp;quot;,
+                                    &amp;quot;Logistic regression&amp;quot;),
+       col = c(&amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;red&amp;quot;), lwd = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/c_viz2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tree-based-methods-for-regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tree-based methods for regression&lt;/h2&gt;
+&lt;p&gt;In the following section, we will consider the use of tree-based methods for regression. The materials that follows are analogous to that above, if not the similar.&lt;/p&gt;
+&lt;div id=&#34;preparation-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preparation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tree)
+library(randomForest)
+
+data(imports85)
+imp &amp;lt;- imports85
+
+# The following data preprocessing steps on
+# the imports85 dataset are suggested by
+# the authors of the randomForest package
+# look at
+# &amp;gt; ?imports85
+imp &amp;lt;- imp[,-2]  # Too many NAs in normalizedLosses.
+imp &amp;lt;- imp[complete.cases(imp), ]
+# ## Drop empty levels for factors
+imp[] &amp;lt;- lapply(imp, function(x) if (is.factor(x)) x[, drop=TRUE] else x)
+
+# Also removing the numOfCylinders and fuelSystem
+# variables due to sparsity of data
+# to see this, run the following lines:
+# &amp;gt; table(imp$numOfCylinders)
+# &amp;gt; table(imp$fuelSystem)
+# This additional step is only necessary because we will be
+# making comparisons between the tree-based models
+# and linear regression, and linear regression cannot
+# handle sparse data well
+imp &amp;lt;- subset(imp, select = -c(numOfCylinders,fuelSystem))
+
+# also removing the make variable
+imp &amp;lt;- subset(imp, select = -make)
+
+# Preparation for cross validation:
+# split the dataset into 2 halves,
+# 96 samples for training and 97 for testing
+num.samples &amp;lt;- nrow(imp) # 193
+num.train   &amp;lt;- round(num.samples / 2) # 96
+num.test    &amp;lt;- num.samples - num.train # 97
+num.var     &amp;lt;- ncol(imp) # 25
+
+# set up the indices
+set.seed(150715)
+idx       &amp;lt;- sample(1:num.samples)
+train.idx &amp;lt;- idx[seq(num.train)]
+test.idx  &amp;lt;- setdiff(idx,train.idx)
+
+# subset the data
+imp.train &amp;lt;- imp[train.idx,]
+imp.test  &amp;lt;- imp[test.idx,]
+
+str(imp.train)
+## &amp;#39;data.frame&amp;#39;:    96 obs. of  22 variables:
+##  $ symboling       : int  1 0 0 3 2 1 1 1 3 2 ...
+##  $ fuelType        : Factor w/ 2 levels &amp;quot;diesel&amp;quot;,&amp;quot;gas&amp;quot;: 2 2 2 2 1 2 2 2 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &amp;quot;std&amp;quot;,&amp;quot;turbo&amp;quot;: 2 1 2 1 1 1 1 1 2 2 ...
+##  $ numOfDoors      : Factor w/ 2 levels &amp;quot;four&amp;quot;,&amp;quot;two&amp;quot;: 1 1 1 2 2 2 1 2 2 1 ...
+##  $ bodyStyle       : Factor w/ 5 levels &amp;quot;convertible&amp;quot;,..: 4 4 4 3 4 4 4 3 3 4 ...
+##  $ driveWheels     : Factor w/ 3 levels &amp;quot;4wd&amp;quot;,&amp;quot;fwd&amp;quot;,&amp;quot;rwd&amp;quot;: 2 2 3 3 2 3 2 2 2 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &amp;quot;front&amp;quot;,&amp;quot;rear&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  96.3 97.2 108 102.9 97.3 ...
+##  $ length          : num  172 173 187 184 172 ...
+##  $ width           : num  65.4 65.2 68.3 67.7 65.5 64 63.8 66.5 65.4 66.5 ...
+##  $ height          : num  51.6 54.7 56 52 55.7 52.6 54.5 53.7 49.4 56.1 ...
+##  $ curbWeight      : int  2403 2302 3130 2976 2261 2265 1971 2385 2370 2847 ...
+##  $ engineType      : Factor w/ 5 levels &amp;quot;dohc&amp;quot;,&amp;quot;l&amp;quot;,&amp;quot;ohc&amp;quot;,..: 3 3 2 1 3 1 3 3 3 1 ...
+##  $ engineSize      : int  110 120 134 171 97 98 97 122 110 121 ...
+##  $ bore            : num  3.17 3.33 3.61 3.27 3.01 3.24 3.15 3.39 3.17 3.54 ...
+##  $ stroke          : num  3.46 3.47 3.21 3.35 3.4 3.08 3.29 3.39 3.46 3.07 ...
+##  $ compressionRatio: num  7.5 8.5 7 9.3 23 9.4 9.4 8.6 7.5 9 ...
+##  $ horsepower      : int  116 97 142 161 52 112 69 84 116 160 ...
+##  $ peakRpm         : int  5500 5200 5600 5200 4800 6600 5200 4800 5500 5500 ...
+##  $ cityMpg         : int  23 27 18 20 37 26 31 26 23 19 ...
+##  $ highwayMpg      : int  30 34 24 24 46 29 37 32 30 26 ...
+##  $ price           : int  9279 9549 18150 16558 7775 9298 7499 10595 9959 18620 ...
+str(imp.test)
+## &amp;#39;data.frame&amp;#39;:    97 obs. of  22 variables:
+##  $ symboling       : int  -1 1 -1 1 1 -2 0 0 2 2 ...
+##  $ fuelType        : Factor w/ 2 levels &amp;quot;diesel&amp;quot;,&amp;quot;gas&amp;quot;: 2 2 1 2 2 2 1 2 2 2 ...
+##  $ aspiration      : Factor w/ 2 levels &amp;quot;std&amp;quot;,&amp;quot;turbo&amp;quot;: 1 1 2 1 1 1 2 1 1 1 ...
+##  $ numOfDoors      : Factor w/ 2 levels &amp;quot;four&amp;quot;,&amp;quot;two&amp;quot;: 1 1 1 2 2 1 2 2 2 2 ...
+##  $ bodyStyle       : Factor w/ 5 levels &amp;quot;convertible&amp;quot;,..: 4 4 5 4 4 4 2 4 1 3 ...
+##  $ driveWheels     : Factor w/ 3 levels &amp;quot;4wd&amp;quot;,&amp;quot;fwd&amp;quot;,&amp;quot;rwd&amp;quot;: 3 3 3 3 2 3 3 3 3 2 ...
+##  $ engineLocation  : Factor w/ 2 levels &amp;quot;front&amp;quot;,&amp;quot;rear&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ wheelBase       : num  115.6 103.5 110 94.5 94.5 ...
+##  $ length          : num  203 189 191 169 165 ...
+##  $ width           : num  71.7 66.9 70.3 64 63.8 67.2 70.3 70.6 65.6 64.4 ...
+##  $ height          : num  56.5 55.7 58.7 52.6 54.5 56.2 54.9 47.8 53 50.8 ...
+##  $ curbWeight      : int  3740 3055 3750 2169 1918 2935 3495 3950 2975 1944 ...
+##  $ engineType      : Factor w/ 5 levels &amp;quot;dohc&amp;quot;,&amp;quot;l&amp;quot;,&amp;quot;ohc&amp;quot;,..: 5 3 3 3 3 3 3 5 3 3 ...
+##  $ engineSize      : int  234 164 183 98 97 141 183 326 146 92 ...
+##  $ bore            : num  3.46 3.31 3.58 3.19 3.15 3.78 3.58 3.54 3.62 2.97 ...
+##  $ stroke          : num  3.1 3.19 3.64 3.03 3.29 3.15 3.64 2.76 3.5 3.23 ...
+##  $ compressionRatio: num  8.3 9 21.5 9 9.4 9.5 21.5 11.5 9.3 9.4 ...
+##  $ horsepower      : int  155 121 123 70 69 114 123 262 116 68 ...
+##  $ peakRpm         : int  4750 4250 4350 4800 5200 5400 4350 5000 4800 5500 ...
+##  $ cityMpg         : int  16 20 22 29 31 24 22 13 24 31 ...
+##  $ highwayMpg      : int  18 25 25 34 37 28 25 17 30 38 ...
+##  $ price           : int  34184 24565 28248 8058 6649 15985 28176 36000 17669 6189 ...
+
+# take a quick look
+hist(imp.train$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(imp.test$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We will be predicting the price of imported automobiles in this example. While tree-based methods are scale-invariant with respect to predictor variables, this is not true for the response variable. Hence, let’s take a log-transformation on &lt;strong&gt;price&lt;/strong&gt; here.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;imp.train$price &amp;lt;- log(imp.train$price)
+imp.test$price &amp;lt;- log(imp.test$price)
+
+# take a look again
+hist(imp.train$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(imp.test$price)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_prep2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decision-tree-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Decision tree&lt;/h3&gt;
+&lt;p&gt;Done with the preparation, let’s begin with decision trees.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Construct decision tree model
+tree.mod &amp;lt;- tree(price ~ ., data = imp.train)
+
+# here&amp;#39;s how the model looks like
+plot(tree.mod)
+title(&amp;quot;Decision tree&amp;quot;)
+text(tree.mod, cex = 0.75)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s see if our decision tree requires pruning
+cv.prune &amp;lt;- cv.tree(tree.mod, FUN = prune.tree)
+plot(cv.prune$size, cv.prune$dev, pch = 20, col = &amp;quot;red&amp;quot;, type = &amp;quot;b&amp;quot;,
+     main = &amp;quot;Cross validation to find optimal size of tree&amp;quot;,
+     xlab = &amp;quot;Size of tree&amp;quot;, ylab = &amp;quot;Mean squared error&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# looks fine
+
+# now let&amp;#39;s make some predictions
+tree.pred &amp;lt;- predict(tree.mod,
+                     subset(imp.test,select = -price), 
+                     type = &amp;quot;vector&amp;quot;)
+
+# Comparing our predictions with the test data:
+plot(tree.pred, imp.test$price, main = &amp;quot;Decision tree: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1) # A prediction with zero error will lie on the y = x line&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_tree1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# What is the MSE of our model?
+print(tree.mse &amp;lt;- mean((tree.pred - imp.test$price) ** 2))
+## [1] 0.04716916&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our decision tree model predicts the price of imported automobiles with a mean squared error of 0.0472. As with the previous section, we will make comparsions on model performances later.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bagging-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bagging&lt;/h3&gt;
+&lt;p&gt;Next, bagging.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bg.mod&amp;lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = num.var - 1, # try all variables at each split, except the response variable
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+# here, the error is the mean squared error,
+# not classification error
+plot(bg.mod$mse, type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Bagging: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# variable importance
+varImpPlot(bg.mod,
+           main = &amp;quot;Bagging: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s make some predictions
+bg.pred &amp;lt;- predict(bg.mod,
+                   subset(imp.test,select = -price))
+
+# Comparing our predictions with test data:
+plot(bg.pred,imp.test$price, main = &amp;quot;Bagging: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_bagging1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE of bagged model
+print(bg.mse &amp;lt;- mean((bg.pred - imp.test$price) ** 2))
+## [1] 0.03004431&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our bagging model predicts the price of imported automobiles with a mean squared error of 0.03.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;random-forest-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Random forest&lt;/h3&gt;
+&lt;p&gt;Finally, the random forest model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rf.mod&amp;lt;-randomForest(price ~ ., data = imp.train,
+                     mtry = floor((num.var - 1) / 3), # 7; only difference from bagging is here
+                     ntree = 300,
+                     importance = TRUE)
+
+# Out-of-bag (OOB) error rate as a function of num. of trees
+plot(rf.mod$mse, type = &amp;quot;l&amp;quot;, lwd = 3, col = &amp;quot;blue&amp;quot;,
+     main = &amp;quot;Random forest: OOB estimate of error rate&amp;quot;,
+     xlab = &amp;quot;Number of Trees&amp;quot;, ylab = &amp;quot;OOB error rate&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# tuning the mtry hyperparameter:
+# model may be rebuilt if desired
+tuneRF(subset(imp.train, select = -price),
+       imp.train$price,
+       ntreetry = 100)
+## mtry = 7  OOB error = 0.02543962 
+## Searching left ...
+## mtry = 4     OOB error = 0.03064481 
+## -0.2046095 0.05 
+## Searching right ...
+## mtry = 14    OOB error = 0.02643948 
+## -0.03930348 0.05
+##    mtry   OOBError
+## 4     4 0.03064481
+## 7     7 0.02543962
+## 14   14 0.02643948
+title(&amp;quot;Random forest: Tuning the mtry hyperparameter&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+
+# variable importance
+varImpPlot(rf.mod,
+           main = &amp;quot;Random forest: Variable importance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# let&amp;#39;s make some predictions
+rf.pred &amp;lt;- predict(rf.mod,
+                   subset(imp.test, select = -price))
+
+# Comparing our predictions with test data:
+plot(rf.pred, imp.test$price, main = &amp;quot;Random forest: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_rf1-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE of RF model
+print(rf.mse &amp;lt;- mean((rf.pred - imp.test$price) ** 2))
+## [1] 0.03139744&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our random forest model incurs a mean squared error of 0.0314 for the prediction of imported automobile prices&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualization-of-performances-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualization of performances&lt;/h3&gt;
+&lt;p&gt;For comparison purposes, let’s also construct a ordinary least squares (linear regression) model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ols.mod &amp;lt;- lm(price ~ ., data = imp.train)
+
+# predictions
+ols.pred &amp;lt;- predict(ols.mod,
+                   subset(imp.test, select = -price))
+
+# comparisons with test data:
+plot(ols.pred, imp.test$price, main = &amp;quot;OLS: Actual vs. predicted&amp;quot;)
+abline(a = 0, b = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_ols1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# MSE
+print(ols.mse &amp;lt;- mean((ols.pred-imp.test$price) ** 2))
+## [1] 0.03556617&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let’s compare their performances.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Comparing MSEs of various models:
+barplot(c(tree.mse,
+          bg.mse,
+          rf.mse,
+          ols.mse),
+        main = &amp;quot;Mean squared errors of various models&amp;quot;,
+        names.arg = c(&amp;quot;Tree&amp;quot;, &amp;quot;Bagging&amp;quot;, &amp;quot;RF&amp;quot;, &amp;quot;OLS&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-07-20-random-forests-in-r_files/figure-html/r_viz1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Our top performer here is the random forest model, followed by the bagging model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

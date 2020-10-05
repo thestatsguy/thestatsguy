@@ -3,6 +3,14 @@ title: "About thestatsguy.rbind.io"
 date: ""
 ---
 
+## The stats guy's blogroll
+
+Some of the blogs that I frequent:
+
+* [R-bloggers](https://www.r-bloggers.com/): been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
+* [Musings on Markets](http://aswathdamodaran.blogspot.com/): blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.
+* [Gwern.net](https://www.gwern.net/index): Gwern Branwen's website. In-depth essays on psychology, statistics, and technology.
+
 ## About this blog
 
 This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – R, statistics, machine learning, investing, personal finance, analyzing financial data, and stoicism, while writing behind a pseudonym.
@@ -62,7 +70,7 @@ Over the years, my world view, and together with it, my focus and my interests h
 
 Nonetheless, some interests didn't change. I was and am still interested in financial markets and assets. I remember reading [The Quants](https://en.wikipedia.org/wiki/The_Quants) by Scott Patterson during 2010 and was intrigued by the idea of math wizards gaming the stock market, looking for signals and earning big money (albeit everything came crashing down). This was when the global financial crisis was still fresh in people's minds, but I was too young and ignorant to appreciate what a financial crisis was. This was also before I entered NUS. Fast forward to 2020, I still find the topic of financial markets alluring - though I must add that I probably would never want to formally get a job in this sector. Perhaps it's alluring only when I admire it from the outside.
 
-During my NUS days was when data science took the world by storm, and so during the early part of 2010s (2011 to 2016), I spend the most of those years understanding machine learning, data science, data analytics - through my B.Sc degree as well as later, honing my skills on the job as a data science consultant. For a year or so, I also briefly dabbled with product management (of data analytics products).  However, after a while, my focus shifted more to statistics and my M.Sc in 2017, after realising that half the time in ML, most people don't have the fundamentals to treat data in the right manner (like Kaggle). Throughout this time, R remained to be my language of choice for many tasks - my first contact with R was during an internship I did in 2012.
+During my NUS days was when data science took the world by storm, and so during the early part of 2010s (2011 to 2016), I spent the most of those years understanding machine learning, data science, data analytics - through my B.Sc degree as well as later, honing my skills on the job as a data science consultant. For a year or so, I also briefly dabbled with product management (of data analytics products).  However, after a while, my focus shifted more to statistics and my M.Sc in 2017, after realising that half the time in ML, most people don't have the fundamentals to treat data in the right manner (like Kaggle). Throughout this time, R remained to be my language of choice for many tasks - my first contact with R was during an internship I did in 2012.
 
 At the same time, as a young professional, my humble net worth started to grow, with salary coming in month after month. I started to spend time understanding investing as a retail investor, to "make my money work for me". Mid 2018 was the first time I shifted from simply reading and researching, to putting money to where my mind or mouth is. That's when I started writing more on investing as well - and now, also coming back to think more about the use of statistics in finance.
 

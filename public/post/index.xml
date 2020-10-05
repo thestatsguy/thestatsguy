@@ -2153,7 +2153,6 @@ OOB ε&lt;sub&gt;i&lt;/sub&gt; distributions from RF models on the same three da
 library(caret)
 ## Loading required package: lattice
 ## Loading required package: ggplot2
-## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3
 library(magrittr)
 library(ggplot2)
 
