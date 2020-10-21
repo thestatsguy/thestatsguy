@@ -20,9 +20,25 @@ footnotereturnlinkcontents = "↩"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
+    name = "ML & Stats"
+    url = "/categories/ml-stats/"
+    weight = 4
+[[menu.main]]
+    name = "Stats finance"
+    url = "/categories/stats-finance/"
+    weight = 5
+[[menu.main]]
+    name = "Finance & Investing"
+    url = "/categories/finance-investing/"
+    weight = 6
+[[menu.main]]
+    name = "Corporate rat race"
+    url = "/categories/corporate-rat-race/"
+    weight = 7
+[[menu.main]]
+    name = "Stoicism"
+    url = "/categories/stoicism/"
+    weight = 8
 [[menu.main]]
     name = "Tags"
     url = "/tags/"

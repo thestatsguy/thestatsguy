@@ -1,15 +1,10 @@
 ---
 title: "About thestatsguy.rbind.io"
 date: ""
+output:
+  blogdown::html_page:
+    toc: true
 ---
-
-## The stats guy's blogroll
-
-Some of the blogs that I frequent:
-
-* [R-bloggers](https://www.r-bloggers.com/): by Tal Galili. Been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
-* [Musings on Markets](http://aswathdamodaran.blogspot.com/): blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.
-* [Gwern.net](https://www.gwern.net/index): Gwern Branwen's website. In-depth essays on psychology, statistics, and technology.
 
 ## About this blog
 
@@ -34,6 +29,14 @@ I’m of course a Singaporean, living and working in Singapore, got my B.Sc and 
 By the way, neither of my B.Sc or M.Sc has anything remotely related to business, finance, or investments. Nor am I in any sorts of professional role that justifies me giving of any sorts of financial advice. That means you should take all my opinions as a pinch of salt and do your own research. I am, however, sufficiently trained in looking at numbers and cryptic computer languages (or at least, I dare to claim so), and my opinions are largely backed by some levels of analysis of available data.
 
 In any case, if you would like a chat, you can drop me a note at thestatsguy90[at]gmail[dot]com. If you are interested in the analyses I did or the code I wrote, you can drop by my [Github](https://github.com/thestatsguy).
+
+## The stats guy's blogroll
+
+Some of the blogs that I frequent:
+
+* [R-bloggers](https://www.r-bloggers.com/): by Tal Galili. Been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
+* [Musings on Markets](http://aswathdamodaran.blogspot.com/): blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.
+* [Gwern.net](https://www.gwern.net/index): Gwern Branwen's website. In-depth essays on psychology, statistics, and technology.
 
 ## [boring] Some history
 
