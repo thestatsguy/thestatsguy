@@ -4,7 +4,7 @@ author: ~
 date: '2016-12-31'
 slug: book-review-the-mckinsey-edge
 categories: ["Corporate rat race"]
-tags: []
+tags: ["Books"]
 ---
 
 The McKinsey Edge by Shu Hattori is a collection of "principles" that the author collected while he was at

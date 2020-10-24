@@ -4,7 +4,7 @@ author: ~
 date: '2017-02-13'
 slug: scientific-desktop-research-tentative-conclusions
 categories: ["Corporate rat race"]
-tags: []
+tags: ["Books"]
 ---
 
 Useful tip I got from "Extreme Productivity" by Robert Pozen, still reading.
