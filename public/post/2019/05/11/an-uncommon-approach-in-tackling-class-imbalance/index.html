@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An uncommon approach in tackling class imbalance | The Stats Guy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">An uncommon approach in tackling class imbalance</span></h2>
+
+<h3 class="categories">Category: [ML &amp; Stats]</h3>
+
+<h3>2019/05/11</h3>
+<h3>3min read</h3>
+</div>
+
+<main>
+<p><center>
+<img src="https://thestatsguyhome.files.wordpress.com/2019/05/f5126-1h01epkhncswjxdtyxzuq6g.jpeg" width="100%">
+</center></p>
+
+<!-- wp:paragraph {"align":"left"} -->
+
+<p><p class="has-text-align-left">In supervised learning, one challenged faced by data scientists is classification class imbalance, where in a binary classification problem, instances in one class severely outnumbers instances in the other. This poses a problem as model performances may be misleading: a naive example would be to always predict negative in a 10% positive-90% negative dataset - accuracy would then be 90%, but the model would be utterly useless.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>The typical approaches in alleviating class imbalance include using robust metrics such as the ROC-AUC, or performing downsampling of majority class or upsampling of minority class (e.g. <a href="https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis#SMOTE">SMOTE</a>). Of course, downsampling of majority class is often frowned upon as precious datapoints are being discarded.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>In many situations, these approaches work reasonably well. However, in contexts in which there is an inherent asymmetry between false positives and false negatives, these approaches are less than ideal. For example,</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:list -->
+
+<p><ul><li>In cyber security, the inability to detect an intrusion into networks (false negative) incurs a different cost as compared to a false alarm (false positive).</li><li>In human resources, the inability to detect impending attrition of a high-potential employee (false negative) incurs a different cost as compared to incorrectly detecting said attrition (false positive).</li><li>In a clinical setting, the inability to detect post-surgical complications (false negative) incurs a different cost as compared to incorrectly detecting a complication (false positive). </li></ul>
+<!-- /wp:list --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>In most practical contexts, false positives and negatives incur different waste and costs. In addition, given that a prediction error is going to occur, there is often a <strong>preferred </strong>outcome or error. For instance, a healthcare practitioner would likely rather to not miss out on a post-surgical complication, than save on manpower and resources with poor prognosis.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Assuming that is the case, a simple but less commonplace approach to tackling class imbalance is to design a utility function <em>U(m)</em> that captures the inherent asymmetry of prediction outcomes, and use <em>U(m) </em>as the loss function in the ML training process for model <em>m</em>. Such utility functions are often used in econometrics to capture choices and preferences. Following illustrates an instructive but naive example of <em>U(m)</em>:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:table -->
+
+<p><figure class="wp-block-table"><table><tbody><tr><td>
+  <strong>Prediction Outcome</strong>
+  </td><td>
+  <strong>Utility Score</strong>
+  </td></tr><tr><td>
+  True positive
+  </td><td>
+  1
+  </td></tr><tr><td>
+  True negative
+  </td><td>
+  1
+  </td></tr><tr><td>
+  False positive
+  </td><td>
+  -5
+  </td></tr><tr><td>
+  False negative
+  </td><td>
+  -50
+  </td></tr></tbody></table></figure>
+<!-- /wp:table --></p>
+
+<!-- wp:paragraph -->
+
+<p><p><em>U(m)</em> would then be:</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:preformatted -->
+
+<p><pre class="wp-block-preformatted">U(m) = TP(n<sub>1</sub>) + TN(n<sub>2</sub>) - 5FP(n<sub>3</sub>) - 50FN(n<sub>4</sub>)</pre>
+<!-- /wp:preformatted --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>where <em>n<sub>i </sub>&nbsp;</em>are the respective case counts of each prediction outcome. <em>U(m) </em>can then be used as the loss function in tuning individual ML models, heavily penalizing false negatives.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>The utility scores of each prediction outcome is a function of the expert judgement of clinicians and practitioners, in evaluating relative costs and tradeoffs between each outcome. They are also largely context-driven and should ideally differ between surgical complications, diseases, or even hospitals and departments. Finally, loss functions are general to supervised learning algorithms, i.e. <em>U(m)</em> can be experimented with and built into various ML models.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p>Of course, the challenge then, in using utility functions in machine learning, is in the design of the function - how to best to capture the inherent asymmetry and tradeoffs, and evaluate and summarize relative costs. This has to be done together with domain experts as they are the ones who can providing the expert opinion and judgement, in articulating the tradeoffs in utility. While network intrusion and employee attrition can be quantified in dollar value, the loss of a human life is definitely not so straightforward.</p>
+<!-- /wp:paragraph --></p>
+
+<!-- wp:paragraph -->
+
+<p><p></p>
+<!-- /wp:paragraph --></p>
+
+</main>
+
+  <footer>
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thestatsguy90" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165274801-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  
+  <hr/>
+  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  
+  </footer>
+  </body>
+</html>

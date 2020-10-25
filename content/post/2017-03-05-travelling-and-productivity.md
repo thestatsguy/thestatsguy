@@ -1,5 +1,5 @@
 ---
-title: "[short] Travelling and productivity"
+title: "Travelling and productivity"
 author: ~
 date: '2017-03-05'
 slug: travelling-and-productivity

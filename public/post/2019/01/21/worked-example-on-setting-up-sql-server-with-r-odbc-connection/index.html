@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Worked example on setting up SQL Server with R ODBC connection | The Stats Guy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">Worked example on setting up SQL Server with R ODBC connection</span></h2>
+
+<h3 class="categories">Category: [ML &amp; Stats]</h3>
+<h3 class="tags">Tag: [R]</h3>
+<h3>2019/01/21</h3>
+<h3>2min read</h3>
+</div>
+
+<main>
+
+
+
+<p>This is a worked example on how to set up SQL Server, SQL Server Management Studio, and a ODBC connection with R.</p>
+<p>Step 1: Install SQL Server from <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" class="uri">https://www.microsoft.com/en-us/sql-server/sql-server-downloads</a>. The SQL Server 2017 Express was good enough for me to run some analysis and modelling on my own. Once done, you should have a screen like this:</p>
+<center>
+<img src="https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture.PNG" width="100%">
+</center>
+<p>Step 2: Click on the “Install SSMS” button. SSMS stands for SQL Server Management Studio. Once done, connect to the server:</p>
+<center>
+<img src="https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/post/images/Capture3.PNG">
+</center>
+<p>Step 3: Create a database on the server. You may follow the steps given in this page as a quick start: <a href="https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017" class="uri">https://docs.microsoft.com/en-us/sql/ssms/tutorials/connect-query-sql-server?view=sql-server-2017</a>. If you do, you should have a database created named “TutorialDB” and a table named “Customers”.</p>
+<p>Step 4: Install and load the RODBC package in R.</p>
+<pre><code>#install.packages(&quot;RODBC&quot;)
+library(RODBC)</code></pre>
+<p>Step 5: Connect to the server and the database, and run a sample query.</p>
+<pre><code>conn &lt;- odbcDriverConnect(&#39;driver={SQL Server};server=SNG1049387\\SQLEXPRESS;database=TutorialDB;trusted_connection=true&#39;)
+customers &lt;- sqlQuery(conn, &#39;select * from dbo.Customers&#39;)
+str(customers)</code></pre>
+<pre><code># &#39;data.frame&#39;: 4 obs. of  4 variables:
+#  $ CustomerId: int  1 2 3 4
+#  $ Name      : Factor w/ 4 levels &quot;Donna&quot;,&quot;Janet&quot;,..: 4 3 1 2
+#  $ Location  : Factor w/ 4 levels &quot;Australia&quot;,&quot;Germany&quot;,..: 1 3 2 4
+#  $ Email     : Factor w/ 4 levels &quot;&quot;,&quot;donna0@adventure-works.com&quot;,..: 1 4 2 3</code></pre>
+<p>Step 6: Write an R data frame into your database.</p>
+<pre><code>df &lt;- read.csv(&quot;data/adult.csv&quot;)
+sqlSave(conn, df)</code></pre>
+<p>Step 7: Refresh the Database node in SMSS to verify if the data frame has been written into the database as a table.</p>
+<p>You are now ready to use SQL Server, SSMS, and R to run some analysis and modelling.</p>
+
+</main>
+
+  <footer>
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thestatsguy90" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165274801-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  
+  <hr/>
+  &copy; The Stats Guy 2020 | <a href="https://thestatsguy.netlify.app">Home</a> | <a href="https://github.com/thestatsguy">GitHub</a>
+  
+  </footer>
+  </body>
+</html>

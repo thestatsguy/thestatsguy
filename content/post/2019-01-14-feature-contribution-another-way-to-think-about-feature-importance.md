@@ -1,5 +1,5 @@
 ---
-title: "[short] Feature Contribution - another way to think about feature importance"
+title: "Feature Contribution - another way to think about feature importance"
 author: ~
 date: '2019-01-14'
 slug: feature-contribution-another-way-to-think-about-feature-importance

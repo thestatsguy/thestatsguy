@@ -1,5 +1,5 @@
 ---
-title: "[short] Taking a part-time Masters this year in 2017"
+title: "Taking a part-time Masters this year in 2017"
 author: ~
 date: '2017-01-30'
 slug: taking-a-part-time-masters-this-year-in-2017
