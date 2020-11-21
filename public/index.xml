@@ -6,10 +6,67 @@
     <description>Recent content on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What is a bank run?</title>
+      <link>/post/2020/11/21/what-is-a-bank-run/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/11/21/what-is-a-bank-run/</guid>
+      <description>&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/f8/Bank_Run_on_American_Union_Bank.jpeg&#34; width=&#34;100%&#34;&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;A bank run, or a run on the bank is a situation where businesses and/or ordinary folks like ourselves, lose confidence and trust in the banks where our deposits are held. In this case, we are the lenders, lending the banks our money, in return for safe keeping and interest rates.&lt;/p&gt;
+
+&lt;p&gt;If a significant number of us lose confidence in the banks that we deposit our cash in, we may all choose to withdraw our money from the banks, preferring to hold physical cash instead.&lt;/p&gt;
+
+&lt;p&gt;Now, in case you haven&amp;rsquo;t realize, banks these days do not actually hold most, if not all, the cash that have been deposited by depositors!&lt;/p&gt;
+
+&lt;p&gt;Most of these funds are invested in assets - and not all liquid in nature, like corporate debt or government/municipal bonds (think Singapore Government Securities). Some are highly illiquid, such as land, infrastructure or properties.&lt;/p&gt;
+
+&lt;p&gt;Therefore, when all of us decide to go to the banks to withdraw our cash, the banks may not be able to fulfil their end of the stick and return our money! When this happens, more people lose confidence, resulting in more withdrawals - a worsening feedback loop.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Technically&lt;/em&gt;, in order to reduce the probability of bank runs, &lt;a href=&#34;https://en.wikipedia.org/wiki/Basel_III&#34;&gt;Basel III&lt;/a&gt; was first purposed in 2010, just after the &lt;a href=&#34;https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008&#34;&gt;2007-2008 Global Financial Crisis&lt;/a&gt;. Under Basel III, banks are obligated to hold, at any point in time, sufficient high-quality liquid assets to cover total outflow (e.g. withdrawals, debt obligations) in any 30-day period. This is known as the &amp;ldquo;&lt;a href=&#34;https://www.investopedia.com/terms/l/liquidity-coverage-ratio.asp#:~:text=The%20liquidity%20coverage%20ratio%20is,its%20short%2Dterm%20financial%20obligations.&#34;&gt;Liquidity Coverage Ratio&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;In Singapore, like many other countries as well, we also have the &lt;a href=&#34;https://www.sdic.org.sg/&#34;&gt;SDIC&lt;/a&gt;, to allay any concerns related to withdrawals and bank insolvency:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the event a Deposit Insurance (DI) Scheme member bank or finance company fails, all of your insured deposits with that member are aggregated and insured up to S$75,000 by the Singapore Deposit Insurance Corporation Limited (SDIC). Insured deposits held in trust and client accounts held by non-bank depositors are insured up to S$75,000 per account.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;SDIC and similar schemes in other countries work to reduce the chance of a bank run.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A little bit of history: the first ever run on the bank happened in AD 33, in the Roman Empire - the first financial crisis in the history of man. There were numerous factors contributing to the bank run, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the sinking of ships filled with assets and treasures belonging to a prominent banking institute, and&lt;/li&gt;
+&lt;li&gt;the then Roman Emperor (Tiberius), who ordered, with good reason, all Roman Senators to have at least a third of their wealth to invested in the Italian land.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These and a multitude of reasons caused Roman citizens, businesses, and even the Senators to hurry to the banks and withdraw their deposits, which the banks were not able to fulfil. In the end, emperor Tiberius decided to inject cash into the Roman economy, in the form of a quantitative easing and resolved the first ever financial crisis in the history of man.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;It is interesting to note much of finance and economics work because of the confidence that people (as economic agents) have in financial systems and the economy. Stock prices are often many times that of earnings per share (even for companies that yet have to break even), credit and loan quantums are often many times that of any form of collateral (if any at all) or annual income. We often talk about abstract concepts like the &lt;a href=&#34;https://en.wikipedia.org/wiki/Consumer_confidence_index&#34;&gt;Consumer Confidence Index&lt;/a&gt; or &lt;a href=&#34;https://www.sec.gov/files/investor_confidence_noteOct2017.pdf&#34;&gt;investor confidence&lt;/a&gt;. We even use money (paper or otherwise) to make high-value transactions, with the confidence that the dollar bills&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Which-used-to-be&#34;&gt;&lt;a href=&#34;#fn:Which-used-to-be&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that we receive or the digital account balance displayed on our banking applications, well, mean anything at all. Increasing confidence amongst economic agents lead to more economic activities which leads to more confidence, while likewise for the opposite - a positive feedback loop. As such, governments often have to step up, at both ends of the spectrum, in order to ensure that some form of stability is achieved - through the use of policies (fiscal, monetary), regulations, supervision and enforcement.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:Which-used-to-be&#34;&gt;Which used to be backed by the &lt;a href=&#34;https://en.wikipedia.org/wiki/Gold_standard&#34;&gt;gold standard&lt;/a&gt; - confidence in the value of gold. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Which-used-to-be&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>What are your 50 books?</title>
