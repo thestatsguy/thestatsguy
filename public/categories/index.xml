@@ -6,10 +6,19 @@
     <description>Recent content in Categories on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Stoicism</title>
+      <link>/categories/stoicism/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/stoicism/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Finance &amp; Investing</title>
@@ -44,15 +53,6 @@
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/ml-stats/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stoicism</title>
-      <link>/categories/stoicism/</link>
-      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/stoicism/</guid>
       <description></description>
     </item>
     
