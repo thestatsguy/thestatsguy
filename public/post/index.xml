@@ -6,10 +6,180 @@
     <description>Recent content in Posts on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The intuition behind averaging</title>
+      <link>/post/2020/12/26/the-intuition-behind-averaging/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/12/26/the-intuition-behind-averaging/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Everyone knows what the average is. To find the average of the bunch of numbers, simply add them all up and then divide the total by the number of numbers there are. Calculating the average of a series of numbers has always been a straightforward way in which we summarize many numbers: “on average, I eat about 3 to 4 apples per week.” This calculating and reporting of the average summarizes a larger amount of information into a single summary - the mean itself.&lt;/p&gt;
+&lt;p&gt;Consider a series of say 9 numbers. Let’s call it &lt;code&gt;v&lt;/code&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;v &amp;lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+length(v)
+## [1] 9&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It makes sense to report the mean as a representative summary of a series of numbers.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(v)
+## [1] 5.777778&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Knowing the mean of something gives us some intuitive sense of the range of numbers that we are dealing with. For example, the mean definitely has to be within the series’ minimum (2) and maximum (10). With this, we also tend to associate the mean to be the “middle” of a series of numbers, whatever the “middle&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;” means.&lt;/p&gt;
+&lt;p&gt;In this post, I would like to illustrate a particular property of the mean that makes it a powerful single summary to describe a series of numbers, namely:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The mean minimizes the squared error.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At this point you may have some intuition on what’s about to follow, or it may not be immediately clear to you why this is important or what I am talking about. I will use a rather peculiar example to illustrate this property and its importance. Hopefully by the end of this example, it would be clearer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-peculiar-example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A peculiar example&lt;/h3&gt;
+&lt;p&gt;Consider the following diagram.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;images/2020-12-26-the-intuition-behind-averaging-01.png&#34; alt=&#34;A peculiar example&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;A peculiar example&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this diagram, there are a bunch of numbers and a single question mark. Behind the question, is also a number. The known numbers are the same as in our friend &lt;code&gt;v&lt;/code&gt; above.&lt;/p&gt;
+&lt;p&gt;Our task is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a guess on what that mystery number could be. And,&lt;/li&gt;
+&lt;li&gt;If we can’t get it right, then reduce, as much as possible, the error we incur on our guess.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that there is no special ordering or patterns in these numbers or their location in their circle. The only thing we know is that these numbers belong to a larger group of numbers, or that they all belong in a group with some other numbers unseen to us at the moment. (If it helps, you can think of them as being numbers relevant to something in real life, like the number of guppies that some fish owners have in their homes, out of all fish owners).&lt;/p&gt;
+&lt;p&gt;There are a few approaches to think about this strange and seemingly irrelevant problem:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Since 3 appeared twice, we should guess 3&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Since 3 appeared twice, we should not guess 3.&lt;/li&gt;
+&lt;li&gt;Since we have no other information, any guess is as good as any other. For example, guessing 1,000,000 is the same as guessing 3 or 8 or any other number.&lt;/li&gt;
+&lt;li&gt;Given that we know these numbers belong together in some fashion, while the actual number could be anything - what is a good guess that reduces our error?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Remember, the only things we know now are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;These numbers belong to a larger group of other numbers.&lt;/li&gt;
+&lt;li&gt;We want to minimize our error.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s consider each of these approaches.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Approach 1 - guess 3&lt;/strong&gt;: frequentist, could work well. Keeping to the guppy example, this assumes many fish owners keep 3 guppies, which, based on the information that we have, is an assumption. However, we can’t really use this as a rule for guessing since there’s no guarantee that duplicate numbers will always appear.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approach 2 - don’t guess 3&lt;/strong&gt;: this assumes that we incidentally picked 3 twice, and the odds of 3 appearing again is low&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Then, with this, what should we guess? Kind of stuck.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approach 3 - it doesn’t matter, guess any number&lt;/strong&gt;: this is useless as we can’t make any intelligent guess of any sorts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approach 4 - what can reduce our error?&lt;/strong&gt;: firstly, what does “belong to the same group” mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - i.e. we have no reason to think that it’s smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number. A reasonable intuition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum 2 and maximium 10.&lt;/p&gt;
+&lt;p&gt;What then, minimizes the error? Well we must first define the error.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;minimizing-our-error&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Minimizing our error&lt;/h3&gt;
+&lt;p&gt;We are looking for a guess that reduces our error to as low as possible, given what we got. In an intuitive sense, we can define error to look something like&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[error = actual - guess\]&lt;/span&gt;
+Fair? We define the error to be distance or difference between the actual value, and our guess. The small the error, the closer our guess is to the actual value, whatever it may be.&lt;/p&gt;
+&lt;div id=&#34;two-sides-of-the-error&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Two sides of the error&lt;/h4&gt;
+&lt;p&gt;Now consider our objective of minimizing the error. This means that we would like to have as low of an error as possible. Suppose we make two guesses: one incurred an error of &lt;span class=&#34;math inline&#34;&gt;\(4\)&lt;/span&gt;, while another incurred an error of &lt;span class=&#34;math inline&#34;&gt;\(-4\)&lt;/span&gt;. Numerically, &lt;span class=&#34;math inline&#34;&gt;\(-4\)&lt;/span&gt; is smaller than &lt;span class=&#34;math inline&#34;&gt;\(4\)&lt;/span&gt;, when in actual fact, both guesses and errors are equally far apart from the actual value. Therefore, to say that we would like “minimize” the error may not be as precise as we like. We would need a way of tweaking our error measurement so that if we try to minimize it, our approach does not favour an error of &lt;span class=&#34;math inline&#34;&gt;\(-10\)&lt;/span&gt; over an error of say &lt;span class=&#34;math inline&#34;&gt;\(2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Fortunately, there are simple ways to tweak our error measurement - here are two of them:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation}
+sq.error = error^2 = (actual - guess)^2  \\
+abs.error = |error| = |actual - guess|
+\end{equation}
+\]&lt;/span&gt;
+The first way is simply to take the square of the error i.e. the &lt;strong&gt;squared error&lt;/strong&gt;. Taking the square resolves the issue of the &lt;span class=&#34;math inline&#34;&gt;\(+\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-\)&lt;/span&gt; signs, in that &lt;span class=&#34;math inline&#34;&gt;\((-4)^2 = 4^2 = 16\)&lt;/span&gt;. We then try to minimize the squared error, since whatever that can minimize the squared error should also minimize the error&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;. Likewise, taking the absolute value of the error, i.e. the &lt;strong&gt;absolute error&lt;/strong&gt; also resolves the issue of directions, in that &lt;span class=&#34;math inline&#34;&gt;\(|-4| = |4| = 4\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;To continue in this example, I will go ahead and pick the first method of squaring the error, and then come back to explain the key differences&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt; between the 2 ways of modifying our error function.&lt;/p&gt;
+&lt;p&gt;Following? OK, let’s continue. Our next step is to find something that can minimize the squared error.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-minimizes-the-squared-error---a-simulation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What minimizes the squared error? - a simulation&lt;/h3&gt;
+&lt;p&gt;To get a sense of this, let’s use some numerical simulation to get some intuition. Let’s bring our friend &lt;code&gt;v&lt;/code&gt; back again.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;v &amp;lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+length(v)
+## [1] 9&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, &lt;code&gt;v&lt;/code&gt; contains all the numbers in the diagram above, in no particular order, other than question mark. A simple way to get some intuition here is simply to iteratively regard each of the 9 numbers in &lt;code&gt;v&lt;/code&gt; as missing (i.e. a question mark), and use the remaining 8 numbers to make a guess, then validate our guess with the actual value. Confusing? Let me explain again, step-by-step:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;v = (2, 6, 9, 4, 10, 3, 3, 7, 8)
+Step 1. Hide 2 and treat 2 as ?, use the rest of the numbers to guess, compare guess with actual value (2).
+Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
+Step 3. Hide 9 and treat 9 as ?, use the rest to guess, compare guess with actual (9).
+Step 4. ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By doing this, we get an interesting mechanic of iterating over different possibilities in order to learn something about our approach or objective of minimizing the squared error&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then for each step, let’s do many brute-force guesses, like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Step 1. Hide 2 and treat 2 as ?, use the rest to guess, compare guess with actual value (2).
+---&amp;gt;Step 1.1. Guess 1, compare guess (1) with actual value (2), calculate squared error
+---&amp;gt;Step 1.2. Guess 2, compare guess (2) with actual value (2), calculate squared error
+---&amp;gt;Step 1.3. Guess 3, compare guess (3) with actual value (2), calculate squared error
+    ...
+---&amp;gt;Step 1.10. Guess 10, compare guess (10) with actual value (2), calculate squared error
+
+Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
+---&amp;gt;Step 2.1. ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s give it a shot and see what happens.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(magrittr)
+library(dplyr)
+## Warning: package &amp;#39;dplyr&amp;#39; was built under R version 3.5.3
+## 
+## Attaching package: &amp;#39;dplyr&amp;#39;
+## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag
+## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union
+library(tidyr)
+## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.5.3
+## 
+## Attaching package: &amp;#39;tidyr&amp;#39;
+## The following object is masked from &amp;#39;package:magrittr&amp;#39;:
+## 
+##     extract
+set.seed(123)
+
+v &amp;lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+mean(v)
+## [1] 5.777778
+length(v)
+## [1] 9
+
+# leave-one-out, let&amp;#39;s guess from 1 to 10 - reasonable?
+# calculate error
+
+simulation_set &amp;lt;- data.frame(leave_out = numeric(0),
+                             guess = numeric(0),
+                             error = numeric(0))
+
+for(idx in seq_along(v)){
+  leave_out &amp;lt;- v[idx]
+  answer &amp;lt;- leave_out
+  
+  for(guess in 1:10){
+    
+    error &amp;lt;- guess - answer
+    simulation_set &amp;lt;- rbind(simulation_set, data.frame(leave_out = leave_out, guess = guess, error = error))
+  }
+}
+
+# calculate squared error
+simulation_set$sq_error &amp;lt;- simulation_set$error**2
+boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess), main = &amp;quot;Distribution of sq error for each guess (1 to 10)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-12-26-the-intuition-behind-averaging_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;code&gt;v&lt;/code&gt; for vector in R.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Otherwise known as &amp;quot;&lt;a href=&#34;https://en.wikipedia.org/wiki/Central_tendency&#34;&gt;central tendency&lt;/a&gt;&amp;quot; in statistics.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Sort of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Frequentist_inference&#34;&gt;frequentist&lt;/a&gt; thinking.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Kind of like &lt;a href=&#34;https://stattrek.com/statistics/dictionary.aspx?definition=sampling_without_replacement&#34;&gt;sampling without replacement&lt;/a&gt;.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Because on both &lt;span class=&#34;math inline&#34;&gt;\([0,\infty]\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\([-\infty,0]\)&lt;/span&gt; subdomains, the function &lt;span class=&#34;math inline&#34;&gt;\(f(x)=x^2\)&lt;/span&gt; is monotonic.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;In particular, you will see later that the mean minimizes the squared error, while the median minimizes the absolute error. Cool huh?&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;In machine learning, this is also known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation&#34;&gt;leave-one-out cross validation (LOOCV)&lt;/a&gt;. This and other types of model validation techniques is also one of the beautiful cornerstone in statistics - we observe what we have (data), and try to make do and make the best out of it. Just like life. Make do and make the best out of what you have, and you will lead a fruitful life.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Our happiness is within our control</title>
@@ -52,7 +222,7 @@ end, i.e. factors that we can control, to help ourselves achieve this happiness?
 &lt;hr /&gt;
 
 &lt;ol&gt;
-&lt;li id=&#34;fn:In-fact-he-was-r&#34;&gt;In fact, he was rather explicit in Meditations that the Stoic philosophy he practiced was to help him cope with the authority that he has as a Roman Emperor. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:In-fact-he-was-r&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:In-fact-he-was-r&#34;&gt;In fact, he was rather explicit in Meditations that the Stoic philosophy he practiced was to help him cope with the authority that he had as a Roman Emperor. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:In-fact-he-was-r&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

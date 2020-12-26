@@ -1,7 +1,7 @@
 ---
-title: "[wip] The intuition behind averaging"
+title: "The intuition behind averaging"
 #author: ""
-date: 2020-06-19
+date: 2020-12-26
 categories: ["ML & Stats"]
 #tags: ["R Markdown", "plot", "regression"]
 # output:
@@ -41,7 +41,7 @@ At this point you may have some intuition on what's about to follow, or it may n
 
 Consider the following diagram.
 
-<diagram>
+![A peculiar example](images/2020-12-26-the-intuition-behind-averaging-01.png)
 
 In this diagram, there are a bunch of numbers and a single question mark. Behind the question, is also a number. The known numbers are the same as in our friend `v` above.
 

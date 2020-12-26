@@ -1,0 +1,171 @@
+---
+title: "The intuition behind averaging"
+#author: ""
+date: 2020-12-26
+categories: ["ML & Stats"]
+#tags: ["R Markdown", "plot", "regression"]
+# output:
+#   blogdown::html_page:
+#     toc: true
+---
+
+
+
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>Everyone knows what the average is. To find the average of the bunch of numbers, simply add them all up and then divide the total by the number of numbers there are. Calculating the average of a series of numbers has always been a straightforward way in which we summarize many numbers: “on average, I eat about 3 to 4 apples per week.” This calculating and reporting of the average summarizes a larger amount of information into a single summary - the mean itself.</p>
+<p>Consider a series of say 9 numbers. Let’s call it <code>v</code><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<pre class="r"><code>v &lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+length(v)
+## [1] 9</code></pre>
+<p>It makes sense to report the mean as a representative summary of a series of numbers.</p>
+<pre class="r"><code>mean(v)
+## [1] 5.777778</code></pre>
+<p>Knowing the mean of something gives us some intuitive sense of the range of numbers that we are dealing with. For example, the mean definitely has to be within the series’ minimum (2) and maximum (10). With this, we also tend to associate the mean to be the “middle” of a series of numbers, whatever the “middle<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>” means.</p>
+<p>In this post, I would like to illustrate a particular property of the mean that makes it a powerful single summary to describe a series of numbers, namely:</p>
+<blockquote>
+<p>The mean minimizes the squared error.</p>
+</blockquote>
+<p>At this point you may have some intuition on what’s about to follow, or it may not be immediately clear to you why this is important or what I am talking about. I will use a rather peculiar example to illustrate this property and its importance. Hopefully by the end of this example, it would be clearer.</p>
+</div>
+<div id="a-peculiar-example" class="section level3">
+<h3>A peculiar example</h3>
+<p>Consider the following diagram.</p>
+<div class="figure">
+<img src="images/2020-12-26-the-intuition-behind-averaging-01.png" alt="A peculiar example" />
+<p class="caption">A peculiar example</p>
+</div>
+<p>In this diagram, there are a bunch of numbers and a single question mark. Behind the question, is also a number. The known numbers are the same as in our friend <code>v</code> above.</p>
+<p>Our task is as follows:</p>
+<ul>
+<li>Make a guess on what that mystery number could be. And,</li>
+<li>If we can’t get it right, then reduce, as much as possible, the error we incur on our guess.</li>
+</ul>
+<p>Note that there is no special ordering or patterns in these numbers or their location in their circle. The only thing we know is that these numbers belong to a larger group of numbers, or that they all belong in a group with some other numbers unseen to us at the moment. (If it helps, you can think of them as being numbers relevant to something in real life, like the number of guppies that some fish owners have in their homes, out of all fish owners).</p>
+<p>There are a few approaches to think about this strange and seemingly irrelevant problem:</p>
+<ol style="list-style-type: decimal">
+<li>Since 3 appeared twice, we should guess 3<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</li>
+<li>Since 3 appeared twice, we should not guess 3.</li>
+<li>Since we have no other information, any guess is as good as any other. For example, guessing 1,000,000 is the same as guessing 3 or 8 or any other number.</li>
+<li>Given that we know these numbers belong together in some fashion, while the actual number could be anything - what is a good guess that reduces our error?</li>
+</ol>
+<p>Remember, the only things we know now are as follows:</p>
+<ul>
+<li>These numbers belong to a larger group of other numbers.</li>
+<li>We want to minimize our error.</li>
+</ul>
+<p>Let’s consider each of these approaches.</p>
+<ul>
+<li><strong>Approach 1 - guess 3</strong>: frequentist, could work well. Keeping to the guppy example, this assumes many fish owners keep 3 guppies, which, based on the information that we have, is an assumption. However, we can’t really use this as a rule for guessing since there’s no guarantee that duplicate numbers will always appear.</li>
+<li><strong>Approach 2 - don’t guess 3</strong>: this assumes that we incidentally picked 3 twice, and the odds of 3 appearing again is low<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. Then, with this, what should we guess? Kind of stuck.</li>
+<li><strong>Approach 3 - it doesn’t matter, guess any number</strong>: this is useless as we can’t make any intelligent guess of any sorts.</li>
+<li><strong>Approach 4 - what can reduce our error?</strong>: firstly, what does “belong to the same group” mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - i.e. we have no reason to think that it’s smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number. A reasonable intuition.</li>
+</ul>
+<p>So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum 2 and maximium 10.</p>
+<p>What then, minimizes the error? Well we must first define the error.</p>
+</div>
+<div id="minimizing-our-error" class="section level3">
+<h3>Minimizing our error</h3>
+<p>We are looking for a guess that reduces our error to as low as possible, given what we got. In an intuitive sense, we can define error to look something like</p>
+<p><span class="math display">\[error = actual - guess\]</span>
+Fair? We define the error to be distance or difference between the actual value, and our guess. The small the error, the closer our guess is to the actual value, whatever it may be.</p>
+<div id="two-sides-of-the-error" class="section level4">
+<h4>Two sides of the error</h4>
+<p>Now consider our objective of minimizing the error. This means that we would like to have as low of an error as possible. Suppose we make two guesses: one incurred an error of <span class="math inline">\(4\)</span>, while another incurred an error of <span class="math inline">\(-4\)</span>. Numerically, <span class="math inline">\(-4\)</span> is smaller than <span class="math inline">\(4\)</span>, when in actual fact, both guesses and errors are equally far apart from the actual value. Therefore, to say that we would like “minimize” the error may not be as precise as we like. We would need a way of tweaking our error measurement so that if we try to minimize it, our approach does not favour an error of <span class="math inline">\(-10\)</span> over an error of say <span class="math inline">\(2\)</span>.</p>
+<p>Fortunately, there are simple ways to tweak our error measurement - here are two of them:</p>
+<p><span class="math display">\[
+\begin{equation}
+sq.error = error^2 = (actual - guess)^2  \\
+abs.error = |error| = |actual - guess|
+\end{equation}
+\]</span>
+The first way is simply to take the square of the error i.e. the <strong>squared error</strong>. Taking the square resolves the issue of the <span class="math inline">\(+\)</span> and <span class="math inline">\(-\)</span> signs, in that <span class="math inline">\((-4)^2 = 4^2 = 16\)</span>. We then try to minimize the squared error, since whatever that can minimize the squared error should also minimize the error<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>. Likewise, taking the absolute value of the error, i.e. the <strong>absolute error</strong> also resolves the issue of directions, in that <span class="math inline">\(|-4| = |4| = 4\)</span>.</p>
+<p>To continue in this example, I will go ahead and pick the first method of squaring the error, and then come back to explain the key differences<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> between the 2 ways of modifying our error function.</p>
+<p>Following? OK, let’s continue. Our next step is to find something that can minimize the squared error.</p>
+</div>
+</div>
+<div id="what-minimizes-the-squared-error---a-simulation" class="section level3">
+<h3>What minimizes the squared error? - a simulation</h3>
+<p>To get a sense of this, let’s use some numerical simulation to get some intuition. Let’s bring our friend <code>v</code> back again.</p>
+<pre class="r"><code>v &lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+length(v)
+## [1] 9</code></pre>
+<p>Here, <code>v</code> contains all the numbers in the diagram above, in no particular order, other than question mark. A simple way to get some intuition here is simply to iteratively regard each of the 9 numbers in <code>v</code> as missing (i.e. a question mark), and use the remaining 8 numbers to make a guess, then validate our guess with the actual value. Confusing? Let me explain again, step-by-step:</p>
+<pre><code>v = (2, 6, 9, 4, 10, 3, 3, 7, 8)
+Step 1. Hide 2 and treat 2 as ?, use the rest of the numbers to guess, compare guess with actual value (2).
+Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
+Step 3. Hide 9 and treat 9 as ?, use the rest to guess, compare guess with actual (9).
+Step 4. ...</code></pre>
+<p>By doing this, we get an interesting mechanic of iterating over different possibilities in order to learn something about our approach or objective of minimizing the squared error<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>.</p>
+<p>Then for each step, let’s do many brute-force guesses, like this:</p>
+<pre><code>Step 1. Hide 2 and treat 2 as ?, use the rest to guess, compare guess with actual value (2).
+---&gt;Step 1.1. Guess 1, compare guess (1) with actual value (2), calculate squared error
+---&gt;Step 1.2. Guess 2, compare guess (2) with actual value (2), calculate squared error
+---&gt;Step 1.3. Guess 3, compare guess (3) with actual value (2), calculate squared error
+    ...
+---&gt;Step 1.10. Guess 10, compare guess (10) with actual value (2), calculate squared error
+
+Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
+---&gt;Step 2.1. ...</code></pre>
+<p>Let’s give it a shot and see what happens.</p>
+<pre class="r"><code>library(magrittr)
+library(dplyr)
+## Warning: package &#39;dplyr&#39; was built under R version 3.5.3
+## 
+## Attaching package: &#39;dplyr&#39;
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+library(tidyr)
+## Warning: package &#39;tidyr&#39; was built under R version 3.5.3
+## 
+## Attaching package: &#39;tidyr&#39;
+## The following object is masked from &#39;package:magrittr&#39;:
+## 
+##     extract
+set.seed(123)
+
+v &lt;- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+mean(v)
+## [1] 5.777778
+length(v)
+## [1] 9
+
+# leave-one-out, let&#39;s guess from 1 to 10 - reasonable?
+# calculate error
+
+simulation_set &lt;- data.frame(leave_out = numeric(0),
+                             guess = numeric(0),
+                             error = numeric(0))
+
+for(idx in seq_along(v)){
+  leave_out &lt;- v[idx]
+  answer &lt;- leave_out
+  
+  for(guess in 1:10){
+    
+    error &lt;- guess - answer
+    simulation_set &lt;- rbind(simulation_set, data.frame(leave_out = leave_out, guess = guess, error = error))
+  }
+}
+
+# calculate squared error
+simulation_set$sq_error &lt;- simulation_set$error**2
+boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess), main = &quot;Distribution of sq error for each guess (1 to 10)&quot;)</code></pre>
+<p><img src="/post/2020-12-26-the-intuition-behind-averaging_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><code>v</code> for vector in R.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Otherwise known as &quot;<a href="https://en.wikipedia.org/wiki/Central_tendency">central tendency</a>&quot; in statistics.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Sort of a <a href="https://en.wikipedia.org/wiki/Frequentist_inference">frequentist</a> thinking.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Kind of like <a href="https://stattrek.com/statistics/dictionary.aspx?definition=sampling_without_replacement">sampling without replacement</a>.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Because on both <span class="math inline">\([0,\infty]\)</span> and <span class="math inline">\([-\infty,0]\)</span> subdomains, the function <span class="math inline">\(f(x)=x^2\)</span> is monotonic.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>In particular, you will see later that the mean minimizes the squared error, while the median minimizes the absolute error. Cool huh?<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>In machine learning, this is also known as <a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation">leave-one-out cross validation (LOOCV)</a>. This and other types of model validation techniques is also one of the beautiful cornerstone in statistics - we observe what we have (data), and try to make do and make the best out of it. Just like life. Make do and make the best out of what you have, and you will lead a fruitful life.<a href="#fnref7" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

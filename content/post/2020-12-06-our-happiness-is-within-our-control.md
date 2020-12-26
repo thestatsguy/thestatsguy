@@ -30,7 +30,7 @@ On the other hand, Stoic teachings tell us to solely focus on factors that we ca
 
 And this is what Marcus Aurelius was trying to say to himself: "our will rules its own domain", actions by others does not harm us - our happiness rest with ourselves, not others.
 
-In other words, it is our minds, thoughts, and actions that bring us happiness, and nothing else. This should be a liberating idea, to say the least. We do not need the right spouse or the right career or the right house or the right "fill in the blank" to be happy. Marcus Aurelius himself was a Roman Emperor (and one of the better ones at his job) and ruled over Rome for close to two decades - yet he attributes none of his authority and wealth to the peace and happiness he enjoyed^[In fact, he was rather explicit in Meditations that the Stoic philosophy he practiced was to help him cope with the authority that he has as a Roman Emperor.].
+In other words, it is our minds, thoughts, and actions that bring us happiness, and nothing else. This should be a liberating idea, to say the least. We do not need the right spouse or the right career or the right house or the right "fill in the blank" to be happy. Marcus Aurelius himself was a Roman Emperor (and one of the better ones at his job) and ruled over Rome for close to two decades - yet he attributes none of his authority and wealth to the peace and happiness he enjoyed^[In fact, he was rather explicit in Meditations that the Stoic philosophy he practiced was to help him cope with the authority that he had as a Roman Emperor.].
 
 Our happiness is within our control. The question then is - what we can do on our
 end, i.e. factors that we can control, to help ourselves achieve this happiness?
