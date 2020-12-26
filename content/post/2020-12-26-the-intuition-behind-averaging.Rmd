@@ -37,6 +37,8 @@ In this post, I would like to illustrate a particular property of the mean that 
 
 At this point you may have some intuition on what's about to follow, or it may not be immediately clear to you why this is important or what I am talking about. I will use a rather peculiar example to illustrate this property and its importance. Hopefully by the end of this example, it would be clearer.
 
+As you read along, if you find this post a bit more abstract than my usual ones -  my apologies!
+
 ### A peculiar example
 
 Consider the following diagram.
@@ -209,3 +211,9 @@ Here, we see that the mean does indeed minimize the squared error. What we have 
 Recall that we sort of have arbitarily chosen the squared error to be minimized, instead of the absolute error? Well if we have chosen the absolute error and conducted a similar simulation, we would have found that the [median minimizes the absolute error](https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-ell-1-norm). However, the squared error and the mean are much easier to work with, because the differentiability properties of the absolute and squared error - very very loosely speaking, the absolute error isn't differentiable while the squared error is^[Specifically, the $L_1$ norm is not differentiable with respect to a coordinate where that coordinate is zero. Elsewhere, the partial derivatives are just constants, $±1$ depending on the quadrant. On the other hand, the $L_2$ norm is usually used as the $L_2$ norm squared so that it's differentiable even at zero. The gradient of $||x||_2^2$ is $2x$, but without the square it's $\frac{x}{||x||}$ (i.e. it just points away from zero). The problem is that it's not differentiable at zero. See [here](https://math.stackexchange.com/questions/391001/taking-derivative-of-l-0-norm-l-1-norm-l-2-norm).]. This has implications in linear regression modelling, which we can cover in a future post.
 
 Finally, the purpose of using the average to represent a group of numbers is so that we can remain basically as close to the numbers within that group as possible, while taking into account all at once the numbers in that group.
+
+<center>
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-12-26-the-intuition-behind-averaging-02.PNG" width="40%">
+</center>
+
+This also means that in our initial problem of guessing what's the number behind the question mark, the best guess that can be used to minimize our error would be use all the known numbers in the circle, calculate the mean, and use that as our guess.

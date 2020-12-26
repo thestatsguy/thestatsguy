@@ -36,6 +36,7 @@ length(v)
 &lt;p&gt;The mean minimizes the squared error.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;At this point you may have some intuition on what’s about to follow, or it may not be immediately clear to you why this is important or what I am talking about. I will use a rather peculiar example to illustrate this property and its importance. Hopefully by the end of this example, it would be clearer.&lt;/p&gt;
+&lt;p&gt;As you read along, if you find this post a bit more abstract than my usual ones - my apologies!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;a-peculiar-example&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;A peculiar example&lt;/h3&gt;
@@ -178,6 +179,10 @@ boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess),
 &lt;h3&gt;Extensions and implications&lt;/h3&gt;
 &lt;p&gt;Recall that we sort of have arbitarily chosen the squared error to be minimized, instead of the absolute error? Well if we have chosen the absolute error and conducted a similar simulation, we would have found that the &lt;a href=&#34;https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-ell-1-norm&#34;&gt;median minimizes the absolute error&lt;/a&gt;. However, the squared error and the mean are much easier to work with, because the differentiability properties of the absolute and squared error - very very loosely speaking, the absolute error isn’t differentiable while the squared error is&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;. This has implications in linear regression modelling, which we can cover in a future post.&lt;/p&gt;
 &lt;p&gt;Finally, the purpose of using the average to represent a group of numbers is so that we can remain basically as close to the numbers within that group as possible, while taking into account all at once the numbers in that group.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src= &#34;https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-12-26-the-intuition-behind-averaging-02.PNG&#34; width=&#34;40%&#34;&gt;
+&lt;/center&gt;
+&lt;p&gt;This also means that in our initial problem of guessing what’s the number behind the question mark, the best guess that can be used to minimize our error would be use all the known numbers in the circle, calculate the mean, and use that as our guess.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
