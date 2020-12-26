@@ -20,7 +20,7 @@ Everyone knows what the average is. To find the average of the bunch of numbers,
 Consider a series of say 9 numbers. Let's call it `v`^[`v` for vector in R.].
 
 ```{r}
-v <- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+v <- c(2, 6, 9, 1, 10, 3, 3, 7, 8)
 length(v)
 
 ```
@@ -41,7 +41,9 @@ At this point you may have some intuition on what's about to follow, or it may n
 
 Consider the following diagram.
 
-![A peculiar example](images/2020-12-26-the-intuition-behind-averaging-01.png)
+<center>
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/2020-12-26-the-intuition-behind-averaging-01.PNG" width="40%">
+</center>
 
 In this diagram, there are a bunch of numbers and a single question mark. Behind the question, is also a number. The known numbers are the same as in our friend `v` above.
 
@@ -50,7 +52,7 @@ Our task is as follows:
 * Make a guess on what that mystery number could be. And,
 * If we can't get it right, then reduce, as much as possible, the error we incur on our guess.
 
-Note that there is no special ordering or patterns in these numbers or their location in their circle. The only thing we know is that these numbers belong to a larger group of numbers, or that they all belong in a group with some other numbers unseen to us at the moment. (If it helps, you can think of them as being numbers relevant to something in real life, like the number of guppies that some fish owners have in their homes, out of all fish owners).
+Note that there is no special ordering or patterns in these numbers or their location in their circle. The only thing we know is that these numbers belong to a larger group of numbers, or that they all belong in a group with some other numbers unseen to us at the moment. (If it helps, you can think of them as being numbers relevant to something in real life, like the number of goldfishes that some fish owners have in their homes, out of all fish owners).
 
 There are a few approaches to think about this strange and seemingly irrelevant problem:
 
@@ -66,10 +68,10 @@ Remember, the only things we know now are as follows:
 
 Let's consider each of these approaches.
 
-* __Approach 1 - guess 3__: frequentist, could work well. Keeping to the guppy example, this assumes many fish owners keep 3 guppies, which, based on the information that we have, is an assumption. However, we can't really use this as a rule for guessing since there's no guarantee that duplicate numbers will always appear.
+* __Approach 1 - guess 3__: frequentist, could work well. Keeping to the goldfish example, this assumes many fish owners keep 3 goldfishes, which, based on the information that we have, is an assumption. However, we can't really use this as a rule for guessing since there's no guarantee that duplicate numbers will always appear.
 * __Approach 2 - don't guess 3__: this assumes that we incidentally picked 3 twice, and the odds of 3 appearing again is low^[Kind of like [sampling without replacement](https://stattrek.com/statistics/dictionary.aspx?definition=sampling_without_replacement).]. Then, with this, what should we guess? Kind of stuck. 
 * __Approach 3 - it doesn't matter, guess any number__: this is useless as we can't make any intelligent guess of any sorts.
-* __Approach 4 - what can reduce our error?__: firstly, what does "belong to the same group" mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - i.e. we have no reason to think that it's smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number. A reasonable intuition.
+* __Approach 4 - what can reduce our error?__: firstly, what does "belong to the same group" mean? The most intuitive way of extrapolating from that is that we can at least guess that the mystery number should be close to the other numbers of the circle - __i.e. we have no reason to think that it's smaller than the smallest number, or larger than the largest number, and have some intuition to guess that the mystery number is somewhere within the smallest and the largest number.__ A reasonable intuition.
 
 So far so good? It seems like approaches 1 to 3 are not so helpful, and reducing error is our lead forward. At the least, approach 4 gives us some probable region of interest to guess, namely somewhere between the minimum `r min(v)` and maximium `r max(v)`.
 
@@ -105,48 +107,45 @@ Following? OK, let's continue. Our next step is to find something that can minim
 To get a sense of this, let's use some numerical simulation to get some intuition. Let's bring our friend `v` back again.
 
 ```{r}
-v <- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+v <- c(2, 6, 9, 1, 10, 3, 3, 7, 8)
 length(v)
 
 ```
 Here, `v` contains all the numbers in the diagram above, in no particular order, other than question mark. A simple way to get some intuition here is simply to iteratively regard each of the `r length(v)` numbers in `v` as missing (i.e. a question mark), and use the remaining `r length(v)-1` numbers to make a guess, then validate our guess with the actual value. Confusing? Let me explain again, step-by-step:
 
 ```
-v = (2, 6, 9, 4, 10, 3, 3, 7, 8)
-Step 1. Hide 2 and treat 2 as ?, use the rest of the numbers to guess, compare guess with actual value (2).
-Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
-Step 3. Hide 9 and treat 9 as ?, use the rest to guess, compare guess with actual (9).
-Step 4. ...
+v = (2, 6, 9, 1, 10, 3, 3, 7, 8)
+1. Hide 2 and treat 2 as ?, use the rest of the numbers to guess, compare guess with actual value (2).
+2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
+3. Hide 9 and treat 9 as ?, use the rest to guess, compare guess with actual (9).
+4. ...
 ```
 By doing this, we get an interesting mechanic of iterating over different possibilities in order to learn something about our approach or objective of minimizing the squared error^[In machine learning, this is also known as [leave-one-out cross validation (LOOCV)](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation). This and other types of model validation techniques is also one of the beautiful cornerstone in statistics - we observe what we have (data), and try to make do and make the best out of it. Just like life. Make do and make the best out of what you have, and you will lead a fruitful life.].
 
 Then for each step, let's do many brute-force guesses, like this:
 
 ```
-Step 1. Hide 2 and treat 2 as ?, use the rest to guess, compare guess with actual value (2).
---->Step 1.1. Guess 1, compare guess (1) with actual value (2), calculate squared error
---->Step 1.2. Guess 2, compare guess (2) with actual value (2), calculate squared error
---->Step 1.3. Guess 3, compare guess (3) with actual value (2), calculate squared error
-    ...
---->Step 1.10. Guess 10, compare guess (10) with actual value (2), calculate squared error
+1. Hide 2 and treat 2 as ?, use the rest to guess, compare guess with actual value (2).
+1.1. Guess 1, compare guess (1) with actual value (2), calculate squared error
+1.2. Guess 2, compare guess (2) with actual value (2), calculate squared error
+1.3. Guess 3, compare guess (3) with actual value (2), calculate squared error
+...
+1.10. Guess 10, compare guess (10) with actual value (2), calculate squared error
 
 Step 2. Hide 6 and treat 6 as ?, use the rest to guess, compare guess with actual (6).
 --->Step 2.1. ...
 ```
 
+If it's a little confusing, feel free to take a quick minute to think this through.
+
 Let's give it a shot and see what happens.
 
 ```{r}
-library(magrittr)
-library(dplyr)
-library(tidyr)
-set.seed(123)
-
-v <- c(2, 6, 9, 4, 10, 3, 3, 7, 8)
+v <- c(2, 6, 9, 1, 10, 3, 3, 7, 8)
 mean(v)
 length(v)
 
-# leave-one-out, let's guess from 1 to 10 - reasonable?
+# leave-one-out, let's guess from 1 to 10?
 # calculate error
 
 simulation_set <- data.frame(leave_out = numeric(0),
@@ -169,3 +168,44 @@ simulation_set$sq_error <- simulation_set$error**2
 boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess), main = "Distribution of sq error for each guess (1 to 10)")
 
 ```
+
+The plot above shows the distribution of squared error, as we use `r min(v)` to `r max(v)` as guesses^[In case you are not familiar with boxplots, which is what's in the plot, [here](https://blog.exploratory.io/introduction-to-boxplot-chart-in-exploratory-255c316a01ca)'s a good introduction.]. Notice the U-shaped pattern here, where the error dips into the middle of the range, from `r min(v)` to `r max(v)`.
+
+Now we can get some sense of what may reduce or minimize our error in our initial problem - we would probably do well if we try to guess a number that is somewhere in the middle.
+
+Alas, if we were to use the mean of our vector `v`, that is `r mean(v)`, here's what it will look like:
+
+```{r}
+v <- c(2, 6, 9, 1, 10, 3, 3, 7, 8)
+
+simulation_set <- data.frame(leave_out = numeric(0),
+                             guess = numeric(0),
+                             error = numeric(0))
+
+for(idx in seq_along(v)){
+  leave_out <- v[idx]
+  answer <- leave_out
+  
+  for(guess in c(1:10, mean(v))){ # including mean(v) here
+    
+    error <- guess - answer
+    simulation_set <- rbind(simulation_set, data.frame(leave_out = leave_out, guess = guess, error = error))
+  }
+}
+
+# calculate squared error
+simulation_set$sq_error <- simulation_set$error**2
+boxplot(simulation_set$sq_error ~ as.factor(simulation_set$guess),
+        main = "Distribution of sq error for each guess (1 to 10), with the mean",
+        names = c("1", "2", "3", "4", "5", "mean(v)", "6", "7", "8", "9", "10"),
+        las = 2)
+
+```
+
+Here, we see that the mean does indeed minimize the squared error. What we have done so far is to replicate and show this property using simulation and brute force - the more elegant way would be to give prove the property mathematically, like in [here](https://math.stackexchange.com/questions/2554243/understanding-the-mean-minimizes-the-mean-squared-error).
+
+### Extensions and implications
+
+Recall that we sort of have arbitarily chosen the squared error to be minimized, instead of the absolute error? Well if we have chosen the absolute error and conducted a similar simulation, we would have found that the [median minimizes the absolute error](https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-ell-1-norm). However, the squared error and the mean are much easier to work with, because the differentiability properties of the absolute and squared error - very very loosely speaking, the absolute error isn't differentiable while the squared error is^[Specifically, the $L_1$ norm is not differentiable with respect to a coordinate where that coordinate is zero. Elsewhere, the partial derivatives are just constants, $±1$ depending on the quadrant. On the other hand, the $L_2$ norm is usually used as the $L_2$ norm squared so that it's differentiable even at zero. The gradient of $||x||_2^2$ is $2x$, but without the square it's $\frac{x}{||x||}$ (i.e. it just points away from zero). The problem is that it's not differentiable at zero. See [here](https://math.stackexchange.com/questions/391001/taking-derivative-of-l-0-norm-l-1-norm-l-2-norm).]. This has implications in linear regression modelling, which we can cover in a future post.
+
+Finally, the purpose of using the average to represent a group of numbers is so that we can remain basically as close to the numbers within that group as possible, while taking into account all at once the numbers in that group.
