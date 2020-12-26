@@ -19,6 +19,15 @@
       <guid>/post/2020/12/26/the-intuition-behind-averaging/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#a-peculiar-example&#34;&gt;A peculiar example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#minimizing-our-error&#34;&gt;Minimizing our error&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-minimizes-the-squared-error---a-simulation&#34;&gt;What minimizes the squared error? - a simulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#extensions-and-implications&#34;&gt;Extensions and implications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
 &lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Introduction&lt;/h3&gt;
