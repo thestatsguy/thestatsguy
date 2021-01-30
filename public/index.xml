@@ -6,10 +6,30 @@
     <description>Recent content on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On punctuality</title>
+      <link>/post/2021/01/30/on-punctuality/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/01/30/on-punctuality/</guid>
+      <description>&lt;p&gt;Don&amp;rsquo;t be late. Always be early or punctual. Being on time for appointments is a basic form of respect for others and for others&amp;rsquo; time. It shows you regard the others as important people in your life - important enough for you to properly plan your time.&lt;/p&gt;
+
+&lt;p&gt;The most common reason I hear to justify lateness is this: since others will be late, I should not waste my time to be early or punctual, and then wait for others to arrive. Instead, I should be late as well. A tit for a tat.&lt;/p&gt;
+
+&lt;p&gt;First and foremost, two wrongs don&amp;rsquo;t make a right. Just because others are late, does not give us a free pass to be late; just because others disrespect our time, does not give us a free pass to disrespect theirs. Our principles for punctuality and respect hold true always - regardless of others&amp;rsquo; lateness and disrespect.&lt;/p&gt;
+
+&lt;p&gt;Often accompanied with this tit-for-tat reason for lateness, are frustration, irritation, possibly even anger. Remind yourself on &lt;a href=&#34;https://thestatsguy.rbind.io/post/2020/12/06/our-happiness-is-within-our-control/&#34;&gt;the separation between what is controllable and what is not&lt;/a&gt;. The actions of others are not within our control. And so, as much as possible, we should not let something not within our control to affect our emotions.&lt;/p&gt;
+
+&lt;p&gt;Tit-for-tat is also the worst scenario in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Prisoner%27s_dilemma&#34;&gt;Prisoner&amp;rsquo;s Dilemma&lt;/a&gt; - a lose-lose for everyone. We can instead choose to bring everyone out of a lose-lose situation, by first being punctual consistently - an action that is definitely within our control. By showing everyone that we are willing to be punctual consistently, we are offering a gesture of goodwill. Again, whether others will return the gesture is beyond our control. But, at the very least, we know that we have tried our best.&lt;/p&gt;
+
+&lt;p&gt;Finally, if we have no choice but to be late, because of a traffic jam, a train breakdown, or a last minute meeting by your boss or customer, then we should have the courtesy to inform others as early as possible, and give an estimation of when we can arrive. This is again a basic form of respect, and especially practicable with the help of smartphones today. The traffic jam is not within our control, but a short WhatsApp message is, surely, within our control.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>On setting goals</title>
@@ -5152,17 +5172,7 @@ barplot(c(tree.mse,
 
 &lt;p&gt;In any case, if you would like a chat, you can drop me a note at thestatsguy90[at]gmail[dot]com. If you are interested in the analyses I did or the code I wrote, you can drop by my &lt;a href=&#34;https://github.com/thestatsguy&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-stats-guy-s-blogroll&#34;&gt;The stats guy&amp;rsquo;s blogroll&lt;/h2&gt;
-
-&lt;p&gt;Some of the blogs that I frequent:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt;: by Tal Galili. Been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://aswathdamodaran.blogspot.com/&#34;&gt;Musings on Markets&lt;/a&gt;: blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gwern.net/index&#34;&gt;Gwern.net&lt;/a&gt;: Gwern Branwen&amp;rsquo;s website. In-depth essays on psychology, statistics, and technology.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;boring-some-history&#34;&gt;[boring] Some history&lt;/h2&gt;
+&lt;h2 id=&#34;some-history-boring&#34;&gt;Some history (boring)&lt;/h2&gt;
 
 &lt;p&gt;This blog you are looking at right now (mid 2020) is the result of years of trying to settle down on a platform and write content. Ever since I joined the workforce in July 2015, I have always wanted to have a consolidated place to write, consistently and painlessly. If you scrutinise a little on the post dates, it&amp;rsquo;s quite obvious there are bouts of time over the years where I was able to diligently write, piece after piece, idea after idea. At the start it was just short writings (~2-3 mins of slow reading) with sporadic ideas, and over time the pieces became longer and (hopefully) more in-depth and interesting. In addition, what I paid attention to has changed over time as well.&lt;/p&gt;
 
@@ -5195,7 +5205,7 @@ barplot(c(tree.mse,
 
 &lt;p&gt;Now, with thestatsguy.rbind.io technically being my 6th attempt, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:However-I-still&#34;&gt;&lt;a href=&#34;#fn:However-I-still&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;even-more-boring-my-focus-for-the-past-10-years-2010-to-2020&#34;&gt;[even more boring] My focus for the past 10 years - 2010 to 2020&lt;/h3&gt;
+&lt;h3 id=&#34;my-focus-for-the-past-10-years-2010-to-2020&#34;&gt;My focus for the past 10 years - 2010 to 2020&lt;/h3&gt;
 
 &lt;p&gt;Over the years, my world view, and together with it, my focus and my interests have changed. For example, I used to think that climbing the corporate ladder is a lofty goal that is worthy of my time and energy. I spent time understanding and strategizing about my work, my work environment and my colleagues at a deeper level, so that I can get more done with less time and then use that productivity to value-add and increase my chances of promotion. These days, I think less of these things. I try to focus more on myself, my family, my development as an individual. Moreover, with life events unfolding one after another in the mid 2010s, Stoicism has been critical in helping me reflect on and dissect these events, and in the process, learn more about myself and the human mind&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:The-most-importa&#34;&gt;&lt;a href=&#34;#fn:The-most-importa&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 

@@ -30,15 +30,7 @@ By the way, neither of my B.Sc or M.Sc has anything remotely related to business
 
 In any case, if you would like a chat, you can drop me a note at thestatsguy90[at]gmail[dot]com. If you are interested in the analyses I did or the code I wrote, you can drop by my [Github](https://github.com/thestatsguy).
 
-## The stats guy's blogroll
-
-Some of the blogs that I frequent:
-
-* [R-bloggers](https://www.r-bloggers.com/): by Tal Galili. Been reading this for years now and content is still as good if not better. R news, tutorials, statistics, and more.
-* [Musings on Markets](http://aswathdamodaran.blogspot.com/): blog by Prof Aswath Damodaran, Professor of Finance at NYU. Deep and insightful writing about finance and financial markets.
-* [Gwern.net](https://www.gwern.net/index): Gwern Branwen's website. In-depth essays on psychology, statistics, and technology.
-
-## [boring] Some history
+## Some history (boring)
 
 This blog you are looking at right now (mid 2020) is the result of years of trying to settle down on a platform and write content. Ever since I joined the workforce in July 2015, I have always wanted to have a consolidated place to write, consistently and painlessly. If you scrutinise a little on the post dates, it's quite obvious there are bouts of time over the years where I was able to diligently write, piece after piece, idea after idea. At the start it was just short writings (~2-3 mins of slow reading) with sporadic ideas, and over time the pieces became longer and (hopefully) more in-depth and interesting. In addition, what I paid attention to has changed over time as well.
 
@@ -67,7 +59,7 @@ Before this, I have tried various platforms:
 
 Now, with thestatsguy.rbind.io technically being my 6th attempt, I am finally satisfied! With that, I also spent some time migrating some of my old writings onto here^[However, I still reference static links of images like [this one](https://thestatsguyhome.files.wordpress.com/2018/12/SSB.jpg) (look at the URL) in my WordPress blog from thestatsguy.rbind.io - something that I have been procrastinating to migrate and fix since it's going to be a boring and time-consuming task. I may never bother to fix this.].
 
-### [even more boring] My focus for the past 10 years - 2010 to 2020
+### My focus for the past 10 years - 2010 to 2020
 
 Over the years, my world view, and together with it, my focus and my interests have changed. For example, I used to think that climbing the corporate ladder is a lofty goal that is worthy of my time and energy. I spent time understanding and strategizing about my work, my work environment and my colleagues at a deeper level, so that I can get more done with less time and then use that productivity to value-add and increase my chances of promotion. These days, I think less of these things. I try to focus more on myself, my family, my development as an individual. Moreover, with life events unfolding one after another in the mid 2010s, Stoicism has been critical in helping me reflect on and dissect these events, and in the process, learn more about myself and the human mind^[The most important lesson or mental model that I learnt from Stoicism is probably the idea of clearly differentiating what that is within my control, and what that is not. “The chief task in life is simply this: to identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control. Where then do I look for good and evil? Not to uncontrollable externals, but within myself to the choices that are my own...” - [Epictetus](https://dailystoic.com/Epictetus/)].
 
