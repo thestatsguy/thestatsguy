@@ -4,7 +4,7 @@ date: 2021-02-21
 categories: ["On Life"]
 ---
 
-A former boss of mine had once told me "the truth is always in the middle". He meant that as a rule of thumb to life's many problems, if not all. Whenever there are two or more competing options to choose from, the best one is likely the one in the middle - the middleground, so to speak. This middleground balances the pros and the cons of the various options, advantageous in some way and sacrificing in some other way.
+A former boss of mine once told me "the truth is always in the middle". He meant that as a rule of thumb to life's many problems, if not all. Whenever there are two or more competing options to choose from, the best one is likely the one in the middle - the middleground, so to speak. This middleground balances the pros and the cons of the various options, advantageous in some way and sacrificing in some other way.
 
 I have used his rule of thumb as a heuristic, or a mental shortcut, ever since. It makes sense to me. The reason why it makes sense is because of incomplete information - to be precise, it's because of the incomplete information available to different people in a given problem.
 
