@@ -3,8 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/2021/05/10/a-second-career/</loc>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/corporate-rat-race/</loc>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -17,18 +40,6 @@
   <url>
     <loc>/post/2021/04/27/on-procrastination/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -273,12 +284,6 @@
   <url>
     <loc>/post/2017/04/12/quick-start-to-using-git-and-github/</loc>
     <lastmod>2017-04-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/corporate-rat-race/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
