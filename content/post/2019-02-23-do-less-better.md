@@ -1,7 +1,7 @@
 ---
 title: "Do Less, Better"
 date: 2019-02-23
-categories: ["Stoicism"]
+categories: ["Philosophy"]
 ---
 
 <center>

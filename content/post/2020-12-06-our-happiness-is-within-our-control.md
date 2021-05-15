@@ -3,7 +3,7 @@ title: Our happiness is within our control
 author: ~
 date: '2020-12-06'
 slug: our-happiness-is-within-our-control
-categories: ["Stoicism"]
+categories: ["Philosophy"]
 ---
 
 <center>
