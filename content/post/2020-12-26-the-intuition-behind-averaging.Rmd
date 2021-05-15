@@ -2,7 +2,7 @@
 title: "The intuition behind averaging"
 #author: ""
 date: 2020-12-26
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 tags: ["R"]
 output:
   blogdown::html_page:

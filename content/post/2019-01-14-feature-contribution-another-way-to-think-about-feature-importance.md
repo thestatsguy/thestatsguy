@@ -3,7 +3,7 @@ title: "Feature Contribution - another way to think about feature importance"
 author: ~
 date: '2019-01-14'
 slug: feature-contribution-another-way-to-think-about-feature-importance
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 ---
 
 <!-- wp:image -->

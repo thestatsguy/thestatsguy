@@ -3,7 +3,7 @@ title: "A fuller review of my Master of Science in Statistics programme in NUS"
 author: ~
 date: '2020-05-10'
 slug: a-fuller-review-of-my-master-of-science-in-statistics-programme-in-nus
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 tags: ["MSc Stats"]
 ---
 

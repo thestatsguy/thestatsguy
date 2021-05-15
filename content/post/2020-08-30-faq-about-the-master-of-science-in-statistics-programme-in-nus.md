@@ -3,7 +3,7 @@ title: FAQ about the Master of Science in Statistics programme in NUS
 author: ~
 date: '2020-08-30'
 slug: faq-about-the-master-of-science-in-statistics-programme-in-nus
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 tags: ["MSc Stats"]
 ---
 

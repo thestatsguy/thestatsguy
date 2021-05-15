@@ -3,7 +3,7 @@ title: My learnings on Apache Spark
 author: ~
 date: '2017-02-14'
 slug: my-learnings-on-apache-spark
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 tags: []
 ---
 

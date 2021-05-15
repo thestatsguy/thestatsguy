@@ -1,7 +1,7 @@
 ---
 title: "Why ensemble modelling works so well - and one often neglected principle"
 date: 2018-12-25
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 ---
 
 <center>

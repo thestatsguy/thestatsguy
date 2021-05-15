@@ -2,7 +2,7 @@
 title: "Using waterfall charts to visualize feature contributions"
 #author: ""
 date: 2019-01-24
-categories: ["ML & Stats"]
+categories: ["Machine learning & Statistics"]
 tags: ["R"]
 ---
 
