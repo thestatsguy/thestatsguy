@@ -30,7 +30,7 @@
 <div class="article-meta">
 <h2><span class="title">A gentle introduction to the modern portfolio theory</span></h2>
 
-<h3 class="categories">Category: [Stats finance]</h3>
+<h3 class="categories">Category: [Finance &amp; Investing]</h3>
 <h3 class="tags">Tag: [R]</h3>
 <h3>2020/09/27</h3>
 <h3>15min read</h3>
@@ -97,7 +97,7 @@ R_{pf} = w_1R_1 + ... + w_NR_N = w^T\mathbf{R},
 <p>In other words, the portfolio is the linear combination of the various assets under consideration. Of course, the question that becomes: how to choose <span class="math inline">\(\mathbf{w} = (w_1, ..., w_N)^T\)</span> such that expected returns are maximised while minimising risk?</p>
 <div id="portfolio-weights" class="section level3">
 <h3>Portfolio weights</h3>
-<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset. In this post, we will only consider positive <span class="math inline">\(w_i\)</span> only.</p>
+<p>A technical point to bring out here is that while <span class="math inline">\(\sum_{i = 1}^{N} w_i = 1\)</span>, there is no constraint on individual <span class="math inline">\(w_i\)</span> to be non-negative. In fact, a negative <span class="math inline">\(w_i\)</span> implies a short position in the <span class="math inline">\(i\)</span>th asset, i.e. <strong>short selling</strong>. This is in constrast to a <em>long</em> position, i.e. buying the <span class="math inline">\(i\)</span>th asset. In this post, we will only consider positive <span class="math inline">\(w_i\)</span> only.</p>
 <hr />
 <p><strong><em>Terminology</em></strong></p>
 <p>Holding a <strong><em>long</em></strong> position in a particular asset simply means buying that particular asset. On the other hand, <strong><em>short selling</em></strong> is where one sells an asset without owning it in the first place. The asset, e.g. a stock, is borrowed from a broker or another customer of the broker. At a later point in time, a stock must then be bought back from the market and then returned to the lender. This closes the short position, and the idea is that if one is able to sell the borrowed stock at a higher price and return it at a lower price, a profit is made.</p>
@@ -128,7 +128,7 @@ ER_1 = ER_2 = \mu \\\
 Var(R_1) = Var(R_2) = \sigma^2
 \end{array}
 \]</span>
-Also, <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span> are uncorrelated, i.e. <span class="math inline">\(\rho_{12} = 0\)</span>.</p>
+Also, <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span> are uncorrelated, i.e. <span class="math inline">\(\rho_{12} = 0\)</span>.</p>
 <p>Investing 100% in either <span class="math inline">\(R_1\)</span> or <span class="math inline">\(R_2\)</span> would yield exactly the same return and the same risk. Now consider a portfiolio with some weight on both assets. Let <span class="math inline">\(w\)</span> be the weight for <span class="math inline">\(R_1\)</span> - then we would have <span class="math inline">\(1-w\)</span> for <span class="math inline">\(R_2\)</span>. In this portfolio, we would have</p>
 <p><span class="math display">\[ER_{pf} = wER_1 + (1-w)ER_2 = w\mu + (1-w)\mu = \mu\]</span>
 With this, we know that the return of this portfolio does not depend on <span class="math inline">\(w\)</span>.</p>

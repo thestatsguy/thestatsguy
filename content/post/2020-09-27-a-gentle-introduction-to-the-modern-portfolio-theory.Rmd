@@ -2,7 +2,7 @@
 title: "A gentle introduction to the modern portfolio theory"
 #author: ""
 date: 2020-09-27
-categories: ["Stats finance"]
+categories: ["Finance & Investing"]
 tags: ["R"]
 output:
   blogdown::html_page:
