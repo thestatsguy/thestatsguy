@@ -1,5 +1,5 @@
 ---
-title: "A second career"
+title: "My NParks Butterfly Watch Experience"
 date: 2021-05-28
 categories: ["Biology"]
 tags: ["NParks"]
@@ -26,7 +26,7 @@ I signed up via a webform on the NParks website, and followed through the three 
 **17th/18th April - Online training**
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-1.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-1.PNG" width="100%">
 </center>
 
 Butterflies 101
@@ -34,7 +34,7 @@ Butterflies 101
 The online training was held over Zoom, where an instructor from NParks introduce to volunteers the basics of butterflies, and how to identify them. The basics, such as butterfly anatomy, lifecycle and behavior, are easy to understand. But identification is a lot more difficult for the beginner. Volunteers were introduced to 23 different butterflies, and their distinct features. Even though it was difficult to grasp at first, fast forward to today and I can confidently identify 12 to 15 of them, without the help of a guidebook. So it's not that difficult after a while.
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-2.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-2.PNG" width="100%">
 </center>
 
 Learning to identify different species of butterflies
@@ -42,7 +42,7 @@ Learning to identify different species of butterflies
 During the online training, volunteers were also taught how to conduct the survey, using a method know as the [Pollard Walk](http://faculty.wwu.edu/jmcl/Wildlife/bfly_walk.pdf). In the actual survey, volunteers would be assigned 2 to 3 transects - a transect is nothing but a 200 meters route,  to be completed in 20 minutes, using the Pollard Walk.
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-3.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-3.PNG" width="100%">
 </center>
 
 The Pollard Walk
@@ -62,7 +62,7 @@ My first attempt at shooting butterflies. This is a Grey Pansy at the Singapore 
 Volunteers then proceed to conduct the actual survey, any day between 8th and 16th May. As butterflies are diurnal animals and rely on the sun's warmth to be active, the surveys have to be conducted between 9.30am and 3.00pm - this is when butterflies are the most active.
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-5.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-5.PNG" width="100%">
 </center>
 
 An example datasheet to record butterfly sightings
@@ -90,7 +90,7 @@ Front and centre from the park: Johor Bahru
 Once there, I quickly located the starting point of my first transect, and began the survey. To be honest, I wasn't feeling confident that I will identify butterflies along the way and collect good data. Luckily, this was less difficult than I had imagined, The moment I began my survey, I chanced upon a Chocolate Pansy lurking in the grass, marking my first sighting for my assignment.
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-8.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-8.PNG" width="100%">
 </center>
 
 First catch of the day: a Chocolate Pansy
@@ -126,7 +126,7 @@ In all, this transect was a more fruitful one, and I spotted a total of 48 butte
 I am satisfied with the data that I collected, and took a couple of videos and pictures of butterflies in the transect. But I had one more thing to do. Because of how the butterflies were fluttering around, there really wasn't enough time to properly record them in my notebook. So far, I only managed to make scribbles like this:
 
 <center>
-<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-10.jpg" width="100%">
+<img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-10.jpeg" width="100%">
 </center>
 
 Handwriting that will quickly become illegible if I don't act fast 
@@ -143,7 +143,7 @@ What's better for a hot and hungry midday than a Coke Zero and a plate of chicke
 <img src= "https://raw.githubusercontent.com/thestatsguy/thestatsguy/master/public/images/butterfly-watch-12.jpg" width="100%">
 </center>
 
-Looks almost scientific
+My notes looks almost scientific
 
 After a good lunch and clean, legible notes, I went home to sort out the data and digital files, and submitted my results.
 
