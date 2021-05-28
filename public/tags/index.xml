@@ -6,10 +6,19 @@
     <description>Recent content in Tags on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NParks</title>
+      <link>/tags/nparks/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nparks/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Books</title>
