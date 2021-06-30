@@ -13,7 +13,16 @@ Stoicism benefitted from the survival of many great texts written by the ancient
 
 Epicureanism never had such luck. Epicureanism is often misunderstood as a luxurious lifestyle of a gourmet or connoisseur - the opposite of what Epicurus taught. This mischaracterization of Epicurean hedonism is due to the deliberate misrepresentation by the Church and medieval scholars - partly because of the nonexistence or nonchalance of a god or gods in Epicurean philosophy. Many Epicurean texts were destroyed or suppressed or have gone missing. Epicurus himself was a prolific writer, but few of his works survived.
 
-Today, we are left with these few great texts as primary sources of Epicureanism - Epicurus' three *Letters* to Herodotus (on metaphysics), to Pythocles (on meteorology), to Menoeceus (on ethics, and living life), and Lucretius' *On the Nature of Things* (a poem, in fact). We do not have a Epictetus-/Arrian-style *Enchiridion* handbook, and we rely on academics like Catherine Wilson and John Sellars to analyze and distill Epicurean wisdom on our behalf.
+Today, we are left with these few great texts as primary sources of Epicureanism:
+
+* Epicurus' *Letters to Herodotus* (on metaphysics) 
+* Epicurus' *Letters to Pythocles* (on meteorology)
+* Epicurus' *Letters to Menoeceus* (on ethics, and living life)
+* The Vatican Collection of Epicurus Sayings
+* Epicurus' *Principal Doctrines*
+* Lucretius' *On the Nature of Things* (a poem, in fact)
+
+We do not have a Epictetus-/Arrian-style *Enchiridion* handbook, and we rely on academics like Catherine Wilson and John Sellars to analyze and distill Epicurean wisdom on our behalf.
 
 It is unfortunate that Epicureanism has suffered gravely from its loss of primary sources. I find myself relating more to Epicurean thinking (natural and necessary needs, lathe biosas, katastematic pleasures) than Stoic thinking (four virtues, role ethics) - though Epictetus' dichotomy of control is front and center in my own philosophy of life.
 
