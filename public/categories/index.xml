@@ -6,15 +6,24 @@
     <description>Recent content in Categories on The Stats Guy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>On Life</title>
+      <link>/categories/on-life/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/on-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Philosophy</title>
       <link>/categories/philosophy/</link>
-      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/categories/philosophy/</guid>
       <description></description>
@@ -35,15 +44,6 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/categories/corporate-rat-race/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On Life</title>
-      <link>/categories/on-life/</link>
-      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/on-life/</guid>
       <description></description>
     </item>
     
