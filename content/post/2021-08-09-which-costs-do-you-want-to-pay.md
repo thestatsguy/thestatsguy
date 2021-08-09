@@ -17,6 +17,6 @@ Think of what society typically considers as a successful person. Most likely, w
 
 Now think of the costs associated with this image of a successful person. High stress, high expectations, high spending, high-strung state of mind, high competitiveness, high environmental footprint. Sounds awful when we put these together in one sentence - but I would be pretentious if I were to say to get rid of all these costs, and lead life like an ascetic. I won't be able to do that myself either.
 
-The truth is in the middle - we have actually don't have to get rid of all these costs at once. We are free to choose which costs we would like to pay for, and reap the benefits. The beauty of modern life is this freedom to do largely what we choose to do. 
+The truth is in the middle - we actually don't have to get rid of all these costs at once. We are free to choose which costs we would like to pay for, and reap the benefits. The beauty of modern life is this freedom to do largely what we choose to do. 
 
-So rather than always thinking about and setting goals, think instead about the costs that you are willing and able to pay. You may find this perspective more useful.
+So rather than always thinking about and setting goals, think instead about the costs that you want to pay, that you are willing and able to pay. You may find this perspective more useful.
