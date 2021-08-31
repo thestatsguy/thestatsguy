@@ -9,7 +9,7 @@ categories: ["Philosophy"]
 
 I have been reading philosophy for a while now - mostly Hellenistic philosophy. So far, there are three principles from the Hellenistic philosophies of Stoicism and Epicureanism that made the biggest impression on me. In formulating elements of my own philosophy, I have placed these three elements front and centre.
 
-1. **Dichotomy of control (Stoicism)**
+**1. Dichotomy of control (Stoicism)**
 
 By far the most influential element of Stoicism to me, is the dichotomy of control.
 
