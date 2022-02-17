@@ -42,11 +42,11 @@ I know now it’s going to take more than just writing and grinding everyday to 
 
 **My plan**
 
-I have been writing quite haphazardly. You can tell from the posts on this blog that I have some familiarity in a number of topics, from finance to statistics to philosophy to biology. What you don’t see is the even more haphazard writing in my notebooks, like random bits of an undeveloped fantasy fiction universe. Likewise, I have also been reading quite haphazardly. Looking at my bookshelf, there are probably only a handful of topics that I won’t want to read about.
+I have been writing quite haphazardly. You can tell from the posts on this blog that I have some familiarity in a number of topics, from finance to statistics to philosophy to biology. What you don’t see is the even more haphazard writing in my notebooks, for example a number of random bits of an undeveloped fantasy fiction universe based on mind control abilities. Likewise, I have also been reading quite haphazardly. Looking at my bookshelf, there are probably only a handful of topics that I feel reluctant read about.
 
-I don’t think both reading and writing haphazardly is bad - in fact I think that it’s rather good to experiment, and to read and write whatever I wish. This haphazardness is conducive to the enjoyment of books and writing.
+I don’t think reading and writing haphazardly is bad - in fact I think that it’s rather good to experiment, and to read and write whatever I wish. This haphazardness is conducive to the enjoyment of books and writing.
 
-But I realised that’s not going to be enough to become a writer. I will need to be more targetted, picky even, in both my reading and writing. There should be genres that I would want to spend more time on, build an edge in, and create an audience for. These are genres that I should also enjoy reading and writing in - it will be such a killjoy to read and write in genres that I don’t truly enjoy.
+But I realised that’s not going to be enough to become a writer. I will need to be more targetted, picky even, in both my reading and writing. There should be genres that I would want to spend more time on, build an edge in, and create an audience for. These are genres that I should also enjoy reading and writing in - it will be such a killjoy to read and write in genres that makes me go "bleargh".
 
 As of now, my exploration has led me to two of these genres: fantasy fiction, and books that popularises philosophy for general public. When I look back at my own reading, it’s always the Warcraft and the Dungeons and Dragons, the Epicureanism and the Schopenhauer books that bring me the most joy. These are the books that I gravitate towards, for enjoyment and for wisdom.
 
