@@ -1,0 +1,140 @@
+---
+title: "Quiet Moments"
+#author: ""
+date: 2022-03-26
+categories: ["On Life"]
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<center>
+
+<h3>**One**</h3>
+
+Taking a long bus ride.
+
+Got a seat in the upper deck. Plenty of seats.
+
+In no rush. Ample time.
+
+Relying on public transport. EZ-Link card in my pocket.
+
+Enjoying the scenes. Recognizing familiar places, discovering new ones. Took a mental note.
+
+No one speaks to me. I speak to no one.
+
+Serene anonymity.
+
+<h3>**Two**</h3>
+
+Walking in a quiet mall. Or in the streets.
+
+Weekday. Just after lunchtime.
+
+Running an errand. Get it done.
+
+No one knows me, especially with the help of a surgical mask.
+
+Enjoying the scenes.
+
+No one speaks to me. I speak to no one.
+
+Serene anonymity.
+
+<h3>**Three**</h3>
+
+A food court. Many selections of food.
+
+Patrons scattered, an early lunch or an early dinner.
+
+Quiet white noise of chattering patrons and vendors. Chinese. Hokkien. English.
+
+Using my Kopitiam card for a discount.
+
+Chose a seat. A clear view at the expanse of the food court.
+
+Cheap food. Strong kopi-c-kosong.
+
+No one speaks to me. I speak to no one.
+
+Serene anonymity.
+
+<h3>**Four**</h3>
+
+Sunday.
+
+Contemplating life. Contemplating finances.
+
+Being single. All in order.
+
+No emotional baggage. No anxiety-inducing liabilities.
+
+Ready for the future. Living within means.
+
+No need to speak to anyone. No one speaks to me.
+
+Serene anonymity.
+
+<h3>**Five**</h3>
+
+Hobbies. Photography. Nature. Books. Volunteering. Arts. Culture. Knowledge. Writing. Philosophy. Life. No need to speak. Just learn.
+
+<h3>**Six**</h3>
+
+A hike. A long hike.
+
+MacRitchie Trail.
+
+Shaded from the hot sun by tall trees.
+
+Few are on the trail.
+
+Beads of sweat rolled down my chest.
+
+Take a deep breath through my nostrils.
+
+Exhale through my mouth.
+
+A sip of water.
+
+A Common Mormon flutters by.
+
+Birds sing from high up the canopy.
+
+No one speaks to me. I speak to no one.
+
+Serene anonymity.
+
+<h3>**Seven**</h3>
+
+A high rise condomium in the city. Or in Harbourfront. Carribean at Keppel Bay.
+
+Green-tinted windows. Squarish.
+
+Squarish apartments.
+
+A study, a room to write. Full of books of every kind (like Montaigne's library).
+
+An armchair. Comfortable.
+
+A sea view. A clean, organized view for inspirations.
+
+<h3>**Eight**</h3>
+
+A writer returns home. Back to the study.
+
+Bookcases line the walls of his study.
+
+A desk faces the window; an unblocked view puts him at ease.
+
+Elevates his perception, into a fictional universe in his mind.
+
+No one knows where he lives. No one knows where he is.
+
+No need to speak.
+
+Serene anonymity.
+
+
+</center>
