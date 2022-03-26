@@ -37,7 +37,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "Explorations in topics that I enjoy the most."
-    footer = "&copy; The Stats Guy 2021 | [Home](https://thestatsguy.netlify.app) | [GitHub](https://github.com/thestatsguy) | [Goodreads](https://www.goodreads.com/review/list/130206849-thestatsguy?page=1&view=covers)"
+    footer = "&copy; The Stats Guy 2016-2022 | [Home](https://thestatsguy.netlify.app) | [GitHub](https://github.com/thestatsguy) | [Goodreads](https://www.goodreads.com/review/list/130206849-thestatsguy?page=1&view=covers)"
     
 # [markup.goldmark.renderer]
 #     unsafe = true    
