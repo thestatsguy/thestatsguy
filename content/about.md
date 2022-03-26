@@ -6,6 +6,8 @@ output:
     toc: true
 ---
 
+*Last edited: 30th Jan 2021*
+
 ## About this blog
 
 This blog is simply an outlet for me to write, and in the process, reflect and analyse, about things in life that I naturally leaned towards – R, statistics, machine learning, investing, personal finance, analyzing financial data, and stoicism, while writing behind a pseudonym.
