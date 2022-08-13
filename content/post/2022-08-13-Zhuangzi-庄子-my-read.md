@@ -1,7 +1,7 @@
 ---
 title: "Zhuangzi 庄子 - my read"
 date: 2022-08-13
-categories: [Philosophy"]
+categories: ["Philosophy"]
 ---
 
 1. Skepticism
