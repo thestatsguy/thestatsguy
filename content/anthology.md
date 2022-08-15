@@ -4,7 +4,7 @@ title: "Anthology"
 
 *Good books that I return to from time to time; in no particular order.*
 
-*This list is kept to a maximum of approximately 10 books at any one point in time.*
+*I keep this list to a maximum of roughly 10 books at any one time. Anything more than that is overwhelming for me.*
 
 Updated: 15th August 2022
 
@@ -18,4 +18,3 @@ Updated: 15th August 2022
 7. [The Stoic Guide to a Happy Life, Massimo Pigliucci](https://www.goodreads.com/book/show/52738239-the-stoic-guide-to-a-happy-life)
 8. [Four Thousand Weeks, Oliver Burkeman](https://www.goodreads.com/book/show/54785515-four-thousand-weeks)
 9. [The Art of the Good Life, Rolf Dobelli](https://www.goodreads.com/book/show/36340275-the-art-of-the-good-life)
-10.
