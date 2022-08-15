@@ -8,7 +8,7 @@ categories: ["Philosophy"]
 
     1. Good and bad are inseparable, right and wrong are indistinguishable. We may never know what is truly good and what is truly bad.
     
-    2. Society and convention place value on typically the more or the better, e.g. more wealth, better grades, or better jobs. But we can’t be sure what more is good. Working for a FAANG company may seem better (from societal convention), but is it really so?
+    2. Society and convention place value on typically the more or the better, e.g. more wealth, better grades, or better jobs. But we can’t be sure whether more is good. Working for a FAANG company may seem better (from societal convention), but is it really so?
     
     3. [塞翁失马, 焉知非福](https://internationalcounselor.com/images/Merric%20Law%20-%20Documents/Sai%20Weng%20Shi%20Ma.pdf)
     
@@ -44,7 +44,7 @@ categories: ["Philosophy"]
     
     4. Accept the role that you happen to occupy.
         
-        “Out in the world, follow its rules” (Zhuangzi 20 - 山木)
+        “Out in the world, follow its rules.” (Zhuangzi 20 - 山木)
         
         “You hide your boat in a gully or your net in a swamp and call them secure. But in the middle of the night a strong man could still take them on his back and leave, and you would be asleep and not know. Hiding the small in the large seems fitting, but still you lose. But if you hid the world in the world, you would have nothing to lose… So the sage wanders in what exists everywhere and can’t be lost. He likes growing old and he likes dying young. He likes the beginning and he likes the end.” (Zhuangzi 6 - 大宗师)
         
@@ -70,13 +70,13 @@ categories: ["Philosophy"]
         
 6. Nonaction, Wuwei, 无为
 
-    1. Focus on know-how (skills, technique, intuition) vs. know-what (knowledge, right and wrong, true or false). Go with the flow, don’t over-rationalize.
+    1. Focus on know-how (skills, technique, intuition) rather than know-what (knowledge, right and wrong, true or false). Go with the flow, don’t over-rationalize.
     
     2. Don’t strive. Van Norden’s example: if you found my wallet, return it not because i) you desire a reward with returning it, or ii) it’s the right (ethical) thing to do, or iii) it’s the lawful thing to do. Return it because you simply never thought of keeping it.
     
 7. Zhuangzi as a therapy
 
-    1. Zhuangzi teaches no doctrine, only to give an intuition to its readers on a “good way” to relate to the world, so that our time in this world will be enjoyable. We will insulated from loss, and be a [flâneur](https://en.wikipedia.org/wiki/Fl%C3%A2neur), or observer, of life.
+    1. Zhuangzi teaches no doctrine, only to give an intuition to its readers on a “good way” to relate to the world, so that our time in this world will be enjoyable. We will be insulated from loss, and be a [flâneur](https://en.wikipedia.org/wiki/Fl%C3%A2neur), or observer, of life.
     
     2. This “good way” can’t be fully named or articulated, but can only be nicknamed or stylized as the Way or Dao or 道.
     
@@ -92,6 +92,6 @@ categories: ["Philosophy"]
     
     5. We may be a “wistful Daoist” - Van Norden’s example:
         
-        A contemporary wistful Daoist might want to do a top law school. If she does not get in, she will be disappointed but she will not be distraught: she does not take society’s and her own evaluations seriously enough for that. When she goes to a less prestigious law school instead, she will submerge herself in her work, and she will be better at it than many of her peers because of her level of commitment but also because she is less fearful of failure. Her approach will the same when she becomes an attorney; however, she will avoid high-profile cases that might get her face on television. Part of her wants to be famous, but she knows that overall the costs of celebrity are not worth it.
+        "A contemporary wistful Daoist might want to do a top law school. If she does not get in, she will be disappointed but she will not be distraught: she does not take society’s and her own evaluations seriously enough for that. When she goes to a less prestigious law school instead, she will submerge herself in her work, and she will be better at it than many of her peers because of her level of commitment but also because she is less fearful of failure. Her approach will be the same when she becomes an attorney; however, she will avoid high-profile cases that might get her face on television. Part of her wants to be famous, but she knows that overall the costs of celebrity are not worth it.""
         
     6. Zhuangzi and the butterfly, the butterfly and Zhuangzi; three nuts in the morning, or four nuts in the morning - they are all the same, all are equalized.

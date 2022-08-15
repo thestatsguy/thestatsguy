@@ -27,13 +27,13 @@ footnotereturnlinkcontents = "↩"
     name = "Tags"
     url = "/tags/"
     weight = 9
-# [[menu.main]]
-#     name = "To-read list"
-#     url = "/to-read-list/"
-#     weight = 10
 [[menu.main]]
-    name = "Subscribe"
-    url = "/index.xml"
+    name = "Anthology"
+    url = "/anthology/"
+    weight = 10
+#[[menu.main]]
+#    name = "Subscribe"
+#    url = "/index.xml"
 
 [params]
     description = "Explorations in topics that I enjoy the most."
